@@ -175,9 +175,9 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 &lt;/form&gt;
 										</code></pre>	
 							</div>
-							<div class="col-xs-6 inline-code">
+							<div class="col-xs-6 ">
 							<ul>
-								<li><span>&lt;form&gt;</span> comprises all form elements</li>
+								<li><code>&lt;form&gt;</code> comprises all form elements</li>
 								<li>action: where the data is sent</li>
 								<li>method: how the data is sent (post/get)</li>
 							</ul>
@@ -187,8 +187,8 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 
 					<section id="C1_InputElement" data-background="#fff" class="container">
 						<div class="row">
-							<div class="col-xs-12 inline-code">
-								<h2>The <span>&lt;input&gt;</span> element</h2>
+							<div class="col-xs-12 ">
+								<h2>The <code>&lt;input&gt;</code> element</h2>
 							</div>
 						</div>
 						<div class="row">
@@ -205,9 +205,9 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 &lt;/p&gt;
 										</code></pre>	
 							</div>
-							<div class="col-xs-8 inline-code">
+							<div class="col-xs-8 ">
 							<ul>
-								<li>Use <span >&lt;input&gt;</span> to get user information</li>
+								<li>Use <code >&lt;input&gt;</code> to get user information</li>
 								<li>Many <b>variations</b>, depending on the <em>type</em> attribute (text, checkbox, button,etc.)</li>
 								<li><b>Inline</b> element (in text, no new lines)</li>
 								<li>Difference <em>id/name</em>
@@ -246,12 +246,12 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 &lt;/fieldset&gt;
 										</code></pre>	
 							</div>
-							<div class="col-xs-6 inline-code">
+							<div class="col-xs-6 ">
 							<img src="./images/C1fieldset.png">
 							<ul>
-								<li>Elements are <b>grouped</b> using <span>&lt;fieldset&gt;</span></li>
-								<li>Caption is assigned to <b>group</b> using <span>&lt;legend&gt;</span></li>
-								<li>Captions are assigned to <b>elements</b> using <span>&lt;lable&gt;</span></li>
+								<li>Elements are <b>grouped</b> using <code>&lt;fieldset&gt;</code></li>
+								<li>Caption is assigned to <b>group</b> using <code>&lt;legend&gt;</code></li>
+								<li>Captions are assigned to <b>elements</b> using <code>&lt;lable&gt;</code></li>
 								<li><em>for</em> references <em>id</em></li>
 							</ul>
 							</div>
@@ -287,8 +287,8 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 							<pre><code>
 &lt;input type="text" id="user"&gt;
 								</code></pre>
-								<ul class="inline-code">
-									<li>Text determined by attribute <span>type="text"</span></li>
+								<ul>
+									<li>Text determined by attribute <code>type="text"</code></li>
 									<li>Single line text field</li>
 								</ul>
 							</div>
@@ -297,8 +297,8 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 							<pre><code>
 &lt;input type="password" id="pass"&gt;
 								</code></pre>
-								<ul class="inline-code">
-									<li>Text determined by attribute <span>type="password"</span></li>
+								<ul>
+									<li>Text determined by attribute <code>type="password"</code></li>
 									<li>Password characters are masked (*****)</li>
 								</ul>
 							</div>
@@ -323,10 +323,10 @@ wrap="soft"&gt; Content
 &lt;/textarea&gt;
 								</code></pre>
 							</div>
-							<div class="col-xs-6 inline-code">
+							<div class="col-xs-6 ">
 							<img src="./images/C2vielvieltext.png">
 								<ul>
-									<li><span>&lt;textarea&gt;</span></li>
+									<li><code>&lt;textarea&gt;</code></li>
 									<li><em>cols/rows</em> determine field‘s display width/height</li>
 									<li><em>wrap</em> controls line break</li>
 								</ul>
@@ -363,7 +363,7 @@ name="vehicle" value="Car"&gt;
 I have a car
 								</code></pre>
 							</div>
-							<div class="col-xs-8 inline-code">
+							<div class="col-xs-8 ">
 								<ul>
 									<li><b>Grouped</b> selections 
 										<ul class="nointendlist">
@@ -372,7 +372,7 @@ I have a car
 										</ul>
 									</li>
 									<li><b>Groups</b> of radiobuttons or checkboxes are determined by attribute name</li>
-									<li>Select by default: set attribute <span>checked</span></li>
+									<li>Select by default: set attribute <code>checked</code></li>
 								</ul>
 							</div>
 						</div>
@@ -387,7 +387,7 @@ I have a car
 					<section id="C2_Selections" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
 						<h2>Selections (Lists)</h2>
 						<div class="row">
-							<div class="col-xs-4 inline-code">
+							<div class="col-xs-4 ">
 								<pre><code class="html">
 &lt;select multiple
 id="options" size="8"&gt;
@@ -398,17 +398,17 @@ selected&gt;Pizza
 Napoli&lt;/option&gt;
 								</code></pre>
 							</div>
-							<div class="col-xs-8 inline-code">
+							<div class="col-xs-8 ">
 								<ul>
-									<li>List defined by <span>&lt;select&gt;</span></li>
+									<li>List defined by <code>&lt;select&gt;</code></li>
 									<li>Appearance
 										<ul>
-											<li><b>Dropdown:</b> <span>size="1"</span></li>
-											<li><b>List:</b> <span>size="n"</span></li>
+											<li><b>Dropdown:</b> <code>size="1"</code></li>
+											<li><b>List:</b> <code>size="n"</code></li>
 											<li>Multiple allows multiple selections (press CTRL)</li>
 										</ul>
 									</li>
-									<li>List options defined by <span>&lt;option&gt;</span></li>
+									<li>List options defined by <code>&lt;option&gt;</code></li>
 								</ul>
 							</div>
 						</div>
@@ -424,8 +424,8 @@ Napoli&lt;/option&gt;
 						<h2>Grouped Selections</h2>
 						<div class="row">
 							<div class="col-xs-12">
-								<ul class="inline-code">
-									<li>Grouping of options by <span>&lt;optgroup&gt;</span> , caption by <span>&lt;label&gt;</span></li>
+								<ul>
+									<li>Grouping of options by <code>&lt;optgroup&gt;</code> , caption by <code>&lt;label&gt;</code></li>
 								</ul>
 								<pre><code class="html">
 &lt;label for="wine"&gt;Wines:&lt;/label&gt;&lt;br&gt;
@@ -474,11 +474,11 @@ Napoli&lt;/option&gt;
 list="pizzalist"&gt;
 								</code></pre>
 							</div>
-							<div class="col-xs-6 inline-code">
+							<div class="col-xs-6 ">
 								<ul>
 									<li>Hybrid element for text and selection
 									<ul>
-										<li>Create <span>&lt;datalist&gt;</span> containing <span>&lt;option&gt;</span></li>
+										<li>Create <code>&lt;datalist&gt;</code> containing <code>&lt;option&gt;</code></li>
 										<li>Reference datalist's <em>id</em> in text input using <em>list</em></li>
 									</ul>
 									</li>
@@ -506,11 +506,11 @@ list="pizzalist"&gt;
 &lt;/button&gt;
 								</code></pre>
 							</div>
-							<div class="col-xs-8 inline-code">
+							<div class="col-xs-8 ">
 								<ul>
-									<li><span>type="button"</span> defines button for tag <span>&lt;button&gt;</span> (or <span>&lt;input&gt;</span></li>
-									<li> <span>&lt;button&gt;</span> may contain other elements like <span>&lt;img&gt;</span></li>
-									<li> <span>onclick</span> event handler allows assigning JS code</li>
+									<li><code>type="button"</code> defines button for tag <code>&lt;button&gt;</code> (or <code>&lt;input&gt;</code></li>
+									<li> <code>&lt;button&gt;</code> may contain other elements like <code>&lt;img&gt;</code></li>
+									<li> <code>onclick</code> event handler allows assigning JS code</li>
 								</ul>
 								
 							</div>
@@ -585,8 +585,8 @@ max="100"&gt;&lt;/progress&gt;
 								</code></pre>
 							</div>
 							<div class="col-xs-8">
-							<p class="text-left inline-code">
-							The <span>&lt;progress&gt;</span> tag represents the progress of a task</li>
+							<p class="text-left ">
+							The <code>&lt;progress&gt;</code> tag represents the progress of a task</li>
 							</p>
 							</div>
 						</div>
@@ -612,9 +612,9 @@ optimum="5"&gt;1 out of
 								</code></pre>
 							</div>
 							<div class="col-xs-8">
-							<p class="text-left inline-code">
+							<p class="text-left ">
 							<ul> 
-								<li><span>&lt;meter&gt;</span> defines <b>scalar measurement</b> within range or a fractional value
+								<li><code>&lt;meter&gt;</code> defines <b>scalar measurement</b> within range or a fractional value
 									<ul>
 										<li><em>high:</em> range that is considered to be high</li>
 										<li><em>low:</em> range that is considered to be low</li>
@@ -698,10 +698,10 @@ optimum="5"&gt;1 out of
 				<div class="row">
 					<div class="col-xs-12">
 						<p class="text-left"><b>Get it started:</b></p>
-								<ul class="inline-code">
+								<ul>
 									<li>Download <b>html5forms</b></li>
 									<li>Extract folder <b>shared</b> to your project folder</li>
-									<li><b>Embed</b> 2 JS scripts into your <span>&lt;head&gt;</span>:</li>
+									<li><b>Embed</b> 2 JS scripts into your <code>&lt;head&gt;</code>:</li>
 								</ul>
 						<pre><code>
 &lt;script type="text/javascript" src="shared/js/modernizr.com/Modernizr-
@@ -735,10 +735,10 @@ src="shared/js/html5Forms.js" &gt;
 						</code></pre>
 					</div>
 					<div class="col-xs-6">
-						<ul class="inline-code">
-							<li><span>url</span> allowes to enter links</li>
-							<li><span>value</span> for preset</li>
-							<li><span>email</span> allows to enter address like <em>a.b@c.d</em></li>
+						<ul>
+							<li><code>url</code> allowes to enter links</li>
+							<li><code>value</code> for preset</li>
+							<li><code>email</code> allows to enter address like <em>a.b@c.d</em></li>
 							<li>Validity evaluated <b>after input</b> and <b>on submit</b></li>
 						</ul> 
 					</div>
@@ -764,8 +764,8 @@ src="shared/js/html5Forms.js" &gt;
 						</code></pre>
 					</div>
 					<div class="col-xs-6">
-						<ul class="inline-code">
-							<li>Parameters: <span>value, min, max</span></li>
+						<ul>
+							<li>Parameters: <code>value, min, max</code></li>
 							<li>Format
 								<ul>
 									<li>Date: YYYY-MM(-DD)</li>
@@ -793,12 +793,12 @@ src="shared/js/html5Forms.js" &gt;
 						</code></pre>
 					</div>
 					<div class="col-xs-6">
-						<ul class="inline-code">
+						<ul>
 							<li><b>Number</b> selection (often displayed as spinner</li>
 							<li><b>Range</b> selection (displayed as slider</li>
-							<li><span>min/max</span> defines range</li>
-							<li><span>step</span> defines legal interval values</li>
-							<li><span>value</span> defines default value</li>
+							<li><code>min/max</code> defines range</li>
+							<li><code>step</code> defines legal interval values</li>
+							<li><code>value</code> defines default value</li>
 						</ul>
 					</div>
 				</div>
@@ -818,9 +818,9 @@ src="shared/js/html5Forms.js" &gt;
 						</code></pre>
 					</div>
 					<div class="col-xs-6">
-						<ul class="inline-code">
-							<li><span>color</span> allows selection of color</li>
-							<li><span>value</span> is HTML color format: <em>#rrggbb</em> (see chapter D CSS)</li>
+						<ul>
+							<li><code>color</code> allows selection of color</li>
+							<li><code>value</code> is HTML color format: <em>#rrggbb</em> (see chapter D CSS)</li>
 						</ul>
 					</div>
 				</div>
@@ -840,8 +840,8 @@ src="shared/js/html5Forms.js" &gt;
 						</code></pre>
 					</div>
 					<div class="col-xs-6">
-						<ul class="inline-code">
-							<li><span>pattern</span> forces the user to enter a value in a specified format</li>
+						<ul>
+							<li><code>pattern</code> forces the user to enter a value in a specified format</li>
 							<li>Specified by regular expressions</li>
 							<li><a  href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank"><small><i class="fa fa-book"> Regular Expressions</i></small></a></li>
 						</ul>
@@ -883,8 +883,8 @@ src="shared/js/html5Forms.js" &gt;
 					</code></pre>
 					</div>
 					<div class="col-xs-6">
-								<ul class="inline-code">
-									<li><span>required</span> makes an input field mandatory</li>
+								<ul>
+									<li><code>required</code> makes an input field mandatory</li>
 									<li>user is forced to enter a value in order to submit the form</li>
 								</ul>
 					</div>
@@ -907,12 +907,12 @@ src="shared/js/html5Forms.js" &gt;
 					</code></pre>
 					</div>
 					<div class="col-xs-6">
-								<ul class="inline-code">
-									<li>Fields may be <span>disabled</span> or set <span>readonly</span></li>
+								<ul>
+									<li>Fields may be <code>disabled</code> or set <code>readonly</code></li>
 									<li>Usage
 										<ul>
-											<li><span>readonly</span> elements are (temporary) output elements</li>	
-											li><span>disabled</span> elements are grayed out</li>	
+											<li><code>readonly</code> elements are (temporary) output elements</li>	
+											li><code>disabled</code> elements are grayed out</li>	
 										</ul>
 									</li>
 								</ul>
@@ -934,8 +934,8 @@ src="shared/js/html5Forms.js" &gt;
 					</code></pre>
 					</div>
 					<div class="col-xs-6">
-								<ul class="inline-code">
-									<li><span>placeholder</span> specifies short hint</li>
+								<ul>
+									<li><code>placeholder</code> specifies short hint</li>
 									<li>
 										<ul>
 											<li>describes expected value (e.g a sample or short description)</li>	
@@ -971,7 +971,7 @@ src="shared/js/html5Forms.js" &gt;
   Choose your username&lt;/label&gt;
  &lt;input type=“text" maxlength="30" id="GmailAddress"
   value=""&gt;
-  &lt;span class="atgmail"&gt;@gmail.com&lt;/span&gt;
+  &lt;code class="atgmail"&gt;@gmail.com&lt;/code&gt;
 &lt;/div&gt;
 &lt;div class="form-element" id="password-form-element"&gt;
   &lt;label id="password-label" for="Passwd"&gt;Create a password&lt;/label&gt;

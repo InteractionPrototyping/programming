@@ -1,0 +1,156 @@
+/*!
+ * style.css
+ * Interaction Prototyping Praktikum
+ * A Web Applications
+ *
+ * 
+ */
+/*********************************************
+ * STYLES
+ *********************************************/
+ #web20 #tagcloud {text-align: center}
+
+ #RIATechnologyFlashHTML p {text-align: left;}
+
+ #A2_History .row {text-align: left;}
+
+ #EvolutionOfTheWeb {
+height:600px;
+padding:2%;}
+
+.exlink {
+text-align: left; 
+position: relative;
+bottom: 0;
+left: 0;
+top: 100%;
+padding-top: 20px;}
+
+.fiddle {
+position: relative;
+top: 100%;
+bottom: 0;
+padding-top: 20px;
+}
+
+#A2_Technology p {text-align: left;}
+
+#Technology_InternetVsWWW {	
+margin-top: 5%;
+padding-top: 2%;
+border-top: 1px solid #0f3750;
+}
+
+
+#Technology_InternetVsWWW  > *:first-child {border-right: 1px solid #0f3750;}
+
+.socrativeBox, .liveCodingBox { 
+background: rgba(15,55,80,1);
+text-align: left;
+color: #fff;
+}
+
+
+
+.socrativeBox, .liveCodingBox{	
+				height: 550px;
+				}
+
+.socrativeBox , .socrativeBox a; .liveCodingBox , .liveCodingBox a{
+				padding: 10% 4%;
+				margin:0;
+				line-height: 1;}
+
+
+
+#A2_Realization div:first-child p{text-align: left;}
+#A2_Realization .row {					
+vertical-align: bottom;
+}
+#A2_Realization iframe {
+margin-top: 10%;
+}
+
+#A2_Engelbart img {height: 250px;}
+
+#A2_BernersLee img {
+margin-left: 0;
+padding: 2%;
+height: 250px;
+}
+
+#A2_HTMLEvolution p {margin-left: 0}
+#G3_manipulateDimensions img; #E1_Exercise img, #A2_HTMLEvolution img, #A4_Webbrowser #wetterapp, #A4_OnlineSnippets img, #A4_stages img, #A4_client img, #A4_iPhone img,#B1_HTMLex img, #A2_TTC img, #A3_UXandDisciplines img, #A3_UXTechnologies img, #A3_ClientServerHTTP .col-xs-12 img, #A3_HTMLmarkup img {
+	height: 550px
+}
+
+#A3_HTMLishypertext .col-xs-12, #A3_HTMLmarkup .col-xs-6, #A2_HTMLEvolution div, #B1_Attributes ul {font-size:0.775em;}
+
+
+.bluefiddle {color:#005c96;}
+.orangeex, .warning { color: #ee762c;}
+.greenex { color: #a1b11a;}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+}
+
+table .datatype,.inline-code-blue span, .inline-code span, #B6_tables span, #B3_TextlevelSemantics span, #B2_Layouting span, #B1_Attributes span, #B1_head span, #B1_body span ,#B2_section span, #B2_groupingelements span,#B2_block span{	
+font-family:monospace; 
+text-transform: lowercase;
+font-size: 0.8em;
+}	
+
+
+#B3_hLinksAndLists img {margin-top: 20%;}
+
+#B6_WeatherApp div, #C1_Examples div {
+max-height: 550px;
+padding:5%;
+}
+
+.fa {display: inline;
+}
+
+#D1_IncludeCSS2 ol, .equation p, #D4_Positioning ul{
+font-size: 0.8em;
+}
+
+#CSS_Frameworks_Examples img, #E2_Images .nonresponsive img { height: 1em;}
+
+#E1_FontAwesome p {
+text-align: justify;
+}
+
+#E1_Capability span { 
+font-size: 0.7em;
+color: #ee762c;
+}
+
+code {
+font-size: 0.6em;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 663px;
+      height: 300px;
+      margin: auto;
+  }
+
+  #ippCarousel li {
+  list-style-type: none;
+}
+
+.table>tbody>tr>td, .table>thead>tr>th{
+font-size: 0.7em;
+line-height: 1em;
+}
+
+
+#F5_JSObjectString img {
+height: 40%;
+}

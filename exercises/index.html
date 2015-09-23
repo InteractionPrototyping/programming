@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Interaction Prototyping</title>
+
+    <!-- use bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            padding-top:50px;
+        }
+        /*headline*/
+        div.page-header {
+            position:relative;
+            padding-right:150px;
+        }
+        div.page-header img {
+            position:absolute;
+            height:70px;
+            right:1em;
+        }
+		/*exercise sheets*/
+		h2 {
+			page-break-before: always;
+		}
+		h2:first-of-type {
+			page-break-before:avoid;
+		}
+        /*number tasks*/
+        body {
+            counter-reset: tasks;
+        }
+        h3:before {
+            content: "Task " counter(tasks)": ";
+            counter-increment: tasks;
+            font-weight: bold;
+        }
+        /*definition lists*/
+        dd {
+            padding-left:2em; 
+        }
+        dt {
+            color:rgb(87,164,218);
+        }
+        /*images*/
+		img {
+			page-break-inside: avoid;
+		}
+        img.small {
+            width:800px;
+            margin:auto;
+        }
+		img.half {
+			width:50%;
+			margin:auto;
+		}
+		img.third {
+			width:33%;
+			margin:auto;
+		}
+		/*todo class*/
+		.todo {
+			background-color:yellow;
+		}
+    </style>
+    <script>
+        var year = (new Date()).getFullYear();
+		var month = (new Date()).getMonth();
+        if (month < 3) {
+			term = "winter term " + (year-1) + "/" + year;
+        } else if (month > 8) {
+ 			term = "winter term " + year + "/" + (year+1)           
+        } else {
+            term = "summer term " + year;
+		}
+		document.title = "Interaction Prototyping: " + term;
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+        
+            <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="LfE.png"> Interaction Prototyping</a>
+            </div> 
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav" role="tablist">
+                <li class="active"><a href="#introduction">Introduction</a></li>
+                <li><a href="#intro">Intro</a></li>
+                  <li><a href="#A">Apps</a></li>
+                  <li><a href="#B">HTML</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+    
+    <!--
+    INTRODUCTION
+    -->
+    <h2 id="introduction">Introduction</h2>
+    <p>This is the practical task assignment for the course<strong> Interaction Programming</strong>. The block course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the <script>document.write(term);</script>. This document is <span class="todo">authored by  <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a></span>, David Schopf, and Niklas Lütteken.</p>
+    <p>The exercises aim to learn the web technologies  HTML5/CSS3/JavaScript by developing a <b>weather application</b> during the course.    </p>
+    <h4 class="todo">Schedule</h4> 
+        <ul>
+            <li>TODO </li>
+            <li>?</li>
+        </ul>
+      <h4 id="grading">Expectations, requirements, and grading:</h4>
+      <p class="alert alert-danger"><i class="fa fa-info"></i> Your final grade will consist of a <b>open-internet practical exam.</b><b></b> </p>
+      <p class="todo">Describe exam</p>
+      <!--
+    PREPARATION
+    -->
+      <h2 id="preparation">A Web Applications</h2>
+      <h3>Environment</h3>
+      <p><strong>Set up</strong> an environment for creating HTML documents on  your computer.</p>
+      <ul>
+        <li>Recommended  Editor: <a href="http://brackets.io/">Brackets</a></li>
+        <li>Recommended  Browser: <a href="https://www.google.com/chrome/">Chrome</a></li>
+      </ul>
+      <p><strong>Create</strong> a simple &quot;hello world&quot; HTML page and run it in chrome.</p>
+      <p>Test the  live preview of Brackets. In case, you&rsquo;re experiencing problems, consider <a href="https://github.com/adobe/brackets/wiki/Troubleshooting#livedev">https://github.com/adobe/brackets/wiki/Troubleshooting#livedev</a>      </p>
+      <p class="well well-sm">You can use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting up eduroam</a>!</p>
+      <p class="todo">Photos of the final app. Link to the final app sources</p>
+      
+      <h2 id="first">B HTML</h2>
+      
+      
+      <h3> Weather App Skeleton (B1)      </h3>
+      <p>Create a  HTML 5 file (weather.html) with the skeleton of your weather application</p>
+      <h3>Weather App  Structure (B2/3)</h3>
+      <p>Create the  sections of the app as (semantic where possible, otherwise generic) HTML  elements.</p>
+      <p>Main View HTML, add dummy  text.</p>
+      <p>Create a  second HTML file (weather-details.html) and its content structure.</p>
+      <ul>
+        <li>The  detail information should be inside a div (don&rsquo;t use tables)</li>
+        <li>Add  (some) detail information (temp, rain, wind, …)</li>
+      </ul>
+      <p>Details View HTML, add dummy text</p>
+      <h3>Hyperlinks between  main view and details view (B4)</h3>
+      <p>Mutually  reference the two pages (&ldquo;details…&rdquo;, &ldquo;X&rdquo;).</p>
+      <h3> Images (B5)</h3>
+      <p>Add images  to the main view and details view:</p>
+      <ul>
+        <li>Weather  icons</li>
+      </ul>
+      <h2>C Forms</h2>
+      <p>Sidebar HTML</p>
+      <p>Add form  elements to the sidebar and main view:</p>
+      <ul>
+        <li>Buttons</li>
+        <li>Input  for creating new city entries</li>
+        <li>Radio  buttons for the unit (temperature, speed) selection</li>
+      </ul>
+      <h2>D Style and Layout</h2>
+      <h3>D1: Make elements  addressable</h3>
+      <p>Add the  same (external) style sheet for both pages<br>
+      Assign ids  and classes to the HTML element, which need to be addressed, e.g.</p>
+      <ul>
+        <li>for  styling</li>
+        <li>for  interactively adding content</li>
+      </ul>
+      <p>Apply the  generic rule:</p>
+      <ul>
+        <li>Assign  ids for content which is present once (menu, current temperature, current  weather, …)</li>
+        <li>Assign  classes for elements, which are present multiple times (e.g. multiple rows of  detail information, multiple buttons, …)</li>
+      </ul>
+      <h3>D3: Style information
+      </h3>
+      <p class="todo">swap D3 and D4</p>
+      <h3>D4: Layout your app</h3>
+      <p>Position elements</p>
+      <h3>D5: Apply effects</h3>
+      <p>Gradients<br>
+      Shadows</p>
+      <h1>E: Bootstrap</h1>
+      <p>&amp;  weather app? Weather App v2?</p>
+      <p>Font-Awesome?</p>
+      <h1>F: JavaScript Interaction &amp; Data</h1>
+      <p class="todo">Include the following</p>
+      <ol>
+        <li>Toggle sidebar, Toggle Details view - Javascript</li>
+        <li>UpdateWeatherMainHTML()- Javascript innerHTML,  Objects</li>
+        <li>UpdateWeatherDetailHTML()- Javascript HTML  String creation</li>
+        <li>ChangeCurrentDay() – Javascript Logik,  DateStrings</li>
+        <li>UpdateColorScheme() – Javascript CSS  Manipulation</li>
+        <li>ConvertTemperature, Wind, Humidity Functions –  Javascript Functions, Returns</li>
+        <li>getAPIData() – jQuery, getJSON</li>
+        <li>Show / Hide Loading overlay - CSS Transitions, Animations</li>
+        <li>ChangeTempUnit, changeWindUnit – jQuery </li>
+        <li>Show city List   - jQuery DOM Insertion</li>
+        <li>addCity + Sortable - jQuery Interaction,  jQueryUI Widgets</li>
+        <li>LocateMe, getLocation, getCoordinates,  getCityname – Javascript Geolocation, Geocoding</li>
+        <li>setCityClickable - jQuery Plugins</li>
+      </ol>
+      Furthermore include
+      <ul>
+        <li>Dummy API Objekt mitliefern (Niklas)</li>
+        <li>Jeder formuliert seinen Teil aus (revealJS?  Powerpoint?)</li>
+        <li>Überprüfen wo Funktionen sich aufeinander  beziehen (Shortcuts)</li>
+      </ul>
+      
+      <p class="todo">Add solution here as a collapsible</p>
+      <h3>F0: Combined Page</h3>
+      <p>Combine  overview and details in a single HTML file<br>
+        Layout the  details to overlay the overview in CSS<br>
+        Hide the  overlay in CSS<br>
+      Modify the  visibility CSS property via JS. Use:</p>
+      <ul>
+        <li>onclick=<strong>&quot;&ldquo;</strong></li>
+        <li>document.getElementById('id').style.? = '?'; </li>
+      </ul>
+      <h3>F1: Improving  Modularity/Debugging</h3>
+      <p>Use an  external JS file<br>
+        Use  functions for opening and closing details<br>
+        Comment the  function<br>
+        Add log  messages for opening and closing<br>
+      Set a  breakpoint in the debugger, both for opening and closing the details view.</p>
+      <h3>F2/3: Variables</h3>
+      <p>Introduce a  global variable currentDay. Its value will represent the &ldquo;day offset&rdquo;: 0 is  today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</p>
+      <h3>F4: Functions</h3>
+      <p>One single  function for changing the day. Connect to the buttons<br>
+        …<br>
+        Helper  functions (e.g. windspeed, …)<br>
+      How to test? Extra file? Log? … </p>
+      <h3>F5: Objects</h3>
+      <p>Date object  for output<br>
+        Create an  weather information object in literal notation.<br>
+        UML according to forecast.io <br>
+        Reference  functions as methods<br>
+        Prototype? <br>
+      Output the  weather information programmatically [use arguments]</p>
+      <h3>F6: Arrays</h3>
+      <p>Array of  multiple data points (two)</p>
+      <h3>F7: Control &amp;  Conditional</h3>
+      <p>Limit the  date selection to 0..7<br>
+        Hide  details button for days other than 0 and 1 (no detail info available)<br>
+      …</p>
+      <h3>F8: Loops</h3>
+      <p>Output  details in a loop. Creator function?</p>
+      <h3>F: Further JS</h3>
+      <p>As many steps as possible during F1-F7! <br>
+        Use weather  object and given icons, </p>
+      <ul>
+        <li>…</li>
+        <li>Onload  for initialization of overview</li>
+      </ul>
+      <h2>G: JS Frameworks</h2>
+      <h3>G1: jQuery</h3>
+      <p>Include<br>
+      Test</p>
+      <h3>G2: jQuery effects</h3>
+      <p>Show and  hide your details panel using jQuery effects</p>
+      <h3>G3: jQuery DOM traversal</h3>
+      <p>Use $  getters/setters instead of JS</p>
+      <ul>
+        <li>…</li>
+      </ul>
+      <p>Use  chaining for creating the details view<br>
+        $(&ldquo;&lt;div&gt;&rdquo;).addClass.attr.html.appendTo.,…<br>
+        For all  buttons, add handlers in HTML</p>
+      <h3>G4: APIs &amp; AJAX</h3>
+      <p>I think, the whole API stuff should be  relocated here? <br>
+      Load data</p>
+      <h3>G5: Utilities</h3>
+      <p>Each:</p>
+      <ul>
+        <li>Define  a custom function for array sorting: <em>updateArraySorting</em>(oldArray,  newPositions)</li>
+      </ul>
+      <h3>G6: jQuery UI</h3>
+      <p>Sortable:</p>
+      <ul>
+        <li>Use  jQuery UI sortable for the city list</li>
+        <li>Add  an event handler for the &ldquo;stop&rdquo; event that resorts the city data array using the  sortable widget method &ldquo;toArray&rdquo; and your <em>updateArraySorting</em> function </li>
+      </ul>
+      <h2>Storage &amp; GPS</h2>
+      <p>Use  offlinestorage for selected element and store your list<br>
+      Use  location to </p>
+
+</div>
+</body>
+
+</html>

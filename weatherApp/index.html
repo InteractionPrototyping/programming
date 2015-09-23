@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Optimize for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <!-- jQuery from Google -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,700,500,900' rel='stylesheet' type='text/css'>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Loading Overlay Start -->
+        <div id="overlay-loading-indicator">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <!-- Loading Overlay End -->
+        
+        <!-- Sidebar Overlay Start -->
+        <div id="sidebar-fade-overlay"></div>
+        <!-- Sidebar Overlay End -->
+        
+        <!-- SideBar Start -->
+        <section id="sidebar" class="text-white">
+            <!-- SideBar Header Start -->
+            <div id="sidebar-header" class="header topbar">
+                <button id="close-sidebar" class="btn-square pull-right sidebar-control">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- SideBar Header End -->
+            
+            <!-- SideBar Content Start -->
+            <div id="sidebar-content">
+
+                <h2><i class="fa fa-globe"></i>Cities</h2>
+                <ul id="citylist"></ul>
+                <input type="text" id="city-input" name="city" />
+                <button id="city-add" class="btn-square">
+                    <i class="fa fa-plus"></i>
+                </button>
+
+                <h2><i class="fa fa-cog"></i>Settings</h2>
+                <ul id="settings">
+                    <li id="settings-temp" class="setting">
+                        <span class="label pull-left">Temp</span>
+                        <span class="toggle pull-left">
+                            <button class="btn-square pull-left active" onclick="changeTempUnit('C')">C</button>
+                            <button class="btn-square pull-left" onclick="changeTempUnit('F')">F</button>
+                        </span>
+                        <span class="clear"></span>
+                    </li>
+                    <li id="settings-wind" class="setting">
+                        <span class="label pull-left">Wind</span>
+                        <span class="toggle pull-left">
+                            <button class="btn-square pull-left active" onclick="changeWindUnit('k')">km/h</button>
+                            <button class="btn-square pull-left" onclick="changeWindUnit('m')">m/h</button>
+                        </span>
+                        <span class="clear"></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- SideBar Content End -->
+        </section>
+        <!-- SideBar End -->
+        
+        <!-- MainView Start -->
+        <section id="mainview">
+            <!-- MainView Header Start -->
+            <div id="mainview-header" class="header topbar text-white">
+                <button id="open-sidebar" class="btn-square pull-left sidebar-control">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button id="locate-me" class="btn-square pull-right">
+                    <i class="fa fa-location-arrow"></i>
+                </button>
+                <h1 id="city" class="pull-left text-center city">Berlin</h1>
+                <div class="clear"></div>
+            </div>
+            <!-- MainView Header End -->
+            
+            <!-- MainView DatePicker Start -->
+            <div id="datebar" class="topbar text-white">
+                <h1 id="datedisplay" class="pull-left text-center">Montag</h1>
+                <button class="btn-square pull-left" onclick="changeCurrentDay(-1)">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="btn-square pull-right" onclick="changeCurrentDay(1)">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+                <div class="clear"></div>
+            </div>
+            <!-- MainView DatePicker End -->
+            
+            <!-- MainView Content Start -->
+            <div id="mainview-content">
+                <div id="icon">
+                    <img id="iconimage" src="">
+                </div>
+                <div id="summary" class="text-center">
+
+                </div>
+                <div id="temperature" class="text-center">
+
+                </div>
+                <div id="additional-info">
+                    <span id="wind" class="info pull-left">
+                        <i class="fa fa-flag"></i> <span id="winddisplay">23 km/h</span>
+                    </span>
+                    <span id="humidity" class="info pull-left">
+                        <i class="fa fa-tint"></i> <span id="humiditydisplay">68%</span>
+                    </span>
+                    <span class="clear"></span>
+                </div>
+            </div>
+            <!-- MainView Content End -->
+            
+            <!-- MainView Footer Start -->
+            <div id="footer">
+                <button class="btn-wide detail-control">Details</button>
+            </div>
+            <!-- MainView Footer Start -->
+        </section>
+        <!-- MainView End -->
+        
+        <!-- DetailsView Start -->
+        <section id="detailview">
+            <!-- DetailsView Header Start -->
+            <div id="detailview-header" class="header topbar">
+                <h1 id="detailview-city" class="pull-left text-center city">Berlin</h1>
+                <button id="close-detailview" class="btn-square pull-right" onclick="toggleDetails()">
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="clear"></div>
+            </div>
+            <!-- DetailsView Header End -->
+            
+            <!-- DetailsView Content Start -->
+            <div id="detailview-content">
+                <div id="detailtable" class="table">
+                    <div class="row">
+                        <span>Time</span>
+                        <span>Icon</span>
+                        <span>Temp</span>
+                        <span>Wind</span>
+                        <span>Hum</span>
+                    </div>
+                </div>
+            </div>
+            <!-- DetailsView Content End -->
+        </section>
+        <!-- DetailsView End -->
+    </div>
+    <!-- Wrapper end -->
+</body>
+
+</html>

@@ -66,15 +66,22 @@ $(function () {
 
     showCityList();
 
-    $('.sidebar-control').click(function () {
-        console.log('clicked sidebar');
-        toggleSidebar();
-    });
 
-    $('.detail-control').click(function () {
+	document.getElementById('close-sidebar').onclick = function () {
+		console.log('clicked sidebar');
+		document.getElementById('#sidebar').style.display = "none";
+	};
+
+
+	document.getElementById('open-sidebar').onclick = function () {
+		console.log('clicked sidebar');
+		document.getElementById('#sidebar').style.display = "block";
+	};
+
+	document.getElementById('footer').firstChild.onclick = function () {
         console.log('clicked details');
         toggleDetails();
-    });
+    };
 
     /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
@@ -204,18 +211,14 @@ function changeCurrentDay(delta) {
  */
 function toggleSidebar() {
     // if sidebar is already displayed, hide it
-    if ($('#sidebar').css('left') == '0px') {
-        $('#sidebar').animate({
-            left: '-70%'
-        }, 500);
-        $('#sidebar-fade-overlay').fadeToggle();
-    } else {
-        //slide it in otherwise
-        $('#sidebar').animate({
-            left: '0px'
-        }, 500);
-        $('#sidebar-fade-overlay').fadeToggle();
-    };
+	var elem = document.getElementById('#sidebar');
+
+	// if details page is already displayed, hide it
+	if(elem.style.display == "none"){
+		elem.style.display = "block";
+	}else{
+		elem.style.display = "none";
+	}
 
     console.log('Function: toggleSidebar()');
 }
@@ -225,17 +228,15 @@ function toggleSidebar() {
  */
 
 function toggleDetails() {
+
+	var elem = document.getElementById('#detailview');
+
     // if details page is already displayed, hide it
-    if ($('#detailview').css('top') == '0px') {
-        $('#detailview').animate({
-            top: '100%'
-        }, 500);
-    } else {
-        //slide it in otherwise
-        $('#detailview').animate({
-            top: '0%'
-        }, 500);
-    };
+	if(elem.style.display == "none"){
+		elem.style.display = "block";
+	}else{
+		elem.style.display = "none";
+	}
 
     console.log('Function: toggleDetails()');
 }

@@ -1,0 +1,131 @@
+/*Given*/
+html, body {
+    /*Prepare for absolute layout*/
+    height:100%;
+}
+
+/*Given*/
+html, body, div, nav, p {
+    /*Global font*/
+    font-size: 18pt;
+    font-family: 'Lucida Sans', 'Verdana', sans-serif;
+    
+    /*Reset document-wide margins and paddings*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Req. 11*/
+#title, #location, #date {
+    padding:6pt;
+    text-align:center;
+    background-color:#CCCCCC;
+    border-bottom:1px solid gray;
+}
+
+/*Req. 12*/
+#title {
+    background-image:url('images/background.jpg');
+    background-size: 100% auto;
+    background-position:center;
+}
+
+/*Req. 13*/
+#weather #info {
+    width:200px;
+    
+    margin-bottom:24pt;
+    margin-top:24px;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+    background-color:#EEEEEE;
+    
+    border-radius:10px;
+
+    padding:16px;
+    
+    text-align:center;
+}
+
+/*Req. 14*/
+#weather #info p {
+    margin:8px;
+}
+
+#weather #text {
+    font-size:9pt;
+}
+
+#weather #temperature {
+    font-size:30pt;
+}
+
+#weather #temperature .max {
+    color:#cc0000;
+}
+
+#weather #temperature .min {
+    color:#3399ff;
+}
+
+/*Req. 15*/
+.button {
+    border: 1px solid gray;
+    border-radius:6pt;
+    background: linear-gradient(silver,gray);
+    padding: 12pt;
+    color:white;
+    cursor:pointer;
+    text-align:center;
+}
+
+/*Req. 16*/
+#weather .button {
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Req. 17*/
+.select {
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-radius:6pt;
+    padding: 12px;
+}
+
+/*Req. 18*/
+#overlay {
+    position:absolute;
+    
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    
+    background-color:black;
+    color:white;
+    
+    box-sizing:border-box;
+    padding:16px;
+
+    /*Req. 19*/
+    display:none;
+}
+
+/*Given*/
+#overlay table {
+    width:100%;
+    font-size:12pt;
+    text-align:left;
+    border-collapse: collapse;
+}
+#overlay table tr th {
+    padding-bottom:16pt;
+    border-bottom:1px solid white;
+}
+#overlay table tr td {
+    border-bottom:1px solid white;
+}

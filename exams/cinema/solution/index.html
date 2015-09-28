@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cinema</title>
+
+    <!-- your layout and style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- special stylesheet for the icon font AwesomeFont (see http://fortawesome.github.io/Font-Awesome)-->
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!-- cool jQuery stuff, if needed -->
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery/jquery-2.1.3.min.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- given movies and schedule -->
+    <script type="text/javascript" src="cinema.js"></script>
+    <!-- your interaction code -->
+    <script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+    <!-- REQ 1: app structure-->
+    <section class="page" id="movies">
+        <!-- REQ 1: app structure-->
+        <header class="title">
+            <!-- REQ 2: cinema headline -->
+            <h1>Cinema</h1>
+            <!-- REQ 3: selector with three date options -->
+            <select id="dateselector" class="control right">
+                <option value="0">Today</option>
+                <option value="1">Tomorrow</option>
+                <option value="2">Thursday</option>
+            </select>
+        </header>
+        <!-- REQ 1: app structure-->
+        <div class="content">
+            <!-- REQ 4: one movie item -->
+            <div class="movie">
+                <!-- REQ 5: elements image, title, fsk, genre, duration. Classes are used for the elements because multiple of them will exist later on -->
+                <img alt="Big Eyes" src="images/posters/big-eyes.jpg">
+                <h2 class="title">Big Eyes</h2>
+                <p class="genre">Biography, Drama</p>
+                <p class="info">
+                    <span class="rating">G</span>
+                    <!-- REQ 6: icons -->
+                    <i class="fa fa-clock-o"></i>
+                    <span class="duration">106 min.</span>
+                </p>
+                <p class="schedule">
+                    <!-- REQ 6: icons -->
+                    <i class="fa fa-calendar-o"></i>
+                    20:15
+                </p>
+                <!-- REQ 6: icons -->
+                <i class="more fa fa-chevron-right"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- REQ 7: second page -->
+    <section class="page" id="details" >
+        <header class="title">
+            <!-- REQ 8: headline and buttons -->
+            <button class="control left" onclick="hideDetails();"><i class="fa fa-chevron-left"></i> Back</button>
+            <h1>Big Eyes</h1>
+            <button class="control right">Reserve</button>
+        </header>
+        <div class="content">
+            <!-- REQ 9: div for image -->
+            <!-- REQ 18: add background image inline -->
+            <div id="details-image" style="background-image:url('images/photos/big-eyes.jpg');"></div>
+            
+            <!-- REQ 10: additional information elements -->
+            <p><b>Title:</b> <span id="details-title">Big Eyes</span></p>
+            <p><b>Director:</b> <span id="details-director">Tim Burton</span></p>
+            <p><b>Actors:</b> <span id="details-actors">Amy Adams, Christoph Waltz, Danny Huston</span></p>
+            <p><b>Release:</b> <span id="details-release">13.11.2014</span></p>
+            
+            <!-- REQ 11: progress bar -->
+            <p><b>IMDB:</b><progress id="details-imdbrating" value="7.0" max="10"></progress></p>
+            
+            <!-- BONUS POINT: button -->
+            <button class="control">View trailer</button>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

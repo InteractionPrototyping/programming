@@ -1,0 +1,196 @@
+/*Given*/
+html, body {
+    /*Prepare for absolute layout*/
+    height:100%;
+}
+
+/*Given*/
+html, body, div, nav, p, h1, button, select {
+    /*Global font*/
+    font-size: 24px;
+    line-height:24px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    
+    /*Reset document-wide margins and paddings*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Given: Remove arrow from select */
+select.control {
+    appearance:none;
+    -webkit-appearance: none;
+}
+
+/* GENERAL PAGE LAYOUT */
+
+/* REQ 12: position & style pages */
+section.page {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background-color: #F2F2F2;
+
+}
+
+/* REQ 13: position & style title bars */
+header {
+    position:absolute;
+    left:0;
+    right:0;
+    padding: 12px;
+    height:48px;
+    background-color:#2E4559;
+    color:white;
+}
+
+/* REQ 14: layout the content areas */
+.content {
+    position:absolute;
+    top:72px;
+    bottom:0px;
+    left:0;
+    right:0;
+    
+    overflow-y:auto;
+}
+
+/* TITLEBAR */
+
+/* REQ 15: center headline horizontally & vertically */
+header h1 {
+    padding:12px;
+    text-align:center;
+}
+
+/* CONTROLS */
+
+/* REQ 16: style all controls */
+.control {
+    padding: 12px;
+    height: 48px;
+    
+    border: 1px solid #96C6D9;
+    color:#96C6D9;
+    background-color:#2E4559; 
+    
+    border-radius: 6px;
+}
+
+/* REQ 17: position controls l/r, adjust margins */
+.left {
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:12px;
+}
+.right {
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    margin:12px;
+}
+
+/* DETAILS VIEW */
+
+/* REQ 19: photo styling */
+#details-image {
+    height:256px;
+    background-position:center;
+    background-size:cover;
+}
+
+/* REQ 20: additional information */
+#details .content p {
+    box-sizing:border-box;
+    width: 100%;
+    
+    margin:12px 0;
+    padding-left:132px;
+}
+#details .content p b {
+    float:left;
+    margin-left:-132px;
+}
+
+/* REQ 21: progress bar and button width */
+#details .content progress, #details .content button {
+    width:100%;
+}
+
+/* HIDE DETAILS */
+
+/* REQ 22: hide the details view */
+#details {
+    display:none;
+}
+
+/* ITEMS OF MOVIE ELEMENTS */
+
+/* REQ 23: style the movie item box */
+.movie {
+    height:119px;
+    border-bottom:1px solid #96C6D9;
+    overflow:hidden;
+    position:relative;
+}
+
+/* REQ 24: position detail elements... */
+.movie > * {
+    position:absolute;
+}
+
+.movie img {
+    width:120px;
+    height:auto;
+}
+
+.movie .title {
+    left: 132px;
+
+    top:12px;
+    font-weight:bold;
+}
+.movie .genre {
+    left:132px;
+    top:36px;
+    font-size:60%;
+
+}
+.movie .info {
+    left:132px;
+    top:60px;
+    font-size:60%;
+}
+.movie .info .rating {
+    border: 1px solid black;
+
+    padding:0 6px;
+    margin-right: 6px;
+}
+
+.movie .schedule {
+    left:132px;
+    top:84px;
+    font-size:60%;
+
+}
+
+.movie .more {
+    right:12px;
+    top:48px;
+    font-size:75%;
+    padding:1px 6px;
+}
+
+/* BONUS POINT: format title, genre, info, schedule */
+.movie .title, .movie .genre, .movie .info, .movie .schedule {
+    right: 36px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+

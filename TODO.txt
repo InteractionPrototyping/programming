@@ -1,0 +1,18 @@
+Slides
+- downloaded dependencies (jquery, bootstrap, ...) would be better (in case of bad internet in seminar room)
+- Title: Interaction Programming Block Course
+- White "down" arrow 
+
+- Create neat index.html file
+
+- Swap style and layout (Markus)
+
+Weather-App:
+- it's m/s, not m/h
+
+Exercises
+- Finally: Pitch exercises in slides
+
+Finally:
+- Branch to gh-pages
+- Check all references (TUMonline, LfE, Slides, ...) 

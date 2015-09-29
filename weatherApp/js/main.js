@@ -410,7 +410,7 @@ function convertWindspeed(wind, unit) {
     if (unit === 'k') {
         convertedWind = Math.round(wind * 1.6) + ' km/h';
     } else if (unit === 'm') {
-        convertedWind = Math.round(wind) + ' m/h';
+        convertedWind = Math.round(wind) + ' m/s';
     }
     return convertedWind;
 }

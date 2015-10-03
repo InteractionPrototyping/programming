@@ -10,7 +10,7 @@
  *********************************************/
 
 
- 
+
  #web20 #tagcloud {text-align: center}
 
  #RIATechnologyFlashHTML p {text-align: left;}
@@ -96,14 +96,18 @@ vertical-align: bottom;
   bottom: 1em;
   left: 1em;
   font-size: 0.5em;
+  z-index: 1;
 }
 
-table .datatype,.inline-code-blue span, .inline-code span, #B6_tables span, #B3_TextlevelSemantics span, #B2_Layouting span, #B1_Attributes span, #B1_head span, #B1_body span ,#B2_section span, #B2_groupingelements span,#B2_block span{	
+.inline-code-blue, table .datatype, .inline-code span{	
 font-family:monospace; 
 text-transform: lowercase;
 font-size: 0.8em;
 }	
 
+#B1_HTML  small {
+  padding-top: 4%;
+}
 
 #B3_hLinksAndLists img {margin-top: 20%;}
 

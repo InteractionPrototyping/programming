@@ -101,7 +101,7 @@ body {
   visibility: visible; }
 
 .reveal .slides section .fragment.highlight-red.visible {
-  color: #ff2c2d; }
+  color: #ee762c; }
 
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e; }
@@ -246,7 +246,7 @@ body {
   position: fixed;
   display: block;
   right: 15px;
-  bottom: 15px;
+  bottom: 20px;
   opacity: 0.5;
   z-index: 31;
   font-size: 18px; }

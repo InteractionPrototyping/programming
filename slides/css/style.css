@@ -8,6 +8,9 @@
 /*********************************************
  * STYLES
  *********************************************/
+
+
+
  #web20 #tagcloud {text-align: center}
 
  #RIATechnologyFlashHTML p {text-align: left;}
@@ -35,19 +38,25 @@ padding-top: 20px;
 
 #A2_Technology p {text-align: left;}
 
-#Technology_InternetVsWWW {	
+#Technology_Internet_answer {	
 margin-top: 5%;
 padding-top: 2%;
 border-top: 1px solid #0f3750;
 }
 
+#Technology_Internet_answer  > *:first-child {border-right: 1px solid #0f3750;}
+#Technology_Internet_answer {
+  display:none;
+}
 
-#Technology_InternetVsWWW  > *:first-child {border-right: 1px solid #0f3750;}
-
-.socrativeBox, .liveCodingBox { 
+.socrativeBox-vertical, .socrativeBox, .liveCodingBox { 
 background: rgba(15,55,80,1);
 text-align: left;
 color: #fff;
+}
+
+.socrativeBox-vertical .btn-group-justified {
+  padding-bottom: 3%;
 }
 
 
@@ -56,7 +65,7 @@ color: #fff;
 				height: 550px;
 				}
 
-.socrativeBox , .socrativeBox a; .liveCodingBox , .liveCodingBox a{
+.socrativeBox-vertical, .socrativeBox , .socrativeBox a; .liveCodingBox , .liveCodingBox a{
 				padding: 10% 4%;
 				margin:0;
 				line-height: 1;}
@@ -67,20 +76,11 @@ color: #fff;
 #A2_Realization .row {					
 vertical-align: bottom;
 }
-#A2_Realization iframe {
-margin-top: 10%;
-}
-
 #A2_Engelbart img {height: 250px;}
 
-#A2_BernersLee img {
-margin-left: 0;
-padding: 2%;
-height: 250px;
-}
 
 #A2_HTMLEvolution p {margin-left: 0}
-#G3_manipulateDimensions img; #E1_Exercise img, #A2_HTMLEvolution img, #A4_Webbrowser #wetterapp, #A4_OnlineSnippets img, #A4_stages img, #A4_client img, #A4_iPhone img,#B1_HTMLex img, #A2_TTC img, #A3_UXandDisciplines img, #A3_UXTechnologies img, #A3_ClientServerHTTP .col-xs-12 img, #A3_HTMLmarkup img {
+#A3_UXTechnologies img, #A3_UXandDisciplines img, #G3_manipulateDimensions img; #E1_Exercise img, #A2_HTMLEvolution img, #A4_Webbrowser #wetterapp, #A4_OnlineSnippets img, #A4_stages img, #A4_client img, #A4_iPhone img,#B1_HTMLex img, #A2_TTC img, #A3_UXandDisciplines img, #A3_UXTechnologies img, #A3_ClientServerHTTP .col-xs-12 img, #A3_HTMLmarkup img {
 	height: 550px
 }
 
@@ -96,14 +96,18 @@ height: 250px;
   bottom: 1em;
   left: 1em;
   font-size: 0.5em;
+  z-index: 1;
 }
 
-table .datatype,.inline-code-blue span, .inline-code span, #B6_tables span, #B3_TextlevelSemantics span, #B2_Layouting span, #B1_Attributes span, #B1_head span, #B1_body span ,#B2_section span, #B2_groupingelements span,#B2_block span{	
+.inline-code-blue, table .datatype, .inline-code span{	
 font-family:monospace; 
 text-transform: lowercase;
 font-size: 0.8em;
 }	
 
+#B1_HTML  small {
+  padding-top: 4%;
+}
 
 #B3_hLinksAndLists img {margin-top: 20%;}
 
@@ -153,4 +157,30 @@ line-height: 1em;
 
 #F5_JSObjectString img {
 height: 40%;
+}
+
+#A_ClassicWebApplications  .literature {
+  margin:0;
+}
+
+
+.exampleOutput { 
+ all: initial;
+  * {
+    all: unset;
+  }
+}
+
+#example1 h1{
+  size:24pt;
+  font-family:Arial;
+}
+
+#example1 strong {
+  color: red
+}
+
+input, label {
+  font-size: 0.8em;
+  margin: 2% 0;
 }

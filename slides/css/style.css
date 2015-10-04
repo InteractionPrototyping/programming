@@ -179,3 +179,8 @@ height: 40%;
 #example1 strong {
   color: red
 }
+
+input, label {
+  font-size: 0.8em;
+  margin: 2% 0;
+}

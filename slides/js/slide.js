@@ -12,3 +12,7 @@ $(document).ready(function(){
         $("#Technology_Internet_answer").show();
     });
 });
+
+function hello() {
+    alert("Hello\nHow are you?");
+}

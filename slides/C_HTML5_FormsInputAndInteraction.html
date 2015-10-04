@@ -62,6 +62,9 @@
 					<h1>C</h1>
 					<h1>HTML5 FORMS</h1>
 					<h2>INPUT & INTERACTION</h2>
+					<p>
+						<small>Interaction Prototyping Block Course</small>
+					</p>
 				</section>
 
 <!--	#							#
@@ -105,11 +108,11 @@
 						<div class="row">
 							<div class="col-xs-6">
 								<img src="./images/C1facebook.png">
-								<p class="imgsource text-left"><small>Source: facebook.com</small></p>
+								<a href="facebook.com"class="text-left"><small><i class="fa fa-external-link"> facebook.com</i> </small></a>
 							</div>
 							<div class="col-xs-6">
 								<img src="./images/C1lufthansa.png">
-								<p class="imgsource text-left"><small>Source: lufthansa.com</small></p>
+								<a href="lufthansa.com"class="text-left"><small><i class="fa fa-external-link"> lufthansa.com</i> </small></a>
 							</div>
 						</div>	
 					</section>
@@ -145,14 +148,10 @@
 							<div class="col-xs-12">
 								<ul>
 									<li>Access and manipulate Forms in <b>JavaScript</b> <br>
-										<pre><code>
-document.getElementById(‘input').value
-										</code></pre>
+										<pre><code>document.getElementById(‘input').value</code></pre>
 									</li>
 									<li>React on Form events in JavaScript <br>
-										<pre><code>
-&lt;button onclick="..."&gt;
-										</code></pre>
+										<pre><code>&lt;button onclick="..."&gt;</code></pre>
 									</li>
 								</ul>
 							</div>
@@ -168,12 +167,10 @@ document.getElementById(‘input').value
 						</div>
 						<div class="row">
 							<div class="col-xs-6">
-										<pre><code>
-&lt;form&gt;
+										<pre><code>&lt;form&gt;
 action="http://www.example.org/path/to/script.php" method="post"&gt;
 &lt;!-- form elements go here --&gt;
-&lt;/form&gt;
-										</code></pre>	
+&lt;/form&gt;</code></pre>	
 							</div>
 							<div class="col-xs-6 ">
 							<ul>
@@ -188,7 +185,7 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 					<section id="C1_InputElement" data-background="#fff" class="container">
 						<div class="row">
 							<div class="col-xs-12 ">
-								<h2>The <code>&lt;input&gt;</code> element</h2>
+								<h2>The <span class="inline-code-blue">&lt;input&gt;</span> element</h2>
 							</div>
 						</div>
 						<div class="row">
@@ -210,10 +207,10 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 								<li>Use <code >&lt;input&gt;</code> to get user information</li>
 								<li>Many <b>variations</b>, depending on the <em>type</em> attribute (text, checkbox, button,etc.)</li>
 								<li><b>Inline</b> element (in text, no new lines)</li>
-								<li>Difference <em>id/name</em>
+								<li>Difference <code>id</code> and <code>name</code>
 									<ul>
-										<li><em>id</em> is used for accessing element in CSS & JS</li>
-										<li><em>name</em> is used for transmitting data to the server</li>
+										<li><code>id</code> is used for accessing element in CSS & JS</li>
+										<li><code>name</code> is used for transmitting data to the server</li>
 									</ul>
 								</li>
 							</ul>
@@ -232,8 +229,7 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 						</div>
 						<div class="row">
 							<div class="col-xs-6">
-										<pre><code>
-&lt;fieldset&gt;
+										<pre><code>&lt;fieldset&gt;
  &lt;legend&gt;Name&lt;/legend&gt;
  &lt;label for="firstname"&gt;
   First name:&lt;/label&gt;
@@ -243,14 +239,32 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
   Last name:&lt;/label&gt;
  &lt;input type="text"
   id="lastname"&gt;
-&lt;/fieldset&gt;
-										</code></pre>	
+&lt;/fieldset&gt;</code></pre>	
+
 							</div>
 							<div class="col-xs-6 ">
-							<img src="./images/C1fieldset.png">
+								<fieldset class="exampleOutput">
+								 <legend>Name</legend>
+								 <label for="firstname">
+								  First name:</label>
+								 <input type="text"
+								  id="firstname"><br>
+								 <label for="lastname">
+								  Last name:</label>
+								 <input type="text"
+								  id="lastname">
+								</fieldset>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<ul>
+									<li>Elements are <b>grouped</b> using <code>&lt;fieldset&gt;</code></li>
+									<li>Caption is assigned to <b>group</b> using <code>&lt;legend&gt;</code></li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
 							<ul>
-								<li>Elements are <b>grouped</b> using <code>&lt;fieldset&gt;</code></li>
-								<li>Caption is assigned to <b>group</b> using <code>&lt;legend&gt;</code></li>
 								<li>Captions are assigned to <b>elements</b> using <code>&lt;lable&gt;</code></li>
 								<li><em>for</em> references <em>id</em></li>
 							</ul>
@@ -284,23 +298,20 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 						<div class="row">
 							<div class="col-xs-6">
 							<p class="text-left">Text field</p>
-							<pre><code>
-&lt;input type="text" id="user"&gt;
-								</code></pre>
+							<pre><code>&lt;input type="text" id="user"&gt;</code></pre>
 								<ul>
 									<li>Text determined by attribute <code>type="text"</code></li>
-									<li>Single line text field</li>
+									<li>Single line text field <input type="text" id="user"></li>
 								</ul>
 							</div>
 							<div class="col-xs-6">
 							<p class="text-left">Password field</p>
-							<pre><code>
-&lt;input type="password" id="pass"&gt;
-								</code></pre>
+							<pre><code>&lt;input type="password" id="pass"&gt; </code></pre>
 								<ul>
 									<li>Text determined by attribute <code>type="password"</code></li>
-									<li>Password characters are masked (*****)</li>
+									<li>Password characters are masked <input type="password" id="pass"></li>
 								</ul>
+
 							</div>
 						</div>
 						<div class="row">
@@ -315,16 +326,18 @@ action="http://www.example.org/path/to/script.php" method="post"&gt;
 						<h2>Textarea</h2>
 						<div class="row">
 							<div class="col-xs-6">
-								<pre><code class="html">
-&lt;textarea id="text"
-cols="50" rows="15"
+								<pre><code class="html">&lt;textarea id="text"
+cols="20" rows="5"
 maxlength="10000"
 wrap="soft"&gt; Content
-&lt;/textarea&gt;
-								</code></pre>
+&lt;/textarea&gt;</code></pre><br>
+							<textarea id="text"
+							cols="20" rows="5"
+							maxlength="10000"
+							wrap="soft"> Content
+							</textarea>
 							</div>
 							<div class="col-xs-6 ">
-							<img src="./images/C2vielvieltext.png">
 								<ul>
 									<li><code>&lt;textarea&gt;</code></li>
 									<li><em>cols/rows</em> determine field‘s display width/height</li>
@@ -344,31 +357,28 @@ wrap="soft"&gt; Content
 						<h2>Radiobuttons/Checkboxes</h2>
 						<div class="row">
 							<div class="col-xs-4">
-								<pre><code class="html">
-&lt;input type="radio" name="sex"
+								<pre><code class="html">&lt;input type="radio" name="sex"
 value="male"&gt;
 Male&lt;br&gt;
 &lt;input type="radio" 
 name="sex"
 value="female"&gt;
-Female
-								</code></pre>
-								<pre><code class="html">
+Female</code></pre><br>
+<pre><code class="html">
 &lt;input type="checkbox"
 name="vehicle" value="Bike"
 checked&gt;
 I have a bike&lt;br&gt;
 &lt;input type="checkbox"
 name="vehicle" value="Car"&gt;
-I have a car
-								</code></pre>
+I have a car</code></pre>
 							</div>
 							<div class="col-xs-8 ">
 								<ul>
 									<li><b>Grouped</b> selections 
 										<ul class="nointendlist">
-											<li><input style="vertical-align: middle; width: 0.4em; height: 0.4em;" type="radio" name="zero" checked><input style="vertical-align: middle; width: 0.4em; height: 0.4em;" type="radio" name="zero"> <b>radio:</b> Only one option selectable </li>
-											<li><input style="vertical-align: middle;" type="checkbox" name="one" width: 0.5em; height: 0.5em; checked><input style="vertical-align: middle;" type="checkbox" name="one" width: 0.5em; height: 0.5em; checked> <b>checkbox:</b> Multiple options selectable</li>
+											<li><input style="vertical-align: middle; width: 0.8em; height: 0.8em;" type="radio" name="zero" checked><input style="vertical-align: middle; width: 0.8em; height: 0.8em;" type="radio" name="zero"> <b>radio:</b> Only one option selectable </li>
+											<li><input style="vertical-align: middle; width: 0.8em; height: 0.8em;" type="checkbox" name="one"  ><input style="vertical-align: middle; width: 0.8em; height: 0.8em;" type="checkbox" name="one"  checked> <b>checkbox:</b> Multiple options selectable</li>
 										</ul>
 									</li>
 									<li><b>Groups</b> of radiobuttons or checkboxes are determined by attribute name</li>
@@ -388,15 +398,24 @@ I have a car
 						<h2>Selections (Lists)</h2>
 						<div class="row">
 							<div class="col-xs-4 ">
-								<pre><code class="html">
-&lt;select multiple
-id="options" size="8"&gt;
-								</code></pre>
-								<pre><code class="html">
-&lt;option value="napoli"
-selected&gt;Pizza
-Napoli&lt;/option&gt;
-								</code></pre>
+								<pre><code class="html">&lt;select multiple
+id="options" size="2"&gt; 
+	&lt;option value="napoli"
+	selected&gt;Pizza
+	Napoli&lt;/option&gt;
+	&lt;option value="salami"
+	&gt;Pizza
+	Salami&lt;/option&gt;
+&lt;/select&gt;</code></pre><br>
+								<select multiple
+									id="options" size="3">
+									<option value="napoli"
+									selected>Pizza
+									Napoli</option>
+									<option value="salami"
+									>Pizza
+									Salami</option>
+								</select>
 							</div>
 							<div class="col-xs-8 ">
 								<ul>
@@ -427,9 +446,12 @@ Napoli&lt;/option&gt;
 								<ul>
 									<li>Grouping of options by <code>&lt;optgroup&gt;</code> , caption by <code>&lt;label&gt;</code></li>
 								</ul>
-								<pre><code class="html">
-&lt;label for="wine"&gt;Wines:&lt;/label&gt;&lt;br&gt;
-&lt;select id="options" size="8"&gt;
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<pre><code class="html">&lt;label for="wine"&gt;Wines:&lt;/label&gt;&lt;br&gt;
+&lt;select id="options" size="7"&gt;
 	&lt;optgroup label="Red wines"&gt;
 		&lt;option value="chianti"&gt;
 		Chianti&lt;/option&gt;
@@ -442,8 +464,24 @@ Napoli&lt;/option&gt;
 		&lt;option value="trentino"&gt;
 		Trentino&lt;/option&gt;
 	&lt;/optgroup&gt;
-&lt;/select&gt;
-								</code></pre>
+&lt;/select&gt;</code></pre>
+							</div>
+							<div class="col-xs-6">
+								<label for="wine">Wines:</label><br>
+								<select id="options" size="7">
+									<optgroup label="Red wines">
+										<option value="chianti"><small>
+											Chianti</small></option>
+										<option value="montepulciano"><small>
+											Montepulciano</small></option>
+									</optgroup>
+									<optgroup label="White wines">
+										<option value="soave"><small>
+											Soave</small></option>
+										<option value="trentino"><small>
+											Trentino</small></option>
+									</optgroup>
+								</select>
 							</div>
 						</div>
 						<div class="row">
@@ -458,8 +496,7 @@ Napoli&lt;/option&gt;
 						<h2>Datalist (Combobox)</h2>
 						<div class="row">
 							<div class="col-xs-6">
-								<pre><code class="html">
-&lt;!-- Definition --&gt;
+								<pre><code class="html">&lt;!-- Definition --&gt;
 &lt;datalist id="pizzalist"&gt;
 	&lt;option value="napoli"&gt;
 	Napoli&lt;/option&gt;
@@ -471,8 +508,7 @@ Napoli&lt;/option&gt;
 
 &lt;!-- Usage --&gt;
 &lt;input type="text" id="pizza"
-list="pizzalist"&gt;
-								</code></pre>
+list="pizzalist"&gt;</code></pre>
 							</div>
 							<div class="col-xs-6 ">
 								<ul>
@@ -497,14 +533,13 @@ list="pizzalist"&gt;
 						<h2>Button</h2>
 						<div class="row">
 							<div class="col-xs-4">
-								<pre><code class="html">
-&lt;button type="button"
+								<pre><code class="html">&lt;button type="button"
 	onclick="..." 
 	id="button"&gt;
 	&lt;img ...&gt;
 	&lt;br&gt;Text
-&lt;/button&gt;
-								</code></pre>
+&lt;/button&gt;</code></pre>
+							<button type="button" class="btn btn-lg btn-primary" onclick="hello()"	id="button">Try it</button>
 							</div>
 							<div class="col-xs-8 ">
 								<ul>
@@ -512,7 +547,6 @@ list="pizzalist"&gt;
 									<li> <code>&lt;button&gt;</code> may contain other elements like <code>&lt;img&gt;</code></li>
 									<li> <code>onclick</code> event handler allows assigning JS code</li>
 								</ul>
-								
 							</div>
 						</div>
 						<div class="row">
@@ -579,10 +613,12 @@ list="pizzalist"&gt;
 						<h2>Progress</h2>
 						<div class="row">
 							<div class="col-xs-4">
-							<pre><code>
-&lt;progress value="22"
-max="100"&gt;&lt;/progress&gt;
-								</code></pre>
+							
+							<pre><code>&lt;progress value="22"
+max="100"&gt;&lt;/progress&gt;</code></pre>
+							<div class="exampleOutput">
+								<progress value="22" max="100"></progress>
+							</div>
 							</div>
 							<div class="col-xs-8">
 							<p class="text-left ">
@@ -601,17 +637,21 @@ max="100"&gt;&lt;/progress&gt;
 						<h2>Meter</h2>
 						<div class="row">
 							<div class="col-xs-4">
-							<pre><code>
-&lt;meter value="0.6"&gt;
+							<pre><code>&lt;meter value="0.6"&gt;
 60%&lt;/meter&gt;
 
 &lt;meter value="1" min="0"
 max="10" low="2" high="8"
 optimum="5"&gt;1 out of
-10%&lt;/meter&gt;
-								</code></pre>
+10%&lt;/meter&gt;</code></pre><br>
+								<meter value="0.6"> 60%</meter><br>
+
+								<meter value="1" min="0"
+										max="10" low="2" high="8"
+										optimum="5">1 out of
+										10%</meter>
 							</div>
-							<div class="col-xs-8">
+							  <div class="col-xs-8">
 							<p class="text-left ">
 							<ul> 
 								<li><code>&lt;meter&gt;</code> defines <b>scalar measurement</b> within range or a fractional value
@@ -703,17 +743,13 @@ optimum="5"&gt;1 out of
 									<li>Extract folder <b>shared</b> to your project folder</li>
 									<li><b>Embed</b> 2 JS scripts into your <code>&lt;head&gt;</code>:</li>
 								</ul>
-						<pre><code>
-&lt;script type="text/javascript" src="shared/js/modernizr.com/Modernizr-
-2.5.3.forms.js"&gt;&lt;/script&gt;
-						</code></pre>
-						<pre><code>
-&lt;script type="text/javascript"
+						<pre><code>&lt;script type="text/javascript" src="shared/js/modernizr.com/Modernizr-
+2.5.3.forms.js"&gt;&lt;/script&gt;</code></pre>
+						<pre><code>&lt;script type="text/javascript"
 data-webforms2-support="validation,autofocus,placeholder,range,date,color"
 data-lang="en"  
 src="shared/js/html5Forms.js" &gt;
-&lt;/script&gt;
-						</code></pre>
+&lt;/script&gt;</code></pre>
 					</div>
 				</div>
 				<div class="row">
@@ -727,12 +763,21 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>URL / E-Mail</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<pre><code>
-&lt;input type="url" value="..."&gt;
-						</code></pre>
-						<pre><code>
-&lt;input type="email" &gt;
-						</code></pre>
+						<pre><code>&lt;input type="url" value="..."&gt;
+						&lt;input type="email" &gt;</code></pre>						
+						<form>
+						    <p>
+						        <label>Website:<br>
+						            <input type="url">
+						        </label>
+						    </p>
+						    <p>
+						        <label>E-Mail:<br>
+						           <input type="email">  
+						       </label>
+						   </p>
+						   <input type="submit">
+						</form>
 					</div>
 					<div class="col-xs-6">
 						<ul>
@@ -754,14 +799,12 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Datetime/time/Date/Time/Month/Week</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<pre><code>
-&lt;input type="datetime"&gt;
+						<pre><code>&lt;input type="datetime"&gt;
 &lt;input type="datetime-local"&gt;
 &lt;input type="date"&gt;
 &lt;input type="time"&gt;
 &lt;input type="month"&gt;
-&lt;input type="week"&gt;
-						</code></pre>
+&lt;input type="week"&gt;</code></pre>
 					</div>
 					<div class="col-xs-6">
 						<ul>
@@ -787,10 +830,10 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Number (Spinner) / Range (Slider)</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<pre><code>
-&lt;input type="number" min="10" max="100" value="50"&gt;
-&lt;input type="range" min="0" max="10" step="1" value="5"&gt;
-						</code></pre>
+						<pre><code>&lt;input type="number" min="10" max="100" value="50"&gt;</code></pre>
+						<input type="number" min="10" max="100" value="50">
+						<pre><code>&lt;input type="range" min="0" max="10" step="1" value="5"&gt;</code></pre><br>
+						<input type="range" min="0" max="10" step="1" value="5">
 					</div>
 					<div class="col-xs-6">
 						<ul>
@@ -813,9 +856,8 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Color</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<pre><code>
-&lt;input type="color" name="favcolor" value="#ff0000"&gt;
-						</code></pre>
+						<pre><code>&lt;input type="color" name="favcolor" value="#ff0000"&gt;</code></pre>
+						<input type="color" name="favcolor" value="#ff0000">
 					</div>
 					<div class="col-xs-6">
 						<ul>
@@ -835,15 +877,20 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Pattern</h2>
 				<div class="row">
 					<div class="col-xs-6">
-						<pre><code>
-&lt;input type="text" value="" pattern="[0-9]{5}" title="5 digits zip code"&gt; 
-						</code></pre>
+						<pre><code>&lt;input type="text" value="" pattern="[0-9]{5}" title="5 digits zip code"&gt;</code></pre>
+						<form>
+							<p><label>Pattern:<br>
+								zip code (5 digits):
+								<input type="text" value="" pattern="[0-9]{5}" title="5 digits zip code">
+							</label></p>
+						    <input type="submit">
+						</form>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 important">
 						<ul>
 							<li><code>pattern</code> forces the user to enter a value in a specified format</li>
 							<li>Specified by regular expressions</li>
-							<li><a  href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank"><small><i class="fa fa-book"> Regular Expressions</i></small></a></li>
+							<li><a  href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank"><i class="fa fa-book"> Regular Expressions</i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -878,9 +925,11 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Required</h2>
 				<div class="row">
 					<div class="col-xs-6">
-					<pre><code>
-&lt;input type="text" required&gt;
-					</code></pre>
+					<pre><code>&lt;input type="text" required&gt;</code></pre>
+					<form>
+						Name*: <input type="text" required><br>
+						<input type="submit">
+					</form>
 					</div>
 					<div class="col-xs-6">
 								<ul>
@@ -900,11 +949,12 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Disabled / read only</h2>
 				<div class="row">
 					<div class="col-xs-6">
-					<pre><code>
-&lt;input type="text" value="do not modify" readonly&gt;
+					<pre><code>&lt;input type="text" value="do not modify" readonly&gt;
 &lt;input type="checkbox" disabled&gt;
-&lt;input type="submit" disabled&gt;
-					</code></pre>
+&lt;input type="submit" disabled&gt;</code></pre>
+					<input type="text" value="do not modify" readonly><br>
+					<input style="vertical-align: middle; width: 0.8em; height: 0.8em;" type="checkbox" disabled><br>
+					<input type="submit" disabled>
 					</div>
 					<div class="col-xs-6">
 								<ul>
@@ -912,7 +962,7 @@ src="shared/js/html5Forms.js" &gt;
 									<li>Usage
 										<ul>
 											<li><code>readonly</code> elements are (temporary) output elements</li>	
-											li><code>disabled</code> elements are grayed out</li>	
+											<li><code>disabled</code> elements are grayed out</li>	
 										</ul>
 									</li>
 								</ul>
@@ -929,9 +979,8 @@ src="shared/js/html5Forms.js" &gt;
 				<h2>Placeholder</h2>
 				<div class="row">
 					<div class="col-xs-6">
-					<pre><code>
-&lt;input type="text" name="fname" placeholder="First name"&gt;
-					</code></pre>
+					<pre><code>&lt;input type="text" name="fname" placeholder="First name"&gt;</code></pre>
+					<input type="text" name="fname" placeholder="First name">
 					</div>
 					<div class="col-xs-6">
 								<ul>
@@ -965,8 +1014,7 @@ src="shared/js/html5Forms.js" &gt;
 						</div>
 						<div class="row">
 							<div class="col-xs-12">
-							<pre><code class="html" data-trim contenteditable >
-&lt;div class="form-element email-address" id="address-form-element"&gt;
+							<pre><code class="html" data-trim contenteditable >&lt;div class="form-element email-address" id="address-form-element"&gt;
  &lt;label id="gmail-address-label" for="GmailAddress"&gt;
   Choose your username&lt;/label&gt;
  &lt;input type=“text" maxlength="30" id="GmailAddress"
@@ -1007,7 +1055,7 @@ src="shared/js/html5Forms.js" &gt;
     &lt;!-- 9 --&gt;="Day"&gt;
   &lt;!-- 11 --&gt; id="BirthMonth"&gt;
    &lt;!-- 12 --&gt; value=""&gt;Month&lt;!-- 12 --&gt;
-   &lt;!-- 12 --&gt; value="01"&gt;January&lt;!-- 12 --gt;
+   &lt;!-- 12 --&gt; value="01"&gt;January&lt;!-- 12 --&gt;
    &lt;!-- ... --&gt;
    &lt;!-- 12 --&gt; value="12"&gt;December&lt;!-- 12 --&gt;
 &lt;!-- 11 --&gt;
@@ -1044,26 +1092,6 @@ src="shared/js/html5Forms.js" &gt;
 						</a>
 		</section>
 
-		<section id="C_Exercise" data-background="#fff" class="container">
-				<h2>Tutorial</h2>
-						<div class="row">
-							<div class="col-xs-12">
-								<a  href="http://24ways.org/2009/have-a-field-day-with-html5-forms/"><i class="fa fa-external-link"> http://24ways.org/2009/have-a-field-day-with-html5-forms/</i></a>
-							</div>
-						</div>
-		</section>
-
-		<section id="C_Exercise" class="container">
-				<h2>Exercise</h2>
-						<div class="row">
-							<div class="col-xs-12">
-							<p class="text-left">
-								Create the form area
-							</p>
-							<img src="./images/C1facebook.png">
-							</div>
-						</div>
-		</section>
 	</section>
 
 
@@ -1077,6 +1105,7 @@ src="shared/js/html5Forms.js" &gt;
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/slide.js"></script>
 
 		
 

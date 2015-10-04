@@ -86,6 +86,7 @@
         
         .todo {
             background-color: yellow;
+            display:none;
         }
     </style>
     <script>
@@ -155,7 +156,7 @@
                 <figcaption>Details view</figcaption>
             </figure>
         </div>
-        <p>You can <a href="http://interactionprototyping.github.io/programming/weatherApp">experience the "best practice" weather app and browse its source code online</a>, or <a href="https://github.com/InteractionPrototyping/programming.git">clone the full Git repository (including exercises, slides, and weatherApp)</a>. We recommend that you use the source code of the sample weather app only for clarification or as a reference for wrap-up and <em>first implement your own app</em>. It doesn't have to look or work identically, we encourage you to <em></em>implement at your own speed</em> and test different approaches. The tutors will be happy to provide you any assistance and inspiration.</p>
+        <p>You can <a href="http://interactionprototyping.github.io/programming/weatherApp">experience the "best practice" weather app and browse its source code online</a>, or <a href="https://github.com/InteractionPrototyping/programming.git">clone the full Git repository (including exercises, slides, and weatherApp)</a>. We recommend that you use the source code of the sample weather app only for clarification or as a reference for wrap-up and <em>first implement your own app</em>. It doesn't have to look or work identically, we encourage you to <em>implement at your own speed</em> and test different approaches. The tutors will be happy to provide you any assistance and inspiration.</p>
         <h4>Schedule</h4> The techniques HTML, CSS and JavaScript, which are necessary for solving the tasks, are taught in the <a href="http://interactionprototyping.github.io/programming/slides">Slides of the Interaction Programming Block Course</a>. Those are loosely aligned to the <a href="http://www.w3schools.com">w3schools</a> reference material. The didactic composition of the tasks follows the slides. The block course follows this schedule:
         <table class="table">
             <thead>
@@ -268,25 +269,26 @@
         <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
 
         <h3>Weather App  Structure (B2/3)</h3>
-        <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). The structure is:</p>
+        <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all areas/elements. Use a (or more) <code>class</code> for elements, that have style properties in common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
         <ul>
-            <li>The <kbd>header</kbd> area (later on containing the menu icon, the current city, the localization icon)
+            <li>The <kbd>header</kbd> area (for the menu icon, the current city, the localization icon)
                 <ul>
                     <li>Add dummy text for the menu and the locate-me icons</li>
-                    <li>Add a heading element for the currently selected city</li>
+                    <li>Add a <code>heading</code> element for the currently selected city</li>
                 </ul>
             </li>
-            <li>The <kbd>datepicker</kbd> area (later on text and two buttons)
+            <li>The <kbd>datepicker</kbd> area (for the weekday and two buttons)
                 <ul>
-                    <li>Add another heading element for the current weekday and dummy text for decreasing and increasing the weekday</li>
+                    <li>Add another <code>heading</code> element for the current weekday</li>
+                    <li>Add dummy text for decreasing and increasing the weekday</li>
                 </ul>
             </li>
-            <li>The <kbd>content</kbd> area (later on containing the weather)
+            <li>The <kbd>content</kbd> area (for the weather information)
                 <ul>
                     <li>Inside the content area, create a useful structure, consisting of block level and inline elements for displaying the icon image, summary text, temperature and additional information like wind speed and humidity. Add dummy text (description, temperature, rain, wind, so far also text for the image).</li>
                 </ul>
             </li>
-            <li>The <kbd>footer</kbd> area (for the details button)
+            <li>The <kbd>footer</kbd> area (for the "details" button)
                 <ul>
                     <li>Add "details" dummy text</li>
                 </ul>
@@ -294,11 +296,11 @@
         </ul>
         <p>Wrap those four elements (i.e. the <kbd>mainview</kbd>) into a new <code>section</code>. Add &ndash; on the same level, outside the mainview &ndash; an element for the <kbd>sidebar</kbd> navigation menu.</p>
 
-        <p>Inside the <kbd>sidebar</kbd>, create two headlines and two unordered lists, one for the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
+        <p>Inside the <kbd>sidebar</kbd>, create two <code>headlines</code> and two <code>unordered lists</code>, one for the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
 
 
         <h3>Hyperlinks Between Main and Details View (B4)</h3>
-        <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <code>detailview</code> section. This in turn should contain a header (with heading to display the selected city) and content area (leave this empty for now).</p>
+        <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <kbd>detailview</kbd> <code>section</code>. This in turn should contain a <kbd>header</kbd> (with heading to display the selected city) and <kbd>content</kbd> area (leave this empty for now).</p>
 
         <p>Mutually <b>reference</b> the <kbd>index.html</kbd> and <kbd>details.html</kbd> pages, by adding hyperlinks to the &ldquo;details…&rdquo; (mainview) and &ldquo;X&rdquo; (detailview) text. Test the links.</p>
         <h3> Images (B5)</h3>
@@ -339,44 +341,71 @@
         <p><b>Add</b> one of the images to the <kbd>content</kbd> area of the <kbd>mainview</kbd></p>
         <h3> Tables (B6)</h3>
 
-        <p class="todo">Always keep in mind to apply useful classes and ids for all elements. Figure out those elements that have CSS properties in common in order to apply the same classes</p>
+        <p><b>Create</b> a <code>table</code> inside the <kbd>content</kbd> area of the <kbd>detailview</kbd>. Provide columns for time, icon, temperature, wind speed and humidity. Insert four rows with dummy content.</p>
+        <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
 
         <h2>C Forms</h2>
-        <p>Sidebar HTML</p>
-        <p>Add form elements to the sidebar and main view:</p>
-        <ul>
-            <li>Buttons</li>
-            <li>Input for creating new city entries</li>
-            <li>Radio buttons for the unit (temperature, speed) selection</li>
-        </ul>
+        <h3>Buttons</h3>
+        <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
+        <h3>Radio Buttons</h3>
+        <p><b>Add</b> radio buttons for the unit (temperature, speed) selection in the <kbd>detailview</kbd> settings.</p>
+        <h3>Input</h3>
+        <p>For adding new cities in the app, add an <code>input</code> field with a <code>placeholder</code> to the <kbd>sidebar</kbd>:</p>
+        <figure style="text-align:center;">
+            <img src="images/city.png" alt="App details view">
+            <figcaption>Add a new city</figcaption>
+        </figure>
+
         <h2>D Style and Layout</h2>
-        <h3>D1: Make elements  addressable</h3>
-        <p>Add the same (external) style sheet for both pages
-            <br> Assign ids and classes to the HTML element, which need to be addressed, e.g.</p>
+        <h3>Global Stylesheet (D1)</h3>
+        <p>Add an external <kbd>main.css</kbd> stylesheet to all <kbd>.html</kbd> files. Always try to use appropriate CSS selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause disarrangement of your elements. If necessary, improve your html structure by adding new <code>classes</code> or <code>ids</code>. Apply the generic rule:</p>
         <ul>
-            <li>for styling</li>
-            <li>for interactively adding content</li>
+            <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)</li>
+            <li>Assign <code>classes</code> for elements, which are present multiple times (e.g. multiple rows of detail information, multiple buttons, …)</li>
         </ul>
-        <p>Apply the generic rule:</p>
+
+        <h3>Layout your Views (D3)</h3>
+        <h4>Main view</h4>
         <ul>
-            <li>Assign ids for content which is present once (menu, current temperature, current weather, …)</li>
-            <li>Assign classes for elements, which are present multiple times (e.g. multiple rows of detail information, multiple buttons, …)</li>
+        <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd> (both e.g. 40px) and <kbd>footer</kbd> (60px). Apply a width of 100% to all elements.</li>
+<li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+<li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+<li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all elements or rather group of elements. </li> 
+<li>Use absolute positioning to pin the <kbd>footer</kbd> to the bottom. Set a fixed height and full width to the <kbd>footer</kbd> <code>button</code>.</li></ul>
+            <h4>Detail view</h4>
+            <ul>
+                <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height <kbd>header</kbd>) and make it scrollable by using the property overflow. </li>
+<li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
+<li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
+
+            </ul>
+
+        <h4>Sidebar</h4>
+        <ul>
+            <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
+<li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
+<li class="todo">Add the fade overlay! Use a width of 100% for the sidebar-fade-overlay and add a dark half-transparent background-color.</li>
+
         </ul>
-        <h3>D3: Style information
+        <h3 class="todo">D4: Style information
       </h3>
-        <p class="todo">swap D3 and D4</p>
-        <h3>D4: Layout your app</h3>
-        <p>Position elements</p>
-        <h3>D5: Apply effects</h3>
-        <p>Gradients
+
+
+        <p class="todo">Position elements</p>
+        <h3 class="todo">D5: Apply effects</h3>
+        <p class="todo">Gradients
             <br> Shadows
         </p>
-        <h1>E: Bootstrap</h1>
-        <p>&amp; weather app? Weather App v2?</p>
-        <p>Font-Awesome?</p>
-        <h1>F: JavaScript Interaction &amp; Data</h1>
+        <h1>E: Frameworks</h1>
+        <p>Frameworks will be important helpers to create (and prototype) your app more quickly.</p>
+        <h3 class="todo">Font-Awesome</h3>
+        <p class="todo">Include Font-Awesome. Use icons.</p>
+        <h3 class="todo">Bootstrap grid</h3>
+        <p class="todo">Include Bootstrap. Use Grid for detailsview</p>
+        <h1>F: JavaScript</h1>
+        <p>In this chapter, you'll add the interaction and model the weather data.</p>
         <p class="todo">Include the following</p>
-        <ol>
+        <ol class="todo">
             <li>Toggle sidebar, Toggle Details view - Javascript</li>
             <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
             <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
@@ -391,14 +420,10 @@
             <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
             <li>setCityClickable - jQuery Plugins</li>
         </ol>
-        Furthermore include
-        <ul>
-            <li>Dummy API Objekt mitliefern (Niklas)</li>
-            <li>Jeder formuliert seinen Teil aus (revealJS? Powerpoint?)</li>
-            <li>Überprüfen wo Funktionen sich aufeinander beziehen (Shortcuts)</li>
-        </ul>
+
 
         <p class="todo">Add solution here as a collapsible</p>
+        <!--
         <h3>F0: Combined Page</h3>
         <p>Combine overview and details in a single HTML file
             <br> Layout the details to overlay the overview in CSS
@@ -444,7 +469,7 @@
             <li>…</li>
             <li>Onload for initialization of overview</li>
         </ul>
-        <h2>G: JS Frameworks</h2>
+        <h2>G: jQuery</h2>
         <h3>G1: jQuery</h3>
         <p>Include
             <br> Test
@@ -473,9 +498,11 @@
             <li>Use jQuery UI sortable for the city list</li>
             <li>Add an event handler for the &ldquo;stop&rdquo; event that resorts the city data array using the sortable widget method &ldquo;toArray&rdquo; and your <em>updateArraySorting</em> function </li>
         </ul>
-        <h2>Storage &amp; GPS</h2>
-        <p>Use offlinestorage for selected element and store your list
-            <br> Use location to </p>
+-->
+        <h2>H: APIs</h2>
+        <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
+        <p class="todo">Use offlinestorage for selected element and store your list
+            <br> Use location </p>
 
     </div>
 </body>

@@ -134,7 +134,7 @@
             
             <!-- MainView Footer Start -->
             <footer id="footer">
-                <button class="btn-wide detail-control" id="details-button" onclick="toggleDetails()">Details</button>
+                <button class="btn-wide detail-control" id="details-button" onclick="document.getElementById('detailview').style.top = '0%';">Details</button>
             </footer>
             <!-- MainView Footer Start -->
         </section>
@@ -145,7 +145,7 @@
             <!-- DetailsView Header Start -->
             <header id="detailview-header" class="header topbar">
                 <h1 id="detailview-city" class="pull-left text-center city">Berlin</h1>
-                <button id="close-detailview" class="btn-square pull-right" onclick="toggleDetails()">
+                <button id="close-detailview" class="btn-square pull-right" onclick="document.getElementById('detailview').style.top = '100%';">
                     <span></span>
                     <span></span>
                 </button>

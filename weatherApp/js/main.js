@@ -247,6 +247,7 @@ function toggleSidebar() {
 
 	function toggleDetails() {
 		// if details page is already displayed, hide it
+
 	console.log($('#detailview').css('top'));
 		if ($('#detailview').css('top') == '0px') {
 			$('#detailview').animate({

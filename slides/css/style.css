@@ -184,3 +184,45 @@ input, label {
   font-size: 0.8em;
   margin: 2% 0;
 }
+
+.transforms {
+    width: 100px;
+    height: 100px;
+    background-color: #d7d7d7;
+}
+
+div#translate {
+    width: 100px;
+    height: 100px;
+    background-color: #a1b11a;
+    -ms-transform: translate(20px,10px);
+    -webkit-transform: translate(20px,10px); 
+    transform: translate(20px,10px);
+    opacity: 0.7;
+}
+
+div#rotate {
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    opacity: 0.7;
+    background-color:#ee762c;
+}
+
+div#scale {
+    width: 100px;
+    height: 100px;
+    background-color: #0076bc;
+    opacity:0.7;
+    -ms-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1,1.2);
+    transform: scale(1.2,1.2);
+}
+
+div#skew {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg); 
+    transform: skewX(20deg);
+    opacity:0.7;
+    background-color: #005c96;
+}

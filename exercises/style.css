@@ -1,0 +1,75 @@
+body {
+    padding-top: 50px;
+}
+/*headline*/
+
+div.page-header {
+    position: relative;
+    padding-right: 150px;
+}
+
+div.page-header img {
+    position: absolute;
+    height: 70px;
+    right: 1em;
+}
+/*exercise sheets*/
+
+h2 {
+    page-break-before: always;
+}
+
+h2:first-of-type {
+    page-break-before: avoid;
+}
+/*number tasks*/
+
+body {
+    counter-reset: tasks;
+}
+
+h3:before {
+    content: "Task " counter(tasks)": ";
+    counter-increment: tasks;
+    font-weight: bold;
+}
+/*definition lists*/
+
+dd {
+    padding-left: 2em;
+}
+
+dt {
+    color: rgb(87, 164, 218);
+}
+/*images*/
+
+img {
+    page-break-inside: avoid;
+}
+
+img.small {
+    width: 800px;
+    margin: auto;
+}
+
+img.half {
+    width: 50%;
+    margin: auto;
+}
+
+img.third {
+    width: 33%;
+    margin: auto;
+}
+
+figure figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+/*todo class*/
+
+.todo {
+    background-color: yellow;
+    display:none;
+}

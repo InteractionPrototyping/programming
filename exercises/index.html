@@ -12,84 +12,8 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <style type="text/css">
-        body {
-            padding-top: 50px;
-        }
-        /*headline*/
-        
-        div.page-header {
-            position: relative;
-            padding-right: 150px;
-        }
-        
-        div.page-header img {
-            position: absolute;
-            height: 70px;
-            right: 1em;
-        }
-        /*exercise sheets*/
-        
-        h2 {
-            page-break-before: always;
-        }
-        
-        h2:first-of-type {
-            page-break-before: avoid;
-        }
-        /*number tasks*/
-        
-        body {
-            counter-reset: tasks;
-        }
-        
-        h3:before {
-            content: "Task " counter(tasks)": ";
-            counter-increment: tasks;
-            font-weight: bold;
-        }
-        /*definition lists*/
-        
-        dd {
-            padding-left: 2em;
-        }
-        
-        dt {
-            color: rgb(87, 164, 218);
-        }
-        /*images*/
-        
-        img {
-            page-break-inside: avoid;
-        }
-        
-        img.small {
-            width: 800px;
-            margin: auto;
-        }
-        
-        img.half {
-            width: 50%;
-            margin: auto;
-        }
-        
-        img.third {
-            width: 33%;
-            margin: auto;
-        }
-        
-        figure figcaption {
-            font-weight: bold;
-            text-align: center;
-        }
-        /*todo class*/
-        
-        .todo {
-            background-color: yellow;
-            display:none;
-        }
-    </style>
-    <script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript">
         var year = (new Date()).getFullYear();
         var month = (new Date()).getMonth();
         if (month < 3) {
@@ -101,7 +25,6 @@
         }
         document.title = "Interaction Programming: " + term;
     </script>
-
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
@@ -269,7 +192,7 @@
         <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
 
         <h3>Weather App  Structure (B2/3)</h3>
-        <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all areas/elements. Use a (or more) <code>class</code> for elements, that have style properties in common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
+        <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all areas/elements. Use one (or more) <code>class</code> attributes for all elements which have style properties in common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
         <ul>
             <li>The <kbd>header</kbd> area (for the menu icon, the current city, the localization icon)
                 <ul>
@@ -355,7 +278,7 @@
             <img src="images/city.png" alt="App details view">
             <figcaption>Add a new city</figcaption>
         </figure>
-
+        Also add a submit <code>button</code> next to the <code>input</code> field.
         <h2>D Style and Layout</h2>
         <h3>Global Stylesheet (D1)</h3>
         <p>Add an external <kbd>main.css</kbd> stylesheet to all <kbd>.html</kbd> files. Always try to use appropriate CSS selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause disarrangement of your elements. If necessary, improve your html structure by adding new <code>classes</code> or <code>ids</code>. Apply the generic rule:</p>

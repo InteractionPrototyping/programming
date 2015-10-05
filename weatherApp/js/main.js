@@ -49,7 +49,7 @@ var colorCodes = [
         code: '#e05111'
     },
 ];
-// current Color Sheme
+// current Color Scheme
 var activeColor = colorCodes[0];
 
 // Executed right after the HTML is loaded completly
@@ -83,7 +83,6 @@ $(function () {
             console.log('Cities sorted. New order: ', newPositions);
         }
     });
-
 
 	/**
 	 * Returns a newArray containing the elements of oldArray sorted by newPositions
@@ -348,7 +347,7 @@ function updateWeatherDetailHTML() {
     console.log('Function: updateWeatherDetailHTML()');
 }
 
-/**     Function to change the Color Sheme
+/**     Function to change the Color Scheme
  */
 function updateColorScheme(temp) {
     // distinguish between temperatures in F

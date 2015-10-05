@@ -418,8 +418,7 @@ PREPARATION
         <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
         <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
     </ul>
-    <h3>Style information (D4)</h3>
-    Now style your elements.
+    <h3>Add style information (D4)</h3>
     <h4>MainView</h4>
     <ul>
         <li>Add a dark, half-transparent background to your button <code>class</code>, main-view-datepicker and main-view-footer.</li>
@@ -436,12 +435,24 @@ PREPARATION
     <ul>
         <li>Edit the color and size of the headlines and icons.</li>
         <li>Style the lists with margins, paddings and borders.</li>
-        <li>If the button classes where applied correctly in the HTML part, all buttons should be already styled. Create an active class to highlight currently selected buttons.</li>
-        <li>Add a :hover class to the city select list item using the image draggable.png inside the img folder.</li>
+        <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already styled. Create an active <code>class</code> to highlight currently selected buttons.</li>
+        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.</li>
     </ul>
 
-    <p class="todo">Position elements</p>
-
+    <h4>Final positioning</h4>
+    This step hides all sections except the <kbd>main-view</kbd>. Make sure that all CSS Styling is completed before you proceed.
+    <ul>
+        <li>Use absolute positioning for all sections and overlays:</li>
+            <ul>
+                <li>loading overlay: top 0 left 0</li>
+                <li>main-view: top 0 left 0</li>
+                <li>detail-view: top 100% left 0</li>
+                <li>sidebar: top: 0 left -70%</li>
+                <li>sidebar fade overlay: top 0 left 0</li>
+            </ul>
+        <li>Use z-indices to arrange all sections.</li>
+        <li>Hide all overlays with display property.</li>
+    </ul>
     <h3 class="todo">D5: Apply effects</h3>
     <ul class="todo">
         <li>Provide a background-color transition for the main-view element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.</li>

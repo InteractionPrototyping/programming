@@ -226,3 +226,17 @@ div#skew {
     opacity:0.7;
     background-color: #005c96;
 }
+
+div#rotateX {
+    -webkit-transform: rotateX(150deg);
+    transform: rotateX(150deg);
+    background-color: #a1b11a;
+    opacity: 0.7;
+}
+
+div#rotateY {
+    -webkit-transform: rotateY(150deg);
+    transform: rotateY(150deg);
+    background-color: #ee762c;
+    opacity: 0.7;
+}

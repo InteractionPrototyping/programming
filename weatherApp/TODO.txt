@@ -1,0 +1,2 @@
+Add JS exercises
+Add exercise to rebuild everything in JS

@@ -669,36 +669,28 @@ background-repeat:repeat-x;
 						<div class="row">
 							<div class="col-xs-6 ">
 							<ul>
-								<li><b>Remove</b> underlines from links:
-									<ul>
-									<li><pre><code>a {text-decoration:none;}</code></pre></li>
-									</ul>
+								<li><b>Remove</b> underlines from links:<br>
+									<pre><code>a {text-decoration:none;}</code></pre>
 								</li>
-								<li>More <b>lines</b>b>
-								<ul>
-								<li><pre><code>text-decoration:overline;</code></pre></li>
-								<li><pre><code>text-decoration:line-through;</code></pre></li>
-								<li><pre><code>text-decoration:underline;</code></pre></li>
-									<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration"><i class="fa fa-laptop"> Show example</i></a></li>
-								</ul>
+								<li>More <b>lines</b> <br>
+									<pre><code>text-decoration:overline;</code></pre><br>
+									<pre><code>text-decoration:line-through;</code></pre><br>
+									<pre><code>text-decoration:underline;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration"><i class="fa fa-laptop"> Show example</i></a>
 								</li>
 							</ul>
 							</div>
 							<div class="col-xs-6 ">
 							<ul>
-								<li>Text <b>Transformation</b> (uppercase,lowercase)
-									<ul>
-									<li><pre><code>text-transform:uppercase;</code></pre></li>
-									<li><pre><code>text-transform:lowercase;</code></pre></li>
-									<li><pre><code>text-transform:capitalize;</code></pre></li>
-										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-transform"><i class="fa fa-laptop"> Show example</i></a></li>
-									</ul>
+								<li>Text <b>Transformation</b> (uppercase,lowercase) <br>
+									<pre><code>text-transform:uppercase;</code></pre><br>
+									<pre><code>text-transform:lowercase;</code></pre><br>
+									<pre><code>text-transform:capitalize;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-transform"><i class="fa fa-laptop"> Show example</i></a>
 								</li>
-								<li>Text <b>indetation</b>
-								<ul>
-								<li><pre><code>text-indent:50px;</code></pre></li>
-									<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-indent"><i class="fa fa-laptop"> Show example</i></a></li>
-								</ul>
+								<li>Text <b>indetation</b><br>
+									<pre><code>text-indent:50px;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-indent"><i class="fa fa-laptop"> Show example</i></a>
 								</li>
 							</ul>
 							</div>
@@ -715,11 +707,9 @@ background-repeat:repeat-x;
 						<div class="row">
 							<div class="col-xs-6 ">
 							<ul>
-								<li>Space between <b>letters</b>
-									<ul>
-									<li><pre><code>letter-spacing:2px;</code></pre></li>
-										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_letter-spacing"><i class="fa fa-laptop"> Show example</i></a></li>
-									</ul>
+								<li>Space between <b>letters</b> <br>
+								<pre><code>letter-spacing:2px;</code></pre><br>
+								<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_letter-spacing"><i class="fa fa-laptop"> Show example</i></a>
 								</li>
 								<li>Space between <b>lines</b>
 								<ul>

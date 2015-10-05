@@ -80,12 +80,7 @@ $(function () {
 		// Later use: toggleSidebar();
 	};
 
-	document.getElementById('footer').firstChild.onclick = function () {
-        console.log('clicked details');
-        toggleDetails();
-    };
-
-    /* Event Handler that updates the currently order*/
+	  /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
         stop: function () {
             var newPositions = $(this).sortable('toArray');
@@ -229,36 +224,45 @@ function changeCurrentDay(delta) {
  *        using jQuery because it makes it just so much easier
  */
 function toggleSidebar() {
-    // if sidebar is already displayed, hide it
-	var elem = document.getElementById('#sidebar');
+	// if sidebar is already displayed, hide it
+	if ($('#sidebar').css('left') == '0px') {
+		$('#sidebar').animate({
+			left: '-70%'
+		}, 500);
+		$('#sidebar-fade-overlay').fadeToggle();
+	} else {
+		//slide it in otherwise
+		$('#sidebar').animate({
+			left: '0px'
+		}, 500);
+		$('#sidebar-fade-overlay').fadeToggle();
+	};
 
-	// if details page is already displayed, hide it
-	if(elem.style.display == "none"){
-		elem.style.display = "block";
-	}else{
-		elem.style.display = "none";
-	}
-
-    console.log('Function: toggleSidebar()');
+	console.log('Function: toggleSidebar()');
 }
 
 /**        Function for showing and hiding the Details page
  *        using jQuery because it makes it just so much easier
  */
 
-function toggleDetails() {
+	function toggleDetails() {
+		// if details page is already displayed, hide it
+	console.log($('#detailview').css('top'));
+		if ($('#detailview').css('top') == '0px') {
+			$('#detailview').animate({
+				top: '100%'
+			}, 500);
+			console.log("Close details");
+		} else {
+			//slide it in otherwise
+			$('#detailview').animate({
+				top: '0%'
+			}, 500);
+			console.log("Open details");
+		};
 
-	var elem = document.getElementById('#detailview');
-
-    // if details page is already displayed, hide it
-	if(elem.style.display == "none"){
-		elem.style.display = "block";
-	}else{
-		elem.style.display = "none";
+		console.log('Function: toggleDetails()');
 	}
-
-    console.log('Function: toggleDetails()');
-}
 
 /**     Function for receiving the API Weather Data
  *      using jQuery

@@ -203,8 +203,17 @@ function changeCurrentDay(delta) {
 
 	// Hide arrows at beginning and end
 	if (currentDay == 0)  {
-
+		document.getElementById("buttonDateLeft").style.display = "none";
+	} else {
+		document.getElementById("buttonDateLeft").style.display = "block";
 	}
+
+	if (currentDay == 6)  {
+		document.getElementById("buttonDateRight").style.display = "none";
+	} else {
+		document.getElementById("buttonDateRight").style.display = "block";
+	}
+
 
 	// Hide details button for > 2 days in the future (only day 0, day 1 have detailed data)
 	if (currentDay > 1) {

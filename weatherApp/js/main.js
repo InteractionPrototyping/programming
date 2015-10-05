@@ -203,13 +203,13 @@ function toggleSidebar() {
     if ($('#sidebar').css('left') == '0px') {
         $('#sidebar').animate({
             left: '-70%'
-        }, 500);
+        }, 5000);
         $('#sidebar-fade-overlay').fadeToggle();
     } else {
         //slide it in otherwise
         $('#sidebar').animate({
             left: '0px'
-        }, 500);
+        }, 5000);
         $('#sidebar-fade-overlay').fadeToggle();
     };
 

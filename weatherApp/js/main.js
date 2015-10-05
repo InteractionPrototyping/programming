@@ -66,16 +66,16 @@ $(function () {
 
     showCityList();
 
-
+	// Close sidebar
 	document.getElementById('close-sidebar').onclick = function () {
 		console.log('clicked sidebar');
-		document.getElementById('#sidebar').style.display = "none";
+		document.getElementById('sidebar').style.left = "-70%";
 	};
 
 
 	document.getElementById('open-sidebar').onclick = function () {
 		console.log('clicked sidebar');
-		document.getElementById('#sidebar').style.display = "block";
+		document.getElementById('sidebar').style.left = "0";
 	};
 
 	document.getElementById('footer').firstChild.onclick = function () {
@@ -263,14 +263,12 @@ function updateWeatherMainHTML() {
     //update all fields with the weather data
     document.getElementById('city').innerHTML = activeCity.name;
     if(weather.daily.data[currentDay]) {
-        
         document.getElementById('iconimage').src = 'img/' + weather.daily.data[currentDay].icon + '.png';
         document.getElementById('summary').innerHTML = weather.daily.data[currentDay].summary;
         document.getElementById('temperature').innerHTML = convertTemperature(weather.daily.data[currentDay].temperatureMax, tempUnit);
         document.getElementById('winddisplay').innerHTML = convertWindspeed(weather.daily.data[currentDay].windSpeed, windUnit);
         document.getElementById('humiditydisplay').innerHTML = convertHumidity(weather.daily.data[currentDay].humidity);
         updateColorScheme(weather.daily.data[currentDay].temperatureMax);
-
     } else {
         document.getElementById('iconimage').src = '';
         document.getElementById('summary').innerHTML = '';
@@ -279,7 +277,6 @@ function updateWeatherMainHTML() {
         document.getElementById('humiditydisplay').innerHTML = '';
         updateColorScheme(0);
     }
-    
     console.log('Function: updateWeatherMainHTML()');
 }
 

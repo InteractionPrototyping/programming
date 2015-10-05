@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>IPP: H - Audio/Video</title>
+		<title>IPP: D - CSS3 P RESENTATION : CASCADING STYLE SHEETS</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -14,31 +14,21 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-
-		<link rel="stylesheet" href="css/style.css">
-
 		<!-- Bootstrap -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+		</script>
+
 		<!-- Bootstrap -->
-
-
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
- 		 <script>
- 		 $(function() {
- 		   $( "#datepicker" ).datepicker();
- 		 });
- 		 </script>
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -67,89 +57,1787 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
-		<section id="coverpage">
-			<h1>H</h1>
-			<h1>Audio and Video</h1>
-			<p>
-				<small>Interaction Prototyping Block Course</small>
-			</p>
-		</section>
 
-
-		<section id="G_jQuery" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<div class="row">
-				<div class="col-xs-10">
-					<h2>HTML5 Video</h2>
-				</div>
-				<div class="col-xs-2">
-					<img src="./images/A3JS.png"> 
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<blockquote>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
-						- <a href="www.jQuery.com">jQuery.com</a></blockquote>
-					<ul>
-						<li><b>jQuery</b> simplifies JS programming
-								<ul>
-								<li>HTML/DOM/CSS manipulation</li>
-								<li>Events</li>
-								<li>Effects, Animations</li>
-								<li>Utilities (a lof of common tasks)</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-			   	<div class="col-xs-4  exlink important">
-					 <a  href="http://www.w3schools.com/jquery/jquery_intro.asp" target="_blank"><small><i class="fa fa-book"> jQuery Intro</i></small></a>
-				</div> 
-			</div>	
-		</section>
+				<section id="coverpage">
+					<h1>D</h1>
+					<h1>CSS</h1>
+					<h2>Cascading Style Sheets</h2>
+					<p>
+						<small>Interaction Prototyping Block Course</small>
+					</p>
+				</section>
 
 <!--	#							#
 	 	#							#
-	 	#    G1 DEVELOPING JS 		#
+	 	#    B1 DOCUMENT 	 		#
 	 	#							#
 	 	#							#	-->
-	<section id="G1">					
-		<section id="G1_jQueryBasics" >
-			<h2>G1</h2>
-			<h2>jQuery Basics</h2>
-				<br>
-				<a href="#" class="navigate-down">
-				<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-				</a>
+				<section id="D1">					
+					<section id="D1_usingCSS" >
+						<h2>D1</h2>
+						<h2>Using CSS</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section id="D1_Usage" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Usage</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-left"><b>CSS</b> (<b>C</b>ascading <b>S</b>tyle <b>S</b>heet) is used to</p>
+								<ul>
+									<li><b>style</b> website, structure</li>
+									<li><b>format</b> content & HTML elements</li>
+									<li>animate</li>
+								</ul>
+								<p class="text-left">Demo: <a target="_blank"  href="http://www.w3schools.com/html/html_forms.asp" target="_blank"><i class="fa fa-laptop"> Simple CSS3 3D cube</i></a></p>
+							 </div> 
+							</div>
+					</section>
+
+
+					<section id="D1_IncludeCSS" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Include CSS</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 ">
+								<ul>
+									<li><b>Inline:</b> <code>style</code> attribute (HTML elements)</li>
+									<li><b>Internal:</b> <code>&lt;style&gt;</code> element (<code>&lt;head&gt;</code> section</li>
+									<li><b>External:</b> external CSS <b>file</b></li>
+								</ul>
+								<p><i class="fa fa-long-arrow-right"></i> Separate Content and Presentation!</p>
+							</div>
+						</div>
+					</section>
+
+					<section id="D1_IncludeCSS2" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Include CSS</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8">
+							<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="utf8"&gt;
+ &lt;title&gt;Include CSS&lt;/title&gt;
+ &lt;!-- external --&gt;
+ &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+ &lt;!-- internal --&gt;
+ &lt;style type="text/css"&gt;
+  h1 {size: 24pt;
+      font-family: Arial;}
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt;(Internally styled) website header&lt;/h1&gt;
+ &lt;p&gt;This is a (externally defined) paragraph.&lt;/p&gt;
+ &lt;!-- inline --&gt;
+ &lt;p style="font-family:Times; color:blue; font-
+size:20px;"&gt;An inline styled paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+							</div>
+							<div class="col-xs-4">
+								<p class="text-left"><b>Cascading/Priorities</b></p>
+										<ol>
+											<li>Browser default</li>
+											<li>External style sheet</li>
+											<li>Internal style sheet</li>
+											<li>Inline style</li>
+										</ol>
+								<p class="text-left"><b>Use External CSS:</b></p>
+										<ol>
+											<li>change appearance/layout of all pages of a project</li>
+											<li>by editing one file</li>
+										</ol>
+							</div>
+						</div>
+						<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/6816hnq7/"><small><i class="fa fa-arrow-down"> View example on Plunker </i></small></a>
+							</div>
+					</section>
+
+
+					<section id="D1_syntax" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>CSS Syntax</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+							<img src="./images/D1CSS.png"><br>
+							<small>Source: w3schools.com</small>
+							</div>
+							<div class="col-xs-12 ">
+										<ul>
+											<li><em>Selector</em>: the HTML element (e.g. h1) to be styled</li>
+											<li>Declaration: contains pairs of <code>property:value;</code></li>
+											<li>Property: style attribute (e.g. color) to be changed</li>
+											<li>Comments: <code>/* comment */</code></li>
+										</ul>
+							</div>
+						</div>
+					</section>
+
+
+					<section id="D1_syntax" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Live: Element selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8">
+								<p class="text-left"><i class="fa fa-bolt"></i> Assign styles to specific element types</p>
+								<ul>
+									<li>Style <b>all</b> element types</li>
+									<li>Style <b>specific</b> element types</li>
+									<li>Style <b>multiple</b> specific element types</li>
+								</ul>
+							</div>
+							<div class="col-xs-4 liveCodingBox fiddle" >
+								<p><small>LIVE Demonstration</small></p>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/"><i class="fa fa-jsfiddle"> Example 1 </i></a><br>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/1/"><i class="fa fa-jsfiddle"> Example 2 </i></a>
+							</div>
+						</div>
+					</section>
+
+					<section id="D1_wlselector" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Element selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+* {
+color: blue;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>*</code> styles all elements</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+body {
+background-color: #FFFCCC;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>body</code> styles all elements in body</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+h1 {
+font-size: 300%;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>h1</code> styles <code>&lt;h1&gt;</code> elements </p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+p, li {
+font-family:Helvetica;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>p, li</code> styles <code>&lt;p&gt;</code> and <code>&lt;li&gt;</code> elements</p>
+							</div>
+						</div>
+					</section>
+
+
+
+					<section id="D1_nested" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Live: Nested selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8">
+								<p class="text-left"><i class="fa fa-bolt"></i> Assign styles to elements inside elements</p>
+							</div>
+							<div class="col-xs-4 liveCodingBox fiddle" >
+								<p><small>LIVE Demonstration</small></p>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/1/"><i class="fa fa-jsfiddle"> Example 1 </i></a><br>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/2/"><i class="fa fa-jsfiddle"> Example 2 </i></a>
+							</div>
+						</div>
+					</section>
+
+
+					<section id="D1_nestedselector" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Nested selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+h1 i {
+color:red;
+font-style:normal;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>Space</code> styles element inside</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+div * b {
+color:violet;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>*</code> is a placeholder for arbitrary (at least one) elements</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+div > p {
+color:black;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>></code> styles first direct child</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-4">
+								<pre><code>
+div + p {
+margin-top:5em;}
+								</code></pre>
+							</div>
+							<div class="col-xs-8 ">
+								<p class="text-left"><code>+</code> first successor on same level</p>
+							</div>
+						</div>
+				</section>
+
+
+			<section id="D1_classSelector" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Live: ID/ class selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8">
+								<p class="text-left"><i class="fa fa-bolt"></i> Select specific elements</p>
+								<ul>
+									<li>by <b>id</b></li>
+									<li>by <b>class</b></li>
+								</ul>
+							</div>
+							<div class="col-xs-4 liveCodingBox fiddle" >
+								<p><small>LIVE Demonstration</small></p>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/2/"><i class="fa fa-jsfiddle"> Example 1 </i></a><br>
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/b5c0wxm7/3/"><i class="fa fa-jsfiddle"> Example 2 </i></a>
+							</div>
+						</div>
+			</section>
+
+			<section id="D1_IDclassSelector" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>ID / class selector</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<pre><code>
+&lt;!DOCTYPE html&lt;
+&lt;html&lt;
+ &lt;head&lt;
+  &lt;meta charset="utf8"&lt;
+  &lt;title&lt;CSS id/class&lt;/title&lt;
+  &lt;style type="text/css"&lt;
+    p
+    { font-family:Arial; }
+    #error { color:red; }
+    .blue { color:blue; }
+    h1.blue { color:navy; }
+  &lt;/style&lt;
+ &lt;/head&lt;
+ &lt;body&lt;
+  &lt;h1 class="blue"&lt;Headline of class 'blue'&lt;/h1&lt;
+  &lt;p id="error"&lt;Paragraph with id 'error'&lt;/p&lt;
+  &lt;p class="blue"&lt;Paragraph of class 'blue'&lt;/p&lt;
+ &lt;/body&lt;
+&lt;/html&lt;
+						</code></pre>
+							</div>
+							<div class="col-xs-6 ">
+										<ul>
+											<li><code>#id</code> selector: style an unique element</li>
+											<li><code>.class</code> selector: style a group of elements
+												<ul>
+													<li>used on several elements</li>
+													<li>set a style for many HTML elements</li>
+													<li>Assign multiple classes:
+														<code>class="blue bold"</code></li>
+											 	</ul>
+											</li>
+											<li><code>element.class</code> selector: only class of specific element</li>
+										</ul>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D1_moreSelectors" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>More selectors</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li>
+									Attributes
+									<pre><code>
+a[target] { color:red;}
+									</code></pre>
+								</li>
+								<li>
+									Values in Attributes
+									<pre><code>
+[name=W3Schools] {
+border:5px solid green; }
+
+									</code></pre>
+								</li>
+								<li>
+									First line
+									<pre><code>
+p:first-line {
+background-color:yellow; }
+
+									</code></pre>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<ul>
+								<li>
+									Every n-th element
+									<pre><code>
+p:nth-child(2) {
+background:#ff0000; }
+									</code></pre>
+								</li>
+								<li>
+									many more...
+								</li>
+							</ul>
+						</div>
+					</div>
+				<div class="row">
+					<div class="col-xs-4  exlink important">
+						 <a target="_blank"  href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank"><small><i class="fa fa-book"> CSS Selector Reference</i></small></a>
+					 </div> 
+				</div>	
+		   	</section>
+
+		   	<section id="D1_Quiz" class="container">
+						<h2>D1</h2>
+						<h2>Quiz</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<a target="_blank"  href="http://b.socrative.com/login/student/">http://b.socrative.com/login/student/</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p>Room: IPP</p>
+							</div>
+						</div>
+				</section>
+	</section>
+
+<!--	#							#
+	 	#							#
+	 	#    D2 Styling		 		#
+	 	#							#
+	 	#							#	-->
+
+
+	<section>
+		<section id="D2_Styling" >
+						<h2>D2</h2>
+						<h2>Styling</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+		
+
+		<section id="D2_BackgroundColor" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Background color</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<pre><code>
+body {background-color:
+#b0c4de}
+								</code></pre>
+							</div>
+							<div class="col-xs-6">
+								<p class="text-left"><a target="_blank"  href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_body" target="_blank"><i class="fa fa-laptop"> Show example</i></a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p class="text-left">Define color:</p><ul>
+									<li>RGB value: <code>rgb(255,0,0)</code></li>
+									<li>HEX value: <code>#ff0000</code></li>
+									<li>color name: <code>red</code></li>
+								</ul>
+							 </div> 
+						</div>
+						<div class="row">
+							<div class="col-xs-4 important">
+									<a target="_blank" href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank"><small><i class="fa fa-book"> CSS Color Values</i></small></a>
+									<a target="_blank" href="http://www.w3schools.com/cssref/css_colornames.asp" target="_blank"><small><i class="fa fa-book"> CSS Color Names</i></small></a>
+									<a target="_blank" href="hhttp://www.w3schools.com/css/css_background.asp" target="_blank"><small><i class="fa fa-book"> CSS Background</i></small></a>
+							</div>
+						</div>
 		</section>
 
-		<section id="G1_UsejQuery" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>Use jQuery</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>Offline:</b> Download from <a href="www.jQuery.com">www.jQuery.com</a> and add in project
-							<pre><code>&lt;script src="jquery-1.9.1.min.js"&gt;&lt;/script&gt;</code></pre>
-						</li>
-						<li>Or <b>online</b>: use directly from a CDN
+		<section id="D2_Colors" data-background="#fff" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Colors</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+							<img src="./images/D2Colors.png">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink">
+								<a target="_blank" href="http://www.w3schools.com/tags/ref_colorpicker.asp" target="_blank"><small><i class="fa fa-laptop"> CSS Color Picker</i></small></a><br>
+								<a target="_blank" href="https://color.adobe.com/" target="_blank"><small><i class="fa fa-laptop"> Adobe Color CC</i></small></a>
+							</div>
+						</div>
+		</section>
+
+		<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>no repeat background image</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
 							<ul>
-								<li>Google:
-									<pre><code>&lt;script
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
-								</li>
-								<li>Microsoft: 
-								<pre><code>&lt;script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"&gt;&lt;/script&gt;</code></pre></li>
-								<li>jQuery: 
-								<pre><code>&lt;script src="http://code.jquery.com/jquery-1.9.1.js"&gt;&lt;/script&gt;</code></pre></li>
+								<li><b>no-repeat</b> displayed once</li>
+								<li>Positionable (right, top, left, bottom</li>
 							</ul>
-						</li>
-					</ul>
-				</div> 
-			</div>
-	</section>
+							<pre><code>
+body {
+background-image:url('image.png');
+background-repeat:no-repeat;
+background-position:right top;
+}
+							</code></pre>
+							</div>
 
-	</section>
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Shorthand:</b> (color, image, repeat, position)</li>
+							</ul>
+							<pre><code>
+body {background:#ffffff
+url('img_tree.png') no-repeat right top;}
+							</code></pre>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink">
+								<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position"><small><i class="fa fa-laptop"> Show example</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
 
+
+		   <section id="D2_backgroundrepeat" data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Repeat background image</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+							<ul>
+								<li><code>background-image</code> is displayed in the background of an element</li>
+								<li>By default repeated in both x and y direction</li>
+								<li><b>repeat-x</b> and <b>repeat-y</b> only horizontally/vertically</li>
+							</ul>
+							<pre><code>
+body {
+background-image:url('gradient2.png');
+background-repeat:repeat-x;
+}
+							</code></pre>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink">
+								<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient2"><small><i class="fa fa-laptop"> Show example</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+<section id="D2_textcolor" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Text color & alignment</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Color</b> of text <br>
+									<pre><code>color:blue;</code></pre><br>
+									<pre><code>color:#00ff00;</code></pre><br>
+									<pre><code>color:rgb(255,0,0);</code></pre>
+								</li>
+								<li>Same color definitions as <code>background-color</code></li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li><b>Alignment</b> of text <br>
+										<pre><code>text-align:center;</code></pre><br>
+										<pre><code>text-align:right;</code></pre><br>
+										<pre><code>text-align:justify;</code></pre><br>
+										<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-align_all"><i class="fa fa-laptop"> Show example</i></a>
+									</li>
+									<li><b>Text-shadow:</b><code>h-shadow v-shadow blur color;</code> <br>
+									<pre><code>h1 { text-shadow:2px 2px 3px #FF0000; }</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_text-shadow"><i class="fa fa-laptop"> Show example</i></a>
+								</ul>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D2_textdecoration" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Text decoration & transformation</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 ">
+							<ul>
+								<li><b>Remove</b> underlines from links:<br>
+									<pre><code>a {text-decoration:none;}</code></pre>
+								</li>
+								<li>More <b>lines</b> <br>
+									<pre><code>text-decoration:overline;</code></pre><br>
+									<pre><code>text-decoration:line-through;</code></pre><br>
+									<pre><code>text-decoration:underline;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration"><i class="fa fa-laptop"> Show example</i></a>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6 ">
+							<ul>
+								<li>Text <b>Transformation</b> (uppercase,lowercase) <br>
+									<pre><code>text-transform:uppercase;</code></pre><br>
+									<pre><code>text-transform:lowercase;</code></pre><br>
+									<pre><code>text-transform:capitalize;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-transform"><i class="fa fa-laptop"> Show example</i></a>
+								</li>
+								<li>Text <b>indetation</b><br>
+									<pre><code>text-indent:50px;</code></pre><br>
+									<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text-indent"><i class="fa fa-laptop"> Show example</i></a>
+								</li>
+							</ul>
+							</div>
+						</div>
+		   	</section>
+
+
+		   		<section id="D2_textspacing" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Text spacing</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 ">
+							<ul>
+								<li>Space between <b>letters</b> <br>
+								<pre><code>letter-spacing:2px;</code></pre><br>
+								<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_letter-spacing"><i class="fa fa-laptop"> Show example</i></a>
+								</li>
+								<li>Space between <b>lines</b>
+								<ul>
+								<li><pre><code>line-height:70%;</code></pre></li>
+									<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_line-height"><i class="fa fa-laptop"> Show example</i></a></li>
+								</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6 ">
+							<ul>
+								<li>Space between <b>words</b>
+									<ul>
+									<li><pre><code>word-spacing:30px;</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_text_word-spacing"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+								<li>Text <b>alignment</b>
+								<ul>
+								<li><pre><code>vertical-align:text-top;</code></pre></li>
+								</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/cssref/pr_pos_vertical-align.asp"><small><i class="fa fa-book"> CSS vertical-align property</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D2_fontfamily" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Font family</h2>
+								<img src="./images/D2font.png">
+								<p>Source:w3schools.com</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+							<ul>
+								<li>Font families:
+									<ul>
+									<li><b>Generic:</b> group with a similar look <pre><code>(serif, sans-serif, monospace)</code></pre></li>
+										<li><b>font family:</b> specific font (e.g. "Times New Roman“, "Arial“, ...)</li>
+									</ul>
+								</li>
+								<li>Property font-family: priorities depending on availability on system
+								<ul>
+								<li><pre><code>p{font-family:"Times New Roman", Times, serif;}</code></pre></li>
+									<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-family"><i class="fa fa-laptop"> Show example</i></a></li>
+								</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_font.asp"><small><i class="fa fa-book"> CSS Font</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D2_fontproperties" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Font properties</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li>Font <b>style</b>
+									<ul>
+										<li><pre><code>font-style:normal;</code></pre></li>
+										<li><pre><code>font-style:italic;</code></pre></li>
+										<li><pre><code>font-style:oblique;</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-style"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+								<li>Font <b>weight</b>
+									<ul>
+										<li><pre><code>font-weight:normal;</code></pre></li>
+										<li><pre><code>font-weight:bold;</code></pre></li>
+										<li><pre><code>font-weight:900;</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-weight"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Absolute size</b>
+									<ul>
+										<li><pre><code>font-size:40px;</code></pre></li>
+										<li>Px: Pixel</li>
+									</ul>
+								</li>
+								<li><b>Relative size</b>
+									<ul>
+										<li><pre><code>font-size:2.5em;</code></pre></li>
+										<li>Em: Default height (1em ~ 16px)</li>
+										<li><pre><code>font-size:100%;</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_em"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+		   	</section>
+
+
+		   		<section id="D2_links" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Links</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 ">
+							<ul>
+								<li>4 pseudo formats:
+									<ul>
+										<li><b>normal/unvisited link:</b> <pre><code>a:link {...}</code></pre></li>
+										<li><b>user visited link</b>: <pre><code>a:visited {...}</code></pre></li>
+										<li>when the user <b>mouses</b> over it: <pre><code>a:hover {...}</code></pre></li>
+										<li>the moment it is <b>clicked</b>: <pre><code>a:active {...}</code></pre></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li>Assign styles, e.g.
+									<ul>
+										<li><pre><code>font-size:40px;</code></pre></li>
+										<li>Px: Pixel</li>
+									</ul>
+								</li>
+								<li><b>Relative size</b>
+									<ul>
+										<li><pre><code>a:link {text-decoration:none;}</code></pre></li>
+										<li><pre><code>a:hover {background-color:#fff;}</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_link2"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_link.asp"><small><i class="fa fa-book"> CSS Links</i></small></a>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D2_lists" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Lists</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li>List item markers
+									<ul>
+										<li><pre><code>ul.a {list-style-type: circle;}</code></pre></li>
+										<li><pre><code>ul.b {list-style-type: square;}</code></pre></li>
+										<li><pre><code>ol.c {list-style-type: upper-roman;}</code></pre></li>
+										<li><pre><code>ol.d {list-style-type: lower-alpha;}</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-type_ex"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li>Image as bullet
+									<ul>
+									<li><pre><code>ul { list-style-image: url('sqpurple.gif'); }</code></pre></li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-image"><i class="fa fa-laptop"> Show example</i></a></li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/cssref/pr_list-style-type.asp"><small><i class="fa fa-book"> Property list-style-type</i></small></a><br>
+								<a target="_blank" href="http://www.w3schools.com/css/css_list.asp"><small><i class="fa fa-book"> CSS Lists</i></small></a>
+							</div>
+						</div>
+		   	</section>
+		   </section>
+
+<!--	#							#
+	 	#							#
+	 	#    D3 BoxModel	 		#
+	 	#							#
+	 	#							#	-->
+
+
+	<section>
+		<section id="D3_BoxModel" >
+						<h2>D3</h2>
+						<h2>Box Model</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+
+		<section id="D3_BoxModel" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Box model</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<img src="./images/D3Box.png">
+								<p><small>Source: w3schools.com</small></p>
+									<ul>
+										<li>Boxes are wrapped around all HTML elements</li>
+									</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li><b>Margin:</b> Cleared area around border (transparent, no background-color)</li>
+									<li><b>Border:</b> Goes around padding and content (background color)</li>
+									<li><b>Padding:</b> Cleared area around content (background color)</li>
+									<li><b>Content:</b> Where text and images appear</li>
+								</ul>
+							 </div> 
+						</div>
+						<div class="row">
+							<div class="col-xs-4 important">
+									<a target="_blank" href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank"><small><i class="fa fa-book"> CSS Box Model</i></small></a>
+							</div>
+						</div>
+		</section>
+
+		<section id="D3_blockVSinline" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Box: Block vs. Inline</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Block</b>
+									<ul>
+										<li>Width: maximized</li>
+										<li>Height: as necessary</li>
+										<li>Forces line break</li>
+									</ul>
+								</li>
+								<li><b>Inline</b>
+										<li>Width/Height: as necessary</li>
+										<li>No line break</li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink fiddle">
+								<a target="_blank" href="http://jsfiddle.net/InteractionPrototyping/foha9qbz/"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+						</div>
+		   	</section>
+
+		<section id="D3_widthHeight" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Box: Width & Height</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li>Set <b>width</b> and <b>height</b> of content area, e.g.
+							</ul>
+							<pre><code>
+width: 250px;
+padding: 10px;
+border: 5px solid gray;
+margin:10px;
+							</code></pre>
+							</div>
+							<div class="col-xs-6 noindentlist">
+								<ul>
+									<li><b>Size:</b> Height/Width + Padding + Border + Margin</li>
+								</ul>
+								<div class="row">
+									<div class="col-xs-10 equation">
+										<p class="text-right">(width) 250px</p>
+										<p class="text-right">(left + right padding) + 20px</p>
+										<p class="text-right">(left + right border) + 10px</p>
+										<p class="text-right">(left + right margin) + 20px</p>
+										<p class="text-right">= 300px</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D3_Metrics" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Metrics</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li><b>%:</b> relative to element/parent size
+								<pre><code>line-height:120%;</code></pre></li>
+								<li><b>cm:</b> absolute size
+								<pre><code>top:2.54cm;</code></pre></li>
+								<li><b>em:</b> relative to font height
+								<pre><code>font-size:1.2em;</code></pre></li>
+								<li><b>ex:</b> relative to lowercase x
+								<pre><code>font-size:1.3ex;</code></pre></li>
+								<li><b>in:</b> absolute size
+								<pre><code>border-width:0.1in;</code></pre></li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li><b>mm</b> absolute size
+								<pre><code>margin-bottom:10mm;</code></pre></li>
+								<li><b>pc:</b> absolute size Pica [12pt]
+								<pre><code>line-height:1.2pt;</code></pre></li>
+								<li><b>pt:</b> absolute size Point [1/72in]
+								<pre><code>font-size:12pt;</code></pre></li>
+								<li><b>px:</b> absolute size Pixel, relative size on different resolutions: 72dpi, 300dpi,..
+								<pre><code>border-width:3px;</code></pre></li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/cssref/css_units.asp"><small><i class="fa fa-book"> CSS Units</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+		   		<section id="D3_Border" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Border</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li>Border <b>style</b> 
+									<pre><code>border-style: solid;</code></pre>
+									<ul>
+										<li>Solid, dashed, dotted, ...</li>
+										<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-style"><i class="fa fa-laptop"> Show example</i></a></li>	
+									</ul>
+								</li>
+								<li>Border <b>width</b> 
+									<pre><code>border-width: 5px;</code></pre>
+									<ul>
+										<li>any metric</li>
+									</ul>
+								</li>
+								<li>Border <b>color</b> 
+									<pre><code>border-color: red;</code></pre>
+									<ul>
+										<li>any color value</li>
+									</ul>
+								</li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Individual</b> sides 
+									<pre><code>
+border-top-style:dotted;
+border-right-style:solid;
+border-bottom-style:dotted;
+border-left-style:solid;
+									</code></pre>
+								</li>
+								<li><b>Shorthand</b> property
+									<pre><code>border:5px solid red;</code></pre>
+								<ul>
+									<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-top"><i class="fa fa-laptop"> Show example</i></a></li>
+								</ul>
+								</li>
+							</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_border.aspd"><small><i class="fa fa-book"> CSS Border</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D3_Margin" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Margin</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Margin</b> clears area around element</li>
+								<li>Individually:
+									<pre><code>
+margin-top: 100%;
+margin-bottom: 10%;
+margin-right: inherit;
+margin-left: auto;
+									</code></pre>
+								</li>
+								<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_margin"><i class="fa fa-laptop"> Show example</i></a></li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li>Shorthand:
+									<pre><code>
+margin:25px 50px 75px 100px;
+/*top, right, bottom, left*/
+
+margin:25px 50px 75px;
+/*top, left+right, bottom*/
+
+margin:25px 50px;
+/*top+bottom, right+left*/
+
+margin:25px;
+/*all*/	
+									</code></pre>
+								</li>	
+							<ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_margin.asp"><small><i class="fa fa-book"> CSS Margin</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D3_Padding" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Padding</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<ul>
+								<li><b>Padding</b> defines space between element border and content</li>
+								<li>Individually:
+									<pre><code>
+padding-top: 25px;
+padding-bottom: 25%;
+padding-right: 50px;
+padding-left: 50%;
+									</code></pre>
+								</li>
+								<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_padding"><i class="fa fa-laptop"> Show example</i></a></li>
+							</ul>
+							</div>
+							<div class="col-xs-6">
+							<ul>
+								<li>Shorthand:
+									<pre><code>
+padding:25px 50px 75px 100px;
+/*top, right, bottom, left*/
+
+padding:25px 50px 75px;
+/*top, left+right, bottom*/
+
+padding:25px 50px;
+/*top+bottom, right+left*/
+
+padding:25px;
+/*all*/	
+									</code></pre>
+								</li>	
+							<ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_padding.asp"><small><i class="fa fa-book"> CSS Padding</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   <section id="D3_BoxSizing" data-background="#fff">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Box Sizing</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 ">
+								<p class="text-left">The default box sizing:</p>
+									<pre><code>box-sizing:content-box</code></pre>
+							<img src="./images/D3boxsize1.png">
+							</div>
+							<div class="col-xs-6 ">
+								<p class="text-left">This can be changed to:</p>
+									<pre><code>box-sizing:border-box</code></pre>
+							<img src="./images/D3boxsize2.png">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp"><small><i class="fa fa-book"> CSS Box Sizing</i></small></a><br>
+							</div>
+						</div>
+		   	</section>
+
+
+		   	<section id="D2_Quiz" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>D2/D3 Quiz</h2>
+					
+							</div>
+							<div class="col-xs-12">
+							<p class="text-left">Name the four areas (applying to all HTML elements) of the CSS Vox model:</p>
+								<img src="./images/D2quiz.png">
+							</div>
+						</div>
+			</section>
+
+		   	<section id="D3_Quiz" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>D2/D3 Quiz</h2>
+					
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;body&gt;
+  &lt;h1&gt;Page Title&lt;/h1&gt;
+  &lt;p&gt;Articles:&lt;/p&gt;
+  &lt;ul&gt;&lt;li&gt;Article one&lt;/li&gt;&lt;/ul&gt;
+  &lt;article&gt;
+   &lt;h1&gt;Article Title&lt;/h1&gt;
+   &lt;div class="ic"&gt;
+    &lt;img src="lfe.png"&gt;
+   &lt;/div&gt;
+   &lt;p&gt; Text &lt;/p&gt;
+  &lt;/article&gt;
+  &lt;p&gt;This is the copyright note&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+							</code></pre> 
+							</div>
+							<div class="col-xs-6">
+							<img src="./images/D3quiz.png"> 
+							</div>
+						</div>
+			</section>
+		</section>
+<!--	#							#
+	 	#							#
+	 	#    D4 layout	 			#
+	 	#							#
+	 	#							#	-->
+
+
+	<section>
+		<section id="D3_Layout" >
+						<h2>D4</h2>
+						<h2>Layout</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="D4_Dimension" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Dimension</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+								<p class="text-left">Control dimension of an element</p>
+										<ul>
+											<li><code>height,width</code></li>
+											<li><code>min-height,min-width</code></li>
+											<li><code>max-height,max-width</code></li>
+											<li>Values: <code> auto,length,%, inherit</code></li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_width"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+							<div class="col-xs-6 ">
+								<p class="text-left"> If content does not fit:</p>
+										<ul>
+											<li><code>overflow</code></li>
+											<li>Values: 
+											<ul>
+												<li><code>hidden</code> (overlapping content cropped)</li>
+												<li><code>visible</code> (content overlapping)</li>
+												<li><code>scroll</code> (bars are displayes</li>
+											</ul>
+											</li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_overflow"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_dimension.asp"><small><i class="fa fa-book"> CSS Dimension</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+		<section id="D4_Dimension" data-background="#fff" class="container">
+						<h2>Dimension</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+								<p class="text-left">Control dimension of an element</p>
+										<ul>
+											<li><code>height,width</code></li>
+											<li><code>min-height,min-width</code></li>
+											<li><code>max-height,max-width</code></li>
+											<li>Values: <code> auto,length,%, inherit</code></li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_width"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+							<div class="col-xs-6 ">
+								<p class="text-left"> If content does not fit:</p>
+										<ul>
+											<li><code>overflow</code></li>
+											<li>Values: 
+											<ul>
+												<li><code>hidden</code> (overlapping content cropped)</li>
+												<li><code>visible</code> (content overlapping)</li>
+												<li><code>scroll</code> (bars are displayes</li>
+											</ul>
+											</li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_overflow"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_dimension.asp"><small><i class="fa fa-book"> CSS Dimension</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="D4_Visibility" data-background="#fff" class="container">
+						<h2>Visibility & Display</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+								<p class="text-left">Hiding an element:</p>
+									<pre><code>visibility:hidden;</code></pre>
+										<ul>
+											<li>Element takes the same space</li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_visibility"> Show example</i></a></li>
+										</ul>
+							</div>
+							<div class="col-xs-6 ">
+								<p class="text-left">Change block/inline behavior:</p>
+											<pre><code>display:inline;-block</code></pre>
+											<pre><code>display:block;</code></pre>
+											<pre><code>display:inline;</code></pre>
+											<pre><code>display:inline-block; /* inline, but allows width/height/margin */</code></pre>
+											<ul>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_display"><i class="fa fa-laptop"> Show example</i></a></li>
+											</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_display_visibility.asp"><small><i class="fa fa-book"> CSS Display / Visibility</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="D4_Positioning" data-background="#fff" class="container">
+						<h2>Positioning</h2>
+						<div class="row">
+							<div class="col-xs-8 ">
+								<p class="text-left">Variants for <code>position</code> of elements</p>
+										<ul>
+											<li><b>static</b> normal page flow (not affected by top, left, ... properties)</li>
+											<li><b>fixed</b> relative to the browser window (not scrolled)</li>
+											<li><b>relative</b> to its normal position</li>
+											<li><b>absolute</b> relative to first parent element having a position other than static (or <html>)</li>
+										</ul>
+							</div>
+							<div class="col-xs-4">
+								<p class="text-left">Position/Offset of elements:</p>
+											<pre><code>top d</code></pre>
+											<pre><code>bottom d</code></pre>
+											<pre><code>left d</code></pre>
+											<pre><code>right d</code></pre>
+										<ul>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_position"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_positioning.asp"><small><i class="fa fa-book"> CSS Positioning</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="D4_Overlapping" data-background="#fff" class="container">
+						<h2>Overlapping</h2>
+						<div class="row">
+							<div class="col-xs-12 ">
+								<img src="./images/D4overlapping.png">
+										<ul>
+											<li>Specify stack order of elements with <code>z-index</code></li>
+											<li>positive/negative values</li>
+											<li>Greater z-index: displayed on top</li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_z-index"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+		</section>
+
+		<section id="D4_Floating"  data-background="#fff" class="container">
+						<h2>Floating</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+										<ul>
+											<li><code>float</code> pushes elements <code>left</code> or <code>right</code>
+												<ul>
+													<li>other (adjacent) elements wrap around it</li>
+													<li>Used for images / layouts</li>
+												</ul>
+											</li>
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_float&preval=left"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+										<li><b>Consecutive</b> floats will display elements side by side
+												<ul>
+													<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float_elements"><i class="fa fa-laptop"> Show example</i></a></li>
+												</ul>
+										</li>
+										<li><code>clear (left, right, both)</code> terminates floating
+												<ul>
+													<li><a target="_blank" href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear"><i class="fa fa-laptop"> Show example</i></a></li>
+												</ul>
+										</li>
+										
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_float.asp"><small><i class="fa fa-book"> CSS Floating</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="D4_Align"  data-background="#fff" class="container">
+						<h2>Align</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+										<ul>
+											<li>Horizontally centered align of block elements:</li>
+											<pre><code>margin:auto;</code></pre>
+											<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_container"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>Left/right align:</li>
+										<pre><code>position:absolute;
+right:0px;</code></pre>			    	<ul>
+											<li><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_align_pos"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+									<li>Or left/right</li>
+										<pre><code>float:right;</code></pre>	
+										<ul>
+											<li>Combined with clear</li>
+										</ul>
+									<li>Always define margin/padding!</li>	
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css/css_align.asp"><small><i class="fa fa-book"> CSS Horizontal Align</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+
+	<section id="D4_Flex"  data-background="#fff" class="container">
+						<h2>CSS3 Flex Box</h2>
+						<div class="row">
+							<div class="col-xs-6 ">
+										<ul>
+											<li>Experimental (but supported) feature: <br>
+												<a target="_blank" href="http://caniuse.com/#feat=flexbox" target="_blank"><i class="fa fa-external-link"> http://caniuse.com</i></a></li>
+											<li>New layout mode, activated in the container via:<pre><code>display: flex;</code></pre></li>
+										</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>Many properties, e.g.</li>
+								    	<ul>
+								    		<li>Weighting</li>
+								    	</ul>
+											<pre><code>flex-grow: &lt;number&gt;;</code></pre>
+										<ul>
+											<li>Vertical Aligning</li>
+										</ul>
+											<pre><code>align-items: flex-start | center| ...;</code></pre>
+										<ul>
+											<li>Horizontal Aligning</li>
+										</ul>
+											<pre><code>justify-content: flex-start | flex-end | center | ...;</code></pre>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 important text-left">
+								<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank"><small><i class="fa fa-book"> Using CSS flexible boxes</i></small></a><br>
+								<a target="_blank" href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank"><small><i class="fa fa-book">  CSS Flex Property</i></small></a><br>
+								<a target="_blank" href="http://learnlayout.com/flexbox.html" target="_blank"><small><i class="fa fa-book"> Flexbox</i></small></a>
+							</div>
+
+							<div class="col-xs-4 fiddle">
+								<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/svb7994a/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a><br>
+								<a target="_blank" href="http://jsfiddle.net/InteractionPrototyping/cs9or01b/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a></li>
+							</div>
+						</div>
+		</section>
+
+	<section id="D4_Quiz" class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>D4 Quiz</h2>
+					
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+							<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;body&gt;
+  &lt;h1&gt;Page Title&lt;/h1&gt;
+  &lt;p&gt;Articles:&lt;/p&gt;
+  &lt;ul&gt;&lt;li&gt;Article one&lt;/li&gt;&lt;/ul&gt;
+  &lt;article&gt;
+   &lt;h1&gt;Article Title&lt;/h1&gt;
+   &lt;div class="ic"&gt;
+    &lt;img src="lfe.png"&gt;
+   &lt;/div&gt;
+   &lt;p&gt; Text &lt;/p&gt;
+  &lt;/article&gt;
+  &lt;p&gt;This is the copyright note&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+							</code></pre> 
+							</div>
+							<div class="col-xs-6">
+							<img src="./images/D3quiz.png"> 
+							</div>
+						</div>
+			</section>
+		</section>
+<!--	#							#
+	 	#							#
+	 	#    CSS EFFECTS 			#
+	 	#							#
+	 	#							#	-->
+
+
+	<section>
+		<section id="D5_Effects" >
+						<h2>D5</h2>
+						<h2>CSS Effects</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="D5_corners" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Corners / Background</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<img src="./images/D5corners.png">
+										<ul>
+											<li>Add rounded <b>corners</b>
+											<pre><code>border-radius:25px;</code></pre>
+											<ul>	
+												<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_border-radius" target="_blank"><i class="fa fa-laptop"> Show example</i></a></li>
+											</ul>
+											</li>	
+										</ul>
+							</div>
+							<div class="col-xs-6 ">
+										<ul>
+											<li>CSS3 introduces more sophisticated control of <b>background</b> image:
+											<ul>
+												<li><code>background-size</code></li>
+												<li><code>background-origin</code></li>
+												<li><code>background-clip</code></li>
+											</ul>
+											</li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css3/css3_borders.asp" target="_blank"><small><i class="fa fa-book"> CSS Borders</i></small></a><br>
+								<a target="_blank" href="http://www.w3schools.com/css3/css3_backgrounds.asp" target="_blank"><small><i class="fa fa-book"> CSS Background</i></small></a>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="D5_shadow" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Shadow / Image</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<img src="./images/D5shadow.png">
+										<ul>
+											<li>Add <b>shadow</b> to boxes</li>
+										</ul>
+										<pre><code>box-shadow:h-shadow v-
+shadow blur spread color
+inset;</code></pre>
+<pre><code>box-shadow:10px 10px 5px
+#888888;</code></pre>
+										<ul>	
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_box-shadow" target="_blank"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+											
+							</div>
+							<div class="col-xs-6 ">
+										<img src="./images/D5borderimage.png">
+										<ul>
+											<li>Add <b>border</b> image</li>
+										</ul>
+											<pre><code>border-image:source slice
+width outset repeat;</code></pre>
+<pre><code>border-image:url(border.png)
+30 30 round;</code></pre>
+										<ul>	
+											<li><a target="_blank" href="http://www.w3schools.com/css3/tryit.asp?filename=trycss3_border-image" target="_blank"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/css3/css3_borders.asp"><small><i class="fa fa-book"> CSS3 Borders</i></small></a><br>
+							</div>
+						</div>
+		</section>
+
+		<section id="D5_opacity" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Opacity / Cursor</h2>
+						<div class="row">
+							<div class="col-xs-6">
+										<ul>
+											<li>Change <b>opacity</b> level for an element:</li>
+										</ul>
+										<pre><code>opacity:0.5;</code></pre>
+										<ul>	
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_opacity" target="_blank"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+											
+							</div>
+							<div class="col-xs-6 ">
+										<ul>
+											<li>Specify type of cursor when element pointed:</li>
+										</ul>
+											<pre><code>cursor:help;</code></pre>
+										<ul>
+											<li>Values: <code>auto, crosshair, default, help, move, n-resize, pointer, progress,...</code></li>	
+											<li><a target="_blank" href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_cursor&preval=help" target="_blank"><i class="fa fa-laptop"> Show example</i></a></li>
+										</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+								<a target="_blank" href="http://www.w3schools.com/cssref/pr_class_cursor.asp" target="_blank"><small><i class="fa fa-book"> CSS cursor property</i></small></a><br>
+								<a target="_blank" href="http://www.w3schools.com/cssref/css3_pr_opacity.asp" target="_blank"><small><i class="fa fa-book"> CSS3 opacity Property</i></small></a>
+							</div>
+						</div>
+		</section>
+</section>
+<!--	#							#
+	 	#							#
+	 	#    D6 Literature			#
+	 	#							#
+	 	#							#	-->
+
+
+	<section>
+		<section id="D6_Literature" >
+						<h2>D6</h2>
+						<h2>Literature</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+
+		<section id="D6_Tutorials" data-background="#fff" class="container">
+				<h2>Tutorials</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<a target="_blank"  href="http://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-external-link"> CSS Tutorial</i></a><br>
+								<a target="_blank"  href="http://www.w3schools.com/css3/default.asp" target="_blank"><i class="fa fa-external-link"> CSS3 Tutorial</i></a>
+							</div>
+						</div>
+		</section>
+
+		<section id="D6_Reference" data-background="#fff" class="container">
+				<h2>Reference</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<a target="_blank"  href="http://www.w3schools.com/cssref" target="_blank"><i class="fa fa-external-link"> CSS Reference</i></a>
+							</div>
+						</div>
+		</section>
+
+		<section id="D6_Exercise" class="container">
+				<h2>Exercise</h2>
+				<h3>Weather App: Structure</h3>
+						<div class="row">
+							<div class="col-xs-6">
+							<img src="./images/B6wa1.png">
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>Create structuring containers (with ids)</li>
+									<li>Insert outputs (text, graphics) and inputs (buttons), have to be addressable</li>
+									<li>NO CSS YET</li>
+								</ul>
+							</div>
+						</div>
+		</section>
+
+		<section id="D6_Exercise1" class="container">
+				<h2>Exercise</h2>
+				<h3>Weather App: Structure</h3>
+						<div class="row">
+							<div class="col-xs-6">
+							<img src="./images/D6wa1.png">
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>Create details view</li>
+									<li>Add table</li>
+									<li>Mutually link overview and details</li>
+									<li>NO CSS YET</li>
+								</ul>
+							</div>
+						</div>
+		</section>
+
+<section id="D6_Exercise2" class="container">
+				<h2>Exercise</h2>
+				<h3>Weather App: Content & Style</h3>
+						<div class="row">
+							<div class="col-xs-6">
+							<img src="./images/B6wa1.png">
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>External CSS</li>
+									<li>Proper spacing</li>
+									<li>Cloudy title: <a target="_blank" href="http://www.bbradio.de/radio/service/wetter/format/wetter-bild_716x403.jpg"><i class="fa fa-external-link"></i> image</a></li>
+									<li>Style info panel to be centered, rounded, ...</li>
+									<li>Style buttons: gradient, round, padding, centered text...</li>
+									<li>Braces around „selectors“</li>
+								</ul>
+							</div>
+						</div>
+		</section>
+
+		<section id="D6_Exercise3" class="container">
+				<h2>Exercise</h2>
+				<h3>Weather App: Content & Style</h3>
+						<div class="row">
+							<div class="col-xs-6">
+							<img src="./images/D6wa1.png">
+							</div>
+							<div class="col-xs-6">
+								<ul>
+									<li>Use same CSS file</li>
+									<li>Style table</li>
+								</ul
+							</div>
+						</div>
+		</section>
+	</section>
 
 	<section style="text-align: left;">
 			<h1>THE END</h1>
@@ -167,6 +1855,7 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/sc
 		<script>
 
 			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
 				progress: true,

@@ -66,15 +66,24 @@ $(function () {
 
     showCityList();
 
-    $('.sidebar-control').click(function () {
-        console.log('clicked sidebar');
-        toggleSidebar();
-    });
+	// Close sidebar
+	document.getElementById('close-sidebar').onclick = function () {
+		console.log('clicked sidebar');
+		document.getElementById('sidebar').style.left = "-70%";
+		// Later use: toggleSidebar();
+	};
 
-    $('.detail-control').click(function () {
+	// Open sidebar
+	document.getElementById('open-sidebar').onclick = function () {
+		console.log('clicked sidebar');
+		document.getElementById('sidebar').style.left = "0";
+		// Later use: toggleSidebar();
+	};
+
+	document.getElementById('footer').firstChild.onclick = function () {
         console.log('clicked details');
         toggleDetails();
-    });
+    };
 
     /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
@@ -192,6 +201,18 @@ function changeCurrentDay(delta) {
         updateWeatherDetailHTML();
     }
 
+	// Hide arrows at beginning and end
+	if (currentDay == 0)  {
+
+	}
+
+	// Hide details button for > 2 days in the future (only day 0, day 1 have detailed data)
+	if (currentDay > 1) {
+		document.getElementById('footer').style.display = "none";
+	} else {
+		document.getElementById('footer').style.display = "block";
+	}
+
     console.log('Function: changeCurrentDay()');
 }
 
@@ -200,18 +221,14 @@ function changeCurrentDay(delta) {
  */
 function toggleSidebar() {
     // if sidebar is already displayed, hide it
-    if ($('#sidebar').css('left') == '0px') {
-        $('#sidebar').animate({
-            left: '-70%'
-        }, 5000);
-        $('#sidebar-fade-overlay').fadeToggle();
-    } else {
-        //slide it in otherwise
-        $('#sidebar').animate({
-            left: '0px'
-        }, 5000);
-        $('#sidebar-fade-overlay').fadeToggle();
-    };
+	var elem = document.getElementById('#sidebar');
+
+	// if details page is already displayed, hide it
+	if(elem.style.display == "none"){
+		elem.style.display = "block";
+	}else{
+		elem.style.display = "none";
+	}
 
     console.log('Function: toggleSidebar()');
 }
@@ -221,17 +238,15 @@ function toggleSidebar() {
  */
 
 function toggleDetails() {
+
+	var elem = document.getElementById('#detailview');
+
     // if details page is already displayed, hide it
-    if ($('#detailview').css('top') == '0px') {
-        $('#detailview').animate({
-            top: '100%'
-        }, 500);
-    } else {
-        //slide it in otherwise
-        $('#detailview').animate({
-            top: '0%'
-        }, 500);
-    };
+	if(elem.style.display == "none"){
+		elem.style.display = "block";
+	}else{
+		elem.style.display = "none";
+	}
 
     console.log('Function: toggleDetails()');
 }
@@ -262,14 +277,12 @@ function updateWeatherMainHTML() {
     //update all fields with the weather data
     document.getElementById('city').innerHTML = activeCity.name;
     if(weather.daily.data[currentDay]) {
-        
         document.getElementById('iconimage').src = 'img/' + weather.daily.data[currentDay].icon + '.png';
         document.getElementById('summary').innerHTML = weather.daily.data[currentDay].summary;
         document.getElementById('temperature').innerHTML = convertTemperature(weather.daily.data[currentDay].temperatureMax, tempUnit);
         document.getElementById('winddisplay').innerHTML = convertWindspeed(weather.daily.data[currentDay].windSpeed, windUnit);
         document.getElementById('humiditydisplay').innerHTML = convertHumidity(weather.daily.data[currentDay].humidity);
         updateColorScheme(weather.daily.data[currentDay].temperatureMax);
-
     } else {
         document.getElementById('iconimage').src = '';
         document.getElementById('summary').innerHTML = '';
@@ -278,7 +291,6 @@ function updateWeatherMainHTML() {
         document.getElementById('humiditydisplay').innerHTML = '';
         updateColorScheme(0);
     }
-    
     console.log('Function: updateWeatherMainHTML()');
 }
 

@@ -352,6 +352,10 @@ PREPARATION
 
     <h2>C Forms</h2>
 
+    <h3>Validate your HTML</h3>
+    <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax.If there are any errors,
+        please correct them. Repeat this process until there are only warnings and no more errors.</p>
+
     <h3>Buttons</h3>
 
     <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
@@ -369,6 +373,7 @@ PREPARATION
         <figcaption>Add a new city</figcaption>
     </figure>
     Also add a submit <code>button</code> next to the <code>input</code> field.
+
     <h2>D Style and Layout</h2>
 
     <h3>Global Stylesheet (D1)</h3>
@@ -453,20 +458,18 @@ PREPARATION
         <li>Use z-indices to arrange all sections.</li>
         <li>Hide all overlays with display property.</li>
     </ul>
-    <h3 class="todo">D5: Apply effects</h3>
-    <ul class="todo">
-        <li>Provide a background-color transition for the main-view element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.</li>
-        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the sidebar-fade-overlay and add a dark
+    <h3>CSS Effects (D5)</h3>
+    <ul>
+        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the <kbd>sidebar-fade-overlay</kbd> and add a dark
             half-transparent background-color. </li>
+        <li>Create a half-transparent background gradient for the table.</li>
+        <li>Add shadow to your <code>button</code>code> style</li>
     </ul>
-
-    <p class="todo">Gradients
-        <ul class="todo">
-            <li>Create a half-transparent background gradient for the table.</li>
-        </ul>
-        <br> Shadows
-    </p>
-
+    <h3>CSS Transform & Transitions (D6)</h3>
+    <ul>
+        <li>Provide a background-color transition for the main-view element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.</li>
+        <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to build an X-icon for the <kbd>close-sidebar</kbd> button </li>
+    </ul>
     <h1>E: Frameworks</h1>
 
     <p>Frameworks will be important helpers to create (and prototype) your app more quickly.</p>
@@ -485,9 +488,9 @@ PREPARATION
 
     <p class="todo">Include the following</p>
     <ol class="todo">
-        <li>Toggle sidebar, Toggle Details view - Javascript</li>
         <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
         <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
+        <li>Add an <code>onclick</code> event handler to each your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>. The function modifies the <code>style.left</code> property in order to show / hide the sidebar.</li>
         <li>ChangeCurrentDay() – Javascript Logik, DateStrings</li>
         <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
         <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
@@ -499,6 +502,8 @@ PREPARATION
         <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
         <li>setCityClickable - jQuery Plugins</li>
     </ol>
+
+    <p class="todo"></p>
 
 
     <p class="todo">Add solution here as a collapsible</p>

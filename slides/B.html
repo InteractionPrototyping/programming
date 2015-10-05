@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>IPP: B - HTML5 Stucture and Content</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<!-- Bootstrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+		</script>
+
+		<!-- Bootstrap -->
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		
+		<!-- Printing   and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+<!--colors: black:#2d2c2b blue:#0f3750 #005c96 ##0076bc # green:#a1b11a orange:#ee762c darkwhite:ebe6d6 darkgrey:#454545 tumgrey:#949494 lightgrey:#d7d7d7 -->
+	<body>
+
+	<div class="reveal">
+		<div class='footer'>
+			<img width="20%" src="./images/LfE.png"> <p><small>Interaction Prototyping Block Course</small></p>
+ 		</div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+
+				<section id="coverpage">
+					<h1>B</h1>
+					<h1>HTML5</h1>
+					<h2>Structure & Content</h2>
+					<p>
+						<small>Interaction Prototyping Block Course</small>
+					</p>
+				</section>
+
+<!--	#							#
+	 	#							#
+	 	#    B1 DOCUMENT 	 		#
+	 	#							#
+	 	#							#	-->
+				<section id="B1">					
+					<section id="B1_Document" >
+						<h2>B1</h2>
+						<h2>Document</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+
+					<section id="B1_HTML" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>HTML</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<ul>
+										<li>Headings <br>
+											<pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;h2&gt;This is a heading&lt;/h2&gt;
+&lt;h3&gt;This is a heading&lt;/h3&gt;</code></pre>
+											<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_headers"><small><i class="fa fa-laptop"> Show w3schools</i></small></a>
+										</li>
+										<li>Paragraphs<br>
+											<pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;p&gt;This is another paragraph&lt;/p&gt;</code></pre> 
+											<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1"><small><i class="fa fa-laptop"> Show w3schools</i></small></a>
+										</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+								<ul>
+										<li>Links<br>
+											<pre><code>&lt;a href="http://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code></pre> 
+											<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link"><small><i class="fa fa-laptop"> Show w3schools</i></small></a>
+										</li>
+										<li>Images <br>
+											<pre><code>&lt;img src="w3schools.jpg" width="104" height="142"&gt;</code></pre> 
+											<a target="_blank" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img"><small><i class="fa fa-laptop"> Show w3schools</i></small></a>
+										</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 exlink important">
+							 <a target="_blank"  href="http://www.w3schools.com/html/html_basic.asp"><small><i class="fa fa-book"> HTML Basic</i></small></a>
+							 </div>
+						</div>	
+					</section>
+
+					<section id="B1_ElementsAndTags" data-background="#fff" class="container">
+					<h2>Elements & Tags</h2>
+						<div class="row">
+							<div class="col-xs-4">
+											<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+ &lt;h1&gt;Heading&lt;/h1&gt;
+ &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre> 
+							</div>
+							<div class="col-xs-8">
+								<ul>
+										<li><b>Elements</b> marked by <b>tags</b></li>
+										<li><b>Tags</b> are part of the element: and keywords in <code>&lt;&gt;</code></li>
+										<li><b>Pairs:</b> opening <code>&lt;&gt;</code> and closing <code>&lt;/&gt;</code></li>
+										<li>Element <b>content</b> is everything between start and end tags</li>
+										<li>Elements can be <b>nested</b> (contain other HTML elements)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2 important">
+							 <a target="_blank"  href="http://www.w3schools.com/html/html_basic.asp"><small><i class="fa fa-book"> HTML Basic</i></small></a>
+							 </div>
+						</div>	
+					</section>
+
+
+
+
+					<section id="B1_HTMLex" data-background="#fff" class="container">
+					<h2>Example</h2>
+						<div class="row">
+							<div class="col-xs-12">
+											<img src="./images/B1HTMLex.png">
+							</div>
+						</div>	
+					</section>
+
+
+					<section id="B1_Visualization" data-background="#fff" class="container">
+					<h2>Visualization of a Page Structure</h2>
+						<div class="row">
+							<div class="col-xs-12">
+											<img src="./images/B1Visualization.png">
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-xs-4 exlink">
+									<a target="_blank"  href="http://w3schools.com/html/html_intro.asp"><small><i class="fa fa-external-link"> w3schools.com</i></small></a>
+							</div>
+						</div>
+					</section>
+
+					<section id="B1_Attributes" data-background="#fff" class="container">
+						<h2>Attributes</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<ul>
+										<li>Additional element information</li>
+										<li>specified in the start tag</li>
+										<li><b>Pairs:</b> always use quotes <code>" "</code></li>
+								</ul> 
+								<pre><code>&lt;a href="http://www.w3schools.com"&gt; This is a link&lt;/a&gt;</code></pre> 
+							</div>
+							<div class="col-xs-6">
+								<ul>
+										<li>Universal attributes
+											<ul>
+												<li><code>class</code> (refers to CSS Style)</li>
+												<li><code>id</code> (unique name)</li>
+												<li><code>style</code> (inline CSS style)</li>
+												<li><code>title</code> (extra info: tooltip)</li>
+											</ul>
+										</li>
+										<li>Tag specific attributes (like <code>href</code>) <br> 
+											<a target="_blank" href="http://www.w3schools.com/tags/default.asp"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+										</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+							 <a target="_blank"  href="http://www.w3schools.com/html/html_attributes.asp"><small><i class="fa fa-book"> HTML Attributes</i></small></a>
+							 </div>
+						</div>	
+					</section>
+
+					<section id="B1_Skeleton" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2>Skeleton</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;!-- your visible content --&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre> 
+							</div>
+						</div>	
+					</section>
+
+					<section id="B1_head" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2 class="inline-code-blue">&lt;head&gt;</h2>
+						<div class="row">
+							<div class="col-xs-12"> 
+								<ul>
+									<li><b>scripts, style sheets, meta</b> information</li>
+									<li><b>title</b> of the document (browser tab/title)</li>
+									<li><b>links</b> to external scripts and style sheets</li>
+								</ul>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://w3schools.cohttp://www.w3schools.com/html/html_head.asp"><small><i class="fa fa-book"> HTML Head</i></small></a>
+							</div>
+						</div>
+					</section>
+
+					<section id="B1_body" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2 class="inline-code-blue">&lt;body&gt;</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<ul>
+									<li><b>Sectioning</b> (areas of the website) elements</li>
+									<li><b>Grouping</b> elements</li>
+								</ul>
+							</div>
+						</div>	
+						
+					</section>
+
+				<section id="B1_Quiz" class="container">
+						<h2>B1</h2>
+						<h2>Quiz</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<a target="_blank" href="http://b.socrative.com/login/student/"><i class="fa fa-external-link"> socrative.com</i></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p>Room: IPP</p>
+							</div>
+						</div>
+				</section>
+
+		<section id="B1_WeatherApp" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 3:</b></p>
+			<p>Weather App Skeleton</p>
+		</section>
+
+	</section>
+
+
+
+<!--	#							#
+	 	#							#
+	 	#    B2 Structure:  		#
+	 	#		Sectioning	&		#
+	 	#			    Grouping	#	-->
+
+
+	<section>
+		<section id="B2_Structure" >
+						<h2>B2</h2>
+						<h2>Structure:</h2>
+						<h3>Sectioning & Grouping</h3>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="B2_section" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+						<h2 class="inline-code-blue">&lt;section&gt;&lt;h1&gt;&lt;p&gt;&lt;br&gt;</h2>
+						<div class="row">
+							<div class="col-xs-8">
+								<ul>
+									<li><b>Section</b> defines logical sections (chapters, ...)</li>
+									<li><b>Headings</b> are important information
+											<ul>
+												<li><code>&lt;h1&gt;</code> most important</li>
+												<li><code>&lt;h6&gt;</code> least important</li>
+											</ul>
+									</li>
+									<li><b>Paragraphs</b> <code>&lt;p&gt;</code></li>
+									<li>Line <b>breaks</b> <code>&lt;br&gt;</code></li>
+								</ul>
+							</div>
+							<div class="col-xs-4">
+							<pre><code>&lt;h1&gt;My book&lt;/h1&gt;
+&lt;section&gt;
+ &lt;h1&gt;First chapter&lt;/h1&gt;
+ &lt;p&gt;Content&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+ &lt;h1&gt;Second chapter&lt;/h1&gt;
+ &lt;p&gt;Content&lt;/p&gt;
+ &lt;p&gt;Another&lt;br&gt;paragraph&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_headings.asp"><small><i class="fa fa-book"> HTML Headings</i></small></a>
+							</div>
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_paragraphs.asp"><small><i class="fa fa-book"> HTML Paragraphs</i></small></a>
+							</div>
+
+							<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/4p1z8ebq/"><small><i class="fa fa-jsfiddle"> View example on fiddle </i></small></a>
+							</div>
+						</div>
+		</section>
+
+
+		<section id="B2_article"  data-background="#fff"  class="container">
+						<h2 class="inline-code-blue">&lt;article&gt;</h2>
+						<div class="row">
+							<div class="col-xs-6">
+								<ul>
+									<li>Independent logical parts are grouped using the article tag</li>
+									<li>Logical part in a forum: e.g. posts (author, content, signature, date, comments, ...)</li>
+								</ul>
+							</div>
+							<div class="col-xs-6">
+							<pre><code>&lt;article&gt;
+ &lt;h1&gt;Title&lt;/h1&gt;
+ &lt;p&gt;Content&lt;/p&gt;
+ &lt;footer&gt;Posted by Author, Year&lt;/footer&gt;
+&lt;/article&gt;</code></pre>
+							</div>
+						</div>	
+						
+		</section>
+
+		<section id="B2_header"  data-background="#fff"  class="container">
+				<h2 class="inline-code-blue">&lt;header&gt;&lt;footer&gt;&lt;nav&gt;&lt;aside&gt;</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<ul>
+							<li>Logical sections of a document
+									<ul>
+										<li><b>Header</b> and <b>footer</b> area of a website (app)</li>
+										<li>Navigation area</li>											<li>Sidebar</li>
+									</ul>
+							</li>
+							<li>By default not specifically presented in browser, layout needs to be done in CSS</li>
+						</ul>
+					</div>
+	   				<div class="col-xs-6">
+							<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;header&gt;
+  &lt;h1&gt;Company name&lt;/h1&gt;
+  Title
+ &lt;/header&gt;
+ &lt;nav&gt;
+  Home, Products, Contact
+ &lt;/nav&gt;
+  Content
+  &lt;aside&gt;Advertisement&lt;/aside&gt;
+  &lt;footer&gt;Copyright note&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+					</div>
+				</div>	
+		</section>
+
+
+		<section id="B2_lists"  data-background="#fff"  class="container">
+				<h2>Lists</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<ul>
+							<li>Unordered lists <code>&lt;ul&gt;</code></li>
+							<li>Ordered list <code>&lt;ol&gt;</code></li>
+							<li>List item <code>&lt;li&gt;</code></li>
+							<li>May be <b>nested</b></li>
+						</ul>
+					</div>
+	   				<div class="col-xs-6">
+							<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;meta charset="utf-8"&gt;
+ &lt;title&gt;Lists&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt;ToDo&lt;/h1&gt;
+ &lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+  &lt;li&gt; Nested List
+   &lt;ol&gt; 
+    &lt;li&gt;a&lt;/li&gt;
+    &lt;li&gt;b&lt;/li&gt;
+   &lt;/ol&gt;
+  &lt;/li&gt;
+ &lt;/ol&gt;
+ &lt;h1&gt;Important Cities&lt;/h1&gt;	
+  &lt;ul&gt;
+   &lt;li&gt;First&lt;/li&gt;
+   &lt;li&gt;Second&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+					</div>
+				</div>
+				<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_lists.asp"><small><i class="fa fa-book"> HTML Lists</i></small></a>
+							</div>
+							
+							<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/gLhhky7j/"><small><i class="fa fa-jsfiddle"> View example on fiddle </i></small></a>
+							</div>
+						</div>	
+		</section>
+
+		<section id="B2_groupingelements"  data-background="#fff"  class="container">
+				<h2>More grouping elements</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<ul class="important">
+							<li>Definition lists <code>&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;</code><br>
+								<a target="_blank"  href="http://www.w3schools.com/tags/tag_dl.asp"><small><i class="fa fa-book"> Definition Lists</i></small></a>
+							</li>
+							<li>Quotes <code>&lt;blockquote cite=““&gt;</code><br>
+								<a target="_blank"  href="http://www.w3schools.com/tags/tag_blockquote.asp"><small><i class="fa fa-book"> Blockquote</i></small></a></li>
+							<li>Subtittled content <code>&lt;figure&gt;&lt;figcaption&gt;</code><br>
+								<a target="_blank"  href="http://www.w3schools.com/tags/tag_figure.asp"><small><i class="fa fa-book"> Figure</i></small></a>
+								<br>
+								<a target="_blank"  href="http://www.w3schools.com/tags/tag_figcaption.asp"><small><i class="fa fa-book"> Figurecaption</i></small></a>
+								</li>
+							<li>Preformatted content <code>&lt;pre&gt;</code><br>
+								<a target="_blank"  href="http://www.w3schools.com/tags/tag_pre.asp"><small><i class="fa fa-book"> Pre Tag</i></small></a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+		</section>
+
+		<section id="B2_block"  data-background="#fff"  class="container">
+				<h2>Block &lt;div&gt; & Inline &lt;code&gt;</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<ul>
+							<li>Container for grouping other HTML elements
+								<ul>
+									<li><b>Block level:</b> line break</li>
+									<li><b>Inline level</b> txt group attributes</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+	   				<div class="col-xs-6">
+							<pre><code>
+&lt;div style="widht:200px; float:left; 
+background-color:silver;"&gt;
+&lt;h1&gt;Logo&lt;/h1&gt;
+ &lt;nav&gt;
+  &lt;ul&gt;
+   &lt;li&gt;Home&lt;/li&gt;
+   &lt;li&gt;Blog&lt;/li&gt;
+   &lt;li&gt;Impressum&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/nav&gt;
+&lt;/div&gt;
+&lt;div&gt;
+ &lt;h1&gt;Home&lt;/h1&gt;
+ &lt;p&gt;Text and &lt;code style="background-  
+ color:red;"&gt; other (grouped content)&lt;/code&gt;,
+ which can be formatted.&lt;/p&gt; 
+&lt;/div&gt; 
+						</code></pre>
+					</div>
+				</div>
+				<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_blocks.asp"><small><i class="fa fa-book"> HTML Blocks</i></small></a>
+							</div>
+							
+							<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/jzbwmLxx/"><small><i class="fa fa-jsfiddle"> View example on fiddle </i></small></a>
+							</div>
+						</div>	
+		</section>  
+
+		<section id="B2_Layouting"  data-background="#fff" class="container">
+				<h2>Layouting: Block Level Elements</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<ul>
+							<li><b>Block level</b> elements (like <code>&lt;div&gt;, &lt;article&gt;, &lt;h1&gt;</code>, ...)
+								<ul>
+									<li>Can be used for layout</li>
+									<li>are aligned by CSS</li>
+									<li>Blocks comprise the whole content and provoke a gap</li>
+								</ul>
+						</ul>
+					</div>
+	   				<div class="col-xs-6">
+							<img src="./images/B2Layouting.png"><br>
+							<a target="_blank"  href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_divs"><small><i class="fa fa-laptop"> Show (w3schools)</i></small></a>
+					</div>
+				</div>
+				<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://w3schools.com/html/html_layout.asp"><small><i class="fa fa-book"> HTML Layout</i></small></a>
+							</div>
+							
+							<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/k3t2obug/"><small><i class="fa fa-jsfiddle"> Example 1 on fiddle </i></small></a>
+							</div>
+							<div class="col-xs-4 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/k3t2obug/2/"><small><i class="fa fa-jsfiddle"> Example 2 on fiddle </i></small></a>
+							</div>
+						</div>	
+		</section> 
+	</section>
+
+<!--	#							#
+	 	#							#
+	 	#    B3 Content:  	    	#
+	 	# TEXTLEVEL SEMANTICS		#
+	 	#			    	#	-->
+
+
+	<section>
+		<section id="B3_TextlevelSemantics" >
+						<h2>B3</h2>
+						<h2>Content</h2>
+						<h3>TEXTLEVEL SEMANTICS</h3>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section> 
+
+		<section id="B2_Textformatting" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+				<h2>Textformatting</h2>
+				<div class="row">
+					<div class="col-xs-6 ">
+						<ul>
+							<li>Formatting output (Inline): words, expressions, sentences, etc.</li>
+							<li>Bold <code>&lt;b&gt;</code>, italic <code>&lt;i&gt;</code>, quotation <code>&lt;q&gt;</code>, etc.</li>
+							<li>List item <code>&lt;li&gt;</code></li>
+							<li><b>Inline</b> level: in the text flow,without a line break.</li>
+						</ul>
+					</div>
+	   				<div class="col-xs-6">
+							<pre><code>
+&lt;p&gt;Die Sprache heißt &lt;b&gt;&lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/b&gt;. Sie ist &lt;em&gt;nicht&lt;/em&gt; zum Formatieren gedacht, mit dem Titel &lt;cite&gt;Information Management: A Proposal&lt;/cite&gt; vom &lt;time datetime="1989-03-13"&gt;13. März 1989&lt;/time&gt;stellte &lt;a href="http://www.w3.org/People/Berners-Lee/"&gt;Tim Berners-Lee&lt;/a&gt; wichtige Thesen auf, die maßgeblich zur Entwicklung von HTML beitrugen. In dem Dokument heißt es unter anderem: &lt;q cite="http://www.w3.org/History/1989/proposal.html"&gt;The system must allow any sort of information to be entered. Another person must be able to find the information, sometimes without knowing what he is looking for.&lt;/q&gt;&lt;/p&gt;
+							</code></pre>
+					</div>
+				</div>
+				<div class="row">
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_formatting.asp"><small><i class="fa fa-book"> HTML Formatting Tags</i></small></a>
+							</div>
+							
+							<div class="col-xs-8 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/bmoyzcqv/"><small><i class="fa fa-jsfiddle"> View example on fiddle </i></small></a>
+							</div>
+						</div>	
+		</section>
+
+		<section id="B3_Quiz" class="container">
+			<h2>A2/3</h2>
+			<h2>Quiz</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<a target="_blank" href="http://b.socrative.com/login/student/"><i class="fa fa-external-link"> socrative.com</i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Room: IPP</p>
+					</div>
+				</div>
+		</section>
+
+		<section id="B3_WeatherApp" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 4:</b></p>
+			<p>Weather App Structure</p>
+		</section>
+
+	</section>
+
+<!--	#							#
+	 	#							#
+	 	#    B4 Hyperlinks 		  	#
+	 	# 							#
+	 	#			    			#	-->
+
+
+	<section>
+		<section id="B4_Hyperlinks" >
+						<h2>B4</h2>
+						<h2>Hyperlinks</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section> 
+
+		<section id="B4_Hyperlinks" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+				<h2>Hyperlinks</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li>are references for structuring HTML document(s)</li>
+							<li>Click link <i class="fa fa-long-arrow-right"></i> jump to another document! <br>
+								<b>Interaction:</b> load different HTML pages</li>
+						</ul><br>
+						<pre><code>&lt;a href="destination.html"&gt;Link text&lt;/a&gt;</code></pre><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+					 <img src="./images/B4hyperlinks.png">
+					</div>
+				</div>	
+		</section>
+
+		<section id="B4_href" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+				<h2>Href: Target URL</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li>Relative
+								<ul>
+									<li>Same Directory
+									<pre><code>&lt;a href="menu-playback.html"&gt;&lt;/a&gt;</code></pre>
+									</li>
+									<li>Subfolder
+									<pre><code>&lt;a href=“musicplayer/menus/menu-main.html"&gt;&lt;/a&gt;</code></pre>
+									</li>
+									<li>Parent Directory
+									<pre><code>&lt;a href="../version1.html"&gt;&lt;/a&gt;</code></pre>
+									</li>
+								</ul>
+							</li>
+							<li>External Link
+								<pre><code>&lt;a href="www.google.de/index.html"&gt;&lt;/a&gt;</code></pre>
+							</li>
+							<li>Absolute Link <br>
+								<span><small>DON'T USE: will not work on other PC</small></span>
+								<pre><code>&lt;a href="c:\IPP\start.html"&gt;&lt;/a&gt;</code></pre>
+							</li>
+						</ul>
+					</div>
+				</div>	
+		</section>
+
+		<section id="B3_hrefExample"  data-background="#fff"  class="container">
+				<h2>Example</h2>
+				<div class="row">
+					<div class="col-xs-6">
+					one.html
+							<pre><code>&lt;p&gt;
+Your options:
+go to
+&lt;a href="two.html"&gt;page &lt;b&gt;two&lt;/b&gt;&lt;/a&gt;,
+go to
+&lt;a href="#tips"&gt;tips (on this page)&lt;/a&gt;,
+a &lt;a href="subfolder/three.html"&gt;document
+in a subfolder&lt;/a&gt;,
+or &lt;a href="http://www.google.de"&gt;
+Google&lt;/a&gt;
+&lt;/p&gt;
+&lt;p style="margin-top:1000px;"&gt;&lt;/p&gt;
+&lt;a id="tips"&gt;&lt;h1&gt;Useful tips&lt;/h1&gt;&lt;/a&gt;
+&lt;p&gt;Some tips...&lt;/p&gt;</code></pre>
+					</div>
+					<div class="col-xs-6">
+					two.html
+							<pre><code>&lt;p&gt;
+Your options:
+Back to &lt;a href="one.html"&gt;page
+&lt;b&gt;one&lt;/b&gt;&lt;/a&gt;,
+or go to &lt;a href="one.html#tips"&gt; tips (on
+the other page)&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+					</div>
+				</div>
+				<div class="row">
+							<div class="col-xs-4 exlink ">
+									<a target="_blank"  href="examples/B4-one.html"><small><i class="fa fa-laptop"> Show example</i></small></a>
+							</div>
+							
+							<div class="col-xs-4 exlink important">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_links.asp"><small><i class="fa fa-book"> HTML Links</i></small></a>
+							</div>
+						</div>	
+		</section>  
+
+		<section id="B3_hLinksAndLists"  data-background="#fff"  class="container">
+				<h2>Navigation: Links & Lists</h2>
+				<div class="row">
+					<div class="col-xs-8">
+							<pre><code>&lt;nav&gt;
+ &lt;ul&gt;
+  &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="products.html"&gt;Products&lt;/a&gt;
+   &lt;ul&gt;
+     &lt;li&gt;
+      &lt;a href="products/product1.html"&gt;Product 1&lt;/a&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+      &lt;a href="products/product2.html"&gt;Product 2&lt;/a&gt;
+     &lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href="impressum.html"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+					</div>
+					<div class="col-xs-4">
+					<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a>
+<ul>
+<li>
+<a href="products/product1.html">Product 1</a>
+</li>
+<li>
+<a href="products/product2.html">Product 2</a>
+</li>
+</ul>
+</li>
+<li><a href="impressum.html">Impressum</a></li>
+</ul>
+					</div>
+				</div>
+		</section>  
+
+		<section id="B4_WeatherApp" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 5:</b></p>
+			<p>Hyperlinks Between Main and Details View</p>
+		</section>
+
+	</section>
+
+<!--	#							#
+	 	#							#
+	 	#    B5 Graphics 		  	#
+	 	# 							#
+	 	#			    			#	-->
+
+
+	<section>
+		<section id="B5_Graphics" >
+						<h2>B5</h2>
+						<h2>Graphics</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section> 
+
+		<section id="B5_Vectors" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+				<h2>Vectors and Pixels</h2>
+				<div class="row">
+					<div class="col-xs-4">
+						<h6>Vector graphics</h6>
+						<ul>
+							<li>Geometric construction</li>
+							<li>Lines & curves</li>
+							<li>Detailed image</li>
+							<li>Scalable</li>
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/VectorBitmapExample.svg/438px-VectorBitmapExample.svg.png">
+					</div>
+					<div class="col-xs-4">
+					<h6>Bitmap graphics</h6>
+						<ul>
+							<li>Rasterized image</li>
+							<li>Dots</li>
+							<li>Realistic image</li>
+							<li>Big file size</li>
+						</ul>
+					</div>
+				</div>
+		</section>
+
+		<section id="B5_pixelgraphics" data-background="#fff"  class="container">
+				<h2>Vectors and Pixels</h2>
+				<div class="row">
+					<div class="col-xs-6">
+						<ul>
+							<li><b>Pixel</b> graphics can be embedded in HTML
+								<ul>
+									<li>Format .jpg, .gif, .png</li>
+									<li>Referenced like HREF</li>
+								</ul>
+							</li>
+							<li><b>Vector</b> graphics (.svg) as well (later in chapter I - Drawing)</li>
+							<li>Detailed image</li>
+							<li>Scalable</li>
+						</ul>
+					</div>
+					<div class="col-xs-6">
+						<pre><code>&lt;p&gt;Images are inline elements
+  &lt;img src="lfe-sw.png"
+   alt="Institute of Ergonomics"&gt;
+  &lt;img src=“x.jpg“&gt;
+ and thus follow the text
+ flow.&lt;/p&gt;</code></pre>
+					</div><br>
+<p class="text-left .exampleOutput">Images are inline elements
+<img src="./images/lfe-sw.jpg"
+alt="Institute of Ergonomics">
+<img src="./images/x.png">
+and thus follow the text
+flow.</p>
+				</div>
+				<div class="row">
+							<div class="col-xs-6 exlink important ">
+									<a target="_blank"  href="http://www.w3schools.com/html/html_images.asp"><small><i class="fa fa-book"> HTML Images</i></small></a>
+							</div>
+							
+							<div class="col-xs-6 exlink fiddle">
+									<a target="_blank"  href="http://jsfiddle.net/InteractionPrototyping/guzvxxjf/"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+							</div>
+					</div>	
+		</section>
+
+		<section id="B5_WeatherApp" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 6:</b></p>
+			<p>Images</p>
+		</section>
+
+	</section>
+
+<!--	#							#
+	 	#							#
+	 	#    B6 tables 		 	 	#
+	 	# 							#
+	 	#			    			#	-->
+
+
+	<section>
+		<section id="B6_Tables" >
+						<h2>B6</h2>
+						<h2>Tables</h2>
+						
+						<br>
+						<a target="_blank" href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section> 		
+
+		<section id="B6_tables" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+				<h2>Tables</h2>
+				<div class="row">
+					<div class="col-xs-8">	
+						<ul>
+							<li>Table defined with <code>&lt;table&gt;</code>
+								<ul>
+									<li>divided into table rows <code>&lt;tr&gt;</code>
+										<ul>
+											<li>divided into table data cells <code>&lt;tr&gt;</code>
+												<ul>
+													<li>Can contain text, <code>&lt;a&gt;</code>,<code>&lt;img&gt;</code>,<code>&lt;ul&gt;</code>,other<code>&lt;table&gt;</code></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<pre><code>&lt;table border="1"&gt;
+ &lt;tr&gt;
+  &lt;td&gt;row 1, cell 1&lt;/td&gt;
+  &lt;td&gt;row 1, cell 2&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;row 2, cell 1&lt;/td&gt;
+  &lt;td&gt;row 2, cell 2&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<table border="1"> <tr>
+  <td><small>
+  	row 1, cell 1</small></td>
+  <td><small>
+  	row 1, cell 2</small></td>
+ </tr>
+ <tr>
+  <td><small>
+  	row 2, cell 1</small></td>
+  <td><small>
+  	row 2, cell 2</small></td>
+	</tr></small>
+</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4 exlink important ">
+									<a target="_blank"  href="http://w3schools.com/html/html_tables.asp"><small><i class="fa fa-book"> HTML Tables</i></small></a>
+					</div>
+				</div>
+		</section>
+
+
+	<section id="B6_Quiz" class="container">
+						<h2>B4/5/6</h2>
+						<h2>Quiz</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<a target="_blank" href="http://b.socrative.com/login/student/"><i class="fa fa-external-link"> socrative.com</i></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p>Room: IPP</p>
+							</div>
+						</div>
+	</section>
+
+	<section id="B6_WeatherApp" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 7:</b></p>
+			<p>Tables</p>
+	</section>
+
+	</section>
+
+	<section id="B_Checkout" class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<a target="_blank" href="http://b.socrative.com/login/student/"><i class="fa fa-external-link"> socrative.com</i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p><small>Room: IPP</small></p>
+					</div>
+				</div>
+
+			<h2>Checkout</h2>
+			<div class="row">
+					<div class="col-xs-12">
+						<ol>
+							<li>How well did you understand today‘s material?</li>
+							<li>What did you learn in today‘s class?</li>
+							<li>Is socrative helpful?</li>
+						</ol>
+					</div>
+				</div>
+				
+	</section>
+
+
+
+	<section style="text-align: left;">
+			<h1>THE END</h1>
+	</section>
+
+</div>
+</div>
+</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

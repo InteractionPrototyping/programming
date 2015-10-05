@@ -1,0 +1,169 @@
+/*Given*/
+html, body {
+    /*Prepare for absolute layout*/
+    height:100%;
+}
+
+/*Given*/
+html, body, div, nav, p, h1 {
+    /*Global font*/
+    font-size: 24px;
+    line-height:24px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    
+    /*Reset document-wide margins and paddings*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Given*/
+.button, .output {
+    display:inline-block;
+    padding:12px;
+    height:24px;
+    min-width:24px;
+    background: white;
+    color:#286460;
+}
+
+/*your CSS classes go here...*/
+
+/* REQ 9: select both title and checkout section */
+header, footer {
+    width:100%;                                             /* full screen width */
+    height:72px;                                            /* 72 pixels high */
+    
+    text-align:center;                                      /* centered text */
+    
+    z-index:99;                                             /* REQ 10: layered in front of other elements*/
+    
+    background-image:url("images/coffee-beans.jpg");        /* REQ 11: image “coffee-beans.jpg” in the folder “images” is used as a background */
+    background-size: 100% auto;                             /* REQ 11: background image is scaled to be fully displayed in its width */
+}
+
+/* REQ 10 + 11: title and checkout */
+header {
+    position:fixed;                                         /* do not move while scrolling */
+    top:0px;                                                /* title on top */
+    border-bottom:1px solid #643C28;                        /* below the title is a “dark café brown” 1 pixel thick line */
+    background-position:center center;                      /* title displays mainly the textile and spoon part of the image */
+}
+footer {
+    position:fixed;                                         /* do not move while scrolling */
+    bottom:0px;                                             /* checkout at the bottom */
+    border-top:1px solid #643C28;                           /* above the checkout is a “dark café brown” 1 pixel thick line */
+    background-position:center bottom;                      /* checkout displays mainly coffee beans. */
+    padding-top:12px;                                       /* REQ 12: move the checkout's contents down by 12 pixels*/
+}
+
+/* REQ 12 */
+header h1 {
+    margin-top:24px;                                        /* move the "coffee app" headline down by 24 pixel */
+}
+
+/* REQ 13 */
+#trigger {
+    position:fixed;                                         /* place the trigger element to be fixed */
+    margin:12px;                                            /* centre it in front of the left part of the title */
+    z-index:101;                                            /* bring it above all other layers */
+}
+
+/* REQ 14: style all buttons and outputs */
+.button, .output {
+    font-weight:bold;                                       /* text is bold */
+    border: 1px solid #23B0A7;                              /* border is "light café turquoise" */
+    border-radius:6px;                                      /* border is rounded */
+}
+/* REQ 15: style all buttons */
+.button {
+    background: linear-gradient(#23B0A7,#286460);           /* background is a gradient from light to dark "café turquoise" */
+    color:white;                                            /* text and icons are coloured white */
+    text-shadow:0px 0px 10px black;                         /* there is a black shadow centred behind the text, it blurs for 10 pixels */
+}
+
+/* REQ 16: modify content container */
+#content {
+    padding:72px 0;                                         /* inner distance: contained items are never hidden by the title and checkout bars on top and bottom, as they are 72px high to (see 9) */
+}
+
+/* REQ 17: modify the item box */
+.item {
+    height: 96px;                                           /* height: 96 pixel */
+    border-bottom:1px solid #B05E35;                        /* solid line below in "light café brown" */
+}
+
+/* REQ 18: align all elements in the item box according to a 24 px raster */
+.item * {
+    position: absolute;                                     /* directly place all elements */
+    margin: 24px;                                           /* 1 unit margin around all elements */
+}
+.item img {                                                 /* automatically leftmost position */
+    height: 48px;                                           /* 2 units high */
+    background-color:#B05E35;                               /* background is "light café brown" */
+    border:1px solid #643C28;                               /* border is "dark café brown" */
+    border-radius:24px;                                     /* image is placed in a circle frame */
+}
+.item .name {
+    left:72px;                                              /* left orientation, 3 units */
+    font-weight:bold;                                       /* product name is bold */
+}
+.item .price {
+    left:72px;                                              /* left orientation, 3 units */
+    margin-top:48px;                                        /* 2 units spacing from top */
+}
+.item .remove {
+    right:96px;                                             /* right orientation, 4 units */
+}
+.item .count {
+    right:48px;                                             /* right orientation, 2 units */
+    text-align:center;                                      /* count is centered */
+    margin-top:36px;                                        /* 1.5 units from top; v-centered */
+    width:48px;                                             /* 2 units wide */
+}
+.item .add {
+    right:0px;                                              /* right orientation, 0 units*/
+    margin:24px;                                            /* 1 unit margin all sides */
+}
+
+/* REQ 19: format the menu */
+#menu {
+    position:fixed;                                         /* relative to screen */
+    top:0;                                                  /* starts on top of the screen */
+    height:100%;                                            /* full height */
+    width:70%;                                              /* fills the left part (70%) of the screen */
+    
+    z-index:99;                                             /* placed in front of all other elements, but behind the trigger */
+    
+    background-color:white;                                 /* white background... */
+    opacity:0.95;                                           /* ...which has a transparency of 5% */
+    
+    border-right:1px solid #286460;                         /* right border is "dark café turquoise" */
+    box-shadow:10px 0px 5px rgba(35,176,167,0.5);           /* "light café turquoise" shadow, which is 50% transparent on the right side*/
+    
+    padding: 12px;                                          /* always 12 px padding... */
+    padding-top:96px;                                       /* ...but 96 on top */
+    
+    /*REQ 21 */
+    display:none;                                           /* initially do not display the menu */
+}
+
+/* REQ 20: menu entries */
+#menu ul {
+    list-style-type:none;                                   /* remove the bullet points... */
+    padding:0;                                              /* ...and the list indentation */
+}
+
+#menu ul li {
+    text-transform:uppercase;                               /* text is written in capital letters */
+    color: #286460;                                         /* text is "dark café turquoise" */
+    margin: 24px 0;                                         /* distance between menu entries */
+}
+
+#menu ul li:first-child {
+    background-color: #286460;                              /* first list element is inverted */
+    color:white;                                            /* -"- */
+}
+
+#menu ul li i {                                             /* all fa images should have the same width */
+    width:32px;
+}

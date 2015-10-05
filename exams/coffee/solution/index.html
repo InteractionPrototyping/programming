@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Coffee App</title>
+
+    <!-- your layout and style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- special stylesheet for the icon font AwesomeFont (see http://fortawesome.github.io/Font-Awesome)-->
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!-- cool jQuery stuff -->
+    <script src="jquery/jquery-2.1.3.min.js"></script>
+
+    <!-- your interaction code -->
+    <script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+    <!-- REQ 1: structural generic element trigger with id--> 
+    <div id="trigger" class="button" onclick="toggleMenu();">
+        <!-- REQ 4: fa-bars -->
+        <i class="fa fa-bars fa-lg"></i>
+    </div>
+    
+    <!-- REQ 1: structural semantic element title with id -->
+    <header id="title">
+        <!-- REQ 2: coffee app headline -->
+        <h1>Coffee App</h1>
+    </header>
+    
+    <!-- REQ 1 structural generic element content with id -->
+    <div id="content">
+        <!-- REQ 5: one item for the drink information -->
+        <div class="item">
+            <!-- REQ 6: elements image, name, price, remove, count, and add.
+            classes are used for the elements because multiple of them will 
+            exist later on -->
+            <img alt="coffee" src="images/coffee.png">
+            <span class="name">Filter Coffee</span>
+            <span class="price">1,50 €</span>
+            <span class="remove button fa fa-minus"></span><!-- REQ 6: added class button-->
+            <span class="count">0</span>
+            <span class="add button fa fa-plus"></span><!-- REQ 6: added class button-->
+        </div>
+
+    </div>
+    <!-- REQ 1 structural semantic element checkout with id-->
+    <footer id="checkout">
+        <!-- REQ 3: element for credit -->
+        <div id="credit" class="output">
+            <!-- REQ 4: fa-money -->
+            <i class="fa fa-money"></i> 5.00 €
+        </div>
+        <!-- REQ 3: element for sum -->
+        <div id="sum" class="output"><!-- REQ 4: sigma-->Σ 0.00 €</div>
+        <!-- REQ 3: element for the order button --> 
+        <div class="button" onclick="order();">
+            <!-- REQ 4: fa-shopping-cart -->
+            <i class="fa fa-shopping-cart"></i> Order
+        </div>
+    </footer>
+    
+    <!-- REQ 7: menu on the same page -->
+    <div id="menu">
+        <!-- REQ 8: list of menu items with fa icons-->
+        <ul>
+            <li><i class="fa fa-shopping-cart"></i> Order</li>
+            <li><i class="fa fa-user"></i> Profile</li>
+            <li><i class="fa fa-history"></i> History</li>
+            <li><i class="fa fa-bar-chart"></i> Rank</li>
+        </ul>
+    </div>
+</body>
+
+</html>

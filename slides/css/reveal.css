@@ -101,7 +101,7 @@ body {
   visibility: visible; }
 
 .reveal .slides section .fragment.highlight-red.visible {
-  color: #ff2c2d; }
+  color: #ee762c; }
 
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e; }
@@ -246,7 +246,7 @@ body {
   position: fixed;
   display: block;
   right: 15px;
-  bottom: 15px;
+  bottom: 20px;
   opacity: 0.5;
   z-index: 31;
   font-size: 18px; }
@@ -660,7 +660,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: #0f3750;
   visibility: hidden;
   opacity: 0;
   z-index: 100;
@@ -728,7 +728,7 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0f3750;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -965,7 +965,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
+  background: #0f3750;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;

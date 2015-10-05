@@ -18,7 +18,6 @@
     <!-- JavaScript -->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-
 <body>
     <div id="wrapper">
         <!-- Loading Overlay Start -->
@@ -36,7 +35,7 @@
         <!-- Sidebar Overlay End -->
         
         <!-- SideBar Start -->
-        <section id="sidebar" class="text-white">
+        <nav id="sidebar" class="text-white">
             <!-- SideBar Header Start -->
             <div id="sidebar-header" class="header topbar">
                 <button id="close-sidebar" class="btn-square pull-right sidebar-control">
@@ -51,7 +50,7 @@
 
                 <h2><i class="fa fa-globe"></i>Cities</h2>
                 <ul id="citylist"></ul>
-                <input type="text" id="city-input" name="city" />
+                <input type="text" id="city-input" name="city" placeholder="New city" />
                 <button id="city-add" class="btn-square">
                     <i class="fa fa-plus"></i>
                 </button>
@@ -70,20 +69,20 @@
                         <span class="label pull-left">Wind</span>
                         <span class="toggle pull-left">
                             <button class="btn-square pull-left active" onclick="changeWindUnit('k')">km/h</button>
-                            <button class="btn-square pull-left" onclick="changeWindUnit('m')">m/h</button>
+                            <button class="btn-square pull-left" onclick="changeWindUnit('m')">m/s</button>
                         </span>
                         <span class="clear"></span>
                     </li>
                 </ul>
             </div>
             <!-- SideBar Content End -->
-        </section>
+        </nav>
         <!-- SideBar End -->
         
         <!-- MainView Start -->
         <section id="mainview">
             <!-- MainView Header Start -->
-            <div id="mainview-header" class="header topbar text-white">
+            <header id="mainview-header" class="header topbar text-white">
                 <button id="open-sidebar" class="btn-square pull-left sidebar-control">
                     <span></span>
                     <span></span>
@@ -94,7 +93,7 @@
                 </button>
                 <h1 id="city" class="pull-left text-center city">Berlin</h1>
                 <div class="clear"></div>
-            </div>
+            </header>
             <!-- MainView Header End -->
             
             <!-- MainView DatePicker Start -->
@@ -134,9 +133,9 @@
             <!-- MainView Content End -->
             
             <!-- MainView Footer Start -->
-            <div id="footer">
-                <button id="detailsbutton" class="btn-wide detail-control">Details</button>
-            </div>
+            <footer id="footer">
+                <button class="btn-wide detail-control">Details</button>
+            </footer>
             <!-- MainView Footer Start -->
         </section>
         <!-- MainView End -->
@@ -144,14 +143,14 @@
         <!-- DetailsView Start -->
         <section id="detailview">
             <!-- DetailsView Header Start -->
-            <div id="detailview-header" class="header topbar">
+            <header id="detailview-header" class="header topbar">
                 <h1 id="detailview-city" class="pull-left text-center city">Berlin</h1>
                 <button id="close-detailview" class="btn-square pull-right" onclick="toggleDetails()">
                     <span></span>
                     <span></span>
                 </button>
                 <div class="clear"></div>
-            </div>
+            </header>
             <!-- DetailsView Header End -->
             
             <!-- DetailsView Content Start -->

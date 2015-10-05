@@ -49,7 +49,7 @@ var colorCodes = [
         code: '#e05111'
     },
 ];
-// current Color Sheme
+// current Color Scheme
 var activeColor = colorCodes[0];
 
 // Executed right after the HTML is loaded completly
@@ -88,12 +88,8 @@ $(function () {
         stop: function () {
             var newPositions = $(this).sortable('toArray');
             console.log('Cities sorted. New order: ', newPositions);
-            // Update cities array with new order
-            cities = updateArraySorting(cities, newPositions);
-            console.log('City array recreated', cities);
         }
     });
-
 
 	/**
 	 * Returns a newArray containing the elements of oldArray sorted by newPositions
@@ -273,7 +269,7 @@ function updateWeatherMainHTML() {
         document.getElementById('temperature').innerHTML = convertTemperature(weather.daily.data[currentDay].temperatureMax, tempUnit);
         document.getElementById('winddisplay').innerHTML = convertWindspeed(weather.daily.data[currentDay].windSpeed, windUnit);
         document.getElementById('humiditydisplay').innerHTML = convertHumidity(weather.daily.data[currentDay].humidity);
-        updateColorSheme(weather.daily.data[currentDay].temperatureMax);
+        updateColorScheme(weather.daily.data[currentDay].temperatureMax);
 
     } else {
         document.getElementById('iconimage').src = '';
@@ -281,7 +277,7 @@ function updateWeatherMainHTML() {
         document.getElementById('temperature').innerHTML = '';
         document.getElementById('winddisplay').innerHTML = '';
         document.getElementById('humiditydisplay').innerHTML = '';
-        updateColorSheme(0);
+        updateColorScheme(0);
     }
     
     console.log('Function: updateWeatherMainHTML()');
@@ -352,9 +348,9 @@ function updateWeatherDetailHTML() {
     console.log('Function: updateWeatherDetailHTML()');
 }
 
-/**     Function to change the Color Sheme
+/**     Function to change the Color Scheme
  */
-function updateColorSheme(temp) {
+function updateColorScheme(temp) {
     // distinguish between temperatures in F
     if (parseInt(temp) <= 68) {
         activeColor = colorCodes[0];
@@ -411,7 +407,7 @@ function convertWindspeed(wind, unit) {
     if (unit === 'k') {
         convertedWind = Math.round(wind * 1.6) + ' km/h';
     } else if (unit === 'm') {
-        convertedWind = Math.round(wind) + ' m/h';
+        convertedWind = Math.round(wind) + ' m/s';
     }
     return convertedWind;
 }
@@ -455,7 +451,7 @@ function showCityList() {
         // Append item to city list
         cityItem.appendTo(citylist);
 
-        // Install click listener with custom jQuery function
+        // Install click listener with custom jQuery plugin
         cityItem.setCityClickable();
     });
 }
@@ -560,8 +556,6 @@ function addCity(city) {
     cityItem.setCityClickable();
 }
 
-
-
 /**
  * Returns a newArray containing the elements of oldArray sorted by newPositions
  *
@@ -593,7 +587,6 @@ function updateArraySorting(oldArray, newPositions) {
                 activeCity = cities[$(this).attr('id')];
                 console.log('New active city: ', activeCity);
                 getApiData(activeCity.location.lat, activeCity.location.lng);
-
                 toggleSidebar();
             });
         }

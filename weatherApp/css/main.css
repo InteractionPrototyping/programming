@@ -109,6 +109,7 @@ input[type=text] {
 
 #sidebar {
     width: 70%;
+    height: 100%;
     position: relative;
     background-color: #333333;
     left: -70%;
@@ -271,6 +272,8 @@ h1.city {
     left: 0;
     right: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
 }
 /* ------- detailview start ------- */

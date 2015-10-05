@@ -351,7 +351,9 @@ PREPARATION
     <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
 
     <h3>Validate your HTML</h3>
-    <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If there are any errors,
+
+    <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If
+        there are any errors,
         please correct them. Repeat this process until there are only warnings and no more errors.</p>
 
     <h2>C Forms</h2>
@@ -390,7 +392,7 @@ PREPARATION
         </li>
     </ul>
 
-    <h3>Layout your Views (D3)</h3>
+    <h3>Layout your Views (D2/D3)</h3>
     <h4>Main view</h4>
     <ul>
         <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd>
@@ -415,9 +417,7 @@ PREPARATION
         </li>
         <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
         <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
-
     </ul>
-
     <h4>Sidebar</h4>
     <ul>
         <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
@@ -426,49 +426,70 @@ PREPARATION
     <h3>Add style information (D4)</h3>
     <h4>MainView</h4>
     <ul>
-        <li>Add a dark, half-transparent background to your button <code>class</code>, main-view-datepicker and main-view-footer.</li>
-        <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user interaction.</li>
-        <li>Use font properties to style <code>color</code>code> and <code>font-size</code> of the icons and appearance of headlines.</li>
+        <li>Add a dark, half-transparent background to your button <code>class</code>, main-view-datepicker and
+            main-view-footer.
+        </li>
+        <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user
+            interaction.
+        </li>
+        <li>Use font properties to style <code>color</code>code> and <code>font-size</code> of the icons and appearance
+            of headlines.
+        </li>
         <li>Use padding & margin to set enough space between the elements.</li>
     </ul>
     <h4>DetailView</h4>
     <ul>
-        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter background-color to even rows.</li>
-        <li>If the button classes where applied correctly in the HTML part, the close button and header should be already styled.</li>
+        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter
+            background-color to even rows.
+        </li>
+        <li>If the button classes where applied correctly in the HTML part, the close button and header should be
+            already styled.
+        </li>
     </ul>
     <h4>Sidebar</h4>
     <ul>
         <li>Edit the color and size of the headlines and icons.</li>
         <li>Style the lists with margins, paddings and borders.</li>
-        <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already styled. Create an active <code>class</code> to highlight currently selected buttons.</li>
-        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.</li>
+        <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already
+            styled. Create an active <code>class</code> to highlight currently selected buttons.
+        </li>
+        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img
+            folder.
+        </li>
     </ul>
 
     <h4>Final positioning</h4>
-    This step hides all sections except the <kbd>main-view</kbd>. Make sure that all CSS Styling is completed before you proceed.
+    This step hides all sections except the <kbd>main-view</kbd>. Make sure that all CSS Styling is completed before you
+    proceed.
     <ul>
         <li>Use absolute positioning for all sections and overlays:</li>
-            <ul>
-                <li>loading overlay: top 0 left 0</li>
-                <li>main-view: top 0 left 0</li>
-                <li>detail-view: top 100% left 0</li>
-                <li>sidebar: top: 0 left -70%</li>
-                <li>sidebar fade overlay: top 0 left 0</li>
-            </ul>
+        <ul>
+            <li>loading overlay: top 0 left 0</li>
+            <li>main-view: top 0 left 0</li>
+            <li>detail-view: top 100% left 0</li>
+            <li>sidebar: top: 0 left -70%</li>
+            <li>sidebar fade overlay: top 0 left 0</li>
+        </ul>
         <li>Use z-indices to arrange all sections.</li>
         <li>Hide all overlays with display property.</li>
     </ul>
     <h3>CSS Effects (D5)</h3>
     <ul>
-        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the <kbd>sidebar-fade-overlay</kbd> and add a dark
-            half-transparent background-color. </li>
+        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
+            <kbd>sidebar-fade-overlay</kbd> and add a dark
+            half-transparent background-color.
+        </li>
         <li>Create a half-transparent background gradient for the table.</li>
         <li>Add shadow to your <code>button</code>code> style</li>
     </ul>
     <h3>CSS Transform & Transitions (D6)</h3>
     <ul>
-        <li>Provide a background-color transition for the main-view element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.</li>
-        <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to build an X-icon for the <kbd>close-sidebar</kbd> button </li>
+        <li>Provide a background-color transition for the main-view element when the color is changed. Test the
+            transition with your browser developer tools by changing the background-color manually.
+        </li>
+        <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to
+            build an X-icon for the <kbd>close-sidebar</kbd> button
+        </li>
     </ul>
     <h1>E: Frameworks</h1>
 
@@ -490,8 +511,13 @@ PREPARATION
     <ol class="todo">
         <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
         <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
-        <li>Add an <code>onclick</code> event handler to each your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>. The function modifies the <code>style.left</code> property in order to show / hide the sidebar.</li>
-        <li>ChangeCurrentDay() – Javascript Logik, DateStrings</li>
+        <li>Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>.
+            The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
+        </li>
+        <li>Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd> and <kbd>close-details</kbd>.
+            The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
+        </li>
+        <li>ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn sinnvoll</li>
         <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
         <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
         <li>getAPIData() – jQuery, getJSON</li>

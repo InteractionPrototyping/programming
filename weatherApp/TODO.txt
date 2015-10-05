@@ -1,3 +1,8 @@
 Add JS exercises
 Add exercise to rebuild everything from vanilla to jQuery (use existing toggle functions)
 Verlinke Aufgaben und Kapitel
+Final positioning als eigene Aufgabe -> Aufgabe eher inhaltlich formulieren, weniger programmiertechnisch
+Fade-Overlay
+Einblenden erst mit display block/none, danach mit Top/Left
+Spinner von Font-Awesome, rotate klasse oder mit CSS Animation
+Framework-Aufgaben: Font Awesome, jQM, Bootstrap table

@@ -70,12 +70,14 @@ $(function () {
 	document.getElementById('close-sidebar').onclick = function () {
 		console.log('clicked sidebar');
 		document.getElementById('sidebar').style.left = "-70%";
+		// Later use: toggleSidebar();
 	};
 
-
+	// Open sidebar
 	document.getElementById('open-sidebar').onclick = function () {
 		console.log('clicked sidebar');
 		document.getElementById('sidebar').style.left = "0";
+		// Later use: toggleSidebar();
 	};
 
 	document.getElementById('footer').firstChild.onclick = function () {
@@ -198,6 +200,18 @@ function changeCurrentDay(delta) {
         updateWeatherMainHTML();
         updateWeatherDetailHTML();
     }
+
+	// Hide arrows at beginning and end
+	if (currentDay == 0)  {
+
+	}
+
+	// Hide details button for > 2 days in the future (only day 0, day 1 have detailed data)
+	if (currentDay > 1) {
+		document.getElementById('footer').style.display = "none";
+	} else {
+		document.getElementById('footer').style.display = "block";
+	}
 
     console.log('Function: changeCurrentDay()');
 }

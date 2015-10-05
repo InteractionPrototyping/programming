@@ -1,2 +1,3 @@
 Add JS exercises
-Add exercise to rebuild everything in JS
+Add exercise to rebuild everything from vanilla to jQuery (use existing toggle functions)
+Verlinke Aufgaben und Kapitel

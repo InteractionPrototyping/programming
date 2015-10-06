@@ -1,6 +1,6 @@
 Add JS exercises
 Add exercise to rebuild everything from vanilla to jQuery (use existing toggle functions)
-Verlinke Aufgaben und Kapitel
+Verlinke Aufgaben und Kapitel (Aufgaben IDs vergeben!)
 Final positioning als eigene Aufgabe -> Aufgabe eher inhaltlich formulieren, weniger programmiertechnisch
 Fade-Overlay
 Einblenden erst mit display block/none, danach mit Top/Left

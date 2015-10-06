@@ -69,15 +69,19 @@ $(function () {
 	// Close sidebar
 	document.getElementById('close-sidebar').onclick = function () {
 		console.log('clicked sidebar');
-		document.getElementById('sidebar').style.left = "-70%";
+		// Klassisches JS
+		//document.getElementById('sidebar').style.left = "-70%";
 		// Later use: toggleSidebar();
+		toggleSidebar();
 	};
 
 	// Open sidebar
 	document.getElementById('open-sidebar').onclick = function () {
-		console.log('clicked sidebar');
-		document.getElementById('sidebar').style.left = "0";
-		// Later use: toggleSidebar();
+		//console.log('clicked sidebar');
+		// Klassisches JS
+		// document.getElementById('sidebar').style.left = "0";
+		// jQuery
+		toggleSidebar();
 	};
 
 	  /* Event Handler that updates the currently order*/

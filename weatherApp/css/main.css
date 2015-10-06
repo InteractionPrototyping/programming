@@ -149,11 +149,13 @@ input[type=text] {
     color: #ffffff;
 }
 
-#citylist > li {
+#citylist > li.list-group-item {
     cursor: pointer;
+    background-color: #333333;
     background-repeat: no-repeat;
     background-position: 0px center;
     padding: 10px 0px 10px 15px;
+    border: 0px;
     border-bottom: 1px solid #555;
 }
 

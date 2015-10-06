@@ -559,8 +559,8 @@ PREPARATION
 
         <h3 id="JS-Test">First Steps (F0)</h3>
         <ul>
-            <li>Go to <code>body</code> and add an <code>onlick="alert('Hello World');"</code> attribute. Reload the page and your message will be displayed.</li>
-            <li>Remove the onclick attribute because it was just for testing purposes.</li>
+            <li>Go to <code>body</code> and add an <code>onload="alert('Hello World');"</code> attribute. Reload the page and your message will be displayed.</li>
+            <li>Remove the onload attribute</li>
             <li>Instead, add an <code>onclick</code> attribute</code> to <kbd>button-next-day</kbd></li>
             <li>Use <code>document.getElementById()</code> and the property <code>innerHTML</code> to change the temperature value. Be sure to use the ID of the corresponding <kbd>temperature</kbd> element.
             <li>Click <kbd>button-next-day</kbd> and the temperature value should change</li>
@@ -573,17 +573,46 @@ PREPARATION
 
         <h3 id="JS-Variables">Variables (F3)</h3>
         <ul>
-        <li>Initialize a variable <kbd>currentDay</kbd></li>
+            <li>Initialize a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
+            <li>Increase / decrease its value when the user changes the current day</li>
         </ul>
 
-        <h3 id="JS-Setup">Create an external JS script file</h3>
+        <h3 id="JS-Setup">External script file</h3>
         <ol>
             <li>Create a new file <kbd>interaction.js</kbd> in your app folder</li>
             <li>Include your JS code using the <code>script</code> tag</li>
         </ol>
-
-
-
+        <h3 id="JS-Functions">Functions (F4)</h3>
+        <ul>
+            <li>Write a function that converts windspeed from m/s to km/h</li>
+            <li>Add another function that converts temperature from Fahrenheit to Celsius</li>
+            <li>Create function for formatting humidity (from 0 to 1) as percentage (50%)</li>
+            <li>Debug your functions by calling them within the console: Just type the name of your function.</li>
+        </ul>
+        <h3 id="JS-Objects">Objects (F5)</h3>
+        <ul>
+            <li>Create a sample weather object</li>
+            <li>....</li>
+        </ul>
+        <h3 id="JS-Objects">Arrays (F6)</h3>
+        <ul>
+            <li>Create an array of weather objects</li>
+            <li>....</li>
+        </ul>
+        <p class="todo">Niklas Wetterobjekt hier einfügen</p>
+        <h3 id="JS-Control" class="todo">Control and conditionals (F7) (</h3>
+        <ul class="todo">
+            <li>changecurrentday logik</li>
+        </ul>
+            <h3 id="JS-Loops" class="todo">Loops (F8) (</h3>
+            <ul class="todo">
+                <li>UpdateWeatherDetailHTML</li>
+            </ul>
+        <h3 id="JS-DOM" class="todo">DOM (F9/10)</h3>
+        <ul class="todo">
+            <li>show hide loading overlay</li>
+            <li>UpdateColorScheme</li>
+        </ul>
     <p class="todo">Include the following</p>
     <ol class="todo">
         <h3 class="todo">UpdateWeatherMainHTML()- Javascript innerHTML, Objects</h3>

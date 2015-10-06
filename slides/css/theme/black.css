@@ -193,6 +193,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a, .reveal .adaption p, .reveal .literature {
+  font-family: inherit;
   font-size: 0.8em;
   color: #a1b11a;
   text-decoration: none;

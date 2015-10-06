@@ -1,5 +1,12 @@
-body {
-    padding-top: 50px;
+#container {
+    padding:0 15px;
+    position:fixed;
+    top:50px;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
 }
 /*headline*/
 

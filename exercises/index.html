@@ -200,7 +200,6 @@ INTRODUCTION
                 solution</a>.
             </li>
         </ul>
-        <p class="todo">Check links!</p>
         <!--
 PREPARATION
 -->
@@ -411,7 +410,7 @@ PREPARATION
     <ul>
         <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the
             <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height
-            <kbd>header</kbd>) and make it scrollable by using the property overflow.
+            <kbd>header</kbd>) and make it scrollable by using the property <code>overflow: auto</code>.
         </li>
         <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
         <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
@@ -487,12 +486,12 @@ PREPARATION
           }
 
           #detailview {
-              width: 100%;
-              height: 100%;
-              top: 100%;
-              left: 0;
-              z-index: 20;
-              position: absolute;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 20;
           }
 
           #sidebar {

@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+
     <script type="text/javascript">
         var year = (new Date()).getFullYear();
         var month = (new Date()).getMonth();
@@ -30,7 +35,6 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -206,7 +210,9 @@ PREPARATION
         <p class="well well-sm">Use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting
         up eduroam</a>!</p>
 
-        <h3>Environment for editing HTML</h3>
+
+    <h3 id="Environment">Environment for editing HTML</h3>
+
 
         <p><strong>Set up</strong> an environment for creating HTML documents on your computer.</p>
         <ul>
@@ -218,7 +224,9 @@ PREPARATION
         <p><b>Test</b> the live preview of Brackets. In case, you&rsquo;re experiencing problems, consider <a href="https://github.com/adobe/brackets/wiki/Troubleshooting#livedev">the Brackets livedev troubleshooting
         document</a>.</p>
 
-        <h3>Versioning control with GitHub</h3>
+
+    <h3 id="Github">Versioning control with GitHub</h3>
+
 
         <p><b>Create</b> a free account at <a href="https://github.com/join">GitHub</a>.</p>
 
@@ -230,14 +238,14 @@ PREPARATION
 
         <h2 id="B">B HTML5</h2>
 
-
-        <h3> Weather App Skeleton (B1) </h3>
+    <h3 id="Skeleton"> Weather App Skeleton (B1) </h3>
 
         <p><b>Ensure</b> that your <kbd>index.html</kbd> document has a proper HTML5 skeleton.</p>
 
         <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
 
-        <h3>Weather App Structure (B2/3)</h3>
+
+    <h3 id="Structure">Weather App Structure (B2/3)</h3>
 
         <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all areas/elements. Use one (or more) <code>class</code> attributes for all elements which have style properties in common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
         <ul>
@@ -270,14 +278,18 @@ PREPARATION
         <p>Inside the <kbd>sidebar</kbd>, create two <code>headlines</code> and two <code>unordered lists</code>, one for the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
 
 
-        <h3>Hyperlinks Between Main and Details View (B4)</h3>
+
+    <h3 id="Hyperlinks">Hyperlinks Between Main and Details View (B4)</h3>
+
 
         <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <kbd>detailview</kbd>
             <code>section</code>. This in turn should contain a <kbd>header</kbd> (with heading to display the selected city) and <kbd>content</kbd> area (leave this empty for now).</p>
 
         <p>Mutually <b>reference</b> the <kbd>index.html</kbd> and <kbd>details.html</kbd> pages, by adding hyperlinks to the &ldquo;details…&rdquo; (mainview) and &ldquo;X&rdquo; (detailview) text. Test the links.</p>
 
-        <h3> Images (B5)</h3>
+
+    <h3 id="Images"> Images (B5)</h3>
+
 
         <p><b>Download</b> those PNG images to a new subfolder <kbd>/img</kbd> in your project:</p>
 
@@ -318,27 +330,32 @@ PREPARATION
 
         <p><b>Add</b> one of the images to the <kbd>content</kbd> area of the <kbd>mainview</kbd></p>
 
-        <h3> Tables (B6)</h3>
+    <h3 id="Tables"> Tables (B6)</h3>
 
         <p><b>Create</b> a <code>table</code> inside the <kbd>content</kbd> area of the <kbd>detailview</kbd>. Provide columns for time, icon, temperature, wind speed and humidity. Insert four rows with dummy content.</p>
 
         <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
 
-        <h3>Validate your HTML</h3>
+    <h3 id="Validation">Validate your HTML</h3>
+
 
         <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If there are any errors, please correct them. Repeat this process until there are only warnings and no more errors.</p>
 
         <h2 id="C">C Forms</h2>
 
-        <h3>Buttons</h3>
+    <h3 id="Buttons">Buttons</h3>
 
         <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
 
-        <h3>Radio Buttons</h3>
+
+    <h3 id="Radiobuttons">Radio Buttons</h3>
+
 
         <p><b>Add</b> radio buttons for the unit (temperature, speed) selection in the <kbd>detailview</kbd> settings.</p>
 
-        <h3>Input</h3>
+
+    <h3 id="Inputs">Input</h3>
+
 
         <p>For adding new cities in the app, add an <code>input</code> field with a <code>placeholder</code> to the <kbd>sidebar</kbd>:
         </p>
@@ -350,158 +367,184 @@ PREPARATION
 
         <h2 id="D">D Style and Layout</h2>
 
-        <h3>Global Stylesheet (D1)</h3>
+    <h3 id="Stylesheet">Global Stylesheet (D1)</h3>
 
-        <p>Add the same external stylesheet <kbd>main.css</kbd> to all <kbd>.html</kbd> files. Always try to use appropriate CSS selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause disarrangement of your elements. If necessary, improve your html structure by adding new <code>class</code> or
-            <code>id</code> attributes. Apply the generic rule:</p>
-        <ul>
-            <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)
-            </li>
-            <li>Assign <code>classes</code> for elements, which are present multiple times (e.g. multiple rows of detail information, multiple buttons, …)
-            </li>
-        </ul>
-        <h3>Layout your Views (D2/D3)</h3>
-        <h4>Transform your app to into a single page application</h4>
-        <ul>
-            <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your <kbd>detailview</kbd> into your <kbd>index.html</kbd> just below <kbd>mainview</kbd>. Now <kbd>detailview</kbd> should overlap <kbd>mainview</kbd>.</li>
-            <li>
-                Use the <code>display</code> property for showing and hiding <kbd>sidebar</kbd> and <kbd>detailview</kbd>. Try the developer console to test very quickly: Add and change CSS properties directly in Chrome (Elements > Styles).
-            </li>
-        </ul>
-        <h4>Main view</h4>
-        <ul>
-            <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd> (both e.g. 40px) and <kbd>footer</kbd> (60px). Apply a width of 100% to all elements.
-            </li>
-            <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd> and <kbd>datepicker</kbd>.
-            </li>
-            <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
-            <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all elements or rather group of elements.
-            </li>
-            <li>Use absolute positioning to pin the <kbd>footer</kbd> to the bottom. Set a fixed height and full width to the <kbd>footer</kbd> <code>button</code>.
-            </li>
-        </ul>
-        <h4>Detail view</h4>
-        <ul>
-            <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the
-                <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height
-                <kbd>header</kbd>) and make it scrollable by using the property overflow.
-            </li>
-            <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
-            <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
-        </ul>
-        <h4>Sidebar</h4>
-        <ul>
-            <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
-            <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
-        </ul>
-        <h3>Add style information (D4)</h3>
-        <h4>MainView</h4>
-        <ul>
-            <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and mainview-footer.
-            </li>
-            <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user interaction.
-            </li>
-            <li>Use font properties to style <code>color</code> and <code>font-size</code> of the icons and appearance of headlines.
-            </li>
-            <li>Use padding & margin to set enough space between the elements.</li>
-        </ul>
-        <h4>DetailView</h4>
-        <ul>
-            <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter background-color to even rows.
-            </li>
-            <li>If the button classes where applied correctly in the HTML part, the close button and header should be already styled.
-            </li>
-        </ul>
-        <h4>Sidebar</h4>
-        <ul>
-            <li>Edit the color and size of the headlines and icons.</li>
-            <li>Style the lists with margins, paddings and borders.</li>
-            <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already styled. Create an active <code>class</code> to highlight currently selected buttons.
-            </li>
-            <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.
-            </li>
-        </ul>
-        <h3>Final positioning</h3> This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you proceed.
-        <ul>
+    <p>Add the same external stylesheet <kbd>main.css</kbd>  to all <kbd>.html</kbd> files. Always try to use appropriate CSS
+        selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause
+        disarrangement of your elements. If necessary, improve your html structure by adding new <code>class</code> or
+        <code>id</code> attributes. Apply the generic rule:</p>
+    <ul>
+        <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)
+        </li>
+        <li>Assign <code>classes</code> for elements, which are present multiple times (e.g. multiple rows of detail
+            information, multiple buttons, …)
+        </li>
+    </ul>
+    <h3 id="Layout">Layout your Views (D2/D3)</h3>
+    <h4>Transform your app to into a single page application</h4>
+    <ul>
+        <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your
+        <kbd>detailview</kbd> into your <kbd>index.html</kbd> just below <kbd>mainview</kbd>. Now <kbd>detailview</kbd> should overlap <kbd>mainview</kbd>.</li>
+        <li>
+            Use the <code>display</code> property for showing and hiding <kbd>sidebar</kbd> and <kbd>detailview</kbd>.
+            Try the developer console to test very quickly: Add and change CSS properties directly in Chrome (Elements > Styles).
+        </li>
+    </ul>
+    <h4>Main view</h4>
+    <ul>
+        <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd>
+            (both e.g. 40px) and <kbd>footer</kbd> (60px). Apply a width of 100% to all elements.
+        </li>
+        <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd>
+            and <kbd>datepicker</kbd>.
+        </li>
+        <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+        <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all
+            elements or rather group of elements.
+        </li>
+        <li>Use absolute positioning to pin the <kbd>footer</kbd> to the bottom. Set a fixed height and full width to
+            the <kbd>footer</kbd> <code>button</code>.
+        </li>
+    </ul>
+    <h4>Detail view</h4>
+    <ul>
+        <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the
+            <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height
+            <kbd>header</kbd>) and make it scrollable by using the property overflow.
+        </li>
+        <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
+        <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
+    </ul>
+    <h4>Sidebar</h4>
+    <ul>
+        <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
+        <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
+    </ul>
+    <h3 id="Style">Add style information (D4)</h3>
+    <h4>MainView</h4>
+    <ul>
+        <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and
+            mainview-footer.
+        </li>
+        <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user
+            interaction.
+        </li>
+        <li>Use font properties to style <code>color</code> and <code>font-size</code> of the icons and appearance
+            of headlines.
+        </li>
+        <li>Use padding & margin to set enough space between the elements.</li>
+    </ul>
+    <h4>DetailView</h4>
+    <ul>
+        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter
+            background-color to even rows.
+        </li>
+        <li>If the button classes where applied correctly in the HTML part, the close button and header should be
+            already styled.
+        </li>
+    </ul>
+    <h4>Sidebar</h4>
+    <ul>
+        <li>Edit the color and size of the headlines and icons.</li>
+        <li>Style the lists with margins, paddings and borders.</li>
+        <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already
+            styled. Create an active <code>class</code> to highlight currently selected buttons.
+        </li>
+        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img
+            folder.
+        </li>
+    </ul>
+    <h3 id="Positioning">Final positioning</h3>
+    This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
+    proceed.
+    <ul>
 
-            <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all sections and overlays:</li>
-            <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
-            <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
-            <li>Use <code>z-index</code> to arrange all sections.</li>
-        </ul>
-        <h3>CSS Effects (D5)</h3>
-        <ul>
-            <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
-                <kbd>sidebar-fade-overlay</kbd> and add a dark half-transparent background-color.
-            </li>
-            <li>Create a half-transparent background gradient for the table.</li>
-            <li>Add shadow to your <code>button</code> style</li>
-            <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
-        </ul>
-        <h3>CSS Transform & Transitions (D6)</h3>
-        <ul>
-            <li>Provide a background-color transition for the mainview element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.
-            </li>
-            <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to build an X-icon for the <kbd>close-sidebar</kbd> button
-            </li>
-        </ul>
-        <h2 id="E">E: Frameworks</h2>
+        <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all sections and overlays:</li>
+        <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
+        <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
+        <li>Use <code>z-index</code> to arrange all sections.</li>
+    </ul>
+    <h3 id="Effects">CSS Effects (D5)</h3>
+    <ul>
+        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
+            <kbd>sidebar-fade-overlay</kbd> and add a dark
+            half-transparent background-color.
+        </li>
+        <li>Create a half-transparent background gradient for the table.</li>
+        <li>Add shadow to your <code>button</code> style</li>
+        <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
+    </ul>
+    <h3 id="Transform">CSS Transform & Transitions (D6)</h3>
+    <ul>
+        <li>Provide a background-color transition for the mainview element when the color is changed. Test the
+            transition with your browser developer tools by changing the background-color manually.
+        </li>
+        <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to
+            build an X-icon for the <kbd>close-sidebar</kbd> button
+        </li>
+    </ul>
+    <h2 id="E">E: Frameworks</h2>
 
         <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
 
-        <h3>Font-Awesome (E1)</h3>
+    <h3 id="Fontawesome">Font-Awesome (E1)</h3>
+
         <ul>
             <li>Set up <a href="https://fortawesome.github.io/Font-Awesome">Font Awesome</a></li>
             <li>Use font awesome <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/">icons</a> in your app</li>
         </ul>
-        <h3>Bootstrap (E2)</h3>
-        <ul>
-            <li>Include <a href="http://getbootstrap.com/">Bootstrap</a></li>
-            <li>Use the bootstrap grid system for layouting <kbd>detailsview</kbd></li>
-            <li>
-                Create a horizontal navigation bar allowing the user to choose between different days.
-                <a href="http://www.w3schools.com/bootstrap/bootstrap_pagination.asp">Bootstrap Pagination</a> might help.
-            </li>
-        </ul>
-        <h3>Boilerplate & jQuery Mobile (E3/E4)</h3>
-        <ul>
-            <li>Download HTML5 Boilerplate from <a href="http://www.initializr.com/">Initializr</a> to start a new project</li>
-            <li>Include <a href="https://jquerymobile.com/">jQuery mobile</a> from <a href="https://code.jquery.com/">jQuery CDN</a> (Content Delivery Network)</li>
-            <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
-            <li>Use hyperlinks to navigate between your two pages</li>
-            <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
-        </ul>
 
-        <h2 id="F">F: JavaScript</h2>
+    <h3 id="Bootstrap">Bootstrap (E2)</h3>
+    <ul>
+        <li>Include <a href="http://getbootstrap.com/">Bootstrap</a></li>
+        <li>Use the bootstrap grid system for layouting <kbd>detailsview</kbd></li>
+        <li>
+            Create a horizontal navigation bar allowing the user to choose between different days.
+            <a href="http://www.w3schools.com/bootstrap/bootstrap_pagination.asp">Bootstrap Pagination</a> might help.
+        </li>
+    </ul>
+    <h3 id="JQueryMobile">Boilerplate & jQuery Mobile (E3/E4)</h3>
+    <ul>
+        <li>Download HTML5 Boilerplate from <a href="http://www.initializr.com/">Initializr</a> to start a new project</li>
+        <li>Include <a href="https://jquerymobile.com/">jQuery mobile</a> from <a href="https://code.jquery.com/">jQuery CDN</a> (Content Delivery Network)</li>
+        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
+        <li>Use hyperlinks to navigate between your two pages</li>
+        <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
+    </ul>
 
-        <p>In this chapter, you'll add the interaction and model the weather data.</p>
+    <h2 id="F">F: JavaScript</h2>
 
-        <p class="todo">Include the following</p>
-        <ol class="todo">
-            <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
-            <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
-            <li>Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>. The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
-            </li>
-            <li>Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd> and <kbd>close-details</kbd>. The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
-            </li>
-            <li>ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn sinnvoll</li>
-            <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
-            <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
-            <li>getAPIData() – jQuery, getJSON</li>
-            <li>Show / Hide Loading overlay - CSS Transitions, Animations</li>
-            <li>ChangeTempUnit, changeWindUnit – jQuery</li>
-            <li>Show city List  - jQuery DOM Insertion</li>
-            <li>addCity + Sortable - jQuery Interaction, jQueryUI Widgets</li>
-            <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
-            <li>setCityClickable - jQuery Plugins</li>
-        </ol>
+    <p>In this chapter, you'll add the interaction and model the weather data.</p>
 
-        <p class="todo"></p>
+    <p class="todo">Include the following</p>
+    <ol class="todo">
+        <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
+        <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
+        <li>Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>.
+            The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
+        </li>
+        <li>Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd> and <kbd>close-details</kbd>.
+            The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
+        </li>
+        <li>ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn sinnvoll</li>
+        <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
+        <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
+        <li>getAPIData() – jQuery, getJSON</li>
+        <li>Show / Hide Loading overlay - CSS Transitions, Animations</li>
+        <li>ChangeTempUnit, changeWindUnit – jQuery</li>
+        <li>Show city List  - jQuery DOM Insertion</li>
+        <li>addCity + Sortable - jQuery Interaction, jQueryUI Widgets</li>
+        <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
+        <li>setCityClickable - jQuery Plugins</li>
+    </ol>
+
+    <p class="todo"></p>
 
 
-        <p class="todo">Add solution here as a collapsible</p>
-        <!--
-    <h3>F0: Combined Page</h3>
+    <p class="todo">Add solution here as a collapsible</p>
+    <!--
+    <h3 id="">F0: Combined Page</h3>
+
     <p>Combine overview and details in a single HTML file
         <br> Layout the details to overlay the overview in CSS
         <br> Hide the overlay in CSS
@@ -510,51 +553,53 @@ PREPARATION
         <li>onclick=<strong>&quot;&ldquo;</strong></li>
         <li>document.getElementById('id').style.? = '?'; </li>
     </ul>
-    <h3>F1: Improving  Modularity/Debugging</h3>
+    <h3 id="">F1: Improving  Modularity/Debugging</h3>
     <p>Use an external JS file
         <br> Use functions for opening and closing details
         <br> Comment the function
         <br> Add log messages for opening and closing
         <br> Set a breakpoint in the debugger, both for opening and closing the details view.</p>
-    <h3>F2/3: Variables</h3>
+    <h3 id="">F2/3: Variables</h3>
     <p>Introduce a global variable currentDay. Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</p>
-    <h3>F4: Functions</h3>
+    <h3 id="">F4: Functions</h3>
     <p>One single function for changing the day. Connect to the buttons
         <br> …
         <br> Helper functions (e.g. windspeed, …)
         <br> How to test? Extra file? Log? … </p>
-    <h3>F5: Objects</h3>
+    <h3 id="">F5: Objects</h3>
     <p>Date object for output
         <br> Create an weather information object in literal notation.
         <br> UML according to forecast.io
         <br> Reference functions as methods
         <br> Prototype?
         <br> Output the weather information programmatically [use arguments]</p>
-    <h3>F6: Arrays</h3>
+    <h3 id="">F6: Arrays</h3>
     <p>Array of multiple data points (two)</p>
-    <h3>F7: Control &amp;  Conditional</h3>
+    <h3 id="">F7: Control &amp;  Conditional</h3>
     <p>Limit the date selection to 0..7
         <br> Hide details button for days other than 0 and 1 (no detail info available)
         <br> …
     </p>
-    <h3>F8: Loops</h3>
+    <h3 id="">F8: Loops</h3>
     <p>Output details in a loop. Creator function?</p>
-    <h3>F: Further JS</h3>
+    <h3 id="">F: Further JS</h3>
     <p>As many steps as possible during F1-F7!
         <br> Use weather object and given icons, </p>
     <ul>
         <li>…</li>
         <li>Onload for initialization of overview</li>
     </ul>
--->
+
     <h2 id="G">G: jQuery</h2>
-<!--    <h3>G1: jQuery</h3>
+
+    <h3 id="">G1: jQuery</h3>
+
     <p>Include
         <br> Test
     </p>
-    <h3>G2: jQuery effects</h3>
+    <h3 id="">G2: jQuery effects</h3>
     <p>Show and hide your details panel using jQuery effects</p>
-    <h3>G3: jQuery DOM traversal</h3>
+    <h3 id="">G3: jQuery DOM traversal</h3>
     <p>Use $ getters/setters instead of JS</p>
     <ul>
         <li>…</li>
@@ -562,15 +607,15 @@ PREPARATION
     <p>Use chaining for creating the details view
         <br> $(&ldquo;&lt;div&gt;&rdquo;).addClass.attr.html.appendTo.,…
         <br> For all buttons, add handlers in HTML</p>
-    <h3>G4: APIs &amp; AJAX</h3>
+    <h3 id="">G4: APIs &amp; AJAX</h3>
     <p>I think, the whole API stuff should be relocated here?
         <br> Load data</p>
-    <h3>G5: Utilities</h3>
+    <h3 id="">G5: Utilities</h3>
     <p>Each:</p>
     <ul>
         <li>Define a custom function for array sorting: <em>updateArraySorting</em>(oldArray, newPositions)</li>
     </ul>
-    <h3>G6: jQuery UI</h3>
+    <h3 id="">G6: jQuery UI</h3>
     <p>Sortable:</p>
     <ul>
         <li>Use jQuery UI sortable for the city list</li>

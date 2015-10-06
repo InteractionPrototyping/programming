@@ -553,9 +553,32 @@ PREPARATION
 
     <h2 id="F">F: JavaScript</h2>
 
-        <h3></h3>
+        <p>In this chapter, you'll add the interaction and model the weather data.</p>
 
-    <p>In this chapter, you'll add the interaction and model the weather data.</p>
+
+
+        <h3 id="JS-Test">First Steps (F0)</h3>
+        <ul>
+            <li>Go to <code>body</code> and add an <code>onlick="alert('Hello World');"</code> attribute. Reload the page and your message will be displayed.</li>
+            <li>Remove the onclick attribute because it was just for testing purposes.</li>
+            <li>Instead, add an <code>onclick</code> attribute</code> to <kbd>button-next-day</kbd></li>
+            <li>Use <code>document.getElementById()</code> and the property <code>innerHTML</code> to change the temperature value. Be sure to use the ID of the corresponding <kbd>temperature</kbd> element.
+            <li>Click <kbd>button-next-day</kbd> and the temperature value should change</li>
+            <li>Add an <code>onclick</code> attribute to <kbd>button-previous-day</kbd> and change the <code>src</code> attribute of your <kbd>weather-image</kbd> element</li>
+            <li>Try to open and hide the details view by changing the <code>display</code> or <code>top</code> property when the user clicks the buttons for open and close. </li>
+        </ul>
+
+        <h3 id="JS-Debugging">
+            Try to <code>log</code> a message to the <code>console</code> every time the <kbd>detailsview</kbd> is open or closed
+        </h3>
+
+
+        <h3 id="JS-Setup">Create an external JS script file</h3>
+        <ol>
+            <li>Create a new file <kbd>interaction.js</kbd> in your app folder</li>
+            <li>Include your JS code using the <code>script</code> tag</li>
+        </ol>
+
 
     <p class="todo">Include the following</p>
     <ol class="todo">

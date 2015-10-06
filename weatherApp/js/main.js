@@ -256,11 +256,13 @@ function toggleSidebar() {
 		if ($('#detailview').css('top') == '0px') {
 			$('#detailview').animate({
 				top: '100%'
-			}, 500);
+			}, 500, "swing", function() {
+				$(this).toggle();
+			});
 			console.log("Close details");
 		} else {
 			//slide it in otherwise
-			$('#detailview').animate({
+			$('#detailview').toggle().animate({
 				top: '0%'
 			}, 500);
 			console.log("Open details");

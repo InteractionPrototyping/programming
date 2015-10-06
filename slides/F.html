@@ -1562,15 +1562,15 @@ greet:function() {
 						<li><b>Call</b></li>
 					</ul>
 					<pre><code>document.getElementById("demo")
-					.innerHTML = person.fullName() + " is " 
-					+ person.age + " years old.";
+.innerHTML = person.fullName() + " is " 
++ person.age + " years old.";
 person.greet();</code></pre>
 
 					<ul>
 						<li><b>Access method</b> by object.method()</li>
 					</ul>
 					<pre><code>person.greet()
-					// Hello, I'm John Doe</code></pre>
+// Hello, I'm John Doe</code></pre>
 				</div> 
 			</div>
 	</section>
@@ -2286,7 +2286,7 @@ default:
 		</section>
 
 		<section id="F8_Motivation" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>Motivatione</h2>
+			<h2>Motivation</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
@@ -2997,14 +2997,14 @@ onchange="upperCase()"&gt;</code></pre>
 			<h2>Window/Screen Objects</h2>
 			<div class="row">
 				<div class="col-xs-6">
-					<ul>
-						<li><b>Window</b> object
+					<p class="text-left"><b>Window</b> object</p>
 							<ul>
 								<li>represents the browser window</li>
 								<li>JS objects/functions/variables are members of window</li>
 							</ul>
-						</li>
-						<li><b>Screen</b> object
+				</div>
+				<div class="col-xs-6">
+					<p class="text-left"><b>Screen</b> object</p>
 							<ul>
 								<li><code>screen.availWidth</code><br>
 								available screen width
@@ -3013,12 +3013,16 @@ onchange="upperCase()"&gt;</code></pre>
 								available screen height</li>
 								<li><a  href="http://w3schools.com/js/tryit.asp?filename=tryjs_screen_availwidth" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>		
 							</ul>
-						</li>
-					</ul>
-				</div>
+				</div>  
+			</div>
+		</section>
+
+
+		<section id="F12_Window/ScreenObjects2" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>Window/Screen Objects</h2>
+			<div class="row">
 				<div class="col-xs-6">
-					<ul>
-						<li><b>Properties</b> e.g.:
+					<p class="text-left"><b>Properties</b> e.g.:</p>
 							<ul>
 								<li><code>window.innerHeight</code><br>
 								height of the browser window</li>
@@ -3026,8 +3030,9 @@ onchange="upperCase()"&gt;</code></pre>
 								width of the browser window</li>
 								<li><a  href="http://w3schools.com/js/tryit.asp?filename=tryjs_win_inner" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
-						</li>
-						<li><b>Methods</b> e.g.:
+				</div>
+				<div class="col-xs-6">
+					<p class="text-left"><b>Methods</b> e.g.:</p>
 							<ul>
 								<li><code>window.open()</code><br>
 								new window
@@ -3043,6 +3048,7 @@ onchange="upperCase()"&gt;</code></pre>
 				</div>  
 			</div>
 		</section>
+
 
 		<section id="F12_PopupBoxes" data-background="#fff" class="container">
 			<h2>Popup Boxes</h2>

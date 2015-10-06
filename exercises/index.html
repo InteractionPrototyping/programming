@@ -13,6 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
     <script type="text/javascript">
         var year = (new Date()).getFullYear();
         var month = (new Date()).getMonth();
@@ -31,7 +35,6 @@
 <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -216,7 +219,7 @@ PREPARATION
     <p class="well well-sm">Use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting
         up eduroam</a>!</p>
 
-    <h3>Environment for editing HTML</h3>
+    <h3 id="Environment">Environment for editing HTML</h3>
 
     <p><strong>Set up</strong> an environment for creating HTML documents on your computer.</p>
     <ul>
@@ -229,7 +232,7 @@ PREPARATION
             href="https://github.com/adobe/brackets/wiki/Troubleshooting#livedev">the Brackets livedev troubleshooting
         document</a>.</p>
 
-    <h3>Versioning control with GitHub</h3>
+    <h3 id="Github">Versioning control with GitHub</h3>
 
     <p><b>Create</b> a free account at <a href="https://github.com/join">GitHub</a>.</p>
 
@@ -246,13 +249,13 @@ PREPARATION
     <h2 id="first">B HTML5</h2>
 
 
-    <h3> Weather App Skeleton (B1) </h3>
+    <h3 id="Skeleton"> Weather App Skeleton (B1) </h3>
 
     <p><b>Ensure</b> that your <kbd>index.html</kbd> document has a proper HTML5 skeleton.</p>
 
     <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
 
-    <h3>Weather App Structure (B2/3)</h3>
+    <h3 id="Structure">Weather App Structure (B2/3)</h3>
 
     <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise
         generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all
@@ -292,7 +295,7 @@ PREPARATION
         the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
 
 
-    <h3>Hyperlinks Between Main and Details View (B4)</h3>
+    <h3 id="Hyperlinks">Hyperlinks Between Main and Details View (B4)</h3>
 
     <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <kbd>detailview</kbd>
         <code>section</code>. This in turn should contain a <kbd>header</kbd> (with heading to display the selected
@@ -301,7 +304,7 @@ PREPARATION
     <p>Mutually <b>reference</b> the <kbd>index.html</kbd> and <kbd>details.html</kbd> pages, by adding hyperlinks to
         the &ldquo;details…&rdquo; (mainview) and &ldquo;X&rdquo; (detailview) text. Test the links.</p>
 
-    <h3> Images (B5)</h3>
+    <h3 id="Images"> Images (B5)</h3>
 
     <p><b>Download</b> those PNG images to a new subfolder <kbd>/img</kbd> in your project:</p>
 
@@ -343,14 +346,14 @@ PREPARATION
 
     <p><b>Add</b> one of the images to the <kbd>content</kbd> area of the <kbd>mainview</kbd></p>
 
-    <h3> Tables (B6)</h3>
+    <h3 id="Tables"> Tables (B6)</h3>
 
     <p><b>Create</b> a <code>table</code> inside the <kbd>content</kbd> area of the <kbd>detailview</kbd>. Provide
         columns for time, icon, temperature, wind speed and humidity. Insert four rows with dummy content.</p>
 
     <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
 
-    <h3>Validate your HTML</h3>
+    <h3 id="Validation">Validate your HTML</h3>
 
     <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If
         there are any errors,
@@ -358,15 +361,15 @@ PREPARATION
 
     <h2>C Forms</h2>
 
-    <h3>Buttons</h3>
+    <h3 id="Buttons">Buttons</h3>
 
     <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
 
-    <h3>Radio Buttons</h3>
+    <h3 id="Radiobuttons">Radio Buttons</h3>
 
     <p><b>Add</b> radio buttons for the unit (temperature, speed) selection in the <kbd>detailview</kbd> settings.</p>
 
-    <h3>Input</h3>
+    <h3 id="Inputs">Input</h3>
 
     <p>For adding new cities in the app, add an <code>input</code> field with a <code>placeholder</code> to the <kbd>sidebar</kbd>:
     </p>
@@ -378,7 +381,7 @@ PREPARATION
 
     <h2>D Style and Layout</h2>
 
-    <h3>Global Stylesheet (D1)</h3>
+    <h3 id="Stylesheet">Global Stylesheet (D1)</h3>
 
     <p>Add the same external stylesheet <kbd>main.css</kbd>  to all <kbd>.html</kbd> files. Always try to use appropriate CSS
         selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause
@@ -391,7 +394,7 @@ PREPARATION
             information, multiple buttons, …)
         </li>
     </ul>
-    <h3>Layout your Views (D2/D3)</h3>
+    <h3 id="Layout">Layout your Views (D2/D3)</h3>
     <h4>Transform your app to into a single page application</h4>
     <ul>
         <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your
@@ -431,7 +434,7 @@ PREPARATION
         <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
         <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
     </ul>
-    <h3>Add style information (D4)</h3>
+    <h3 id="Style">Add style information (D4)</h3>
     <h4>MainView</h4>
     <ul>
         <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and
@@ -465,7 +468,7 @@ PREPARATION
             folder.
         </li>
     </ul>
-    <h3>Final positioning</h3>
+    <h3 id="Positioning">Final positioning</h3>
     This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
     proceed.
     <ul>
@@ -475,7 +478,7 @@ PREPARATION
         <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
         <li>Use <code>z-index</code> to arrange all sections.</li>
     </ul>
-    <h3>CSS Effects (D5)</h3>
+    <h3 id="Effects">CSS Effects (D5)</h3>
     <ul>
         <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
             <kbd>sidebar-fade-overlay</kbd> and add a dark
@@ -485,7 +488,7 @@ PREPARATION
         <li>Add shadow to your <code>button</code> style</li>
         <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
     </ul>
-    <h3>CSS Transform & Transitions (D6)</h3>
+    <h3 id="Transform">CSS Transform & Transitions (D6)</h3>
     <ul>
         <li>Provide a background-color transition for the mainview element when the color is changed. Test the
             transition with your browser developer tools by changing the background-color manually.
@@ -498,12 +501,12 @@ PREPARATION
 
     <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
 
-    <h3>Font-Awesome (E1)</h3>
+    <h3 id="Fontawesome">Font-Awesome (E1)</h3>
         <ul>
             <li>Set up <a href="https://fortawesome.github.io/Font-Awesome">Font Awesome</a></li>
             <li>Use font awesome <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/">icons</a> in your app</li>
         </ul>
-    <h3>Bootstrap (E2)</h3>
+    <h3 id="Bootstrap">Bootstrap (E2)</h3>
     <ul>
         <li>Include <a href="http://getbootstrap.com/">Bootstrap</a></li>
         <li>Use the bootstrap grid system for layouting <kbd>detailsview</kbd></li>
@@ -512,7 +515,7 @@ PREPARATION
             <a href="http://www.w3schools.com/bootstrap/bootstrap_pagination.asp">Bootstrap Pagination</a> might help.
         </li>
     </ul>
-    <h3>Boilerplate & jQuery Mobile (E3/E4)</h3>
+    <h3 id="JQueryMobile">Boilerplate & jQuery Mobile (E3/E4)</h3>
     <ul>
         <li>Download HTML5 Boilerplate from <a href="http://www.initializr.com/">Initializr</a> to start a new project</li>
         <li>Include <a href="https://jquerymobile.com/">jQuery mobile</a> from <a href="https://code.jquery.com/">jQuery CDN</a> (Content Delivery Network)</li>
@@ -552,7 +555,7 @@ PREPARATION
 
     <p class="todo">Add solution here as a collapsible</p>
     <!--
-    <h3>F0: Combined Page</h3>
+    <h3 id="">F0: Combined Page</h3>
     <p>Combine overview and details in a single HTML file
         <br> Layout the details to overlay the overview in CSS
         <br> Hide the overlay in CSS
@@ -561,36 +564,36 @@ PREPARATION
         <li>onclick=<strong>&quot;&ldquo;</strong></li>
         <li>document.getElementById('id').style.? = '?'; </li>
     </ul>
-    <h3>F1: Improving  Modularity/Debugging</h3>
+    <h3 id="">F1: Improving  Modularity/Debugging</h3>
     <p>Use an external JS file
         <br> Use functions for opening and closing details
         <br> Comment the function
         <br> Add log messages for opening and closing
         <br> Set a breakpoint in the debugger, both for opening and closing the details view.</p>
-    <h3>F2/3: Variables</h3>
+    <h3 id="">F2/3: Variables</h3>
     <p>Introduce a global variable currentDay. Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</p>
-    <h3>F4: Functions</h3>
+    <h3 id="">F4: Functions</h3>
     <p>One single function for changing the day. Connect to the buttons
         <br> …
         <br> Helper functions (e.g. windspeed, …)
         <br> How to test? Extra file? Log? … </p>
-    <h3>F5: Objects</h3>
+    <h3 id="">F5: Objects</h3>
     <p>Date object for output
         <br> Create an weather information object in literal notation.
         <br> UML according to forecast.io
         <br> Reference functions as methods
         <br> Prototype?
         <br> Output the weather information programmatically [use arguments]</p>
-    <h3>F6: Arrays</h3>
+    <h3 id="">F6: Arrays</h3>
     <p>Array of multiple data points (two)</p>
-    <h3>F7: Control &amp;  Conditional</h3>
+    <h3 id="">F7: Control &amp;  Conditional</h3>
     <p>Limit the date selection to 0..7
         <br> Hide details button for days other than 0 and 1 (no detail info available)
         <br> …
     </p>
-    <h3>F8: Loops</h3>
+    <h3 id="">F8: Loops</h3>
     <p>Output details in a loop. Creator function?</p>
-    <h3>F: Further JS</h3>
+    <h3 id="">F: Further JS</h3>
     <p>As many steps as possible during F1-F7!
         <br> Use weather object and given icons, </p>
     <ul>
@@ -598,13 +601,13 @@ PREPARATION
         <li>Onload for initialization of overview</li>
     </ul>
     <h2>G: jQuery</h2>
-    <h3>G1: jQuery</h3>
+    <h3 id="">G1: jQuery</h3>
     <p>Include
         <br> Test
     </p>
-    <h3>G2: jQuery effects</h3>
+    <h3 id="">G2: jQuery effects</h3>
     <p>Show and hide your details panel using jQuery effects</p>
-    <h3>G3: jQuery DOM traversal</h3>
+    <h3 id="">G3: jQuery DOM traversal</h3>
     <p>Use $ getters/setters instead of JS</p>
     <ul>
         <li>…</li>
@@ -612,15 +615,15 @@ PREPARATION
     <p>Use chaining for creating the details view
         <br> $(&ldquo;&lt;div&gt;&rdquo;).addClass.attr.html.appendTo.,…
         <br> For all buttons, add handlers in HTML</p>
-    <h3>G4: APIs &amp; AJAX</h3>
+    <h3 id="">G4: APIs &amp; AJAX</h3>
     <p>I think, the whole API stuff should be relocated here?
         <br> Load data</p>
-    <h3>G5: Utilities</h3>
+    <h3 id="">G5: Utilities</h3>
     <p>Each:</p>
     <ul>
         <li>Define a custom function for array sorting: <em>updateArraySorting</em>(oldArray, newPositions)</li>
     </ul>
-    <h3>G6: jQuery UI</h3>
+    <h3 id="">G6: jQuery UI</h3>
     <p>Sortable:</p>
     <ul>
         <li>Use jQuery UI sortable for the city list</li>

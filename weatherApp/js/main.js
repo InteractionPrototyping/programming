@@ -466,7 +466,7 @@ function showCityList() {
     // Cycle trough cities and add them to DOM
     $.each(cities, function (c, city) {
         // Create list item
-        cityItem = $('<li>').html(city.name).addClass('city').attr('id', c);
+        cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', c);
 
         // First item is active
         if (c == 0) {
@@ -572,7 +572,7 @@ function addCity(city) {
     }
 
     // Create list item
-    cityItem = $('<li>').html(city.name).addClass('city').attr('id', cities.length - 1);
+    cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', cities.length - 1);
 
     // Append item to city list
     cityItem.appendTo(citylist);

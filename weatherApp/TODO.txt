@@ -6,3 +6,4 @@ Fade-Overlay
 Einblenden erst mit display block/none, danach mit Top/Left
 Spinner von Font-Awesome, rotate klasse oder mit CSS Animation
 Framework-Aufgaben: Font Awesome, jQM, Bootstrap table
+Single Page

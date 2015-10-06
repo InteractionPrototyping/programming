@@ -380,10 +380,10 @@ PREPARATION
 
     <h3>Global Stylesheet (D1)</h3>
 
-    <p>Add an external <kbd>main.css</kbd> stylesheet to all <kbd>.html</kbd> files. Always try to use appropriate CSS
+    <p>Add the same external stylesheet <kbd>main.css</kbd>  to all <kbd>.html</kbd> files. Always try to use appropriate CSS
         selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause
-        disarrangement of your elements. If necessary, improve your html structure by adding new <code>classes</code> or
-        <code>ids</code>. Apply the generic rule:</p>
+        disarrangement of your elements. If necessary, improve your html structure by adding new <code>class</code> or
+        <code>id</code> attributes. Apply the generic rule:</p>
     <ul>
         <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)
         </li>
@@ -391,8 +391,16 @@ PREPARATION
             information, multiple buttons, …)
         </li>
     </ul>
-
     <h3>Layout your Views (D2/D3)</h3>
+    <h4>Transform your app to into a single page application</h4>
+    <ul>
+        <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your
+        <kbd>detailview</kbd> into your <kbd>index.html</kbd> just below <kbd>mainview</kbd></li>. Now <kbd>detailview</kbd> should overlap <kbd>mainview</kbd>.
+        <li>
+            Use the <code>display</code> property for showing and hiding <kbd>sidebar</kbd> and <kbd>detailview</kbd>.
+            Try the developer console to test very quickly: Add and change CSS properties directly in Chrome (Elements > Styles).
+        </li>
+    </ul>
     <h4>Main view</h4>
     <ul>
         <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd>
@@ -426,13 +434,13 @@ PREPARATION
     <h3>Add style information (D4)</h3>
     <h4>MainView</h4>
     <ul>
-        <li>Add a dark, half-transparent background to your button <code>class</code>, main-view-datepicker and
-            main-view-footer.
+        <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and
+            mainview-footer.
         </li>
         <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user
             interaction.
         </li>
-        <li>Use font properties to style <code>color</code>code> and <code>font-size</code> of the icons and appearance
+        <li>Use font properties to style <code>color</code> and <code>font-size</code> of the icons and appearance
             of headlines.
         </li>
         <li>Use padding & margin to set enough space between the elements.</li>
@@ -457,21 +465,15 @@ PREPARATION
             folder.
         </li>
     </ul>
-
-    <h4>Final positioning</h4>
-    This step hides all sections except the <kbd>main-view</kbd>. Make sure that all CSS Styling is completed before you
+    <h3>Final positioning</h3>
+    This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
     proceed.
     <ul>
-        <li>Use absolute positioning for all sections and overlays:</li>
-        <ul>
-            <li>loading overlay: top 0 left 0</li>
-            <li>main-view: top 0 left 0</li>
-            <li>detail-view: top 100% left 0</li>
-            <li>sidebar: top: 0 left -70%</li>
-            <li>sidebar fade overlay: top 0 left 0</li>
-        </ul>
-        <li>Use z-indices to arrange all sections.</li>
-        <li>Hide all overlays with display property.</li>
+
+        <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all sections and overlays:</li>
+        <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
+        <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
+        <li>Use <code>z-index</code> to arrange all sections.</li>
     </ul>
     <h3>CSS Effects (D5)</h3>
     <ul>
@@ -480,11 +482,12 @@ PREPARATION
             half-transparent background-color.
         </li>
         <li>Create a half-transparent background gradient for the table.</li>
-        <li>Add shadow to your <code>button</code>code> style</li>
+        <li>Add shadow to your <code>button</code> style</li>
+        <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
     </ul>
     <h3>CSS Transform & Transitions (D6)</h3>
     <ul>
-        <li>Provide a background-color transition for the main-view element when the color is changed. Test the
+        <li>Provide a background-color transition for the mainview element when the color is changed. Test the
             transition with your browser developer tools by changing the background-color manually.
         </li>
         <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to

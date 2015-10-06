@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Interaction Programming Block Course</title>
 
@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <script type="text/javascript">
         var year = (new Date()).getFullYear();
         var month = (new Date()).getMonth();
@@ -27,8 +27,7 @@
     </script>
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
-<div class="container">
+<body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
 
@@ -39,519 +38,469 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics"
-                                                      style="height:100%; display:inline-block;" src="LfE.png">
-                    Interaction Programming</a>
+                <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="LfE.png"> Interaction Programming</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav" role="tablist">
-                    <li class="active"><a href="#introduction">Introduction</a></li>
-                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#introduction">Intro</a></li>
                     <li><a href="#A">Apps</a></li>
                     <li><a href="#B">HTML</a></li>
+                    <li><a href="#C">Forms</a></li>
+                    <li><a href="#D">CSS</a></li>
+                    <li><a href="#E">Frameworks</a></li>
+                    <li><a href="#F">JS</a></li>
+                    <li><a href="#G">jQuery</a></li>
+                    <li><a href="#H">APIs</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div id="container"  data-spy="scroll" data-target="#navbar">
 
-
-    <!--
+        <!--
 INTRODUCTION
 -->
-    <h2 id="introduction">Introduction</h2>
+        <h2 id="introduction">Introduction</h2>
 
-    <p>This is the practical task assignment for the <strong> Interaction Programming Block Course</strong> (<a href="../slides/Introduction.pdf">introductory slides</a>). The block course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a
-                href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human
+        <p>This is the practical task assignment for the <strong> Interaction Programming Block Course</strong> (<a href="../slides/Introduction.pdf">introductory slides</a>). The block course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human
             Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the
-        <script>
-            document.write(term);
-        </script>
-        . This document is authored by <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a>, <a
-                href="mailto:schopf@lfe.mw.tum.de">David Schopf</a>, <a href="mailto:luetteken@lfe.mw.tum.de">Niklas
+            <script>
+                document.write(term);
+            </script>
+            . This document is authored by <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a>, <a href="mailto:schopf@lfe.mw.tum.de">David Schopf</a>, <a href="mailto:luetteken@lfe.mw.tum.de">Niklas
             Lütteken</a>, and <a href="mailto:stumpf@lfe.mw.tum.de">Annika Stumpf</a>.
-    </p>
-    <p>The exercises aim to learn the web technologies HTML5/CSS3/JavaScript by developing a <b>weather application</b>
-        during the course. </p>
-    <h4>The Vision</h4>
+        </p>
+        <p>The exercises aim to learn the web technologies HTML5/CSS3/JavaScript by developing a <b>weather application</b> during the course. </p>
+        <h4>The Vision</h4>
 
-    <p>If you follow the task assignments, you will create a weather app looking similar to the image below:</p>
+        <p>If you follow the task assignments, you will create a weather app looking similar to the image below:</p>
 
-    <div class="row">
-        <figure class="col-sm-4">
-            <img src="images/app.png" style="width:100%;" alt="App main view">
-            <figcaption>Main view</figcaption>
-        </figure>
-        <figure class="col-sm-4">
-            <img src="images/menu.png" style="width:100%" alt="App menu view">
-            <figcaption>Menu overlay</figcaption>
-        </figure>
-        <figure class="col-sm-4">
-            <img src="images/details.png" style="width:100%" alt="App details view">
-            <figcaption>Details view</figcaption>
-        </figure>
-    </div>
-    <p>You can <a href="http://interactionprototyping.github.io/programming/weatherApp">experience the "best practice"
-        weather app and browse its source code online</a>, or <a
-            href="https://github.com/InteractionPrototyping/programming.git">clone the full Git repository (including
-        exercises, slides, and weatherApp)</a>. We recommend that you use the source code of the sample weather app only
-        for clarification or as a reference for wrap-up and <em>first implement your own app</em>. It doesn't have to
-        look or work identically, we encourage you to <em>implement at your own speed</em> and test different
-        approaches. The tutors will be happy to provide you any assistance and inspiration.</p>
-    <h4>Schedule and Slides</h4> The techniques HTML, CSS and JavaScript, which are necessary for solving the tasks, are taught in
-    the <a href="http://interactionprototyping.github.io/programming/slides">Slides of the Interaction Programming Block
-    Course</a>. Those are loosely aligned to the <a href="http://www.w3schools.com">w3schools</a> reference material.
-    The didactic composition of the tasks follows the slides. The block course follows this schedule:
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Time/Day</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="info">
-            <th>9:15 -
-                <br>10:45
-            </th>
-            <td><a href="../slides/Introduction.pdf">1 Introduction</a>
-                <br><a href="../slides/A.html">A Web Apps</a>
-                <br><a href="../slides/B.html">B HTML5 (I)</a>
-            </td>
-            <td><a href="../slides/D.html">D CSS3</a></td>
-            <td><a href="../slides/F.html">F Javascript (I)</a></td>
-            <td><a href="../slides/G.html">G jQuery (I)</a></td>
-            <td><a href="../slides/H.html">H APIs</a></td>
-        </tr>
-        <tr class="danger">
-            <th>11:00 -
-                <br>12:30
-            </th>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-        </tr>
-        <tr class="success">
-            <th>12:30 -
-                <br>13:30
-            </th>
-            <td>Lunchbreak</td>
-            <td>Lunchbreak</td>
-            <td>Lunchbreak</td>
-            <td>Lunchbreak</td>
-            <td>Lunchbreak</td>
-        </tr>
-        <tr class="info">
-            <th>13:30 -
-                <br>15:00
-            </th>
-            <td class="primary"><a href="../slides/B.html">B HTML5 (II)</a>
-                <br><a href="../slides/C.html">C Forms</a>
-            </td>
-            <td><a href="../slides/E.html">E CSS Frameworks</a></td>
-            <td><a href="../slides/F.html">F Javascript (II)</a></td>
-            <td><a href="../slides/G.html">G jQuery (II)</a></td>
-            <td><a href="../slides/I.html">I Mobile Apps (tipps &amp; tricks)</a></td>
-        </tr>
-        <tr class="danger">
-            <th>15:15 -
-                <br>16:45
-            </th>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-            <td>Exercises</td>
-        </tr>
-        </tbody>
-    </table>
-    
-    <p class="todo">Add hrefs to slides/exercises</p>
+        <div class="row">
+            <figure class="col-sm-4">
+                <img src="images/app.png" style="width:100%;" alt="App main view">
+                <figcaption>Main view</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="images/menu.png" style="width:100%" alt="App menu view">
+                <figcaption>Menu overlay</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="images/details.png" style="width:100%" alt="App details view">
+                <figcaption>Details view</figcaption>
+            </figure>
+        </div>
+        <p>You can <a href="http://interactionprototyping.github.io/programming/weatherApp">experience the "best practice"
+        weather app and browse its source code online</a>, or <a href="https://github.com/InteractionPrototyping/programming.git">clone the full Git repository (including
+        exercises, slides, and weatherApp)</a>. We recommend that you use the source code of the sample weather app only for clarification or as a reference for wrap-up and <em>first implement your own app</em>. It doesn't have to look or work identically, we encourage you to <em>implement at your own speed</em> and test different approaches. The tutors will be happy to provide you any assistance and inspiration.</p>
+        <h4>Schedule and Slides</h4> The techniques HTML, CSS and JavaScript, which are necessary for solving the tasks, are taught in the <a href="http://interactionprototyping.github.io/programming/slides">Slides of the Interaction Programming Block
+    Course</a>. Those are loosely aligned to the <a href="http://www.w3schools.com">w3schools</a> reference material. The didactic composition of the tasks follows the slides. The block course follows this schedule:
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Time/Day</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info">
+                    <th>9:15 -
+                        <br>10:45
+                    </th>
+                    <td><a href="../slides/Introduction.pdf">1 Introduction</a>
+                        <br><a href="../slides/A.html">A Web Apps</a>
+                        <br><a href="../slides/B.html">B HTML5 (I)</a>
+                    </td>
+                    <td><a href="../slides/D.html">D CSS3</a></td>
+                    <td><a href="../slides/F.html">F Javascript (I)</a></td>
+                    <td><a href="../slides/G.html">G jQuery (I)</a></td>
+                    <td><a href="../slides/H.html">H APIs</a></td>
+                </tr>
+                <tr class="danger">
+                    <th>11:00 -
+                        <br>12:30
+                    </th>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                </tr>
+                <tr class="success">
+                    <th>12:30 -
+                        <br>13:30
+                    </th>
+                    <td>Lunchbreak</td>
+                    <td>Lunchbreak</td>
+                    <td>Lunchbreak</td>
+                    <td>Lunchbreak</td>
+                    <td>Lunchbreak</td>
+                </tr>
+                <tr class="info">
+                    <th>13:30 -
+                        <br>15:00
+                    </th>
+                    <td class="primary"><a href="../slides/B.html">B HTML5 (II)</a>
+                        <br><a href="../slides/C.html">C Forms</a>
+                    </td>
+                    <td><a href="../slides/E.html">E CSS Frameworks</a></td>
+                    <td><a href="../slides/F.html">F Javascript (II)</a></td>
+                    <td><a href="../slides/G.html">G jQuery (II)</a></td>
+                    <td><a href="../slides/I.html">I Mobile Apps (tipps &amp; tricks)</a></td>
+                </tr>
+                <tr class="danger">
+                    <th>15:15 -
+                        <br>16:45
+                    </th>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                    <td>Exercises</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h4 id="grading">Expectations, requirements, and grading:</h4>
+        <p class="todo">Add hrefs to slides/exercises</p>
 
-    <p class="alert alert-danger"><i class="fa fa-info"></i> Your final grade will consist of a <b>open-internet
+        <h4 id="grading">Expectations, requirements, and grading:</h4>
+
+        <p class="alert alert-danger"><i class="fa fa-info"></i> Your final grade will consist of a <b>open-internet
         practical exam.</b><b></b></p>
 
-    <p><b>Bring your own notebooks</b> with your favourite authoring environment. Ensure, that you have <b>internet
+        <p><b>Bring your own notebooks</b> with your favourite authoring environment. Ensure, that you have <b>internet
         access</b> (for the assignments, the disposal and the starter pack). The exam will be <b>"open-book" and
         "open-internet"</b>, you may use any references and tools, except file-sharing or messengers! You will be given
-        <b>requirements</b> (ca. 20% HTML, ca. 30% CSS, ca 50% JS), which you have to fulfill. Implementing 50% of the
-        requirements is suficcient for passing the exam (grade 4.0). You can get a picture of the exams and use them for
-        practice: </p>
-    <ul>
-        <li><b>Weather App</b>:
-            <a href="http://interactionprototyping.github.io/programming/exams/weather/exam.pdf">Requirements</a>,
-            <a href="http://interactionprototyping.github.io/programming/exams/weather/exam.zip">starter pack</a>
-            and
-            <a href="http://interactionprototyping.github.io/programming/exams/weather/solution/index.html">sample
+            <b>requirements</b> (ca. 20% HTML, ca. 30% CSS, ca 50% JS), which you have to fulfill. Implementing 50% of the requirements is suficcient for passing the exam (grade 4.0). You can get a picture of the exams and use them for practice: </p>
+        <ul>
+            <li><b>Weather App</b>:
+                <a href="http://interactionprototyping.github.io/programming/exams/weather/exam.pdf">Requirements</a>,
+                <a href="http://interactionprototyping.github.io/programming/exams/weather/exam.zip">starter pack</a> and
+                <a href="http://interactionprototyping.github.io/programming/exams/weather/solution/index.html">sample
                 solution</a>.
-        </li>
-        <li><b>Coffee App</b>:
-            <a href="http://interactionprototyping.github.io/programming/exams/coffee/exam.pdf">Requirements</a>,
-            <a href="http://interactionprototyping.github.io/programming/exams/coffee/exam.zip">starter pack</a> and
-            <a href="http://interactionprototyping.github.io/programming/exams/coffee/solution/index.html">sample
+            </li>
+            <li><b>Coffee App</b>:
+                <a href="http://interactionprototyping.github.io/programming/exams/coffee/exam.pdf">Requirements</a>,
+                <a href="http://interactionprototyping.github.io/programming/exams/coffee/exam.zip">starter pack</a> and
+                <a href="http://interactionprototyping.github.io/programming/exams/coffee/solution/index.html">sample
                 solution</a>.
-        </li>
-        <li><b>Cinema App</b>:
-            <a href="http://interactionprototyping.github.io/programming/exams/cinema/exam.pdf">Requirements</a>,
-            <a href="http://interactionprototyping.github.io/programming/exams/cinema/exam.zip">starter pack</a> and
-            <a href="http://interactionprototyping.github.io/programming/exams/cinema/solution/index.html">sample
+            </li>
+            <li><b>Cinema App</b>:
+                <a href="http://interactionprototyping.github.io/programming/exams/cinema/exam.pdf">Requirements</a>,
+                <a href="http://interactionprototyping.github.io/programming/exams/cinema/exam.zip">starter pack</a> and
+                <a href="http://interactionprototyping.github.io/programming/exams/cinema/solution/index.html">sample
                 solution</a>.
-        </li>
-    </ul>
-    <p class="todo">Check links!</p>
-    <!--
+            </li>
+        </ul>
+        <p class="todo">Check links!</p>
+        <!--
 PREPARATION
 -->
-    <h2 id="preparation">A Web Applications</h2>
+        <h2 id="A">A Web Applications</h2>
 
-    <p>For this course, you are going to need internet connectivity:</p>
+        <p>For this course, you are going to need internet connectivity:</p>
 
-    <p class="well well-sm">Use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting
+        <p class="well well-sm">Use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting
         up eduroam</a>!</p>
 
-    <h3>Environment for editing HTML</h3>
+        <h3>Environment for editing HTML</h3>
 
-    <p><strong>Set up</strong> an environment for creating HTML documents on your computer.</p>
-    <ul>
-        <li>Recommended Editor: <a href="http://brackets.io/">Brackets</a></li>
-        <li>Recommended Browser: <a href="https://www.google.com/chrome/">Chrome</a></li>
-    </ul>
-    <p><strong>Create</strong> a simple &quot;hello world&quot; <kbd>index.html</kbd> page and run it in chrome.</p>
+        <p><strong>Set up</strong> an environment for creating HTML documents on your computer.</p>
+        <ul>
+            <li>Recommended Editor: <a href="http://brackets.io/">Brackets</a></li>
+            <li>Recommended Browser: <a href="https://www.google.com/chrome/">Chrome</a></li>
+        </ul>
+        <p><strong>Create</strong> a simple &quot;hello world&quot; <kbd>index.html</kbd> page and run it in chrome.</p>
 
-    <p><b>Test</b> the live preview of Brackets. In case, you&rsquo;re experiencing problems, consider <a
-            href="https://github.com/adobe/brackets/wiki/Troubleshooting#livedev">the Brackets livedev troubleshooting
+        <p><b>Test</b> the live preview of Brackets. In case, you&rsquo;re experiencing problems, consider <a href="https://github.com/adobe/brackets/wiki/Troubleshooting#livedev">the Brackets livedev troubleshooting
         document</a>.</p>
 
-    <h3>Versioning control with GitHub</h3>
+        <h3>Versioning control with GitHub</h3>
 
-    <p><b>Create</b> a free account at <a href="https://github.com/join">GitHub</a>.</p>
+        <p><b>Create</b> a free account at <a href="https://github.com/join">GitHub</a>.</p>
 
-    <p><b>Download and install</b> the <a href="https://windows.github.com/">Windows</a> or <a
-            href="https://mac.github.com/">Mac</a> client.</p>
+        <p><b>Download and install</b> the <a href="https://windows.github.com/">Windows</a> or <a href="https://mac.github.com/">Mac</a> client.</p>
 
-    <p><b>Create</b> a new repository, add your <kbd>index.html</kbd> file, commit and sync your changes. Repeat this
-        process regularly throughout this course, this is how you can save different versions of your progress online
-        (and share them with lecturers, tutors and other students). During the semester, we will intensely use <a
-                href="http://interactionprototyping.github.io/exercises/#preparation">GitHub in the Interaction
+        <p><b>Create</b> a new repository, add your <kbd>index.html</kbd> file, commit and sync your changes. Repeat this process regularly throughout this course, this is how you can save different versions of your progress online (and share them with lecturers, tutors and other students). During the semester, we will intensely use <a href="http://interactionprototyping.github.io/exercises/#preparation">GitHub in the Interaction
             Prototyping Practical Course</a>. </p>
 
 
-    <h2 id="first">B HTML5</h2>
+        <h2 id="B">B HTML5</h2>
 
 
-    <h3> Weather App Skeleton (B1) </h3>
+        <h3> Weather App Skeleton (B1) </h3>
 
-    <p><b>Ensure</b> that your <kbd>index.html</kbd> document has a proper HTML5 skeleton.</p>
+        <p><b>Ensure</b> that your <kbd>index.html</kbd> document has a proper HTML5 skeleton.</p>
 
-    <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
+        <p><b>Give</b> your weather app a fancy <code>title</code>!</p>
 
-    <h3>Weather App Structure (B2/3)</h3>
+        <h3>Weather App Structure (B2/3)</h3>
 
-    <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise
-        generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all
-        areas/elements. Use one (or more) <code>class</code> attributes for all elements which have style properties in
-        common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
-    <ul>
-        <li>The <kbd>header</kbd> area (for the menu icon, the current city, the localization icon)
-            <ul>
-                <li>Add dummy text for the menu and the locate-me icons</li>
-                <li>Add a <code>heading</code> element for the currently selected city</li>
-            </ul>
-        </li>
-        <li>The <kbd>datepicker</kbd> area (for the weekday and two buttons)
-            <ul>
-                <li>Add another <code>heading</code> element for the current weekday</li>
-                <li>Add dummy text for decreasing and increasing the weekday</li>
-            </ul>
-        </li>
-        <li>The <kbd>content</kbd> area (for the weather information)
-            <ul>
-                <li>Inside the content area, create a useful structure, consisting of block level and inline elements
-                    for displaying the icon image, summary text, temperature and additional information like wind speed
-                    and humidity. Add dummy text (description, temperature, rain, wind, so far also text for the image).
-                </li>
-            </ul>
-        </li>
-        <li>The <kbd>footer</kbd> area (for the "details" button)
-            <ul>
-                <li>Add "details" dummy text</li>
-            </ul>
-        </li>
-    </ul>
-    <p>Wrap those four elements (i.e. the <kbd>mainview</kbd>) into a new <code>section</code>. Add &ndash; on the same
-        level, outside the mainview &ndash; an element for the <kbd>sidebar</kbd> navigation menu.</p>
+        <p><b>Transfer</b> the structure of the <kbd>mainview</kbd> to HTML elements (semantic where possible, otherwise generic). Always apply a (unique) <code>id</code> or (reusable) <code>class</code> entries for all areas/elements. Use one (or more) <code>class</code> attributes for all elements which have style properties in common (e.g. multiple footers of the same color). The structure of the weather app is:</p>
+        <ul>
+            <li>The <kbd>header</kbd> area (for the menu icon, the current city, the localization icon)
+                <ul>
+                    <li>Add dummy text for the menu and the locate-me icons</li>
+                    <li>Add a <code>heading</code> element for the currently selected city</li>
+                </ul>
+            </li>
+            <li>The <kbd>datepicker</kbd> area (for the weekday and two buttons)
+                <ul>
+                    <li>Add another <code>heading</code> element for the current weekday</li>
+                    <li>Add dummy text for decreasing and increasing the weekday</li>
+                </ul>
+            </li>
+            <li>The <kbd>content</kbd> area (for the weather information)
+                <ul>
+                    <li>Inside the content area, create a useful structure, consisting of block level and inline elements for displaying the icon image, summary text, temperature and additional information like wind speed and humidity. Add dummy text (description, temperature, rain, wind, so far also text for the image).
+                    </li>
+                </ul>
+            </li>
+            <li>The <kbd>footer</kbd> area (for the "details" button)
+                <ul>
+                    <li>Add "details" dummy text</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Wrap those four elements (i.e. the <kbd>mainview</kbd>) into a new <code>section</code>. Add &ndash; on the same level, outside the mainview &ndash; an element for the <kbd>sidebar</kbd> navigation menu.</p>
 
-    <p>Inside the <kbd>sidebar</kbd>, create two <code>headlines</code> and two <code>unordered lists</code>, one for
-        the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
+        <p>Inside the <kbd>sidebar</kbd>, create two <code>headlines</code> and two <code>unordered lists</code>, one for the <em>cities</em> Berlin and Paris, one for the <em>settings</em> Temp. and Wind</p>
 
 
-    <h3>Hyperlinks Between Main and Details View (B4)</h3>
+        <h3>Hyperlinks Between Main and Details View (B4)</h3>
 
-    <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <kbd>detailview</kbd>
-        <code>section</code>. This in turn should contain a <kbd>header</kbd> (with heading to display the selected
-        city) and <kbd>content</kbd> area (leave this empty for now).</p>
+        <p><b>Create</b> a second HTML file <kbd>details.html</kbd>, which should have a HTML5 skeleton with a <kbd>detailview</kbd>
+            <code>section</code>. This in turn should contain a <kbd>header</kbd> (with heading to display the selected city) and <kbd>content</kbd> area (leave this empty for now).</p>
 
-    <p>Mutually <b>reference</b> the <kbd>index.html</kbd> and <kbd>details.html</kbd> pages, by adding hyperlinks to
-        the &ldquo;details…&rdquo; (mainview) and &ldquo;X&rdquo; (detailview) text. Test the links.</p>
+        <p>Mutually <b>reference</b> the <kbd>index.html</kbd> and <kbd>details.html</kbd> pages, by adding hyperlinks to the &ldquo;details…&rdquo; (mainview) and &ldquo;X&rdquo; (detailview) text. Test the links.</p>
 
-    <h3> Images (B5)</h3>
+        <h3> Images (B5)</h3>
 
-    <p><b>Download</b> those PNG images to a new subfolder <kbd>/img</kbd> in your project:</p>
+        <p><b>Download</b> those PNG images to a new subfolder <kbd>/img</kbd> in your project:</p>
 
-    <div class="row" style="margin-bottom: 1em;">
-        <div class="col-xs-2 text-center">
-            <img src="resources/clear-day.png" class="img-thumbnail"> clear-day.png
+        <div class="row" style="margin-bottom: 1em;">
+            <div class="col-xs-2 text-center">
+                <img src="resources/clear-day.png" class="img-thumbnail" alt="clear-day"> clear-day.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/clear-night.png" class="img-thumbnail" alt="clear-night"> clear-night.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/cloudy.png" class="img-thumbnail" alt="cloudy"> cloudy.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/fog.png" class="img-thumbnail" alt="fog"> fog.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/partly-cloudy-day.png" class="img-thumbnail" alt="partly-cloudy-day"> partly-cloudy-day.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/partly-cloudy-night.png" class="img-thumbnail" alt="partly-cloudy-night"> partly-cloudy-night.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/rain.png" class="img-thumbnail" alt="rain"> rain.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/sleet.png" class="img-thumbnail" alt="sleet"> sleet.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/snow.png" class="img-thumbnail" alt="snow"> snow.png
+            </div>
+            <div class="col-xs-2 text-center">
+                <img src="resources/wind.png" class="img-thumbnail" alt="wind"> wind.png
+            </div>
         </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/clear-night.png" class="img-thumbnail"> clear-night.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/cloudy.png" class="img-thumbnail"> cloudy.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/fog.png" class="img-thumbnail"> fog.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/partly-cloudy-day.png" class="img-thumbnail"> partly-cloudy-day.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/partly-cloudy-night.png" class="img-thumbnail"> partly-cloudy-night.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/rain.png" class="img-thumbnail"> rain.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/sleet.png" class="img-thumbnail"> sleet.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/snow.png" class="img-thumbnail"> snow.png
-        </div>
-        <div class="col-xs-2 text-center">
-            <img src="resources/wind.png" class="img-thumbnail"> wind.png
-        </div>
-    </div>
-    <p>Those icons are taken from the <a href="http://findicons.com/pack/2607/tick_weather_icons">Tick Weather Icons</a>
-        icon pack by <a href="http://maxclassic.blogspot.de/">Max Classic</a>, which are free for non-commercial use.
-    </p>
+        <p>Those icons are taken from the <a href="http://findicons.com/pack/2607/tick_weather_icons">Tick Weather Icons</a> icon pack by <a href="http://maxclassic.blogspot.de/">Max Classic</a>, which are free for non-commercial use.
+        </p>
 
-    <p><b>Add</b> one of the images to the <kbd>content</kbd> area of the <kbd>mainview</kbd></p>
+        <p><b>Add</b> one of the images to the <kbd>content</kbd> area of the <kbd>mainview</kbd></p>
 
-    <h3> Tables (B6)</h3>
+        <h3> Tables (B6)</h3>
 
-    <p><b>Create</b> a <code>table</code> inside the <kbd>content</kbd> area of the <kbd>detailview</kbd>. Provide
-        columns for time, icon, temperature, wind speed and humidity. Insert four rows with dummy content.</p>
+        <p><b>Create</b> a <code>table</code> inside the <kbd>content</kbd> area of the <kbd>detailview</kbd>. Provide columns for time, icon, temperature, wind speed and humidity. Insert four rows with dummy content.</p>
 
-    <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
+        <p>Now <b>modify</b> the table to use <kbd>divs</kbd> only (no table element).</p>
 
-    <h3>Validate your HTML</h3>
+        <h3>Validate your HTML</h3>
 
-    <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If
-        there are any errors,
-        please correct them. Repeat this process until there are only warnings and no more errors.</p>
+        <p>Use the <a href="https://validator.w3.org">W3C Markup Validation Service</a> to validate your HTML syntax. If there are any errors, please correct them. Repeat this process until there are only warnings and no more errors.</p>
 
-    <h2>C Forms</h2>
+        <h2 id="C">C Forms</h2>
 
-    <h3>Buttons</h3>
+        <h3>Buttons</h3>
 
-    <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
+        <p>Add all <b>buttons</b> in <kbd>mainview</kbd>, <kbd>detailview</kbd>, and <kbd>sidebar</kbd>.</p>
 
-    <h3>Radio Buttons</h3>
+        <h3>Radio Buttons</h3>
 
-    <p><b>Add</b> radio buttons for the unit (temperature, speed) selection in the <kbd>detailview</kbd> settings.</p>
+        <p><b>Add</b> radio buttons for the unit (temperature, speed) selection in the <kbd>detailview</kbd> settings.</p>
 
-    <h3>Input</h3>
+        <h3>Input</h3>
 
-    <p>For adding new cities in the app, add an <code>input</code> field with a <code>placeholder</code> to the <kbd>sidebar</kbd>:
-    </p>
-    <figure style="text-align:center;">
-        <img src="images/city.png" alt="App details view">
-        <figcaption>Add a new city</figcaption>
-    </figure>
-    Also add a submit <code>button</code> next to the <code>input</code> field.
+        <p>For adding new cities in the app, add an <code>input</code> field with a <code>placeholder</code> to the <kbd>sidebar</kbd>:
+        </p>
+        <figure style="text-align:center;">
+            <img src="images/city.png" alt="App details view">
+            <figcaption>Add a new city</figcaption>
+        </figure>
+        Also add a submit <code>button</code> next to the <code>input</code> field.
 
-    <h2>D Style and Layout</h2>
+        <h2 id="D">D Style and Layout</h2>
 
-    <h3>Global Stylesheet (D1)</h3>
+        <h3>Global Stylesheet (D1)</h3>
 
-    <p>Add the same external stylesheet <kbd>main.css</kbd>  to all <kbd>.html</kbd> files. Always try to use appropriate CSS
-        selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause
-        disarrangement of your elements. If necessary, improve your html structure by adding new <code>class</code> or
-        <code>id</code> attributes. Apply the generic rule:</p>
-    <ul>
-        <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)
-        </li>
-        <li>Assign <code>classes</code> for elements, which are present multiple times (e.g. multiple rows of detail
-            information, multiple buttons, …)
-        </li>
-    </ul>
-    <h3>Layout your Views (D2/D3)</h3>
-    <h4>Transform your app to into a single page application</h4>
-    <ul>
-        <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your
-        <kbd>detailview</kbd> into your <kbd>index.html</kbd> just below <kbd>mainview</kbd></li>. Now <kbd>detailview</kbd> should overlap <kbd>mainview</kbd>.
-        <li>
-            Use the <code>display</code> property for showing and hiding <kbd>sidebar</kbd> and <kbd>detailview</kbd>.
-            Try the developer console to test very quickly: Add and change CSS properties directly in Chrome (Elements > Styles).
-        </li>
-    </ul>
-    <h4>Main view</h4>
-    <ul>
-        <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd>
-            (both e.g. 40px) and <kbd>footer</kbd> (60px). Apply a width of 100% to all elements.
-        </li>
-        <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd>
-            and <kbd>datepicker</kbd>.
-        </li>
-        <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
-        <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all
-            elements or rather group of elements.
-        </li>
-        <li>Use absolute positioning to pin the <kbd>footer</kbd> to the bottom. Set a fixed height and full width to
-            the <kbd>footer</kbd> <code>button</code>.
-        </li>
-    </ul>
-    <h4>Detail view</h4>
-    <ul>
-        <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the
-            <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height
-            <kbd>header</kbd>) and make it scrollable by using the property overflow.
-        </li>
-        <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
-        <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
-    </ul>
-    <h4>Sidebar</h4>
-    <ul>
-        <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
-        <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
-    </ul>
-    <h3>Add style information (D4)</h3>
-    <h4>MainView</h4>
-    <ul>
-        <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and
-            mainview-footer.
-        </li>
-        <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user
-            interaction.
-        </li>
-        <li>Use font properties to style <code>color</code> and <code>font-size</code> of the icons and appearance
-            of headlines.
-        </li>
-        <li>Use padding & margin to set enough space between the elements.</li>
-    </ul>
-    <h4>DetailView</h4>
-    <ul>
-        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter
-            background-color to even rows.
-        </li>
-        <li>If the button classes where applied correctly in the HTML part, the close button and header should be
-            already styled.
-        </li>
-    </ul>
-    <h4>Sidebar</h4>
-    <ul>
-        <li>Edit the color and size of the headlines and icons.</li>
-        <li>Style the lists with margins, paddings and borders.</li>
-        <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already
-            styled. Create an active <code>class</code> to highlight currently selected buttons.
-        </li>
-        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img
-            folder.
-        </li>
-    </ul>
-    <h3>Final positioning</h3>
-    This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
-    proceed.
-    <ul>
+        <p>Add the same external stylesheet <kbd>main.css</kbd> to all <kbd>.html</kbd> files. Always try to use appropriate CSS selectors that only affect those elements, which are supposed to be affected. Too imprecise selectors may cause disarrangement of your elements. If necessary, improve your html structure by adding new <code>class</code> or
+            <code>id</code> attributes. Apply the generic rule:</p>
+        <ul>
+            <li>Assign <code>ids</code> for content which is present once (menu, current temperature, current weather, …)
+            </li>
+            <li>Assign <code>classes</code> for elements, which are present multiple times (e.g. multiple rows of detail information, multiple buttons, …)
+            </li>
+        </ul>
+        <h3>Layout your Views (D2/D3)</h3>
+        <h4>Transform your app to into a single page application</h4>
+        <ul>
+            <li>Instead of using multiple HTML files (one for each view) we will now use only <b>one</b> page for all views. Copy and paste your <kbd>detailview</kbd> into your <kbd>index.html</kbd> just below <kbd>mainview</kbd>. Now <kbd>detailview</kbd> should overlap <kbd>mainview</kbd>.</li>
+            <li>
+                Use the <code>display</code> property for showing and hiding <kbd>sidebar</kbd> and <kbd>detailview</kbd>. Try the developer console to test very quickly: Add and change CSS properties directly in Chrome (Elements > Styles).
+            </li>
+        </ul>
+        <h4>Main view</h4>
+        <ul>
+            <li>Use fixed heights for the <kbd>mainview</kbd> element (e.g. 600px), <kbd>header</kbd>, <kbd>datepicker</kbd> (both e.g. 40px) and <kbd>footer</kbd> (60px). Apply a width of 100% to all elements.
+            </li>
+            <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd> and <kbd>datepicker</kbd>.
+            </li>
+            <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+            <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all elements or rather group of elements.
+            </li>
+            <li>Use absolute positioning to pin the <kbd>footer</kbd> to the bottom. Set a fixed height and full width to the <kbd>footer</kbd> <code>button</code>.
+            </li>
+        </ul>
+        <h4>Detail view</h4>
+        <ul>
+            <li>Use same heights and widths for the <kbd>detailview</kbd> elements as used before for the
+                <kbd>mainview</kbd>. Set a fixed height for the <kbd>content</kbd> (height <kbd>detailview</kbd> – height
+                <kbd>header</kbd>) and make it scrollable by using the property overflow.
+            </li>
+            <li>Use absolute positioning for the <kbd>header</kbd> to pin it to the top.</li>
+            <li>Set a fixed height for all table rows and divide the table rows into columns using percental widths.</li>
+        </ul>
+        <h4>Sidebar</h4>
+        <ul>
+            <li>Use same heights for <kbd>sidebar</kbd> as used before.</li>
+            <li>Use a width of 70% for the <kbd>sidebar</kbd> and a dark background-color.</li>
+        </ul>
+        <h3>Add style information (D4)</h3>
+        <h4>MainView</h4>
+        <ul>
+            <li>Add a dark, half-transparent background to your button <code>class</code>, mainview-datepicker and mainview-footer.
+            </li>
+            <li>Create <code>:hover</code> and <code>:active</code> styles for all buttons to highlight the user interaction.
+            </li>
+            <li>Use font properties to style <code>color</code> and <code>font-size</code> of the icons and appearance of headlines.
+            </li>
+            <li>Use padding & margin to set enough space between the elements.</li>
+        </ul>
+        <h4>DetailView</h4>
+        <ul>
+            <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter background-color to even rows.
+            </li>
+            <li>If the button classes where applied correctly in the HTML part, the close button and header should be already styled.
+            </li>
+        </ul>
+        <h4>Sidebar</h4>
+        <ul>
+            <li>Edit the color and size of the headlines and icons.</li>
+            <li>Style the lists with margins, paddings and borders.</li>
+            <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already styled. Create an active <code>class</code> to highlight currently selected buttons.
+            </li>
+            <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.
+            </li>
+        </ul>
+        <h3>Final positioning</h3> This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you proceed.
+        <ul>
 
-        <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all sections and overlays:</li>
-        <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
-        <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
-        <li>Use <code>z-index</code> to arrange all sections.</li>
-    </ul>
-    <h3>CSS Effects (D5)</h3>
-    <ul>
-        <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
-            <kbd>sidebar-fade-overlay</kbd> and add a dark
-            half-transparent background-color.
-        </li>
-        <li>Create a half-transparent background gradient for the table.</li>
-        <li>Add shadow to your <code>button</code> style</li>
-        <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
-    </ul>
-    <h3>CSS Transform & Transitions (D6)</h3>
-    <ul>
-        <li>Provide a background-color transition for the mainview element when the color is changed. Test the
-            transition with your browser developer tools by changing the background-color manually.
-        </li>
-        <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to
-            build an X-icon for the <kbd>close-sidebar</kbd> button
-        </li>
-    </ul>
-    <h1>E: Frameworks</h1>
+            <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all sections and overlays:</li>
+            <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
+            <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
+            <li>Use <code>z-index</code> to arrange all sections.</li>
+        </ul>
+        <h3>CSS Effects (D5)</h3>
+        <ul>
+            <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
+                <kbd>sidebar-fade-overlay</kbd> and add a dark half-transparent background-color.
+            </li>
+            <li>Create a half-transparent background gradient for the table.</li>
+            <li>Add shadow to your <code>button</code> style</li>
+            <li>Use a <code>div</code> element and CSS <code>animation</code> to create an animated loading indicator.</li>
+        </ul>
+        <h3>CSS Transform & Transitions (D6)</h3>
+        <ul>
+            <li>Provide a background-color transition for the mainview element when the color is changed. Test the transition with your browser developer tools by changing the background-color manually.
+            </li>
+            <li>Use two css-rotated spans with white <code>background-color</code> and a <code>height</code> of 3px, to build an X-icon for the <kbd>close-sidebar</kbd> button
+            </li>
+        </ul>
+        <h2 id="E">E: Frameworks</h2>
 
-    <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
+        <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
 
-    <h3>Font-Awesome (E1)</h3>
+        <h3>Font-Awesome (E1)</h3>
         <ul>
             <li>Set up <a href="https://fortawesome.github.io/Font-Awesome">Font Awesome</a></li>
             <li>Use font awesome <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/">icons</a> in your app</li>
         </ul>
-    <h3>Bootstrap (E2)</h3>
-    <ul>
-        <li>Include <a href="http://getbootstrap.com/">Bootstrap</a></li>
-        <li>Use the bootstrap grid system for layouting <kbd>detailsview</kbd></li>
-        <li>
-            Create a horizontal navigation bar allowing the user to choose between different days.
-            <a href="http://www.w3schools.com/bootstrap/bootstrap_pagination.asp">Bootstrap Pagination</a> might help.
-        </li>
-    </ul>
-    <h3>Boilerplate & jQuery Mobile (E3/E4)</h3>
-    <ul>
-        <li>Download HTML5 Boilerplate from <a href="http://www.initializr.com/">Initializr</a> to start a new project</li>
-        <li>Include <a href="https://jquerymobile.com/">jQuery mobile</a> from <a href="https://code.jquery.com/">jQuery CDN</a> (Content Delivery Network)</li>
-        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
-        <li>Use hyperlinks to navigate between your two pages</li>
-        <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
-    </ul>
+        <h3>Bootstrap (E2)</h3>
+        <ul>
+            <li>Include <a href="http://getbootstrap.com/">Bootstrap</a></li>
+            <li>Use the bootstrap grid system for layouting <kbd>detailsview</kbd></li>
+            <li>
+                Create a horizontal navigation bar allowing the user to choose between different days.
+                <a href="http://www.w3schools.com/bootstrap/bootstrap_pagination.asp">Bootstrap Pagination</a> might help.
+            </li>
+        </ul>
+        <h3>Boilerplate & jQuery Mobile (E3/E4)</h3>
+        <ul>
+            <li>Download HTML5 Boilerplate from <a href="http://www.initializr.com/">Initializr</a> to start a new project</li>
+            <li>Include <a href="https://jquerymobile.com/">jQuery mobile</a> from <a href="https://code.jquery.com/">jQuery CDN</a> (Content Delivery Network)</li>
+            <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
+            <li>Use hyperlinks to navigate between your two pages</li>
+            <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
+        </ul>
 
-    <h1>F: JavaScript</h1>
+        <h2 id="F">F: JavaScript</h2>
 
-    <p>In this chapter, you'll add the interaction and model the weather data.</p>
+        <p>In this chapter, you'll add the interaction and model the weather data.</p>
 
-    <p class="todo">Include the following</p>
-    <ol class="todo">
-        <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
-        <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
-        <li>Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>.
-            The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
-        </li>
-        <li>Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd> and <kbd>close-details</kbd>.
-            The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
-        </li>
-        <li>ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn sinnvoll</li>
-        <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
-        <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
-        <li>getAPIData() – jQuery, getJSON</li>
-        <li>Show / Hide Loading overlay - CSS Transitions, Animations</li>
-        <li>ChangeTempUnit, changeWindUnit – jQuery</li>
-        <li>Show city List  - jQuery DOM Insertion</li>
-        <li>addCity + Sortable - jQuery Interaction, jQueryUI Widgets</li>
-        <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
-        <li>setCityClickable - jQuery Plugins</li>
-    </ol>
+        <p class="todo">Include the following</p>
+        <ol class="todo">
+            <li>UpdateWeatherMainHTML()- Javascript innerHTML, Objects</li>
+            <li>UpdateWeatherDetailHTML()- Javascript HTML String creation</li>
+            <li>Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd> and <kbd>close-sidebar</kbd>. The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
+            </li>
+            <li>Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd> and <kbd>close-details</kbd>. The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
+            </li>
+            <li>ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn sinnvoll</li>
+            <li>UpdateColorScheme() – Javascript CSS Manipulation</li>
+            <li>ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</li>
+            <li>getAPIData() – jQuery, getJSON</li>
+            <li>Show / Hide Loading overlay - CSS Transitions, Animations</li>
+            <li>ChangeTempUnit, changeWindUnit – jQuery</li>
+            <li>Show city List  - jQuery DOM Insertion</li>
+            <li>addCity + Sortable - jQuery Interaction, jQueryUI Widgets</li>
+            <li>LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</li>
+            <li>setCityClickable - jQuery Plugins</li>
+        </ol>
 
-    <p class="todo"></p>
+        <p class="todo"></p>
 
 
-    <p class="todo">Add solution here as a collapsible</p>
-    <!--
+        <p class="todo">Add solution here as a collapsible</p>
+        <!--
     <h3>F0: Combined Page</h3>
     <p>Combine overview and details in a single HTML file
         <br> Layout the details to overlay the overview in CSS
@@ -597,8 +546,9 @@ PREPARATION
         <li>…</li>
         <li>Onload for initialization of overview</li>
     </ul>
-    <h2>G: jQuery</h2>
-    <h3>G1: jQuery</h3>
+-->
+    <h2 id="G">G: jQuery</h2>
+<!--    <h3>G1: jQuery</h3>
     <p>Include
         <br> Test
     </p>
@@ -627,14 +577,14 @@ PREPARATION
         <li>Add an event handler for the &ldquo;stop&rdquo; event that resorts the city data array using the sortable widget method &ldquo;toArray&rdquo; and your <em>updateArraySorting</em> function </li>
     </ul>
 -->
-    <h2>H: APIs</h2>
+        <h2 id="H">H: APIs</h2>
 
-    <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
+        <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
 
-    <p class="todo">Use offlinestorage for selected element and store your list
-        <br> Use location </p>
+        <p class="todo">Use offlinestorage for selected element and store your list
+            <br> Use location </p>
 
-</div>
+    </div>
 </body>
 
 </html>

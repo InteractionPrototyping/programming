@@ -556,7 +556,7 @@ PREPARATION
     <h2 id="F">F: JavaScript</h2>
     <div class="well">
         <h4>What the app will do</h4>
-        For better understanding, compare with our  <a href="http://interactionprototyping.github.io/programming/weatherApp">best practice weather app</a>.
+        <p>For better understanding, compare with our  <a href="http://interactionprototyping.github.io/programming/weatherApp">best practice weather app</a></p>.
             <ul>
                 <li>The app shows the weather data of the selected day. The user can flick through seven consecutive days using the next and previous button</li>
                 <li>For today, tomorrow and the day after tomorrow detail information will be generated. The detail information consists of hourly weather data</li>
@@ -623,15 +623,15 @@ PREPARATION
     <h3 id="JS-Objects">Objects (F5)</h3>
     <div class="row">
         <figure class="col-xs-6">
-        <img id="uml_weather_obj" src="images/uml_weather_object.svg" />
-            <figcaption>UML diagram for sample weather data object</figcaption>
+            <img id="simple_object" src="images/uml_weather_basic.svg" />
+            <figcaption>A simple javascript object</figcaption>
         </figure>
     </div>
     <ul>
-        <li>Create a <strong>weather</strong> object following the UML specification above</li>
-        <li>For the moment the objects <strong>daily</strong> and <strong>hourly</strong> may be empty</li>
+        <li>Create a simple object containing weather data, as shown above</li>
         <li>Add your converting functions to the object (key: function name, value: function) </li>
     </ul>
+
 
     <h3 id="JS-Objects">Arrays (F6)</h3>
     <ul>
@@ -642,6 +642,20 @@ PREPARATION
         <li>Now try to fill your <kbd>mainview</kbd></kbdd> elements with data from the object (using <code>innerHTML</code>)</li>
         <li>Create an <code>array</code> of <strong>cities</strong>. Objects should contain the city's name and a nested object containing <strong>latitude</strong> and <strong>longitude</strong></li>
     </ul>
+
+    <h3 id="JS-UML">Model weather data</h3>
+    <div class="row">
+        <figure class="col-xs-6">
+            <img id="uml_weather_obj" src="images/uml_weather_object.svg" />
+            <figcaption>UML diagram for sample weather data object</figcaption>
+        </figure>
+    </div>
+    <ul>
+        <li>Now change your <strong>weather</strong> object so that it follows UML specification above</li>
+        <li>For the moment the objects <strong>daily</strong> and <strong>hourly</strong> may be empty</li>
+
+    </ul>
+
     <!-- Sample Weather Object -->
     <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed">View Demo Weather
         Object

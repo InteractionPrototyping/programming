@@ -66,12 +66,6 @@ $(function () {
 
     showCityList();
 
-	$(document).ready(function () {
-		$('#detailview-content').click(function() {
-			document.write("Hallo");
-		});
-	});
-
 	// Close sidebar
 	document.getElementById('close-sidebar').onclick = function () {
 		console.log('clicked sidebar');

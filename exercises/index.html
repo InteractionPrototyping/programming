@@ -69,7 +69,7 @@ INTRODUCTION
 -->
     <h2 id="introduction">Introduction</h2>
 
-    <p>This is the practical task assignment for the <strong> Interaction Programming Block Course</strong> (<a
+    <p>This is the practical task assignment for the <em> Interaction Programming Block Course</em> (<a
             href="../slides/Introduction.pdf">introductory slides</a>). The block course is taught at the <a
             href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische
         Universität München</a> in the context of master courses in <em>Human
@@ -438,7 +438,7 @@ PREPARATION
         <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd>
             and <kbd>datepicker</kbd>.
         </li>
-        <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+        <li>Use a fixed <code>width</code> and <code>height</code> and <code>absolute</code> positioning for buttons in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
         <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all
             elements or rather group of elements.
         </li>
@@ -478,93 +478,26 @@ PREPARATION
     </ul>
     <h4>DetailView</h4>
     <ul>
-        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter
-            background-color to even rows.
+        <li>Use the CSS selector <code>:nth-child()</code> to set a half-transparent darker <code>background-color</code> to odd rows and lighter
+            <code>background-color</code> to even rows.
         </li>
-        <li>If the button classes where applied correctly in the HTML part, the close button and header should be
-            already styled.
+        <li>If the button classes where applied correctly in the HTML part, the close button and header should be already styled.
         </li>
     </ul>
     <h4>Sidebar</h4>
     <ul>
         <li>Edit the color and size of the headlines and icons.</li>
-        <li>Style the lists with margins, paddings and borders.</li>
+        <li>Style the lists with <code>margin</code>, <code>padding</code> and <code>border</code>.</li>
         <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already
             styled. Create an active <code>class</code> to highlight currently selected buttons.
         </li>
-        <li>Add a <code>:
-        hover</code> class to the city select list item using the image draggable.png inside the img
-            folder.
+        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.
         </li>
     </ul>
-    <h3 id="Positioning">Final positioning</h3>
-    This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
-    proceed.
+    <h3 id="Positioning">Arrange sections</h3>
     <ul>
-
-        <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all
-            sections and overlays:
-        </li>
-        <li>Wrap your view sections <kbd>mainview</kbd> and <kbd>detailview</kbd> into a full-size wrapper block element
-            with <code>overflow:hidden;</code> to prevent
-            your views from being displayed.
-        </li>
-        <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
-        <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
-        <li>Use <code>z - index</code> to arrange all sections.</li>
+        <li>Use <code>z - index</code> to arrange all sections. The element with the highest <code>z-index</code> is always in front of other elements.</li>
     </ul>
-    <button data-toggle="collapse" data-target="#Positioning-Solution" class="btn btn-info collapsed">View Solution
-    </button>
-
-    <div id="Positioning-Solution" class="collapse">
-      <pre><code class="css">
-          #
-          wrapper
-          {
-              width: 100 %;
-              height: 100 %;
-              overflow: hidden;
-          }
-
-          #
-          mainview
-          {
-              width: 100 %;
-              height:100 %;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z - index
-          :
-              1;
-          }
-
-          #
-          detailview
-          {
-              width: 100 %;
-              height: 100 %;
-              position: absolute;
-              top: 100 %;
-              left: 0;
-              z - index
-          :
-              20;
-          }
-
-          #
-          sidebar
-          {
-              width: 70 %;
-              height: 100 %;
-              position: absolute;
-              left: -70 %;
-              z - index
-          :
-              10;
-          }
-      </code></pre>
-    </div>
     <h3 id="Effects">CSS Effects (D5)</h3>
     <ul>
         <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
@@ -586,7 +519,7 @@ PREPARATION
     </ul>
     <h2 id="E">E: Frameworks</h2>
 
-    <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
+    <h4>Create your app more quickly with pre-defined styles, content or functionality.</h4>
 
     <h3 id="Fontawesome">Font-Awesome (E1)</h3>
 
@@ -614,7 +547,7 @@ PREPARATION
         <li>Check out the <a href="http://www.w3schools.com/jquerymobile/jquerymobile_intro.asp">jQM Tutorial</a> at
             w3schools to get an overview
         </li>
-        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data - role</code> page</li>
+        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
         <li>Use hyperlinks to navigate between your two pages</li>
         <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
     </ul>
@@ -644,7 +577,8 @@ PREPARATION
     <h4 id="JS-Setup">External script file</h4>
     <ol>
         <li>Create a new file <kbd>interaction.js</kbd> in your app folder</li>
-        <li>Include your JS code using the <code>script</code> tag</li>
+        <li>Include your JS code using the <code>script</code> tag with the <code>src</code> attribute</li>
+
     </ol>
 
     <h3 id="JS-Debugging">Debugging (F1)</h3>
@@ -658,38 +592,48 @@ PREPARATION
     <br>
     <h3 id="JS-Variables">Variables (F3)</h3>
     <ul>
-        <li>Declare a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
+        <li>Declare a variable <strong>currentDay</strong> in your <kbd>interaction.js</kbd></li>
         <li>Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</li>
         <li>Increase / decrease its value when the user clicks the corresponding button</li>
+        <li>Use the console to <code>log</code> its value</li>
     </ul>
 
     <h3 id="JS-Functions">Functions (F4)</h3>
     <ul>
         <li>Write a function that converts windspeed from m/s to km/h</li>
         <li>Add another function that converts temperature from Fahrenheit to Celsius</li>
-        <li>Create function for formatting humidity (from 0 to 1) as percentage (50%)</li>
+        <li>Create a function for formatting <code>numeric</code> humidity data (e.g. 0.5) as <code>string</code> percentage (e.g. &quot;50%&quot;)</li>
         <li>Debug your functions by calling them within the console: Just type the name of your function.</li>
         <li>Add comments above your functions and above important statements: Describe parameters, functionality and output</li>
         <li>Write functions for all code that yo have written into <code>onclick</code> attributes and replace the value of onclick with the function name </li>
     </ul>
     <h3 id="JS-Objects">Objects (F5)</h3>
+    <div class="row">
+        <figure class="col-xs-6">
+        <img id="uml_weather_obj" src="images/uml_weather_object.svg" />
+            <figcaption>UML diagram for sample weather data object</figcaption>
+        </figure>
+    </div>
     <ul>
-        <li>Create a sample weather object with some data: latitude, longitude, temperature, windspeed, ...</li>
+        <li>Create a <strong>weather</strong> object following the UML specification above</li>
+        <li>For the moment the objects <strong>daily</strong> and <strong>hourly</strong> may be empty</li>
         <li>Add your converting functions to the object (key: function name, value: function) </li>
     </ul>
+
     <h3 id="JS-Objects">Arrays (F6)</h3>
     <ul>
-        <li>Create an array of your weather objects</li>
-        <li>Nest an array of hourly data inside the weather object</li>
-        <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction. Reference the new file in your HTML <code>head</code></li>
-        <li>Write a function <code>updateWeatherMainHTML()</code> that logs values from the object to the console.</li>
+        <li>Nest arrays of <strong>hourly</strong> and <strong>daily</strong> data inside the <strong>weather</strong> object, according to the UML diagram</li>
+        <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction.</li>
+        <li>Reference the new file in your HTML <code>head</code></li>
+        <li>Write a function <strong>updateWeatherMainHTML()</strong> that logs values from the object to the console.</li>
         <li>Now try to fill your <kbd>mainview</kbd></kbdd> elements with data from the object (using <code>innerHTML</code>)</li>
+        <li>Create an <code>array</code> of <strong>cities</strong>. Objects should contain the city's name and a nested object containing <strong>latitude</strong> and <strong>longitude</strong></li>
     </ul>
     <!-- Sample Weather Object -->
     <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed">View Demo Weather
         Object
     </button>
-    <div id="WeatherObject" class="collapse todo">
+    <div id="WeatherObject" class="collapse">
       <pre><code>
           var weather = {
               "latitude" : 48.1351253,
@@ -798,7 +742,8 @@ PREPARATION
         </ul>
         <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>
         <ul class="todo">
-            <li>UpdateWeatherDetailHTML</li>
+            <li>Now loop through your weather data and create the rows of <kbd>detailview</kbd> programmatically using HTML <code>strings</code></li>
+            <li>Wrap the loop into a function <code>updateWeatherDetailHTML()</code></li>
         </ul>
         <h3 id="JS-DOM" class="todo">DOM (F9/10)</h3>
         <ul class="todo">

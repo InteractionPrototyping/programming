@@ -72,7 +72,14 @@ img.third {
 
 figure figcaption {
     font-weight: bold;
-    text-align: center;
+    margin-bottom:12pt;
+}
+figure.app {
+    text-align:center;
+}
+figure.app img {
+    width:100%;
+    max-width:300px;
 }
 /*todo class*/
 

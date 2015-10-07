@@ -281,7 +281,7 @@ function getApiData(lat, lng) {
     showLoadingIndicator();
     $.getJSON('http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/' + lat + ',' + lng + '?callback=?')
         .done(function (data) {
-            //console.log(JSON.stringify(data));
+            console.log(JSON.stringify(data));
             weather = data;
             updateWeatherMainHTML();
             updateWeatherDetailHTML();

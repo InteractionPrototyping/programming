@@ -9,3 +9,6 @@ OK: Single Page
 Verlinke Aufgaben und Kapitel
 Add JS exercises
 Add exercise to rebuild everything from vanilla to jQuery (use existing toggle functions)
+
+Hash-Navigate bei Slides
+Suche bei Slides

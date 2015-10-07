@@ -6,12 +6,6 @@
 
 		<title>IPP: H - APIs</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<!-- Bootstrap -->
@@ -158,7 +152,7 @@
 						<li><b>A</b>synchronous <b>J</b>avaScript <b>a</b>nd <b>X</b>ML
 							<ul>
 								<li>loading data in the <b>background</b> and display it on the webpage</li>
-								<li><b>without reloading the whole page</b></li>
+								<li><b>without reloading</b> the whole page</li>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
 						</li>
@@ -245,18 +239,42 @@
 			</div>
 		</section>
 
-		<section id="H3_Usage" data-background="#fff" class="container">
-			<h2>Usage</h2>
+		<section id="H3_Technologies" data-background="#fff" class="container">
+			<h2>Technologies</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
-						<li><b>Connectivity:</b>allowing you to communicate with the server</li>
-						<li><b>Offline & Storage: allowing webpages to store data on the client-side locally and operate offline more efficiently</b></li>
-						<li><b>Multimedia: controlling aufio on the web</b> </li>
-						<li><b>Device access:</b> allowing for the usage of various input and output devices</li>
+						<li><b>Semantics:</b> allowing you to describe more precisely what your content is</li>
+						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways</li>
+						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (Web Storage API)</li>
+						<li><b>Multimedia:</b> controlling audio and video on the web</li>
 					</ul>
 				</div>
 			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://html5index.org/" target="_blank"><small><i class="fa fa-book"> The HTML 5 JavaScript API Index</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="H3_moreTechnologies" data-background="#fff" class="container">
+			<h2>Technologies</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>2D/3D graphics and effects:</b> allowing a much more diverse range of presentation options</li>
+						<li><b>Performance and Integration:</b> providing greater speed optimization and better usage of computer hardware</li>
+						<li><b>Device access:</b> allowing for the usage of various input and output devices</li>
+						<li><b>Styling:</b> letting authors write more sophisticated themes</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://html5index.org/" target="_blank"><small><i class="fa fa-book"> The HTML 5 JavaScript API Index</i></small></a>
+				</div>
+			</div>	
 		</section>
 
 		<section id="H3_retrievingData" data-background="#fff" class="container">
@@ -294,23 +312,116 @@ alert("Hallo " + data.first + ' ' + data.last);
 				<div class="col-xs-12">
 					<ul>
 						<li>API key is required for access</li>
-						<li>Create a project in Google Developer Console</li>
-						<li>Activate your desired API and obtain public API key</li>
+						<li>Create a project in <a href="https://console.developers.google.com/" target="_blank"><i class="fa fa-external-link"> Google Developer Console</i></a></li>
+						<li>Activate your desired API and obtain public API key</li>					
+						<li><b>IPP-API Key zum Testen:</b> AIzaSyBJIJgx9RT6J1o-Xd-roM0q7F4QXEzltns</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section id="H3_WebStorageAPI" data-background="#fff" class="container">
+			<h2>Web Storage API</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>Web Storage API</b> provides mechanisms by which browsers can store key/value pairs</li>
+						<li>Two mechanisms:
+							<ul>
+								<li><code>sessionStorage</code> maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores)</li>
+								<li><code>localStorage</code> persists even when the browser is closed and reopened</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row"> 
-			<div class="col-xs-12 exlink important">
-				<a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp" target="_blank"><small><i class="fa fa-book"> AJAX Reference</i></small></a>
-			</div>
-		</div>
+				<div class="col-xs-12 exlink important">
+					<a href="https://w3c.github.io/webstorage/" target="_blank"><small><i class="fa fa-book"> Web Storage API </i></small></a>
+				</div>
+			</div>	
 		</section>
+
+		<section id="H3_WebStorageAPI1" data-background="#fff" class="container">
+			<h2>Web Storage API</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Access:</p>
+							<ul>
+								<li><code>localStorage.key="value"</code></li>
+								<li>keys/values are stored as Strings</li>
+								<li><a  href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+							</ul>
+				</div>
+				<div class="col-xs-6">
+					<pre><code>if (localStorage.clickcount) {
+  localStorage.clickcount=
+  Number(localStorage.clickcount)+1;
+} else {
+  localStorage.clickcount=1;
+}
+document.getElementById("result")
+.innerHTML="You have clicked the 
+button " + localStorage.clickcount 
++ "time(s).";</code></pre>
+				</div>
+			</div>
+		</section>
+
+		<section id="H3_WebAudioAPI2" data-background="#fff" class="container">
+			<h2>Web Audio API</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>Web Audio API</b> provides mechanisms for mixing, processing and synthesizing audio in web applications</li>
+						<li>The <code>AudioContext</code> Interface is used for managing and playing all sounds</li>
+						<li><code>localStorage</code> persists even when the browser is closed and reopened</li>
+						<li>short- to medium</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="https://w3c.github.io/webstorage/" target="_blank"><small><i class="fa fa-book"> Web Storage API </i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="H3_WebAudioAPI2" data-background="#fff" class="container">
+			<h2>Web Storage API</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Access:</p>
+							<ul>
+								<li><code>localStorage.key="value"</code></li>
+								<li>keys/values are stored as Strings</li>
+								<li><a  href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+							</ul>
+				</div>
+				<div class="col-xs-6">
+					<pre><code>if (localStorage.clickcount) {
+  localStorage.clickcount=
+  Number(localStorage.clickcount)+1;
+} else {
+  localStorage.clickcount=1;
+}
+document.getElementById("result").innerHTML="You have clicked the button " + localStorage.clickcount + "
+time(s).";</code></pre>
+				</div>
+			</div>
+		</section>
+
 
 	</section>
 
+
+
+
+
 <!-- chapter API -->
 	<!-- Google API key -->
-	<!-- offline-storage, SoundAPI -->
 	<!-- Example: Sound API -->
 	<!-- Example: Geocoding -->
 	<!-- Example: forecast.io -->

@@ -87,3 +87,18 @@ figure.app img {
     background-color: yellow;
     display:none;
 }
+
+strong {
+    background-color: rgba(161,177,26, 0.7);
+    padding: 2px 4px;
+    font-size: 90%;
+    color: darkgreen;
+    border-radius: 4px;
+    font-weight: 200;
+}
+
+#uml_weather_obj {
+    width: 80%;
+    height: 80%;
+
+}

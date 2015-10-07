@@ -69,7 +69,7 @@ INTRODUCTION
 -->
     <h2 id="introduction">Introduction</h2>
 
-    <p>This is the practical task assignment for the <strong> Interaction Programming Block Course</strong> (<a
+    <p>This is the practical task assignment for the <em> Interaction Programming Block Course</em> (<a
             href="../slides/Introduction.pdf">introductory slides</a>). The block course is taught at the <a
             href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische
         Universität München</a> in the context of master courses in <em>Human
@@ -438,7 +438,7 @@ PREPARATION
         <li>Use relative positioning for all buttons and absolute positioning for the headlines inside <kbd>header</kbd>
             and <kbd>datepicker</kbd>.
         </li>
-        <li>Use a fixed width and height for <code>buttons</code> in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
+        <li>Use a fixed <code>width</code> and <code>height</code> and <code>absolute</code> positioning for buttons in <kbd>header</kbd> and <kbd>datepicker</kbd>.</li>
         <li>Use relative positioning for all elements inside <kbd>content</kbd>. Set appropriate widths and center all
             elements or rather group of elements.
         </li>
@@ -478,93 +478,26 @@ PREPARATION
     </ul>
     <h4>DetailView</h4>
     <ul>
-        <li>Use the CSS selector :nth-child() to set a half-transparent darker background-color to odd rows and lighter
-            background-color to even rows.
+        <li>Use the CSS selector <code>:nth-child()</code> to set a half-transparent darker <code>background-color</code> to odd rows and lighter
+            <code>background-color</code> to even rows.
         </li>
-        <li>If the button classes where applied correctly in the HTML part, the close button and header should be
-            already styled.
+        <li>If the button classes where applied correctly in the HTML part, the close button and header should be already styled.
         </li>
     </ul>
     <h4>Sidebar</h4>
     <ul>
         <li>Edit the color and size of the headlines and icons.</li>
-        <li>Style the lists with margins, paddings and borders.</li>
+        <li>Style the lists with <code>margin</code>, <code>padding</code> and <code>border</code>.</li>
         <li>If the <code>button</code> classes where applied correctly in the HTML part, all buttons should be already
             styled. Create an active <code>class</code> to highlight currently selected buttons.
         </li>
-        <li>Add a <code>:
-        hover</code> class to the city select list item using the image draggable.png inside the img
-            folder.
+        <li>Add a <code>:hover</code> class to the city select list item using the image draggable.png inside the img folder.
         </li>
     </ul>
-    <h3 id="Positioning">Final positioning</h3>
-    This step hides all sections except the <kbd>mainview</kbd>. Make sure that all CSS Styling is completed before you
-    proceed.
+    <h3 id="Positioning">Arrange sections</h3>
     <ul>
-
-        <li>Instead of <code>display</code> we will now use <code>position: absolute</code> for showing and hiding all
-            sections and overlays:
-        </li>
-        <li>Wrap your view sections <kbd>mainview</kbd> and <kbd>detailview</kbd> into a full-size wrapper block element
-            with <code>overflow:hidden;</code> to prevent
-            your views from being displayed.
-        </li>
-        <li>Move the <kbd>sidebar</kbd> out of sight by using <code>left</code></li>
-        <li>Do the same for the <kbd>detailview</kbd> with <code>top</code></li>
-        <li>Use <code>z - index</code> to arrange all sections.</li>
+        <li>Use <code>z - index</code> to arrange all sections. The element with the highest <code>z-index</code> is always in front of other elements.</li>
     </ul>
-    <button data-toggle="collapse" data-target="#Positioning-Solution" class="btn btn-info collapsed">View Solution
-    </button>
-
-    <div id="Positioning-Solution" class="collapse">
-      <pre><code class="css">
-          #
-          wrapper
-          {
-              width: 100 %;
-              height: 100 %;
-              overflow: hidden;
-          }
-
-          #
-          mainview
-          {
-              width: 100 %;
-              height:100 %;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z - index
-          :
-              1;
-          }
-
-          #
-          detailview
-          {
-              width: 100 %;
-              height: 100 %;
-              position: absolute;
-              top: 100 %;
-              left: 0;
-              z - index
-          :
-              20;
-          }
-
-          #
-          sidebar
-          {
-              width: 70 %;
-              height: 100 %;
-              position: absolute;
-              left: -70 %;
-              z - index
-          :
-              10;
-          }
-      </code></pre>
-    </div>
     <h3 id="Effects">CSS Effects (D5)</h3>
     <ul>
         <li>Add a fade overlay that covers the underlying content, when the sidebar is open.Use a width of 100% for the
@@ -586,7 +519,7 @@ PREPARATION
     </ul>
     <h2 id="E">E: Frameworks</h2>
 
-    <p>Frameworks are important helpers to create (and prototype) your app more quickly.</p>
+    <h4>Create your app more quickly with pre-defined styles, content or functionality.</h4>
 
     <h3 id="Fontawesome">Font-Awesome (E1)</h3>
 
@@ -614,15 +547,13 @@ PREPARATION
         <li>Check out the <a href="http://www.w3schools.com/jquerymobile/jquerymobile_intro.asp">jQM Tutorial</a> at
             w3schools to get an overview
         </li>
-        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data - role</code> page</li>
+        <li>Add a new <kbd>mainview</kbd> and <kbd>detailview</kbd> with <code>data-role</code> page</li>
         <li>Use hyperlinks to navigate between your two pages</li>
         <li>Try a flip switch widget for changing between different units (e.g. km/h or miles/hour)</li>
     </ul>
 
     <h2 id="F">F: JavaScript</h2>
-
-    <p>In this chapter, you'll add the interaction and model the weather data.</p>
-
+    <h4>Add interaction to your app</h4>
 
     <h3 id="JS-Test">First Steps (F0)</h3>
     <ul>
@@ -659,7 +590,7 @@ PREPARATION
     <br>
     <h3 id="JS-Variables">Variables (F3)</h3>
     <ul>
-        <li>Declare a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
+        <li>Declare a variable <strong>currentDay</strong> in your <kbd>interaction.js</kbd></li>
         <li>Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</li>
         <li>Increase / decrease its value when the user clicks the corresponding button</li>
         <li>Use the console to <code>log</code> its value</li>
@@ -675,25 +606,26 @@ PREPARATION
         <li>Write functions for all code that yo have written into <code>onclick</code> attributes and replace the value of onclick with the function name </li>
     </ul>
     <h3 id="JS-Objects">Objects (F5)</h3>
+    <div class="row">
+        <figure class="col-xs-6">
+        <img id="uml_weather_obj" src="images/uml_weather_object.svg" />
+            <figcaption>UML diagram for sample weather data object</figcaption>
+        </figure>
+    </div>
     <ul>
-        <li>Create a sample weather object with some data: latitude, longitude, temperature, windspeed, ...</li>
-        <li>Try to follow the UML specification below</li>
+        <li>Create a <strong>weather</strong> object following the UML specification above</li>
+        <li>For the moment the objects <strong>daily</strong> and <strong>hourly</strong> may be empty</li>
         <li>Add your converting functions to the object (key: function name, value: function) </li>
     </ul>
-    <button data-toggle="collapse" data-target="#WeatherObjectUML" class="btn btn-info collapsed">View UML specification</button>
-    <div id="WeatherObjectUML" class="collapse">
-        <img src="images/uml_weather_object.svg" />
-    </div>
 
     <h3 id="JS-Objects">Arrays (F6)</h3>
     <ul>
-        <li>Create an array of multiple weather objects</li>
-        <li>Nest an array of hourly data inside the weather object</li>
+        <li>Nest arrays of <strong>hourly</strong> and <strong>daily</strong> data inside the <strong>weather</strong> object, according to the UML diagram</li>
         <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction.</li>
         <li>Reference the new file in your HTML <code>head</code></li>
-        <li>Write a function updateWeatherMainHTML() that logs values from the object to the console.</li>
+        <li>Write a function <strong>updateWeatherMainHTML()</strong> that logs values from the object to the console.</li>
         <li>Now try to fill your <kbd>mainview</kbd></kbdd> elements with data from the object (using <code>innerHTML</code>)</li>
-        <li>Create an <code>array</code> of cities. Objects should contain the city's name and a nested object containing latitude and longitude</li>
+        <li>Create an <code>array</code> of <strong>cities</strong>. Objects should contain the city's name and a nested object containing <strong>latitude</strong> and <strong>longitude</strong></li>
     </ul>
     <!-- Sample Weather Object -->
     <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed">View Demo Weather
@@ -798,71 +730,30 @@ PREPARATION
       </code></pre>
         </div>
 
-        <h3 id="JS-Control" class="todo">Control and conditionals (F7) </h3>
+        <h3 id="JS-Control">Control and conditionals (F7) </h3>
 
-        <p class="todo">Add a function <code>changeCurrentDay()</code> to your <kbd>interactions.js</kbd> file</p>
-        <ul class="todo">
+        <p>Add a function <strong>changeCurrentDay()</strong> to your <kbd>interactions.js</kbd> file:</p>
+        <ul c>
             <li>Depending on the given parameter, currentDay should be incremented or decremented</li>
-            <li>Log an error message to the console if the value of <code>currentDay</code> exceeds the range of [0-6]</li>
-            <li>Now prevent any change of <code>currentDay</code> if it's going to exceed the range</li>
+            <li>Log an error message to the console if the value of <strong>currentDay</strong> exceeds the range of [0-6]</li>
+            <li>Now prevent any change of <strong>currentDay</strong> if it's going to exceed the range</li>
         </ul>
-        <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>
-        <ul class="todo">
-            <li>Now loop through your weather data and create the rows of <kbd>detailview</kbd> programmatically using HTML <code>strings</code></li>
-            <li>Wrap the loop into a function <code>updateWeatherDetailHTML()</code></li>
+        <h3 id="JS-Loops"> Loops (F8) </h3>
+        <ul>
+            <li>Create a function <code>updateWeatherDetailHTML()</code> that contains a <code>for</code> loop with 12 steps</li>
+            <li>Now loop through your <strong>hourly</strong> weather data and create the rows of <kbd>detailview</kbd> programmatically. Hint: Set an HTML <code>string</code> as <code>innerHTML</code> of <kbd>detail-table</kbd></li>
         </ul>
-        <h3 id="JS-DOM" class="todo">DOM (F9/10)</h3>
-        <ul class="todo">
-            <li>show hide loading overlay</li>
-            <li>UpdateColorScheme</li>
+        <h3 id="JS-DOM">DOM (F9/10)</h3>
+        <ul>
+            <li>Add a function <strong>updateColorScheme</strong> that changes the <code>background-color</code> of all <code>children</code> of <kbd>detail-table</kbd> (=rows) depending on temperature of that hour.</li>
         </ul>
-        <h3 id="JS-LDOMEvents" class="todo"> DOM Events (F11) </h3>
-        <ul class="todo">
-            <li>Try to add an onclick listener to a button programmatically instead of using HTML attributes</li>
-            <li>Add a new DOM element programmatically and add an onclik event listener</li>
+        <h3 id="JS-DOMEvents"> DOM Events (F11) </h3>
+        <ul>
+            <li>Add an <code>onclick</code> listener to the <kbd>city-submit</kbd> button that adds the value of <kbd>city-input</kbd> text field as new city to the <strong>cities</strong> array and to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
+            <li>Write a function that gets called during the body <code>onload</code> event. It should call <strong>updateWeatherMainHTML</strong> that inserts displays default values into your HTML elements.</li>
+            <li>You could remove the content from these elements because they are set now when the apps loads</li>
         </ul>
-        <p class="todo">Include the following</p>
-        <ol class="todo">
-            <h3 class="todo">UpdateWeatherMainHTML()- Javascript innerHTML, Objects</h3>
 
-            <h3 class="todo">UpdateWeatherDetailHTML()- Javascript HTML String creation</h3>
-
-            <h3 class="todo">Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd>
-                and <kbd>close-sidebar</kbd>.
-                The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
-            </h3>
-
-            <h3 class="todo">Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd>
-                and <kbd>close-details</kbd>.
-                The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
-            </h3>
-
-            <h3 class="todo">ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn
-                sinnvoll</h3>
-
-            <h3 class="todo">UpdateColorScheme() – Javascript CSS Manipulation</h3>
-
-            <h3 class="todo">ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</h3>
-
-            <h3 class="todo">getAPIData() – jQuery, getJSON</h3>
-
-            <h3 class="todo">Show / Hide Loading overlay - CSS Transitions, Animations</h3>
-
-            <h3 class="todo">ChangeTempUnit, changeWindUnit – jQuery</h3>
-
-            <h3 class="todo">Show city List  - jQuery DOM Insertion</h3>
-
-            <h3 class="todo">addCity + Sortable - jQuery Interaction, jQueryUI Widgets</h3>
-
-            <h3 class="todo">LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</h3>
-
-            <h3 class="todo">setCityClickable - jQuery Plugins</h3>
-        </ol>
-
-        <p class="todo"></p>
-
-
-        <p class="todo">Add solution here as a collapsible</p>
         <!--
         <h3 id="">F0: Combined Page</h3>
 
@@ -944,10 +835,66 @@ PREPARATION
         </ul>
     -->
         <h2 id="G">G: jQuery</h2>
-        <h2 id="H">H: APIs</h2>
 
-        <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
 
+    <h3 class="todo" id="jQ-Transition">Transition & Animation</h3>
+    <ul class="todo">
+        <li>Fade in the animated loading indicator</li>
+    </ul>
+
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+
+    <h3 class="todo" id="jQ-UI">jQuery UI</h3>
+    <ul class="todo">
+        <li>Embed jQuery UI from <a href="https//code.jquery.com">jQuery CDN</a></li>
+        <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
+    </ul>
+
+
+    <h3 class="todo">Show / Hide Loading overlay - CSS Transitions, Animations</h3>
+
+    <h3 class="todo">ChangeTempUnit, changeWindUnit – jQuery</h3>
+
+    <h3 class="todo">Show city List  - jQuery DOM Insertion</h3>
+
+    <h3 class="todo">addCity + Sortable - jQuery Interaction, jQueryUI Widgets</h3>
+
+    <h3 class="todo">LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</h3>
+
+    <h3 class="todo">setCityClickable - jQuery Plugins</h3>
+
+
+
+
+    <h2 id="H">H: APIs</h2>
+
+    <!-- API -->
+    <h3 class="todo" id="jQ-API">Weather API</h3>
+    <ul class="todo">
+        <li>Use getJSON to retrieve data from forecast.io</li>
+        <li>Replace your weather object with original API data</li>
+    </ul>
+
+    <h3 class="todo">Local Storage</h3>
         <p class="todo">Use offlinestorage for selected element and store your list
             <br> Use location </p>
 

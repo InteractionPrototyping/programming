@@ -453,7 +453,17 @@ source.start(0);   // play the source now
 			<h2>jQuery AJAX Request URI</h2>
 			<div class="row">
 				<div class="col-xs-6">
-					
+					<ul class="fa fa-ul">
+						<li>Communication with API Server via HTTP</li>
+						<li>GET: Key/Value-Pairs attached to URL</li>
+						<li>URL and first parameter seperated by <code>?</code>, parameters seperated by <code>&</code>
+						pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></li>
+						<li>jQuery AJAX method takes URL as String and parameters as object
+						<pre><code>var url = “https://maps.googleapis.com/maps/api/geocode/json”;
+var data = {key: “API_KEY”, ADDRESS: "Boltzmannstrasse 15, Garching“};</code>
+						</li>
+						<li class="fa-li fa fa-long-arrow-right">Request URI is built automatically, no manual string concatenation needed</li>
+					</ul>
 				</div>
 			</div>
 		</section>

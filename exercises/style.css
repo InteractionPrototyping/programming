@@ -89,10 +89,11 @@ figure.app img {
 }
 
 strong {
-    background-color: rgba(161,177,26, 0.7);
+    //background-color: rgba(161,177,26, 0.7);
+    background-color: rgba(255, 204, 0, 0.4);
     padding: 2px 4px;
     font-size: 90%;
-    color: darkgreen;
+    color: black;
     border-radius: 4px;
     font-weight: 200;
 }

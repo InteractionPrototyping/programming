@@ -58,6 +58,7 @@
                 <li><a href="#F">JS</a></li>
                 <li><a href="#G">jQuery</a></li>
                 <li><a href="#H">APIs</a></li>
+                <li><a href="#I">Inspiration</a></li>
             </ul>
         </div>
     </div>
@@ -553,9 +554,7 @@ PREPARATION
     </ul>
 
     <h2 id="F">F: JavaScript</h2>
-
-    <p>In this chapter, you'll add the interaction and model the weather data.</p>
-
+    <h4>Add interaction to your app</h4>
 
     <h3 id="JS-Test">First Steps (F0)</h3>
     <ul>
@@ -732,71 +731,30 @@ PREPARATION
       </code></pre>
         </div>
 
-        <h3 id="JS-Control" class="todo">Control and conditionals (F7) </h3>
+        <h3 id="JS-Control">Control and conditionals (F7) </h3>
 
-        <p class="todo">Add a function <code>changeCurrentDay()</code> to your <kbd>interactions.js</kbd> file</p>
-        <ul class="todo">
+        <p>Add a function <strong>changeCurrentDay()</strong> to your <kbd>interactions.js</kbd> file:</p>
+        <ul c>
             <li>Depending on the given parameter, currentDay should be incremented or decremented</li>
-            <li>Log an error message to the console if the value of <code>currentDay</code> exceeds the range of [0-6]</li>
-            <li>Now prevent any change of <code>currentDay</code> if it's going to exceed the range</li>
+            <li>Log an error message to the console if the value of <strong>currentDay</strong> exceeds the range of [0-6]</li>
+            <li>Now prevent any change of <strong>currentDay</strong> if it's going to exceed the range</li>
         </ul>
-        <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>
-        <ul class="todo">
-            <li>Now loop through your weather data and create the rows of <kbd>detailview</kbd> programmatically using HTML <code>strings</code></li>
-            <li>Wrap the loop into a function <code>updateWeatherDetailHTML()</code></li>
+        <h3 id="JS-Loops"> Loops (F8) </h3>
+        <ul>
+            <li>Create a function <code>updateWeatherDetailHTML()</code> that contains a <code>for</code> loop with 12 steps</li>
+            <li>Now loop through your <strong>hourly</strong> weather data and create the rows of <kbd>detailview</kbd> programmatically. Hint: Set an HTML <code>string</code> as <code>innerHTML</code> of <kbd>detail-table</kbd></li>
         </ul>
-        <h3 id="JS-DOM" class="todo">DOM (F9/10)</h3>
-        <ul class="todo">
-            <li>show hide loading overlay</li>
-            <li>UpdateColorScheme</li>
+        <h3 id="JS-DOM">DOM (F9/10)</h3>
+        <ul>
+            <li>Add a function <strong>updateColorScheme</strong> that changes the <code>background-color</code> of all <code>children</code> of <kbd>detail-table</kbd> (=rows) depending on temperature of that hour.</li>
         </ul>
-        <h3 id="JS-LDOMEvents" class="todo"> DOM Events (F11) </h3>
-        <ul class="todo">
-            <li>Try to add an onclick listener to a button programmatically instead of using HTML attributes</li>
-            <li>Add a new DOM element programmatically and add an onclik event listener</li>
+        <h3 id="JS-DOMEvents"> DOM Events (F11) </h3>
+        <ul>
+            <li>Add an <code>onclick</code> listener to the <kbd>city-submit</kbd> button that adds the value of <kbd>city-input</kbd> text field as new city to the <strong>cities</strong> array and to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
+            <li>Write a function that gets called during the body <code>onload</code> event. It should call <strong>updateWeatherMainHTML</strong> to insert default values into your HTML elements.</li>
+            <li>You could remove the content from these elements because they are set when the apps loads</li>
         </ul>
-        <p class="todo">Include the following</p>
-        <ol class="todo">
-            <h3 class="todo">UpdateWeatherMainHTML()- Javascript innerHTML, Objects</h3>
 
-            <h3 class="todo">UpdateWeatherDetailHTML()- Javascript HTML String creation</h3>
-
-            <h3 class="todo">Add an <code>onclick</code> event handler to each of your sidebar controls <kbd>open-sidebar</kbd>
-                and <kbd>close-sidebar</kbd>.
-                The function modifies the <code>style.left</code> (CSS) property in order to show / hide the sidebar.
-            </h3>
-
-            <h3 class="todo">Add an <code>onclick</code> event handler to each of your detail controls <kbd>detail-button</kbd>
-                and <kbd>close-details</kbd>.
-                The function modifies the <code>style.top</code> (CSS) property in order to show / hide the sidebar.
-            </h3>
-
-            <h3 class="todo">ChangeCurrentDay() – Javascript Logik, DateStrings: Pfeile und Details nur anzeigen wenn
-                sinnvoll</h3>
-
-            <h3 class="todo">UpdateColorScheme() – Javascript CSS Manipulation</h3>
-
-            <h3 class="todo">ConvertTemperature, Wind, Humidity Functions – Javascript Functions, Returns</h3>
-
-            <h3 class="todo">getAPIData() – jQuery, getJSON</h3>
-
-            <h3 class="todo">Show / Hide Loading overlay - CSS Transitions, Animations</h3>
-
-            <h3 class="todo">ChangeTempUnit, changeWindUnit – jQuery</h3>
-
-            <h3 class="todo">Show city List  - jQuery DOM Insertion</h3>
-
-            <h3 class="todo">addCity + Sortable - jQuery Interaction, jQueryUI Widgets</h3>
-
-            <h3 class="todo">LocateMe, getLocation, getCoordinates, getCityname – Javascript Geolocation, Geocoding</h3>
-
-            <h3 class="todo">setCityClickable - jQuery Plugins</h3>
-        </ol>
-
-        <p class="todo"></p>
-
-
-        <p class="todo">Add solution here as a collapsible</p>
         <!--
         <h3 id="">F0: Combined Page</h3>
 
@@ -878,14 +836,56 @@ PREPARATION
         </ul>
     -->
         <h2 id="G">G: jQuery</h2>
-        <h2 id="H">H: APIs</h2>
 
-        <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
+    <h3 class="todo" id="jQ-DOM">DOM Manipulation</h3>
+    <ul class="todo">
+        <li>Replace all innerHTML manipulations with jQuery's <code>html()</code> function</li>
+        <li>Show city List  - jQuery DOM Insertion</li>
+        <li>addCity</li>
+        <li>ChangeTempUnit, changeWindUnit</li>
+    </ul>
+    <h3 class="todo" id="jQ-Transition">Transition & Animation</h3>
+    <ul class="todo">
+        <li>Fade in the animated loading indicator</li>
+    </ul>
+    <h3 class="todo" id="jQ-Plugin">Plugins</h3>
+    <ul class="todo">
+        <li>setCityClickable - jQuery Plugins</li>
+    </ul>
+    <h3 class="todo" id="jQ-UI">jQuery UI</h3>
+    <ul class="todo">
+        <li>Embed jQuery UI from <a href="https//code.jquery.com">jQuery CDN</a></li>
+        <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
+    </ul>
+    <!-- Dummy Task -->
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
 
-        <p class="todo">Use offlinestorage for selected element and store your list
-            <br> Use location </p>
+    <h2 id="H">H: APIs</h2>
 
-    </div>
+    <!-- API -->
+    <h3 class="todo" id="API-Weather">Weather API</h3>
+    <ul class="todo">
+        <li>Use getJSON to retrieve data from forecast.io</li>
+        <li>Replace your weather object with original API data</li>
+    </ul>
+
+    <h3 class="todo" id="API-Location">Geolocation API </h3>
+    <ul class="todo">
+        <li>LocateMe</li>
+        <li>getLocation</li>
+    <h3 class="todo" id="API-Geocoding">Geocoding API</h3>
+        <li>getCoordinates</li>
+        <li>getCityname</li>
+    </ul>
+    <h3 class="todo">Local Storage</h3>
+        <p class="todo">Use offlinestorage for selected element and store your list</p>
+    <h2 id="I">I: Inspiration</h2>
+    <ul class="todo">
+        <li>Add a function that changes the <code>background-color</code> depending on temperature.</li>
+    </ul>
+</div>
 </body>
-
 </html>

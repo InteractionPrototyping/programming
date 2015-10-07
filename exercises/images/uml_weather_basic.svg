@@ -49,11 +49,11 @@
 				<v:ud v:nameU="Test" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 				<v:ud v:nameU="WidthMin" v:prompt="" v:val="VT0(2.2185287369763):1"/>
-				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(weather: object)"/>
+				<v:ud v:nameU="EntityName" v:prompt="" v:val="VT4(Weather)"/>
 				<v:ud v:nameU="BackGrndLine" v:prompt="" v:val="VT5(#ffffff)"/>
 			</v:userDefs>
 			<title>Klasse.75</title>
-			<desc>weather: object</desc>
+			<desc>Weather</desc>
 			<g id="shape2-2" v:mID="2" v:groupContext="shape">
 				<title>Tabelle.2</title>
 				<v:userDefs>
@@ -77,7 +77,7 @@
 					<v:ud v:nameU="Spacer" v:prompt="" v:val="VT0(0):26"/>
 					<v:ud v:nameU="UsableHgt" v:prompt="" v:val="VT0(0.43616263699002):1"/>
 					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(Klassenname)"/>
-					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(weather: object)"/>
+					<v:ud v:nameU="UmlRole" v:prompt="" v:val="VT4(Weather)"/>
 				</v:userDefs>
 				<path d="M0 124 L184.25 124 L184.25 92.59 L0 92.59 L0 124 Z" class="st2"/>
 			</g>
@@ -96,7 +96,7 @@
 			<g id="shape1-7" v:mID="1" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(8.5,4,8.5,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="92.126" cy="16.2019" width="184.26" height="31.4037"/>
-				<text x="4" y="19.8" class="st3" v:langID="1031"><v:paragraph/><v:tabList/>weather: object</text>			</g>
+				<text x="4" y="19.8" class="st3" v:langID="1031"><v:paragraph/><v:tabList/>Weather</text>			</g>
 		</g>
 		<g id="shape6-9" v:mID="6" v:groupContext="shape" transform="translate(3.08465,-75.1032)">
 			<title>Mitglied.115</title>

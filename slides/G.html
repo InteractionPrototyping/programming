@@ -533,11 +533,9 @@ wn(2000);</code></pre>
 		</section>
 
 		<section id="G3_getAndSet" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>Get and Set</h2>
+			<h2>Get Content</h2>
 			<div class="row">
 				<div class="col-xs-6">
-					<ul>
-						<li>Get Content
 							<ul>
 								<li><code>text()</code> sets or returns the text content of selected elements
 									<ul>
@@ -550,6 +548,10 @@ wn(2000);</code></pre>
 										<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_get" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 									</ul>
 								</li>
+							</ul>	
+				</div>
+				<div class="col-xs-6">
+							<ul>
 								<li><code>val()</code> sets or returns the value of form fields
 									<ul>
 										<li><code>$("#test").val()</code></li>
@@ -557,20 +559,30 @@ wn(2000);</code></pre>
 									</ul>
 								</li>
 							</ul>
-						</li>
-					</ul>	
-				</div>
-				<div class="col-xs-6">
-					<ul>
-						<li>Set Content
+				</div> 
+			</div>	
+		</section>
+
+		<section id="G3_getAndSet" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>Set Content</h2>
+			<div class="row">
+				<div class="col-xs-12">
 							<ul>
 								<li><code>$("#test1").text("Hello world!");</code></li>
 								<li><code>$("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");</code></li>
 								<li><code>$("#test3").val("Dolly Duck");</code></li>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-							</ul>
-						</li>  
-						<li>Get Attributes
+							</ul> 
+				</div> 
+			</div>	
+		</section>
+
+
+		<section id="G3_getAndSetAttributes" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>Get and Set Attributes</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Get Attributes</p>
 							<ul>
 								<li><code>attr()</code>method is used to get attribute values 
 									<ul>
@@ -579,15 +591,13 @@ wn(2000);</code></pre>
 									</ul>
 								</li>
 							</ul>
-						</li>
-						
-						<li>Set Attributes
+				</div>
+				<div class="col-xs-6">
+							<p class="text-left">Set Attributes</p>
 							<ul>
 								<li><code>$("#w3s").attr("href","w3schools.com/jquery");</code></li>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_set" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
-						</li>
-					</ul>
 				</div> 
 			</div>	
 		</section>
@@ -608,22 +618,19 @@ wn(2000);</code></pre>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_prepend" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
 						</li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-6">
+					<ul>
 						<li><code>after()</code> inserts content after the selected elements</li>
 						<li><code>before()</code> content before the selected elements
 							<ul>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_after" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
 						</li>
-					</ul>
-				</div>
-				<div class="col-xs-6">
-					<ul>
 						<li>Several Elements
 							<ul>
-								<li><code>var txt1="&lt;p&gt;Text.&lt;/p&gt;";</code></li>
-								<li><code>var txt2=$("&lt;p&gt;&lt;/p&gt;").text("Text.");</code></li>
-								<li><code>var txt3=document.createElement("p"); <br> txt3.innerHTML="Text.";</code></li>
-								<li><code>$("p").append(txt1,txt2,txt3);</code></li>
 								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append2" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
 							</ul>
 						</li>
@@ -722,7 +729,6 @@ wn(2000);</code></pre>
 			</div>	
 		</section>
 
-
 		<section id="G3_manipulateDimensions" data-background="#fff" class="container">
 			<h2>Manipulate Dimensions</h2>
 			<div class="row">
@@ -744,6 +750,25 @@ wn(2000);</code></pre>
 					<img src="./images/G3dimension.png">
 				</div>
 			</div>	
+		</section>
+
+		<section id="G3_jQuerychaining" data-background="#fff" class="container">
+			<h2>Chaining</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>Create and insert new elements via chaining multiple actions</li>
+					</ul>
+					<pre><code>function createContentView() { 
+ $("<div>/div>").addClass("box").text($("body").html()).appendTo("body");
+}</code></pre>
+				</div>
+			</div>	
+			<div class="row">
+			   	<div class="col-xs-4 exlink fiddle">
+					 <a  href="https://jsfiddle.net/InteractionPrototyping/j7us6db3/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+				</div> 
+			</div>
 		</section>
 
 		<section id="G3_moremanipulation" data-background="#fff" class="container">

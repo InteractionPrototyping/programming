@@ -1450,39 +1450,38 @@ function myFunction(name,job)
 
 
 	<section id="F5_CreateAccessObject" data-background="#fff" class="container">
-			<h2>JS Object: Date</h2>
+			<h2>JS generic Object</h2>
 			<div class="row">
 				<div class="col-xs-6">
 					<ul>
 						<li><b>Create</b> direct instance</li>
 					</ul>
 					<pre><code>person= new Object();
-					person.firstname="John";
-					person.lastname="Doe";
-					person.age=50;
-					person.eyecolor="blue";</code></pre>
+person.firstname="John";
+person.lastname="Doe";
+person.age=50;
+person.eyecolor="blue";</code></pre>
 					<ul>
 						<li><b>Add function as method</b></li>
 					</ul>
-					<pre><code>function greet() {
-					alert('Hello, I\'m' + this.firstname + ' ' +
-					this.lastname);
-					}
-					person.greet = greet;</code></pre>
-				</div>
+					<pre><code>person.greet = function(){
+alert('Hello, I\'m' + this.firstname + ' ' +
+this.lastname);
+}</code></pre>
+				</div>)
 				<div class="col-xs-6">
 					<ul>
 						<li><b>Access property</b> by object.property</li>
 					</ul>
 					<pre><code>var message = "Hello World!";
-					var x = message.length
-					alert(x); // 12</code></pre>
+var x = message.length
+alert(x); // 12</code></pre>
 
 					<ul>
 						<li><b>Access method</b> by object.method()</li>
 					</ul>
 					<pre><code>person.greet()
-					// Hello, I'm John Doe</code></pre>
+// Hello, I'm John Doe</code></pre>
 				</div> 
 			</div>
 	</section>
@@ -1491,9 +1490,7 @@ function myFunction(name,job)
 			<h2>Shorthand Object</h2>
 			<div class="row">
 				<div class="col-xs-6">
-					<ul>
-						<li><b>Define</b></li>
-					</ul>
+						<p class="text-left"><b>Define;</b></p>
 					<pre><code>var person = {
  firstName: "John",
  lastName: "Doe",
@@ -1513,17 +1510,12 @@ greet:function() {
 };</code></pre>
 				</div>
 				<div class="col-xs-6">
-					<ul>
-						<li><b>Call</b></li>
-					</ul>
+				<p class="text-left"><b>Call:</b></p>
 					<pre><code>document.getElementById("demo")
 .innerHTML = person.fullName() + " is " 
 + person.age + " years old.";
 person.greet();</code></pre>
-
-					<ul>
-						<li><b>Access method</b> by object.method()</li>
-					</ul>
+						<p class="text-left"><b>Access method</b> by object.method()</li>
 					<pre><code>person.greet()
 // Hello, I'm John Doe</code></pre>
 				</div> 
@@ -1750,11 +1742,11 @@ person.greet();</code></pre>
 				<div class="col-xs-12">
 				<ul class="fa-ul">
 					<li><b>Splice</b> adds/removes items to/from an array, and returns the removed item(s)</li>
-					<li>Signature
+					<li> <code>array.splice(index, howmany, item1,...,itemX</code>
 						<ul>
 							<li><b>index:</b> at what position to add/remove items. Negative values: position from the end of the array</li>
 							<li><b>howmany:</b> number of items to be removed (0: no items will be removed)</li>
-							<li><b>values:</b> Optional. The new item(s) to be added to the array</li>
+							<li><b>item1,...,itemX:</b> Optional. The new item(s) to be added to the array</li>
 						</ul>
 					</li>
 				</ul>

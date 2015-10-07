@@ -672,20 +672,21 @@ PREPARATION
         <li>Add comments above your functions and above important statements: Describe parameters, functionality and output</li>
         <li>Write functions for all code that yo have written into <code>onclick</code> attributes and replace the value of onclick with the function name </li>
     </ul>
-    <h3 id="JS-Objects" class="todo">Objects (F5)</h3>
-    <ul class="todo">
-        <li>Create a sample weather object</li>
-        <li>....</li>
+    <h3 id="JS-Objects">Objects (F5)</h3>
+    <ul>
+        <li>Create a sample weather object with some data: latitude, longitude, temperature, windspeed, ...</li>
+        <li>Add your converting functions to the object (key: function name, value: function) </li>
     </ul>
-    <h3 id="JS-Objects" class="todo">Arrays (F6)</h3>
-    <ul class="todo">
-        <li>Create an array of weather objects</li>
-        <li>....</li>
+    <h3 id="JS-Objects">Arrays (F6)</h3>
+    <ul>
+        <li>Create an array of your weather objects</li>
+        <li>Nest an array of hourly data inside the weather object</li>
+        <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction. Reference the new file in your HTML <code>head</code></li>
     </ul>
-    <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed todo">View Demo Weather
+    <!-- Sample Weather Object -->
+    <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed">View Demo Weather
         Object
     </button>
-
     <div id="WeatherObject" class="collapse todo">
       <pre><code>
           var weather = {
@@ -784,13 +785,13 @@ PREPARATION
 
       </code></pre>
         </div>
+
         <h3 id="JS-Control" class="todo">Control and conditionals (F7) </h3>
 
         <p class="todo">Add a function <code>changeCurrentDay()</code> to your <kbd>interactions.js</kbd> file</p>
         <ul class="todo">
             <li>Depending on the given parameter, currentDay should be incremented or decremented</li>
-            <li>Log an error message to the console if the value of <code>currentDay</code> exceeds the range of [0-6]
-            </li>
+            <li>Log an error message to the console if the value of <code>currentDay</code> exceeds the range of [0-6]</li>
             <li>Now prevent any change of <code>currentDay</code> if it's going to exceed the range</li>
         </ul>
         <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>

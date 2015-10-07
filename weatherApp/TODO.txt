@@ -10,5 +10,7 @@ Verlinke Aufgaben und Kapitel
 Add JS exercises
 Add exercise to rebuild everything from vanilla to jQuery (use existing toggle functions)
 
+Add jQuery Exercises (document.ready! wichtig!)
+
 Hash-Navigate bei Slides
 Suche bei Slides

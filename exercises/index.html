@@ -554,8 +554,22 @@ PREPARATION
     </ul>
 
     <h2 id="F">F: JavaScript</h2>
-    <h4>Add interaction to your app</h4>
-
+    <h4>Requirements</h4>
+    For better understanding, compare with our  <a href="http://interactionprototyping.github.io/programming/weatherApp">best practice weather app</a>.
+    <div class="well">
+            <ul>
+                <li>The app shows the weather data of the selected day. The user can flick through seven consecutive days using the next and previous button</li>
+                <li>For today, tomorrow and the day after tomorrow detail information will be generated. The detail information consists of hourly weather data</li>
+                <li>The sidebar menu allows you to select different cities</li>
+                <li>One can add additional cities</li>
+                <li>The cities can be sorted</li>
+                <li>You can add a new city based on your GPS location using the Locate me button</li>
+                <li>In the menu settings you can choose between different units for temperature and windspeed</li>
+                <li>We will use real weather data from an Internet Service</li>
+                <li>While the data is loaded, a loading animation is shown. Sidebar and detail view are animated.</li>
+                <li>The background color changes depending on current temperature</li>
+            </ul>
+    </div>
     <h3 id="JS-Test">First Steps (F0)</h3>
     <ul>
         <li>Go to <code>body</code> and add an <code>onload = "alert('Hello World');"</code> attribute. Reload the page
@@ -885,6 +899,7 @@ PREPARATION
     <h2 id="I">I: Inspiration</h2>
     <ul class="todo">
         <li>Add a function that changes the <code>background-color</code> depending on temperature.</li>
+        <li>Interpolate the color code from hot to code </li>
     </ul>
 </div>
 </body>

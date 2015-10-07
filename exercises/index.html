@@ -738,7 +738,7 @@ PREPARATION
             <li>Log an error message to the console if the value of <strong>currentDay</strong> exceeds the range of [0-6]</li>
             <li>Now prevent any change of <strong>currentDay</strong> if it's going to exceed the range</li>
         </ul>
-        <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>
+        <h3 id="JS-Loops"> Loops (F8) </h3>
         <ul>
             <li>Create a function <code>updateWeatherDetailHTML()</code> that contains a <code>for</code> loop with 12 steps</li>
             <li>Now loop through your <strong>hourly</strong> weather data and create the rows of <kbd>detailview</kbd> programmatically. Hint: Set an HTML <code>string</code> as <code>innerHTML</code> of <kbd>detail-table</kbd></li>
@@ -749,11 +749,10 @@ PREPARATION
         </ul>
         <h3 id="JS-DOMEvents"> DOM Events (F11) </h3>
         <ul>
-            <li>Add an <code>onclick</code> listener to the <kbd>city-submit</kbd> button that adds the value of <kbd>city-input</kbd> text field to the <kbd>city-list</kbd>in the <kbd>sidebar</kbd></li>
+            <li>Add an <code>onclick</code> listener to the <kbd>city-submit</kbd> button that adds the value of <kbd>city-input</kbd> text field as new city to the <strong>cities</strong> array and to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
             <li>Write a function that gets called during the body <code>onload</code> event. It should call <strong>updateWeatherMainHTML</strong> that inserts displays default values into your HTML elements.</li>
             <li>You could remove the content from these elements because they are set now when the apps loads</li>
         </ul>
-
 
         <!--
         <h3 id="">F0: Combined Page</h3>
@@ -837,9 +836,39 @@ PREPARATION
     -->
         <h2 id="G">G: jQuery</h2>
 
-    <p class="todo">Include the following</p>
 
-    <h3 class="todo">getAPIData() – jQuery, getJSON</h3>
+    <h3 class="todo" id="jQ-Transition">Transition & Animation</h3>
+    <ul class="todo">
+        <li>Fade in the animated loading indicator</li>
+    </ul>
+
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+    <h3 class="todo" id="jQ-"></h3>
+    <ul class="todo">
+        <li></li>
+    </ul>
+
+    <h3 class="todo" id="jQ-UI">jQuery UI</h3>
+    <ul class="todo">
+        <li>Embed jQuery UI from <a href="https//code.jquery.com">jQuery CDN</a></li>
+        <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
+    </ul>
+
 
     <h3 class="todo">Show / Hide Loading overlay - CSS Transitions, Animations</h3>
 
@@ -858,8 +887,14 @@ PREPARATION
 
     <h2 id="H">H: APIs</h2>
 
-        <p>In this chapter, you'll add live weather data and access your GPS coordinates.</p>
+    <!-- API -->
+    <h3 class="todo" id="jQ-API">Weather API</h3>
+    <ul class="todo">
+        <li>Use getJSON to retrieve data from forecast.io</li>
+        <li>Replace your weather object with original API data</li>
+    </ul>
 
+    <h3 class="todo">Local Storage</h3>
         <p class="todo">Use offlinestorage for selected element and store your list
             <br> Use location </p>
 

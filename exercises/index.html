@@ -644,7 +644,8 @@ PREPARATION
     <h4 id="JS-Setup">External script file</h4>
     <ol>
         <li>Create a new file <kbd>interaction.js</kbd> in your app folder</li>
-        <li>Include your JS code using the <code>script</code> tag</li>
+        <li>Include your JS code using the <code>script</code> tag with the <code>src</code> attribute</li>
+
     </ol>
 
     <h3 id="JS-Debugging">Debugging (F1)</h3>
@@ -661,13 +662,14 @@ PREPARATION
         <li>Declare a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
         <li>Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</li>
         <li>Increase / decrease its value when the user clicks the corresponding button</li>
+        <li>Use the console to <code>log</code> its value</li>
     </ul>
 
     <h3 id="JS-Functions">Functions (F4)</h3>
     <ul>
         <li>Write a function that converts windspeed from m/s to km/h</li>
         <li>Add another function that converts temperature from Fahrenheit to Celsius</li>
-        <li>Create function for formatting humidity (from 0 to 1) as percentage (50%)</li>
+        <li>Create a function for formatting <code>numeric</code> humidity data (e.g. 0.5) as <code>string</code> percentage (e.g. &quot;50%&quot;)</li>
         <li>Debug your functions by calling them within the console: Just type the name of your function.</li>
         <li>Add comments above your functions and above important statements: Describe parameters, functionality and output</li>
         <li>Write functions for all code that yo have written into <code>onclick</code> attributes and replace the value of onclick with the function name </li>
@@ -675,21 +677,29 @@ PREPARATION
     <h3 id="JS-Objects">Objects (F5)</h3>
     <ul>
         <li>Create a sample weather object with some data: latitude, longitude, temperature, windspeed, ...</li>
+        <li>Try to follow the UML specification below</li>
         <li>Add your converting functions to the object (key: function name, value: function) </li>
     </ul>
+    <button data-toggle="collapse" data-target="#WeatherObjectUML" class="btn btn-info collapsed">View UML specification</button>
+    <div id="WeatherObjectUML" class="collapse">
+        <img src="images/uml_weather_object.svg" />
+    </div>
+
     <h3 id="JS-Objects">Arrays (F6)</h3>
     <ul>
-        <li>Create an array of your weather objects</li>
+        <li>Create an array of multiple weather objects</li>
         <li>Nest an array of hourly data inside the weather object</li>
-        <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction. Reference the new file in your HTML <code>head</code></li>
-        <li>Write a function <code>updateWeatherMainHTML()</code> that logs values from the object to the console.</li>
+        <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction.</li>
+        <li>Reference the new file in your HTML <code>head</code></li>
+        <li>Write a function updateWeatherMainHTML() that logs values from the object to the console.</li>
         <li>Now try to fill your <kbd>mainview</kbd></kbdd> elements with data from the object (using <code>innerHTML</code>)</li>
+        <li>Create an <code>array</code> of cities. Objects should contain the city's name and a nested object containing latitude and longitude</li>
     </ul>
     <!-- Sample Weather Object -->
     <button data-toggle="collapse" data-target="#WeatherObject" class="btn btn-info collapsed">View Demo Weather
         Object
     </button>
-    <div id="WeatherObject" class="collapse todo">
+    <div id="WeatherObject" class="collapse">
       <pre><code>
           var weather = {
               "latitude" : 48.1351253,
@@ -798,7 +808,8 @@ PREPARATION
         </ul>
         <h3 id="JS-Loops" class="todo"> Loops (F8) </h3>
         <ul class="todo">
-            <li>UpdateWeatherDetailHTML</li>
+            <li>Now loop through your weather data and create the rows of <kbd>detailview</kbd> programmatically using HTML <code>strings</code></li>
+            <li>Wrap the loop into a function <code>updateWeatherDetailHTML()</code></li>
         </ul>
         <h3 id="JS-DOM" class="todo">DOM (F9/10)</h3>
         <ul class="todo">

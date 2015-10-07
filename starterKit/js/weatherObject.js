@@ -6,6 +6,7 @@ var weather = {
     "currently": {
         "time": 1428444000,
         "summary": "Partly Cloudy",
+		"icon": "fog",
         "temperature": 53.32,
         "humidity": 0.52,
         "windSpeed": 4.85

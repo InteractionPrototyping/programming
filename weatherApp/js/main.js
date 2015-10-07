@@ -66,25 +66,25 @@ $(function () {
 
     showCityList();
 
-	// Close sidebar
-	document.getElementById('close-sidebar').onclick = function () {
-		console.log('clicked sidebar');
-		// Klassisches JS
-		//document.getElementById('sidebar').style.left = "-70%";
-		// Later use: toggleSidebar();
-		toggleSidebar();
-	};
+    // Close sidebar
+    document.getElementById('close-sidebar').onclick = function () {
+        console.log('clicked sidebar');
+        // Klassisches JS
+        //document.getElementById('sidebar').style.left = "-70%";
+        // Later use: toggleSidebar();
+        toggleSidebar();
+    };
 
-	// Open sidebar
-	document.getElementById('open-sidebar').onclick = function () {
-		//console.log('clicked sidebar');
-		// Klassisches JS
-		// document.getElementById('sidebar').style.left = "0";
-		// jQuery
-		toggleSidebar();
-	};
+    // Open sidebar
+    document.getElementById('open-sidebar').onclick = function () {
+        //console.log('clicked sidebar');
+        // Klassisches JS
+        // document.getElementById('sidebar').style.left = "0";
+        // jQuery
+        toggleSidebar();
+    };
 
-	  /* Event Handler that updates the currently order*/
+    /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
         stop: function () {
             var newPositions = $(this).sortable('toArray');
@@ -92,24 +92,24 @@ $(function () {
         }
     });
 
-	/**
-	 * Returns a newArray containing the elements of oldArray sorted by newPositions
-	 *
-	 * @param oldArray
-	 * @param newPositions
-	 * @return {Array}
-	 */
-	function updateArraySorting(oldArray, newPositions) {
-		// Initialize the new array
-		var newArray = new Array();
-		// Go trough new positions and build sorted array
-		$.each(newPositions, function(i, p) {
-			// add the object at this position from the old array to the new array
-			newArray.push(oldArray[p]);
-		});
-		// Return the sorted array
-		return newArray;
-	}
+    /**
+     * Returns a newArray containing the elements of oldArray sorted by newPositions
+     *
+     * @param oldArray
+     * @param newPositions
+     * @return {Array}
+     */
+    function updateArraySorting(oldArray, newPositions) {
+        // Initialize the new array
+        var newArray = new Array();
+        // Go trough new positions and build sorted array
+        $.each(newPositions, function (i, p) {
+            // add the object at this position from the old array to the new array
+            newArray.push(oldArray[p]);
+        });
+        // Return the sorted array
+        return newArray;
+    }
 
     /**
      * Click handler for add city button
@@ -200,26 +200,26 @@ function changeCurrentDay(delta) {
         updateWeatherDetailHTML();
     }
 
-	// Hide arrows at beginning and end
-	if (currentDay == 0)  {
-		document.getElementById("buttonDateLeft").style.display = "none";
-	} else {
-		document.getElementById("buttonDateLeft").style.display = "block";
-	}
+    // Hide arrows at beginning and end
+    if (currentDay == 0) {
+        document.getElementById("buttonDateLeft").style.display = "none";
+    } else {
+        document.getElementById("buttonDateLeft").style.display = "block";
+    }
 
-	if (currentDay == 6)  {
-		document.getElementById("buttonDateRight").style.display = "none";
-	} else {
-		document.getElementById("buttonDateRight").style.display = "block";
-	}
+    if (currentDay == 6) {
+        document.getElementById("buttonDateRight").style.display = "none";
+    } else {
+        document.getElementById("buttonDateRight").style.display = "block";
+    }
 
 
-	// Hide details button for > 2 days in the future (only day 0, day 1 have detailed data)
-	if (currentDay > 1) {
-		document.getElementById('footer').style.display = "none";
-	} else {
-		document.getElementById('footer').style.display = "block";
-	}
+    // Hide details button for > 2 days in the future (only day 0, day 1 have detailed data)
+    if (currentDay > 1) {
+        document.getElementById('footer').style.display = "none";
+    } else {
+        document.getElementById('footer').style.display = "block";
+    }
 
     console.log('Function: changeCurrentDay()');
 }
@@ -228,48 +228,48 @@ function changeCurrentDay(delta) {
  *        using jQuery because it makes it just so much easier
  */
 function toggleSidebar() {
-	// if sidebar is already displayed, hide it
-	if ($('#sidebar').css('left') == '0px') {
-		$('#sidebar').animate({
-			left: '-70%'
-		}, 500);
-		$('#sidebar-fade-overlay').fadeToggle();
-	} else {
-		//slide it in otherwise
-		$('#sidebar').animate({
-			left: '0px'
-		}, 500);
-		$('#sidebar-fade-overlay').fadeToggle();
-	};
+    // if sidebar is already displayed, hide it
+    if ($('#sidebar').css('left') == '0px') {
+        $('#sidebar').animate({
+            left: '-70%'
+        }, 500);
+        $('#sidebar-fade-overlay').fadeToggle();
+    } else {
+        //slide it in otherwise
+        $('#sidebar').animate({
+            left: '0px'
+        }, 500);
+        $('#sidebar-fade-overlay').fadeToggle();
+    };
 
-	console.log('Function: toggleSidebar()');
+    console.log('Function: toggleSidebar()');
 }
 
 /**        Function for showing and hiding the Details page
  *        using jQuery because it makes it just so much easier
  */
 
-	function toggleDetails() {
-		// if details page is already displayed, hide it
+function toggleDetails() {
+    // if details page is already displayed, hide it
 
-	console.log($('#detailview').css('top'));
-		if ($('#detailview').css('top') == '0px') {
-			$('#detailview').animate({
-				top: '100%'
-			}, 500, "swing", function() {
-				$(this).toggle();
-			});
-			console.log("Close details");
-		} else {
-			//slide it in otherwise
-			$('#detailview').toggle().animate({
-				top: '0%'
-			}, 500);
-			console.log("Open details");
-		};
+    console.log($('#detailview').css('top'));
+    if ($('#detailview').css('top') == '0px') {
+        $('#detailview').animate({
+            top: '100%'
+        }, 500, "swing", function () {
+            $(this).toggle();
+        });
+        console.log("Close details");
+    } else {
+        //slide it in otherwise
+        $('#detailview').toggle().animate({
+            top: '0%'
+        }, 500);
+        console.log("Open details");
+    };
 
-		console.log('Function: toggleDetails()');
-	}
+    console.log('Function: toggleDetails()');
+}
 
 /**     Function for receiving the API Weather Data
  *      using jQuery
@@ -281,7 +281,7 @@ function getApiData(lat, lng) {
     showLoadingIndicator();
     $.getJSON('http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/' + lat + ',' + lng + '?callback=?')
         .done(function (data) {
-            //console.log(JSON.stringify(data));
+            console.log(JSON.stringify(data));
             weather = data;
             updateWeatherMainHTML();
             updateWeatherDetailHTML();
@@ -296,7 +296,7 @@ function getApiData(lat, lng) {
 function updateWeatherMainHTML() {
     //update all fields with the weather data
     document.getElementById('city').innerHTML = activeCity.name;
-    if(weather.daily.data[currentDay]) {
+    if (weather.daily.data[currentDay]) {
         document.getElementById('iconimage').src = 'img/' + weather.daily.data[currentDay].icon + '.png';
         document.getElementById('summary').innerHTML = weather.daily.data[currentDay].summary;
         document.getElementById('temperature').innerHTML = convertTemperature(weather.daily.data[currentDay].temperatureMax, tempUnit);
@@ -329,7 +329,7 @@ function hideLoadingIndicator() {
 }
 
 /*
-*        Function for generating the HTML Output for the MainView
+ *        Function for generating the HTML Output for the MainView
  */
 
 function updateWeatherDetailHTML() {
@@ -391,9 +391,9 @@ function updateColorScheme(temp) {
         activeColor = colorCodes[2];
     }
     //$('#mainview').css('background-color', activeColor.code);
-	document.getElementById('mainview').style.backgroundColor = activeColor.code;
+    document.getElementById('mainview').style.backgroundColor = activeColor.code;
     //$('#detailsview').css('background-color', activeColor.code);
-	document.getElementById('detailview').style.backgroundColor = activeColor.code;
+    document.getElementById('detailview').style.backgroundColor = activeColor.code;
 }
 
 

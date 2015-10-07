@@ -648,13 +648,19 @@ PREPARATION
     </ol>
 
     <h3 id="JS-Debugging">Debugging (F1)</h3>
-    Try to <code>log</code> a message to the <code>console</code> every time the <kbd>detailsview</kbd> is open or
-    closed.
 
+    <ul>
+        <li>Try to <code>log</code> a message to the <code>console</code> every time the <kbd>detailsview</kbd> is open or
+            closed.</li>
+        <li>Set a breakpoint in the debugger, both for opening and closing the details view.</p></li>
+    </ul>
+
+    <br>
     <h3 id="JS-Variables">Variables (F3)</h3>
     <ul>
-        <li>Initialize a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
-        <li>Increase / decrease its value when the user changes the current day</li>
+        <li>Declare a variable <kbd>currentDay</kbd> in your <kbd>interaction.js</kbd></li>
+        <li>Its value will represent the &ldquo;day offset&rdquo;: 0 is today and 1 tomorrow, -1 would be yesterday. Initialize it with 0</li>
+        <li>Increase / decrease its value when the user clicks the corresponding button</li>
     </ul>
 
     <h3 id="JS-Functions">Functions (F4)</h3>
@@ -663,6 +669,8 @@ PREPARATION
         <li>Add another function that converts temperature from Fahrenheit to Celsius</li>
         <li>Create function for formatting humidity (from 0 to 1) as percentage (50%)</li>
         <li>Debug your functions by calling them within the console: Just type the name of your function.</li>
+        <li>Add comments above your functions and above important statements: Describe parameters, functionality and output</li>
+        <li>Write functions for all code that yo have written into <code>onclick</code> attributes and replace the value of onclick with the function name </li>
     </ul>
     <h3 id="JS-Objects" class="todo">Objects (F5)</h3>
     <ul class="todo">

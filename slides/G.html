@@ -754,14 +754,19 @@ wn(2000);</code></pre>
 		</section>
 
 		<section id="G3_jQuerychaining" data-background="#fff" class="container">
-			<h2>Chaining</h2>
+			<h2>Chaining: creating elements</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
 						<li>Create and insert new elements via chaining multiple actions</li>
 					</ul>
-					<pre><code>function createContentView() { 
- $("&lt;div&gt;&lt;/div&gt;").addClass("box").text($("body").html()).appendTo("body");
+					<pre><code>function createContentView() {
+$("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
+	"width": "300px",
+	"height": "100%",
+	"color": "red",
+	"padding": "2%"
+    }).text($("body").html()).appendTo("body");
 }</code></pre>
 				</div>
 			</div>	

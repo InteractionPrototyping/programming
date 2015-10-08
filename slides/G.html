@@ -266,25 +266,6 @@ CSS-like select
 			</div>
 		</section>
 
-		<section id="G1_jExercise:QueryEvents" class="container">
-			<h2>Exercise: jQuery Events</h2>
-			<div class="row">
-				<div class="col-xs-12 inline-code-blue">
-					<ul>
-						<li>Embed the jQuery library – either offline or via jQuery CDN</li>
-						<li>Move all <span>&lt;script&gt;</span> tags to the <span>&lt;head&gt;</span> (& use external file)</li>
-						<li>Delete the <span>&lt;body&gt;</span> onload attribute</li>
-						<li>Wrap all JS Code that should be executed after the DOM has been loaded („onload“ event) inside the document ready event handler</li>
-						<li>Other functions can be outside the event handler</li>							
-						<li>Remove any „onclick“ attributes from HTML and use .click() jQuery event handlers</li>
-					</ul>
-					<pre><code>$(function() {
-// Code that relies on the DOM (referencing ids, changing HTML ...) goes here
-});
-// General functions without DOM-access go here</code></pre>
-				</div>
-			</div>
-		</section>
 	</section>
 <!--	#							#
 	 	#							#
@@ -505,15 +486,6 @@ wn(2000);</code></pre>
 			</div>
 		</section>
 		
-		<section id="G2_jExercise:QueryEvents" class="container">
-			<h2>Exercise: jQuery Effects</h2>
-			<div class="row">
-				<div class="col-xs-12 inline-code-blue">
-					<p>Add an animation that smoothly displays the details view when clicking the button: Use <code>.show()</code>, <code>.hide()</code> or <code>.toggle()</code> to control visibility of your details view and try different animation speeds
-					</p>
-				</div>
-			</div>
-		</section>
 
 	</section>
 <!--	#							#
@@ -749,7 +721,7 @@ wn(2000);</code></pre>
 				<div class="col-xs-6">
 					<img src="./images/G3dimension.png">
 				</div>
-			</ pdiv>	
+			</div>	
 		</section>
 
 		<section id="G3_jQuerychaining" data-background="#fff" class="container">
@@ -801,18 +773,6 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
 			</div>
 		</section>
 
-		<section id="G3_jQueryHTML" class="container">
-			<h2>Exercise: jQuery & HTML</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>Replace every usage of innerHTML with the corresponding jQuery function .html()</li>
-						<li>Replace every document.write and create HTML using jQuery instead</li>
-						<li>Use event handlers to connect the functions with the buttons</li>
-					</ul>
-				</div>
-			</div>
-		</section>
 	</section>
 
 
@@ -875,18 +835,16 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
 			</div>	
 		</section>
 
-		<section id="G4_jQueryFunctions" class="container">
-			<h2>Exercise: jQuery Functions</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>Create an object „prototype“ with your methods getWindspeed, getTemperature</li>
-						<li>Create an array of data objects containing only data temperature windspeed</li>
-						<li>Use <code>$.each()</code> and <code>$.extend()</code> to merge the prototype functions into every data object in the array</li>
-					</ul>
-				</div>
-			</div>
+		<section id="G4_Exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 32+33:</b></p>
+			<ul>
+				<li>DOM Manipulations</li>
+				<li>Transition and Animation</li>
+			</ul>	
 		</section>
+
+	
 	</section>
 
 <!--	#							#
@@ -1092,18 +1050,6 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
 			</div>
 		</section>
 
-		<section id="G5_SettingsView" class="container">
-			<h2>Exercise: Settings View</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>Create a settings icon and a settings view for your weather app (remember the details view)</li>
-						<li>Define an array of cities with some objects (property ‚name‘)</li>
-						<li>Embed jQuery and jQuery UI: JS (minified) + CSS(theme). URLs: see <a href="https://code.jquery.com/ui/">jQuery UI CDN</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
 
 	<section id="G5_Examples" data-background="#fff" class="container">
 			<h2>Examples: Sortable I</h2>
@@ -1245,18 +1191,18 @@ console.log(cities); // Check if array has new order
 			</div>	
 	</section>	
 
-	<section id="G5_Exercise"  class="container">
-			<h2>Exercise: City List</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>Add a city list in your Settings view: Create an empty HTML list element with an ID</li>
-						<li>Add your dummy data dynamically to the DOM: Create list elements from your cities array</li>
-						<li>Make the list sortable and update your array every time the user rearranges a city</li>
-					</ul>
-				</div> 
-			</div>
-		</section>
+
+	<section id="G5_Exercise" class="container">
+		<h2>Exercise</h2>
+		<p><b>Task 34+35:</b></p>
+		<ul>
+			<li>Plugins</li>
+			<li>jQuery UI</li>	
+		</ul>
+		
+	</section>
+
+
 	</section>
 
 

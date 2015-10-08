@@ -32,9 +32,8 @@ function getLocation() {
 
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
-    " Longitude: " + position.coords.longitude;	
+    "<br>Longitude: " + position.coords.longitude;	
 }
-
 // get Location shown in Map
 var x = document.getElementById("demo");
 

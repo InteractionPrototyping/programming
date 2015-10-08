@@ -20,18 +20,18 @@ function hello() {
 /*           H APIs              */
 
 // get Location as coordinates
-var searchlocation = document.getElementById("searchlocation");
+var x = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
-        searchlocation.innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
 function showPosition(position) {
-    searchlocation.innerHTML = "Latitude: " + position.coords.latitude + 
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
     " Longitude: " + position.coords.longitude;	
 }
 

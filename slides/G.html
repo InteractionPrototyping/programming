@@ -1266,30 +1266,35 @@ console.log(cities); // Check if array has new order
 	 	#							#
 	 	#							#	-->
 	<section id="G6">					
-		<section id="G6_Templates" >
+		<section id="G6_Frameworks" >
 			<h2>G6</h2>
-			<h2>JS Templates</h2>
+			<h2>JS Frameworks</h2>
 				<br>
 				<a href="#" class="navigate-down">
 							<img data-src="./images/arrow.png" alt="Down arrow">
 						</a>
 		</section>
 
-		<section id="G6_Template_Engines" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>JavaScript Template Engines</h2>
-			<p></p>
+		<section id="G6_Templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>Javascript templates</h2>
+			<p>Separate data, presentation and interaction</p>
             <div class="row">
 				<div class="col-xs-6">
+                    <h4>Frameworks</h4>
 					<ul>
 						<li><a href="https://github.com/janl/mustache.js">Mustache.js</a></li>
 						<li><a href="http://underscorejs.org/">Underscore.js</a></li>
                         <li><a href="http://www.embeddedjs.com/">Embedded JS</a></li>
                         <li><a href="http://handlebarsjs.com/">Handlebars.js</a></li>
                         <li><a href="https://github.com/trix/nano">NanoJS</a></li>
+                        <li><a href="https://angularjs.org/">AngularJS</a></li>
 					</ul>
                     </div>
                     <div class="col-xs-6">
-                        <div
+                        <figure>
+                        <img src="images/mvc.svg"/>
+                            <figcaption>Model View Controller</figcaption>
+                            </figure>
                     </div>
                 </div>
 		</section>
@@ -1325,6 +1330,43 @@ var view = {
     }
 };
 var output = Mustache.render("{{title}} spends {{calc}}", view);</code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="G6_Angular" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+            <h2>Angular example</h2>
+            <div class="row">
+                <div class="col-xs-6">
+                    <pre><code class="javascript">
+<div ng-app="myApp" ng-controller="myCtrl" class="container">
+    <form class="form-inline">
+        <label>First Name:</label>
+        <input type="text" ng-model="name.first" class="form-control"/>
+        <label>Last Name: </label>
+        <input type="text" ng-model="name.last" class="form-control"/>
+        <output>Hello {{name.first}} {{name.last}}</output>
+    </form><br/>
+    <div class="panel panel-default"><b>Debug</b>{{name}}</div>
+</div>
+                    </code></pre>
+                    <pre><code class="javascript">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = {first: "John", last: "Doe"};
+});
+                    </code></pre>
+                </div>
+                <div class="col-xs-6">
+                    <div ng-app="myApp" ng-controller="myCtrl" class="container ng-scope">
+                        <form class="form-inline ng-valid ng-dirty">
+                            <label>First Name:</label>
+                            <input type="text" ng-model="name.first" class="form-control ng-valid ng-dirty">
+                            <label>Last Name: </label>
+                            <input type="text" ng-model="name.last" class="form-control ng-valid ng-dirty">
+                            <output class="ng-binding">Hello Aha gut</output>
+                        </form><br>
+                        <div class="panel panel-default ng-binding"><b>Debug</b>{"first":"Aha","last":"gut"}</div>
+                    </div>
                 </div>
             </div>
         </section>

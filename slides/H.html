@@ -293,7 +293,7 @@
 			</div>	
 		</section>
 
-		<section id="h3-htmlgeolocation1" data-background="#fff" class="container">
+		<section id="h3-htmlgeolocation2" data-background="#fff" class="container">
 			<h2>HTML5 Geolocation</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -310,6 +310,25 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude; 
 }</code></pre>
 				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation" class="pull-left"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+			</div>
+		</section>
+
+		<section id="h3-htmlgeolocation3" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-6">
+				<pre><code>function showPosition(position) {
+var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
+document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;";
+}</code></pre>
+				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+				<div class="col-xs-6">
+					<button class="btn btn-lg btn-primary" onclick="getMapLocation()"><i class="fa fa-location-arrow"></i> Show location</button>
+					<div id="mapholder"></div>
 				</div>	
 			</div>
 		</section>

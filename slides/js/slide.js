@@ -20,7 +20,7 @@ function hello() {
 /*           H APIs              */
 
 // get Location as coordinates
-var location = document.getElementById("location");
+var searchlocation = document.getElementById("searchlocation");
 
 function getLocation() {
     if (navigator.geolocation) {

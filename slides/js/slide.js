@@ -31,12 +31,12 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    searchlocation.innerHTML = "Latitude: " + position.coords.latitude + 
     " Longitude: " + position.coords.longitude;	
 }
 
 // get Location shown in Map
-var maplocation = document.getElementById("mapholder");
+var x = document.getElementById("demo");
 
 function getMapLocation() {
     if (navigator.geolocation) {

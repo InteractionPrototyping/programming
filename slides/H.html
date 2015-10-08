@@ -243,7 +243,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
-						<li><b>Semantics:</b> allowing you to describe more precisely what your content is</li>
+						<li><b>Semantics:</b> allowing you to describe more precisely what your content is  (e.g. media and forms elements)</li>
 						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways</li>
 						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (Web Storage API)</li>
 						<li><b>Multimedia:</b> controlling audio and video on the web (Web Audio API, Youtube Data API)</li>
@@ -304,38 +304,9 @@ alert("Hallo " + data.first + ' ' + data.last);
 			</div>
 		</div>
 	</section>
-</section>
 
-<!--	#							#
-	 	#							#
-	 	#    G1 DEVELOPING JS 		#
-	 	#							#
-	 	#							#	-->
-	<section id="h4">					
-		<section id="h4_webapis" >
-			<h2>h4</h2>
-			<h2>Web APIs</h2>
-				<br>
-				<a href="#" class="navigate-down">
-							<img data-src="./images/arrow.png" alt="Down arrow">
-						</a>
-		</section>
 
-		<section id="h4-googleapikey" data-background="#fff" class="container">
-			<h2>Google API Key</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>API key is required for access</li>
-						<li>Create a project in <a href="https://console.developers.google.com/" target="_blank"><i class="fa fa-external-link"> Google Developer Console</i></a></li>
-						<li>Activate your desired API and obtain public API key</li>					
-						<li><b>IPP-API Key zum Testen:</b> AIzaSyBJIJgx9RT6J1o-Xd-roM0q7F4QXEzltns</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section id="h4-webstorageapi" data-background="#fff" class="container">
+	<section id="h4-webstorageapi" data-background="#fff" class="container">
 			<h2>Web Storage API</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -383,6 +354,177 @@ button " + localStorage.clickcount
 			</div>
 		</section>
 
+</section>
+
+<!--	#							#
+	 	#							#
+	 	#    G1 DEVELOPING JS 		#
+	 	#							#
+	 	#							#	-->
+	<section id="h4">					
+		<section id="h4_webapis" >
+			<h2>h4</h2>
+			<h2>Web APIs</h2>
+				<br>
+				<a href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="h4-googleapikey" data-background="#fff" class="container">
+			<h2>Google API Key</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>API key is required for access</li>
+						<li>Create a project in <a href="https://console.developers.google.com/" target="_blank"><i class="fa fa-external-link"> Google Developer Console</i></a></li>
+						<li>Activate your desired API and obtain public API key</li>					
+						<li><b>IPP-API Key zum Testen:</b> AIzaSyBJIJgx9RT6J1o-Xd-roM0q7F4QXEzltns</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="h4-geolocation1" data-background="#fff" class="container">
+			<h2>Google Map Geolocation API</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left"><b>What is Geocoding?</b></p>
+					<ul>
+						<li><b>Geocoding</b> is the process of converting addresses into geographic coordinates</li>
+						<li><b>Reverse Geocoding</b> is the process of converting geographic coordinates into a human-readable address</li>
+						<li>Geocoding API requests a JSON response using an URL of the form:
+						<pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></pre>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+
+		<section id="h4-geolocation2" data-background="#fff" class="container">
+			<h2>jQuery AJAX Request URI</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<ul>
+						<li>Communication with API Server via HTTP</li>
+						<li>GET: Key/Value-Pairs attached to URL</li>
+						<li>URL and first parameter seperated by <code>?</code>, parameters seperated by <code>&</code>
+						pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></li>
+						<li>jQuery AJAX method takes URL as String and parameters as object
+						<pre><code>var url = “https://maps.googleapis.com/maps/api/geocode/json”;
+var data = {key: “API_KEY”, ADDRESS: "Boltzmannstrasse 15, Garching“};</code></pre>
+						</li>
+						<li>Request URI is built automatically, no manual string concatenation needed</li>
+						
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="h4-geolocation3" data-background="#fff" class="container">
+			<h2>Loading data (AJAX)</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left">Prepare URL and object with request parameters</p>
+					<pre><code>var url = “https://maps.googleapis.com/maps/api/geocode/json”;
+var data = {key: “YOUR_API_KEY”, address: "Boltzmannstrasse 15, Garching“};</code></pre>
+					<p>jQuery AJAX call</p>
+					<pre><code>$.getJSON(url, data, function(geodata) {
+var lat = geodata.results[0].geometry.location.lat;
+var long = geodata.results[0].geometry.location.lng;
+alert(lat + ” , ”
++ long);
+});</code></pre>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="h4-geolocation4" data-background="#fff" class="container">
+			<h2>Determine GPS Location</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>Use the Javascript method <code>getCurrentPosition()</code> to get the user's position.</li>
+						<li>If supported, run <code>getCurrentPosition()</code></li>
+						<li>If not, display a message to the user</li>
+						<li>If successful, it returns a coordinates object to the function specified as parameter</li>
+						<li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="h4-weather1" data-background="#fff" class="container">
+			<h2>The Dark Sky Forecast API</h2>
+			<h3><a href="forecast.io">forecast.io</a></h3>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>Forecast API lets you query for most locations on the globe, and returns:
+							<ul>
+								<li>Current conditions</li>
+								<li>Minute-by-minute forecasts out to 1 hour</li>
+								<li>Hour-byhour forecasts out to 48 hours</li>
+								<li>Day-by-day forecasts out to 7 days</li>
+							</ul>
+						</li>
+						<li>Retrieve update weather data in JSON format using an API call of this form:
+						<pre><code>https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE</code></pre> </li>
+						
+				</div>
+			</div> 
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="https://developer.forecast.io/" target="_blank"><small><i class="fa fa-book"> The Dark Sky Forecast API Documentation</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h4-weather2" data-background="#fff" class="container">
+			<h2>The Dark Sky Forecast API</h2>
+			<h3><a href="forecast.io">forecast.io</a></h3>
+			<p class="text-left"><b>Loading weather data:</b> example of JSON response</p>
+			<div class="row">
+				<div class="col-xs-12">
+					<pre><code>{
+    "latitude": 48.1351253,
+    "longitude": 11.5819806,
+    "timezone": "Europe/Berlin",
+    "offset": 2,
+    "currently": {
+        "time": 1428444000,
+        "summary": "Partly Cloudy",
+        "icon": "clear-day",
+        "precipIntensity": 0,
+        "precipProbability": 0,
+        "temperature": 53.32,
+        "apparentTemperature": 55.92,
+        "dewPoint": 27.33,
+        "humidity": 0.52,
+        "windSpeed": 4.85,
+        "windBearing": 5.06,
+        "cloudCover": 0,
+        "pressure": 1027.25,
+        "ozone": 334.29
+    }</code></pre>
+				</div>
+			</div> 	
+		</section>
+
+
+		<section id="h4-exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task ??:</b></p>
+			<p>Geocoding</p>
+		</section>
+
 		<section id="h4-webaudioapi1" data-background="#fff" class="container">
 			<h2>Web Audio API</h2>
 			<div class="row">
@@ -427,48 +569,7 @@ source.start(0);   // play the source now
 		</section>
 
 
-		<section id="h4-geolocation1" data-background="#fff" class="container">
-			<h2>Google Map Geolocation API</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-left"><b>What is Geocoding?</b></p>
-					<ul>
-						<li><b>Geocoding</b> is the process of converting addresses into geographic coordinates</li>
-						<li><b>Reverse Geocoding</b> is the process of converting geographic coordinates into a human-readable address</li>
-						<li>Geocoding API requests a JSON response using an URL of the form:
-						<pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></pre>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
-				</div>
-			</div>	
-		</section>
-
-
-		<section id="h4-geolocation2" data-background="#fff" class="container">
-			<h2>jQuery AJAX Request URI</h2>
-			<div class="row">
-				<div class="col-xs-6">
-					<ul class="fa fa-ul">
-						<li>Communication with API Server via HTTP</li>
-						<li>GET: Key/Value-Pairs attached to URL</li>
-						<li>URL and first parameter seperated by <code>?</code>, parameters seperated by <code>&</code>
-						pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></li>
-						<li>jQuery AJAX method takes URL as String and parameters as object
-						<pre><code>var url = “https://maps.googleapis.com/maps/api/geocode/json”;
-var data = {key: “API_KEY”, ADDRESS: "Boltzmannstrasse 15, Garching“};</code>
-						</li>
-						<li class="fa-li fa fa-long-arrow-right">Request URI is built automatically, no manual string concatenation needed</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-
+		
 	</section>
 
 

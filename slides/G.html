@@ -17,6 +17,8 @@
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- Bootstrap -->
 
+		<!-- Angular JS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
@@ -266,6 +268,12 @@ CSS-like select
 			</div>
 		</section>
 
+		<section id="G1_Exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 32</b></p>
+			<p>jQuery Basics</p>	
+		</section>
+
 	</section>
 <!--	#							#
 	 	#							#
@@ -484,6 +492,12 @@ wn(2000);</code></pre>
 					<p>Room: IPP</p>
 				</div>
 			</div>
+		</section>
+
+		<section id="G2_Exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 33</b></p>
+			<p>jQuery Effects</p>	
 		</section>
 		
 
@@ -773,6 +787,12 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
 			</div>
 		</section>
 
+		<section id="G3_Exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 34:</b></p>
+			<p>jQuery and HTML</p>	
+		</section>
+
 	</section>
 
 
@@ -837,14 +857,9 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
 
 		<section id="G4_Exercise" class="container">
 			<h2>Exercise</h2>
-			<p><b>Task 32+33:</b></p>
-			<ul>
-				<li>DOM Manipulations</li>
-				<li>Transition and Animation</li>
-			</ul>	
+			<p><b>Task 35:</b></p>
+			<p>jQuery Functions</p>	
 		</section>
-
-	
 	</section>
 
 <!--	#							#
@@ -1191,19 +1206,12 @@ console.log(cities); // Check if array has new order
 			</div>	
 	</section>	
 
-
-	<section id="G5_Exercise" class="container">
-		<h2>Exercise</h2>
-		<p><b>Task 34+35:</b></p>
-		<ul>
-			<li>Plugins</li>
-			<li>jQuery UI</li>	
-		</ul>
-		
+	<section id="G4_Exercise" class="container">
+			<h2>Exercise</h2>
+			<p><b>Task 36:</b></p>
+			<p>jQuery UI</p>	
 	</section>
-
-
-	</section>
+</section>
 
 
 <!--	#							#
@@ -1211,17 +1219,17 @@ console.log(cities); // Check if array has new order
 	 	#    G7 JS Templates			#
 	 	#							#
 	 	#							#	-->
-	<section id="G6">					
-		<section id="G6_Frameworks" >
+<section id="G6">					
+	<section id="G6_Frameworks" >
 			<h2>G6</h2>
 			<h2>JS Frameworks</h2>
 				<br>
 				<a href="#" class="navigate-down">
 							<img data-src="./images/arrow.png" alt="Down arrow">
 						</a>
-		</section>
+	</section>
 
-		<section id="G6_Templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+	<section id="G6_Templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
 			<h2>Javascript templates</h2>
 			<p>Separate data, presentation and interaction</p>
             <div class="row">
@@ -1243,13 +1251,13 @@ console.log(cities); // Check if array has new order
                             </figure>
                     </div>
                 </div>
-		</section>
-        <section id="G6_Nano_JS" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-            <h2>Code examples</h2>
+	</section>
+
+    <section id="G6_Nano_JS" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+            <h2>Nano JS</h2>
             <p></p>
             <div class="row">
                 <div class="col-xs-6">
-                        <p>NanoJS Example</p>
                         <pre><code>
 data = {
         user: {
@@ -1278,47 +1286,45 @@ var view = {
 var output = Mustache.render("{{title}} spends {{calc}}", view);</code></pre>
                 </div>
             </div>
-        </section>
-        <section id="G6_Angular" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-            <h2>Angular example</h2>
+	</section>
+
+    <section id="G6_Angular" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+            <h2>Angular JS</h2>
             <div class="row">
                 <div class="col-xs-6">
-                    <pre><code class="javascript">
-<div ng-app="myApp" ng-controller="myCtrl" class="container">
-    <form class="form-inline">
-        <label>First Name:</label>
-        <input type="text" ng-model="name.first" class="form-control"/>
-        <label>Last Name: </label>
-        <input type="text" ng-model="name.last" class="form-control"/>
-        <output>Hello {{name.first}} {{name.last}}</output>
-    </form><br/>
-    <div class="panel panel-default"><b>Debug</b>{{name}}</div>
-</div>
+                    <pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl" class="container"&gt;
+ &lt;form class="form-vertical"&gt;
+   &lt;label&gt;First Name:&lt;/label&gt;
+    &lt;input type="text" ng-model="name.first" class="form-control"/&gt;
+    &lt;label&gt;Last Name: &lt;/label&gt;
+    &lt;input type="text" ng-model="name.last" class="form-control"/&gt;
+    &lt;output&gt;Hello {{name.first}} {{name.last}}&lt;/output&gt;
+  &lt;/form&gt;&lt;br/&gt;
+  &lt;div class="panel panel-default"&gt;&lt;b&gt;Debug&lt;/b&gt;{{name}}&lt;/div&gt;
+&lt;/div&gt;&lt;/form&gt;&lt;br/&gt;
+    &lt;div class="panel panel-default"&gt;&lt;b&gt;Debug&lt;/b&gt;{{name}}&lt;/div&gt;
+&lt;/div&gt;
                     </code></pre>
-                    <pre><code class="javascript">
-var app = angular.module('myApp', []);
+                    <pre><code class="javascript">var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.name = {first: "John", last: "Doe"};
-});
-                    </code></pre>
+});</code></pre>
                 </div>
                 <div class="col-xs-6">
-                    <div ng-app="myApp" ng-controller="myCtrl" class="container ng-scope">
-                        <form class="form-inline ng-valid ng-dirty">
-                            <label>First Name:</label>
-                            <input type="text" ng-model="name.first" class="form-control ng-valid ng-dirty">
-                            <label>Last Name: </label>
-                            <input type="text" ng-model="name.last" class="form-control ng-valid ng-dirty">
-                            <output class="ng-binding">Hello Aha gut</output>
+                    <div ng-app="myApp" ng-controller="myCtrl" class="container">
+                        <form class="form-vertical">
+                            <label class="pull-left">First Name:</label>
+                            <input type="text" ng-model="name.first" class="form-control">
+                            <label class="pull-left">Last Name: </label>
+                            <input type="text" ng-model="name.last" class="form-control">
+                            <output class="pull-left">Hello Aha gut</output>
                         </form><br>
-                        <div class="panel panel-default ng-binding"><b>Debug</b>{"first":"Aha","last":"gut"}</div>
+                        <div class="pull-left"><small><b>Debug:</b> {"first":"Aha","last":"gut"}</small></div>
                     </div>
                 </div>
             </div>
-        </section>
-
-	</section>
-
+    </section>
+ </section>
 
 <!--	#							#
 	 	#							#
@@ -1389,6 +1395,14 @@ app.controller('myCtrl', function($scope) {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+
+			/* G jQuery - Angular.js example */
+
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope) {
+			    $scope.name = {first: "John", last: "Doe"};
 			});
 
 		</script>

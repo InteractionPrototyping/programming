@@ -15,6 +15,7 @@
 		</script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
 		</script>
+		<script src="js/slide.js"></script>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="css/style.css">
@@ -290,6 +291,27 @@
 					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
 				</div>
 			</div>	
+		</section>
+
+		<section id="h3-htmlgeolocation1" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<pre><code>var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}</code></pre>
+				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation" class="pull-left"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+			</div>
 		</section>
 
 		<section id="h3_audioVideo4" data-background="#fff" class="container">
@@ -727,7 +749,7 @@ alert("Hallo " + data.first + ' ' + data.last);
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-		<script src="js/slide.js"></script>
+		
 
 		
 

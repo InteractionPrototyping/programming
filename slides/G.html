@@ -56,7 +56,7 @@
 
 <body>
 
-    <div class="reveal">
+    <div class="reveal new">
         <div class="footer">
             <img width="20%" src="./images/LfE.png">
             <p><small>Interaction Programming Block Course</small></p>
@@ -74,7 +74,7 @@
             </section>
 
 
-            <section id="G_jQuery" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+            <section id="g-jquery" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                 <div class="row">
                     <div class="col-xs-10">
                         <h2>jQuery</h2>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <blockquote>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. - <a href="www.jQuery.com">jQuery.com</a></blockquote>
+                        <blockquote>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. <a href="http://www.jQuery.com">jQuery.com</a></blockquote>
                         <ul>
                             <li><b>jQuery</b> simplifies JS programming
                                 <ul>
@@ -99,8 +99,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4  exlink important">
-                        <a href="http://www.w3schools.com/jquery/jquery_intro.asp" target="_blank"><small><i class="fa fa-book"> jQuery Intro</i></small></a>
+                    <div class="col-xs-4">
+                        <small><a class="documentation" href="http://www.w3schools.com/jquery/jquery_intro.asp" target="_blank">jQuery Intro</a></small>
                     </div>
                 </div>
             </section>
@@ -125,7 +125,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li><b>Offline:</b> Download from <a href="www.jQuery.com">www.jQuery.com</a> and add in project
+                                <li><b>Offline:</b> Download from <a href="http://www.jQuery.com">www.jQuery.com</a> and add in project
                                     <pre><code>&lt;script src="jquery-1.9.1.min.js"&gt;&lt;/script&gt;</code></pre>
                                 </li>
                                 <li>Or <b>online</b>: use directly from a CDN
@@ -193,19 +193,19 @@ for (i = 0; i &lt; nodes.length; i++) {
                                 <li>jQuery uses CSS selectors (and additional ones)
                                     <ul>
                                         <li>element: <code>$("p")</code>
-                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_p" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_p" target="_blank">Try it</a></li>
                                         <li>#id: <code>$("#test")</code>
-                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_id" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_id" target="_blank">Try it</a></li>
                                         <li>.class: <code>$(".test")</code>
-                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_class" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                            <br><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_class" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-4  exlink important">
-                            <a href="http://www.w3schools.com/jquery/jquery_selectors.asp" target="_blank"><small><i class="fa fa-book"> jQuery Selectors</i></small></a>
+                        <div class="col-xs-4 col-xs-offset-8">
+                            <small><a href="http://www.w3schools.com/jquery/jquery_selectors.asp" class="documentation" target="_blank">jQuery Selectors</a></small>
                         </div>
                     </div>
                 </section>
@@ -243,15 +243,15 @@ for (i = 0; i &lt; nodes.length; i++) {
 // action goes here!!
 });</code></pre>
                                         </li>
-                                        <li><a href="https://jsfiddle.net/InteractionPrototyping/xn54q7ta/" target="_blank"><i class="fa fa-laptop"> Show </i></a></li>
+                                        <li><a href="https://jsfiddle.net/InteractionPrototyping/xn54q7ta/" target="_blank">Example</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-4  exlink important">
-                            <a href="http://www.w3schools.com/jquery/jquery_events.asp" target="_blank"><small><i class="fa fa-book"> jQuery Event Methods</i></small></a>
+                        <div class="col-xs-4  col-xs-offset-8">
+                            <small><a href="http://www.w3schools.com/jquery/jquery_events.asp" class="documentation" target="_blank">jQuery Event Methods</a></small>
                         </div>
                     </div>
                 </section>
@@ -281,249 +281,12 @@ for (i = 0; i &lt; nodes.length; i++) {
             </section>
             <!--	#							#
 	 	#							#
-	 	#    G2 jQuery Effects 		#
+	 	#    G jQuery DOM 		#
 	 	#							#
 	 	#							#	-->
             <section id="g2">
-                <section id="g2-jquery-effects">
+                <section id="g2-jquery-html">
                     <h2>G2</h2>
-                    <h2>jQuery Effects</h2>
-                    <br>
-                    <a href="#" class="navigate-down">
-                        <img data-src="./images/arrow.png" alt="Down arrow">
-                    </a>
-                </section>
-
-
-                <section id="g2-hide-show-toggle" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-                    <h2>Hide/Show/Toggle</h2>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Hide and show HTML elements
-                                    <ul>
-                                        <li><code>$("p").hide();</code></li>
-                                        <li><code>$("p").show</code></li>
-
-                                    </ul>
-                                </li>
-                                <li>Add speed
-                                    <ul>
-                                        <li><code>$("p").hide(1000)</code></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Toggle between show and hide:
-                                    <ul>
-                                        <li><code>$("p").toggle();</code></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <i class="fa fa-jsfiddle fiddle"><a href="http://jsfiddle.net/InteractionPrototyping/L7s7wmkc/" class="fiddle"> Show</a></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-fade" data-background="#fff" class="container">
-                    <h2>Fade/Slide</h2>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Fade elements in and out of visibility
-                                    <ul>
-                                        <li><code>$(selector).fadeIn([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadein" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-
-                                        <li><code>$(selector).fadeOut([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeout" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-
-                                        <li><code>$(selector).fadeToggle([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadetoggle" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-
-                                        <li><code>$(selector).fadeTo([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeto" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Slide elements up and down
-                                    <ul>
-                                        <li><code>$(selector).slideDown([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_down" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-
-                                        <li><code>$(selector).slideUp([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_up" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-
-                                        <li><code>$(selector).slideToggle([speed]);</code>
-                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-animations" data-background="#fff" class="container">
-                    <h2>Animations</h2>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Create custom animations
-                                    <ul>
-                                        <li><code>$(selector).animate({params},speed);</code></li>
-
-                                        <li><code>{params}</code>: CSS properties</li>
-
-                                        <li><code>speed</code>: "slow", "fast", milliseconds</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul>
-                                <li>Example
-                                    <pre><code>$("div").animate({left:'250px'});</code></pre>
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                                <li>Multiple properties
-                                    <pre><code>$("button").click(function(){
- $("div").animate({
-  left:'250px',
-  ams},speed);
-  opacity:'0.5',
-  height:'150px',
-  width:'150px'
- });
-});</code></pre>
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1_multicss" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-
-                <section id="g2-animationqueues" data-background="#fff" class="container">
-                    <h2>Animation Queues</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li>jQuery queues animations
-                                    <ul>
-                                        <li>Multiple <code>animate()</code> calls will be processed one by one</li>
-                                    </ul>
-                                </li>
-                                <pre><code>$("button").click(function(){
- var div=$("div");
- div.animate({height:'300px',opacity:'0.4'},"slow");
- div.animate({width:'300px',opacity:'0.8'},"slow");
- div.animate({height:'100px',opacity:'0.4'},"slow");
- div.animate({width:'100px',opacity:'0.8'},"slow");
-});</code></pre>
-                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-more-effects" data-background="#fff" class="container">
-                    <h2>More Effects</h2>
-                    <div class="row">
-                        <div class="col-xs-12 important">
-                            <a href="http://www.w3schools.com/jquery/jquery_ref_effects.asp" target="_blank"><i class="fa fa-book"> jQuery Effect Reference</i></a>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-callback" data-background="#fff" class="container">
-                    <h2>Callback</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li>Problem: Subsequent code is run while effect is still running.
-                                    <ul>
-                                        <pre><code>$("p").hide(1000);
-alert("The paragraph is now hidden");</code></pre>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_no_callback" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                                <li>Solution: Callback listener is executed after effect is finished
-                                    <ul>
-                                        <li><code>$(selector).hide(speed,callback);</code></li>
-                                        <pre><code>$("p").hide("slow",function(){
-alert("The paragraph is now hidden");
-});</code></pre>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_callback" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-chaining" data-background="#fff" class="container">
-                    <h2>Chaining</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li>Chain together multiple actions/methods within a single statement</li>
-                                <li>Browsers only have to find the same element(s) once</li>
-                                <li>Append action to previous action
-                                    <ul>
-                                        <pre><code>$("#p1").css("color","red").slideUp(2000).slideDown(2000);</code></pre>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_chaining" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-quiz" class="container">
-                    <h2>G2</h2>
-                    <h2>Quiz</h2>
-                    <h2>jQuery Effects</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <a href="http://b.socrative.com/login/student/">socrative.com</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p>Room: IPP</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="g2-exercise" class="container">
-                    <h2>Exercise</h2>
-                    <p><b>Task 33</b></p>
-                    <p>jQuery Effects</p>
-                </section>
-
-
-            </section>
-            <!--	#							#
-	 	#							#
-	 	#    G jQuery Effects 		#
-	 	#							#
-	 	#							#	-->
-            <section id="G3">
-                <section id="G3_jQueryAndHTML">
-                    <h2>G3</h2>
                     <h2>jQuery and HTML</h2>
                     <br>
                     <a href="#" class="navigate-down">
@@ -531,7 +294,7 @@ alert("The paragraph is now hidden");
                     </a>
                 </section>
 
-                <section id="G3_getAndSet" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g2-get" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Get Content</h2>
                     <div class="row">
                         <div class="col-xs-6">
@@ -544,7 +307,7 @@ alert("The paragraph is now hidden");
                                 <li><code>html()</code> sets or returns the content of selected elements (including HTML markup)
                                     <ul>
                                         <li><code>$("#test").html()</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_get" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_get" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -554,7 +317,7 @@ alert("The paragraph is now hidden");
                                 <li><code>val()</code> sets or returns the value of form fields
                                     <ul>
                                         <li><code>$("#test").val()</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_val_get" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_val_get" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -562,7 +325,7 @@ alert("The paragraph is now hidden");
                     </div>
                 </section>
 
-                <section id="g3-set" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g2-set" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Set Content</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -570,23 +333,23 @@ alert("The paragraph is now hidden");
                                 <li><code>$("#test1").text("Hello world!");</code></li>
                                 <li><code>$("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");</code></li>
                                 <li><code>$("#test3").val("Dolly Duck");</code></li>
-                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set" target="_blank">Try it</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
 
-                <section id="G3_getAndSetAttributes" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g2-attributes" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Get and Set Attributes</h2>
                     <div class="row">
                         <div class="col-xs-6">
                             <p class="text-left">Get Attributes</p>
                             <ul>
-                                <li><code>attr()</code>method is used to get attribute values
+                                <li><code>attr()</code> method is used to get attribute values
                                     <ul>
-                                        <li><code>$("#w3s").attr("href")</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_get" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><code>$("#w3s").attr("href");</code></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_get" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -595,27 +358,27 @@ alert("The paragraph is now hidden");
                             <p class="text-left">Set Attributes</p>
                             <ul>
                                 <li><code>$("#w3s").attr("href",
-								"w3schools.com/jquery");</code></li>
-                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_set" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+"w3schools.com/jquery");</code></li>
+                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_attr_set" target="_blank">Try it</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
 
-                <section id="G3_addContent" data-background="#fff" class="container">
+                <section id="g2-add-content" data-background="#fff" class="container">
                     <h2>Add Content</h2>
                     <div class="row">
                         <div class="col-xs-6">
                             <ul>
                                 <li><code>append()</code> inserts content at the end of the selected elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li><code>prepend()</code> inserts content at the beginning of the selected elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_prepend" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_prepend" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
 
@@ -626,12 +389,12 @@ alert("The paragraph is now hidden");
                                 <li><code>after()</code> inserts content after the selected elements</li>
                                 <li><code>before()</code> content before the selected elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_after" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_after" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li>Several Elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append2" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append2" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -639,20 +402,20 @@ alert("The paragraph is now hidden");
                     </div>
                 </section>
 
-                <section id="G3_removeContent" data-background="#fff" class="container">
+                <section id="g2-remove-content" data-background="#fff" class="container">
                     <h2>Remove Content</h2>
                     <div class="row">
                         <div class="col-xs-6">
                             <ul>
                                 <li><code>remove()</code> inserts content at the end of the selected elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li><code>empty()</code> removes the child elements from the selected element
                                     <ul>
                                         <li><code>$("#div1").empty();</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_empty" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_empty" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -662,7 +425,7 @@ alert("The paragraph is now hidden");
                                 <li><b>Filter</b> the removed element
                                     <ul>
                                         <li><code>$("p").remove(".italic");</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_remove2" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_remove2" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -671,26 +434,26 @@ alert("The paragraph is now hidden");
                 </section>
 
 
-                <section id="G3_manipulateClass" data-background="#fff" class="container">
-                    <h2>Manipulate CSS class/style I</h2>
+                <section id="g2-manipulate-class" data-background="#fff" class="container">
+                    <h2>Manipulate CSS class</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
                                 <li><code>addClass()</code> adds one or more classes to the selected elements
                                     <ul>
                                         <li><code>$("h1,h2,p").addClass("blue");</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_addclass2" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li><code>removeClass()</code> removes one or more classes from the selected elements
                                     <ul>
                                         <li><code>$("h1,h2,p").removeClass("blue");</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_removeclass" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li><code>toggleClass()</code> toggles between adding/removing classes from the selected elements
                                     <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_toggleclass" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -698,30 +461,30 @@ alert("The paragraph is now hidden");
                     </div>
                 </section>
 
-                <section id="G3_manipulateCSS" data-background="#fff" class="container">
-                    <h2>Manipulate CSS class/style</h2>
+                <section id="g2-manipulate-style" data-background="#fff" class="container">
+                    <h2>Manipulate CSS style</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li><code>css()</code> Gets the style attribute
+                                <li><code>css();</code> Gets the style attribute
                                     <ul>
                                         <li><code>css("propertyname");</code></li>
                                         <li><code>c = $("p").css("background-color");</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_getcolor" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_getcolor" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li><code>css()</code> Sets the style attribute
                                     <ul>
                                         <li><code>css("propertyname", "value");</code></li>
                                         <li><code>$("p").css("background-color","yellow");</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_setcolor" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_setcolor" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                                 <li>Multiple properties
                                     <ul>
                                         <li><code>css({"propertyname":"value","propertyname": "value", ...);</code></li>
                                         <li><code>$("p").css({"background-color":"yellow","font-size":"200%"});</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_set_multiple" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_set_multiple" target="_blank">Try it</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -729,7 +492,7 @@ alert("The paragraph is now hidden");
                     </div>
                 </section>
 
-                <section id="G3_manipulateDimensions" data-background="#fff" class="container">
+                <section id="g2-manipulate-dimension" data-background="#fff" class="container">
                     <h2>Manipulate Dimensions</h2>
                     <div class="row">
                         <div class="col-xs-6">
@@ -752,7 +515,7 @@ alert("The paragraph is now hidden");
                     </div>
                 </section>
 
-                <section id="G3_jQuerychaining" data-background="#fff" class="container">
+                <section id="g2-chaining" data-background="#fff" class="container">
                     <h2>Chaining: creating elements</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -771,12 +534,12 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </div>
                     <div class="row">
                         <div class="col-xs-4 exlink fiddle">
-                            <a href="https://jsfiddle.net/InteractionPrototyping/j7us6db3/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+                            <a href="https://jsfiddle.net/InteractionPrototyping/j7us6db3/" target="_blank">Example</a>
                         </div>
                     </div>
                 </section>
 
-                <section id="G3_moremanipulation" data-background="#fff" class="container">
+                <section id="g2-more-manipulation" data-background="#fff" class="container">
                     <h2>More HTML/CSS manipulation</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -785,8 +548,8 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </div>
                 </section>
 
-                <section id="G3_Quiz" class="container">
-                    <h2>G3</h2>
+                <section id="g2-quiz" class="container">
+                    <h2>G2</h2>
                     <h2>Quiz</h2>
                     <h2>jQuery & HTML</h2>
                     <div class="row">
@@ -801,24 +564,22 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </div>
                 </section>
 
-                <section id="G3_Exercise" class="container">
+                <section id="g2-exercise" class="container">
                     <h2>Exercise</h2>
-                    <p><b>Task 34:</b></p>
+                    <p><b>Task 33:</b></p>
                     <p>jQuery and HTML</p>
                 </section>
 
             </section>
-
-
             <!--	#							#
 	 	#							#
-	 	#    G4 Handling Arrays &	#
-	 	#				Objects		#
+	 	#    G2 jQuery Effects 		#
+	 	#							#
 	 	#							#	-->
-            <section id="G4">
-                <section id="G4_HandlingArrays">
-                    <h2>G4</h2>
-                    <h2>Handling Arrays & Objects</h2>
+            <section id="g3">
+                <section id="g3-jquery-effects">
+                    <h2>G3</h2>
+                    <h2>jQuery Effects</h2>
                     <br>
                     <a href="#" class="navigate-down">
                         <img data-src="./images/arrow.png" alt="Down arrow">
@@ -826,7 +587,247 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                 </section>
 
 
-                <section id="G4_Array" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g3-hide-show-toggle" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                    <h2>Hide/Show/Toggle</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Hide and show HTML elements
+                                    <ul>
+                                        <li><code>$("p").hide();</code></li>
+                                        <li><code>$("p").show();</code></li>
+
+                                    </ul>
+                                </li>
+                                <li>Add speed
+                                    <ul>
+                                        <li><code>$("p").hide(1000);</code></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Toggle between show and hide:
+                                    <ul>
+                                        <li><code>$("p").toggle();</code></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="http://jsfiddle.net/InteractionPrototyping/L7s7wmkc/" class="fiddle">Example</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-fade" data-background="#fff" class="container">
+                    <h2>Fade/Slide</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Fade elements in and out of visibility
+                                    <ul>
+                                        <li><code>$(selector).fadeIn([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadein" target="_blank">Try it</a></li>
+
+                                        <li><code>$(selector).fadeOut([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeout" target="_blank">Try it</a></li>
+
+                                        <li><code>$(selector).fadeToggle([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadetoggle" target="_blank">Try it</a></li>
+
+                                        <li><code>$(selector).fadeTo([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeto" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Slide elements up and down
+                                    <ul>
+                                        <li><code>$(selector).slideDown([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_down" target="_blank">Try it</a></li>
+
+                                        <li><code>$(selector).slideUp([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_up" target="_blank">Try it</a></li>
+
+                                        <li><code>$(selector).slideToggle([speed]);</code>
+                                            <br> <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-animations" data-background="#fff" class="container">
+                    <h2>Animations</h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Create custom animations
+                                    <ul>
+                                        <li><code>$(selector).animate({params},speed);</code></li>
+
+                                        <li><code>{params}</code>: CSS properties</li>
+
+                                        <li><code>speed</code>: "slow", "fast", milliseconds</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul>
+                                <li>Example
+                                    <pre><code>$("div").animate({left:'250px'});</code></pre>
+                                    <ul>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                                <li>Multiple properties
+                                    <pre><code>$("button").click(function(){
+ $("div").animate({
+  left:'250px',
+  ams},speed);
+  opacity:'0.5',
+  height:'150px',
+  width:'150px'
+ });
+});</code></pre>
+                                    <ul>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1_multicss" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="g3-animationqueues" data-background="#fff" class="container">
+                    <h2>Animation Queues</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li>jQuery queues animations
+                                    <ul>
+                                        <li>Multiple <code>animate()</code> calls will be processed one by one</li>
+                                    </ul>
+                                </li>
+                                <pre><code>$("button").click(function(){
+ var div=$("div");
+ div.animate({height:'300px',opacity:'0.4'},"slow");
+ div.animate({width:'300px',opacity:'0.8'},"slow");
+ div.animate({height:'100px',opacity:'0.4'},"slow");
+ div.animate({width:'100px',opacity:'0.8'},"slow");
+});</code></pre>
+                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation" target="_blank">Try it</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-more-effects" data-background="#fff" class="container">
+                    <h2>More Effects</h2>
+                    <div class="row">
+                        <div class="col-xs-12 important">
+                            <a href="http://www.w3schools.com/jquery/jquery_ref_effects.asp" target="_blank"><i class="fa fa-book"> jQuery Effect Reference</i></a>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-callback" data-background="#fff" class="container">
+                    <h2>Callback</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li>Problem: Subsequent code is run while effect is still running.
+                                    <ul>
+                                        <pre><code>$("p").hide(1000);
+alert("The paragraph is now hidden");</code></pre>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_no_callback" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                                <li>Solution: Callback listener is executed after effect is finished
+                                    <ul>
+                                        <li><code>$(selector).hide(speed,callback);</code></li>
+                                        <pre><code>$("p").hide("slow",function(){
+alert("The paragraph is now hidden");
+});</code></pre>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_callback" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-chaining" data-background="#fff" class="container">
+                    <h2>Chaining</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li>Chain together multiple actions/methods within a single statement</li>
+                                <li>Browsers only have to find the same element(s) once</li>
+                                <li>Append action to previous action
+                                    <ul>
+                                        <pre><code>$("#p1").css("color","red").slideUp(2000).slideDown(2000);</code></pre>
+                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_chaining" target="_blank">Try it</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-quiz" class="container">
+                    <h2>G3</h2>
+                    <h2>Quiz</h2>
+                    <h2>jQuery Effects</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="http://b.socrative.com/login/student/">socrative.com</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>Room: IPP</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="g3-exercise" class="container">
+                    <h2>Exercise</h2>
+                    <p><b>Task 34</b></p>
+                    <p>jQuery Effects</p>
+                </section>
+
+
+            </section>
+
+
+
+            <!--	#							#
+	 	#							#
+	 	#    G4 Handling Arrays &	#
+	 	#				Objects		#
+	 	#							#	-->
+            <section id="g4">
+                <section id="g4-handling-arrays">
+                    <h2>G4</h2>
+                    <h2>Handling Arrays &amp; Objects</h2>
+                    <br>
+                    <a href="#" class="navigate-down">
+                        <img data-src="./images/arrow.png" alt="Down arrow">
+                    </a>
+                </section>
+
+
+                <section id="g4-array" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Reminder Array & Object</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -846,7 +847,7 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </div>
                 </section>
 
-                <section id="G4_Each" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g4-each" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Each()</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -865,13 +866,13 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </div>
                     <div class="row">
                         <div class="col-xs-12 exlink fiddle">
-                            <a href="https://jsfiddle.net/InteractionPrototyping/mqvbpoyt/1/" target="_blank"><small><i class="fa fa-jsfiddle">View example on fiddle</i></small></a>
-                            <a href="https://jsfiddle.net/InteractionPrototyping/e6jsq2rh/3/" target="_blank"><small><i class="fa fa-jsfiddle">View example on fiddle</i></small></a>
+                            <a href="https://jsfiddle.net/InteractionPrototyping/mqvbpoyt/1/" target="_blank">Example</a>
+                            <a href="https://jsfiddle.net/InteractionPrototyping/e6jsq2rh/3/" target="_blank">Example</a>
                         </div>
                     </div>
                 </section>
 
-                <section id="G4_Exercise" class="container">
+                <section id="g4-exercise" class="container">
                     <h2>Exercise</h2>
                     <p><b>Task 35:</b></p>
                     <p>jQuery Functions</p>
@@ -883,8 +884,8 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
 	 	#    G5 jQuery UI			#
 	 	#							#
 	 	#							#	-->
-            <section id="G5">
-                <section id="G5_jQueryUI">
+            <section id="g5">
+                <section id="g5-jquery-ui">
                     <h2>G5</h2>
                     <h2>jQuery UI</h2>
                     <br>
@@ -893,11 +894,11 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                     </a>
                 </section>
 
-                <section id="g5-jquery-ui" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g5-intro" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>jQuery UI</h2>
                     <div class="row">
                         <div class="col-xs-12">
-                            <blockquote>jQuery UI is a widget and interaction library built on top of the jQuery JavaScript Library that you can use to build highly interactive web applications. - <a href="jQuery.com">jQuery.com</a></blockquote>
+                            <blockquote>jQuery UI is a widget and interaction library built on top of the jQuery JavaScript Library that you can use to build highly interactive web applications. <a href="https://jqueryui.com/">jQueryUI.com</a></blockquote>
                             <ul>
                                 <li><b>jQuery UI</b> provides
                                     <ul>
@@ -909,21 +910,16 @@ $("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 exlink important">
-                            <a href="http://www.w3schools.com/jquery/jquery_intro.asp" target="_blank"><small><i class="fa fa-book"> jQuery Intro</i></small></a>
-                        </div>
-                    </div>
                 </section>
 
 
-                <section id="G5_UsejQueryUI" data-background="#fff" class="container">
+                <section id="g5-usage" data-background="#fff" class="container">
                     <h2>Use jQuery UI</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li><b>Offline:</b> Download from <a href="www.jqueryui.com">www.jQuery.com</a> and add in project (you need jQuery as well)
-                                    <pre><code>&lt;script src="jquery-1.9.1.min.js"&gt;&lt;/script&gt;</code></pre>
+                                <li><b>Offline:</b> Download from <a href="http://www.jqueryui.com">www.jQueryUi.com</a> and add in project (you need jQuery as well)
+                                    <pre><code>&lt;script src="jquery-ui.min.js"&gt;&lt;/script&gt;</code></pre>
                                     <pre><code>&lt;src="jquery-ui.js"&gt;&lt;/script&gt;</code></pre>
                                 </li>
                                 <li>Or <b>online</b>: use directly from a CDN
@@ -939,7 +935,7 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                     </div>
                 </section>
 
-                <section id="G5_Example" data-background="#fff" class="container">
+                <section id="g5-example" data-background="#fff" class="container">
                     <h2>Use jQuery UI</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -952,60 +948,60 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                                 </li>
                                 <li>Result:</li>
                             </ol>
-                            <img src="./images/G5datepicker.png">
+                            <img src="./images/G6datepicker.png">
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Interaction" data-background="#fff" class="container">
+                <section id="g5-interaction" data-background="#fff" class="container">
                     <h2>Interaction</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li>Draggable: <a href="http://jqueryui.com/draggable/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Droppable: <a href="http://jqueryui.com/droppable/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Resizable: <a href="http://jqueryui.com/resizable/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Selectable: <a href="http://jqueryui.com/selectable/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Sortable: <a href="http://jqueryui.com/sortable/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
+                                <li><a href="http://jqueryui.com/draggable/" target="_blank">Draggable</a></li>
+                                <li><a href="http://jqueryui.com/droppable/" target="_blank">Droppable</a></li>
+                                <li><a href="http://jqueryui.com/resizable/" target="_blank">Resizable</a></li>
+                                <li><a href="http://jqueryui.com/selectable/" target="_blank">Selectable</a></li>
+                                <li><a href="http://jqueryui.com/sortable/" target="_blank">Sortable</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Widgets" data-background="#fff" class="container">
+                <section id="g5-widgets" data-background="#fff" class="container">
                     <h2>Widgets</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li>Menu: <a href="http://jqueryui.com/menu/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Slider: <a href="http://jqueryui.com/slider/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Spinner: <a href="http://jqueryui.com/spinner/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Tabs: <a href="http://jqueryui.com/tabs/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
-                                <li>Tooltip: <a href="http://jqueryui.com/tooltip/" target="_blank"><i class="fa fa-laptop"> Show (jQuery UI)</i></a></li>
+                                <li><a href="http://jqueryui.com/menu/" target="_blank">Menu</a></li>
+                                <li><a href="http://jqueryui.com/slider/" target="_blank">Slider</a></li>
+                                <li><a href="http://jqueryui.com/spinner/" target="_blank">Spinner</a></li>
+                                <li><a href="http://jqueryui.com/tabs/" target="_blank">Tabs</a></li>
+                                <li><a href="http://jqueryui.com/tooltip/" target="_blank">Tooltip</a></li>
                                 <li>...</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Plugins" data-background="#fff" class="container">
+                <section id="g5-plugins" data-background="#fff" class="container">
                     <h2>Plugins</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
                                 <li>Search the web for plugins, (e.g. Coverflow):</li>
                                 <ul>
-                                    <li><a href="http://fredhq.com/projects/roundabout/" target="_blank"><i class="fa fa-external-link"> http://fredhq.com/projects/roundabout/</i></a></li>
-                                    <li><a href="http://luwes.co/jquery-coverflow/" target="_blank"><i class="fa fa-external-link"> http://luwes.co/jquery-coverflow/</i></a></li>
-                                    <li><a href="http://addyosmani.com/blog/jqueryuicoverflow/" target="_blank"><i class="fa fa-external-link"> http://addyosmani.com/blog/jqueryuicoverflow/</i></a></li>
+                                    <li><a href="http://fredhq.com/projects/roundabout/" target="_blank"> http://fredhq.com/projects/roundabout/</a></li>
+                                    <li><a href="http://luwes.co/jquery-coverflow/" target="_blank"> http://luwes.co/jquery-coverflow/</a></li>
+                                    <li><a href="http://addyosmani.com/blog/jqueryuicoverflow/" target="_blank">http://addyosmani.com/blog/jqueryuicoverflow/</a></li>
                                 </ul>
-                                <li>Can be appended to HTML (e.g. lists) elements easily (e.g. $.coverflow() )</li>
+                                <li>Can be appended to HTML (e.g. lists) elements easily (e.g. <code>$.coverflow()</code> )</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Themes" data-background="#fff" class="container">
+                <section id="g5-themes" data-background="#fff" class="container">
                     <h2>Themes</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1018,7 +1014,7 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                     </div>
                 </section>
 
-                <section id="G5_ConfigurationParadigm" data-background="#fff" class="container">
+                <section id="g5-config" data-background="#fff" class="container">
                     <h2>Configuration paradigm</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1038,12 +1034,12 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                     </div>
                     <div class="row">
                         <div class="col-xs-12 exlink fiddle">
-                            <a href="http://jsfiddle.net/InteractionPrototyping/syhj8egy/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+                            <a href="http://jsfiddle.net/InteractionPrototyping/syhj8egy/" target="_blank">Example</small></a>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_methodsEvents" data-background="#fff" class="container">
+                <section id="g5-methods-events" data-background="#fff" class="container">
                     <h2>Methods & Events</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1060,12 +1056,12 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                     </div>
                     <div class="row">
                         <div class="col-xs-12 exlink fiddle">
-                            <a href="http://jsfiddle.net/InteractionPrototyping/91cr54hp/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+                            <a href="http://jsfiddle.net/InteractionPrototyping/91cr54hp/" target="_blank">Example</a>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Quiz" class="container">
+                <section id="g5-quiz" class="container">
                     <h2>G5</h2>
                     <h2>Quiz</h2>
                     <h2>jQuery UI</h2>
@@ -1082,7 +1078,7 @@ src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"&gt;&lt;/script&gt;</code></p
                 </section>
 
 
-                <section id="G5_Examples" data-background="#fff" class="container">
+                <section id="g5-examples" data-background="#fff" class="container">
                     <h2>Examples: Sortable I</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1103,7 +1099,7 @@ $( "#sortable" ).sortable();
                     </div>
                 </section>
 
-                <section id="G5_Examples2" data-background="#fff" class="container">
+                <section id="g5-examples-2" data-background="#fff" class="container">
                     <h2>Examples: Sortable II</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1122,7 +1118,7 @@ $( "#sortable" ).sortable();
                 </section>
 
 
-                <section id="G5_Examples3" data-background="#fff" class="container">
+                <section id="g5-examples-3" data-background="#fff" class="container">
                     <h2>Examples: Sortable III</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1142,7 +1138,7 @@ $( "#sortable" ).sortable();
                 </section>
 
 
-                <section id="G5_Examples4" data-background="#fff" class="container">
+                <section id="g5-examples-4" data-background="#fff" class="container">
                     <h2>Examples: Sortable IV</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1170,7 +1166,7 @@ return newArray;
                 </section>
 
 
-                <section id="G5_Examples5" data-background="#fff" class="container">
+                <section id="g5-examples-5" data-background="#fff" class="container">
                     <h2>Examples: Sortable V</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1190,12 +1186,12 @@ console.log(cities); // Check if array has new order
                     </div>
                     <div class="row">
                         <div class="col-xs-12 exlink fiddle">
-                            <a href="http://jsfiddle.net/InteractionPrototyping/nbas7pv1/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+                            <a href="http://jsfiddle.net/InteractionPrototyping/nbas7pv1/" target="_blank">Example</a>
                         </div>
                     </div>
                 </section>
 
-                <section id="G5_Examples6" data-background="#fff" class="container">
+                <section id="g5-examples-6" data-background="#fff" class="container">
                     <h2>Examples: Sortable VI</h2>
                     <div class="row">
                         <div class="col-xs-12">
@@ -1217,12 +1213,12 @@ console.log(cities); // Check if array has new order
                     </div>
                     <div class="row">
                         <div class="col-xs-12 exlink fiddle">
-                            <a href="http://jsfiddle.net/InteractionPrototyping/wmy6uc2v/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+                            <a href="http://jsfiddle.net/InteractionPrototyping/wmy6uc2v/" target="_blank">Example</a>
                         </div>
                     </div>
                 </section>
 
-                <section id="g6-exercise" class="container">
+                <section id="g5-exercise" class="container">
                     <h2>Exercise</h2>
                     <p><b>Task 36:</b></p>
                     <p>jQuery UI</p>
@@ -1235,8 +1231,8 @@ console.log(cities); // Check if array has new order
 	 	#    G7 JS Templates			#
 	 	#							#
 	 	#							#	-->
-            <section id="G6">
-                <section id="G6_Frameworks">
+            <section id="g6">
+                <section id="g6-frameworks">
                     <h2>G6</h2>
                     <h2>JS Frameworks</h2>
                     <br>
@@ -1245,7 +1241,7 @@ console.log(cities); // Check if array has new order
                     </a>
                 </section>
 
-                <section id="G6_Templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g6-templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Javascript templates</h2>
                     <p>Separate data, presentation and interaction</p>
                     <div class="row">
@@ -1269,7 +1265,7 @@ console.log(cities); // Check if array has new order
                     </div>
                 </section>
 
-                <section id="G6_Nano_JS" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g6-nanojs" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Nano JS</h2>
                     <p></p>
                     <div class="row">
@@ -1304,21 +1300,19 @@ var output = Mustache.render("{{title}} spends {{calc}}", view);</code></pre>
                     </div>
                 </section>
 
-                <section id="G6_Angular" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                <section id="g6-angularjs" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
                     <h2>Angular JS</h2>
                     <div class="row">
                         <div class="col-xs-6">
-                            <pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl" class="container"&gt;
- &lt;form class="form-vertical"&gt;
-   &lt;label&gt;First Name:&lt;/label&gt;
-    &lt;input type="text" ng-model="name.first" class="form-control"/&gt;
+                            <pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+    &lt;label&gt;First Name:&lt;/label&gt;
+    &lt;input type="text" ng-model="name.first"&gt;
     &lt;label&gt;Last Name: &lt;/label&gt;
-    &lt;input type="text" ng-model="name.last" class="form-control"/&gt;
-    &lt;output&gt;Hello {{name.first}} {{name.last}}&lt;/output&gt;
-  &lt;/form&gt;&lt;br/&gt;
-  &lt;div class="panel panel-default"&gt;&lt;b&gt;Debug&lt;/b&gt;{{name}}&lt;/div&gt;
-&lt;/div&gt;&lt;/form&gt;&lt;br/&gt;
-    &lt;div class="panel panel-default"&gt;&lt;b&gt;Debug&lt;/b&gt;{{name}}&lt;/div&gt;
+    &lt;input type="text" ng-model="name.last" /&gt;
+    &lt;output&gt;
+        Hello {{name.first}} {{name.last}}
+    &lt;/output&gt;
+    Debug: {{name}}&lt;/div&gt;
 &lt;/div&gt;
                     </code></pre>
                             <pre><code class="javascript">var app = angular.module('myApp', []);
@@ -1333,11 +1327,22 @@ app.controller('myCtrl', function($scope) {
                                     <input type="text" ng-model="name.first" class="form-control">
                                     <label class="pull-left">Last Name: </label>
                                     <input type="text" ng-model="name.last" class="form-control">
-                                    <output class="pull-left">Hello Aha gut</output>
+                                    <output class="pull-left">Hello {{name.first}} {{name.last}}</output>
                                 </form>
                                 <br>
-                                <div class="pull-left"><small><b>Debug:</b> {"first":"Aha","last":"gut"}</small></div>
+                                <div class="pull-left"><small><b>Debug:</b> {{name}}</small></div>
                             </div>
+                            <script>
+                                /* G jQuery - Angular.js example */
+
+                                var app = angular.module('myApp', []);
+                                app.controller('myCtrl', function ($scope) {
+                                    $scope.name = {
+                                        first: "John",
+                                        last: "Doe"
+                                    };
+                                });
+                            </script>
                         </div>
                     </div>
                 </section>
@@ -1348,8 +1353,8 @@ app.controller('myCtrl', function($scope) {
 	 	#    G7 Literature			#
 	 	#							#
 	 	#							#	-->
-            <section id="G7">
-                <section id="G7_Literature">
+            <section id="g7">
+                <section id="g7-literature">
                     <h2>G7</h2>
                     <h2>Literature</h2>
                     <br>
@@ -1358,18 +1363,18 @@ app.controller('myCtrl', function($scope) {
                     </a>
                 </section>
 
-                <section id="G7_Tutorial" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-                    <h2>Tutorial & References</h2>
+                <section id="g7-tutorials" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+                    <h2>Tutorials &amp; References</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li><a href="http://www.w3schools.com/jquery/default.asp" target="_blank"><i class="fa fa-external-link"> jQuery Tutorial</i></a></li>
-                                <li><a href="http://www.w3schools.com/jquery/jquery_examples.asp" target="_blank"><i class="fa fa-external-link"> jQuery Examples</i></a></li>
-                                <li><a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" target="_blank"><i class="fa fa-external-link"> jQuery Reference</i></a></li>
-                                <li><a href="http://www.w3schools.com/jquerymobile/default.asp" target="_blank"><i class="fa fa-external-link"> jQuery Mobile Tutorial</i></a></li>
-                                <li><a href="http://api.jquery.com/" target="_blank"><i class="fa fa-external-link"> jQuery API Documentation</i></a></li>
-                                <li><a href="http://api.jqueryui.com/" target="_blank"><i class="fa fa-external-link"> jQuery UI API Documentation</i></a></li>
-                                <li><a href="http://api.jquerymobile.com/" target="_blank"><i class="fa fa-external-link"> jQuery Mobile API Documentation</i></a></li>
+                                <li><a href="http://www.w3schools.com/jquery/default.asp" target="_blank">jQuery Tutorial</a></li>
+                                <li><a href="http://www.w3schools.com/jquery/jquery_examples.asp" target="_blank">jQuery Examples</a></li>
+                                <li><a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" target="_blank">jQuery Reference</a></li>
+                                <li><a href="http://www.w3schools.com/jquerymobile/default.asp" target="_blank">Query Mobile Tutorial</a></li>
+                                <li><a href="http://api.jquery.com/" target="_blank" class="documentation">jQuery API Documentation</a></li>
+                                <li><a href="http://api.jqueryui.com/" target="_blank" class="documentation">jQuery UI API Documentation</a></li>
+                                <li><a href="http://api.jquerymobile.com/" target="_blank" class="documentation">jQuery Mobile API Documentation</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1441,17 +1446,6 @@ app.controller('myCtrl', function($scope) {
                     async: true
                 }
 				]
-        });
-
-
-        /* G jQuery - Angular.js example */
-
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function ($scope) {
-            $scope.name = {
-                first: "John",
-                last: "Doe"
-            };
         });
     </script>
 

@@ -7,6 +7,8 @@
 
     <title>Interaction Programming Block Course</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <!-- use bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -35,7 +37,7 @@
     </script>
 </head>
 
-<body>
+<body onload="document.getElementById('term').innerHTML = term;">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -73,11 +75,7 @@ INTRODUCTION
 
         <p>This is the practical task assignment for the <em> Interaction Programming Block Course</em> (<a href="../slides/Introduction.pdf">introductory slides</a>). The block course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische
         Universität München</a> in the context of master courses in <em>Human
-        Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the
-            <script>
-                document.write(term);
-            </script>
-            . This document is authored by <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a>, <a href="mailto:schopf@lfe.mw.tum.de">David Schopf</a>, <a href="mailto:luetteken@lfe.mw.tum.de">Niklas
+        Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the <span id="term">summer and winter term</span>. This document is authored by <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a>, <a href="mailto:schopf@lfe.mw.tum.de">David Schopf</a>, <a href="mailto:luetteken@lfe.mw.tum.de">Niklas
             Lütteken</a>, and <a href="mailto:stumpf@lfe.mw.tum.de">Annika Stumpf</a>.
         </p>
         <p>The exercises aim to learn the web technologies HTML5/CSS3/JavaScript by developing a <b>weather application</b> during the course. </p>
@@ -525,8 +523,7 @@ PREPARATION
         </div>
         <h3 id="JS-Test">First Steps (F0)</h3>
         <ul>
-            <li>Go to <code>body</code> and add an <code>onload = "alert('Hello World');"</code> attribute. Reload the page and your message will be displayed.
-            </li>
+            <li>Go to <code>body</code> and add an <code>onload = "alert('Hello World');"</code> attribute. Reload the page and your message will be displayed.</li>
             <li>Remove the onload attribute</li>
             <li>Instead, add an <code>onclick</code> attribute to <kbd>button-next-day</kbd></li>
             <li>Use <code>document.getElementById()</code> and the property <code>innerHTML</code> to change the temperature value. Be sure to use the ID of the corresponding <kbd>temperature</kbd> element.</li>
@@ -573,7 +570,7 @@ PREPARATION
         <div class="row">
             <figure class="col-xs-6">
                 <img id="simple_object" src="images/uml_weather_basic.svg" />
-                <figcaption>A simple javascript weather object</figcaption>
+                <figcaption>A simple javascript object</figcaption>
             </figure>
         </div>
         <ul>
@@ -594,17 +591,15 @@ PREPARATION
         <h3 id="JS-UML">Model weather data</h3>
         <div class="row">
             <figure class="col-xs-12">
-                <img id="uml_weather_obj" src="images/uml_weather_object.svg" style="width:100%;" />
+                <img id="uml_weather_obj" src="images/uml_weather_object.svg" />
                 <figcaption>UML diagram for sample weather data object</figcaption>
             </figure>
         </div>
         <ul>
-            <li>Nest arrays of <strong>hourly</strong> and <strong>daily</strong> data inside the <strong>weather</strong> object, according to the UML diagram above</li>
+            <li>Nest arrays of <strong>hourly</strong> and <strong>daily</strong> data inside the <strong>weather</strong> object, according to the UML diagram above. For the moment the objects <strong>daily</strong> and <strong>hourly</strong> may be empty.</li>
             <li>Now change the app (array/object access), so that it follows UML specification above</li>
             <li>Look at the demo weather object provided below and include it into your app. Consider creating an own script file <kbd>data.js</kbd> to separate data and interaction.</li>
             <li>Reference the new file in your HTML <code>head</code></li>
-
-
         </ul>
 
         <!-- Sample Weather Object -->
@@ -620,7 +615,7 @@ PREPARATION
               "currently" : {
                   "time" : 1428444000,
                   "summary" : "Partly Cloudy",
-                  "icon": "fog",
+                  "icon" : "fog",
                   "temperature" : 53.32,
                   "humidity" : 0.52,
                   "windSpeed" : 4.85
@@ -711,7 +706,7 @@ PREPARATION
         </div>
 
         <h3 id="JS-Control">Control and conditionals (F7) </h3>
-        <!-- TODO: this should be done, when functions are created -->
+
         <p>Add a function <strong>changeCurrentDay()</strong> to your <kbd>interactions.js</kbd> file:</p>
         <ul>
             <li>Depending on the given parameter, currentDay should be incremented or decremented</li>
@@ -816,28 +811,32 @@ PREPARATION
     -->
         <h2 id="G">G: jQuery</h2>
 
-        <h3 class="todo" id="jQ-DOM">DOM Manipulation</h3>
-        <ul class="todo">
+        <h3 id="jQ-DOM">DOM Manipulation</h3>
+        <ul>
             <li>Replace all innerHTML manipulations with jQuery's <code>html()</code> function</li>
-            <li>Show city List  - jQuery DOM Insertion</li>
-            <li>addCity</li>
-            <li>ChangeTempUnit, changeWindUnit</li>
+            <li>Use jQuery's <code>.each()</code> to create DOM elements for each element in your <strong>cities</strong> array. Then <code>.append()</code> them to your
+                <kbd>city-list</kbd>
+            </li>
+            <li>When the user adds a new city, append it to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
+            <li>Track the current unit of wind speed and temperature with a global variable.Use jQuery's <code>.click()</code> on the <kbd>sidebar</kbd> unit chooser buttons to change the current unit.</li>
         </ul>
-        <h3 class="todo" id="jQ-Transition">Transition & Animation</h3>
-        <ul class="todo">
+        <h3 id="jQ-Transition">Transition & Animation</h3>
+        <ul>
             <li>Fade in the animated loading indicator</li>
+            <li>Call <code>.fadeOut()</code> after 500 ms</li>
+            <li>Hint: Check the documentation how the jQuery animation queue works</li>
         </ul>
-        <h3 class="todo" id="jQ-Plugin">Plugins</h3>
-        <ul class="todo">
-            <li>setCityClickable - jQuery Plugins</li>
+        <h3 id="jQ-Plugin">Plugins</h3>
+        <ul>
+            <li>Introduce a jQuery plugin <strong>setCityClickable()</strong> that adds the <code>.click()</code> handler to a city. Use the plugin function whenever a new city getss created.</li>
         </ul>
-        <h3 class="todo" id="jQ-UI">jQuery UI</h3>
-        <ul class="todo">
+        <h3 id="jQ-UI">jQuery UI</h3>
+        <ul>
             <li>Embed jQuery UI from <a href="https//code.jquery.com">jQuery CDN</a></li>
             <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
         </ul>
         <!-- Dummy Task -->
-        <h3 class="todo" id="jQ-"></h3>
+        <h3 class="todo" id="jQ-">&nbsp;</h3>
         <ul class="todo">
             <li></li>
         </ul>

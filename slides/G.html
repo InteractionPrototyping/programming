@@ -182,7 +182,6 @@ CSS-like select
 				</div> 
 			</div>
 	</section>
-
 	<section id="G1_Selectors" data-background="#fff" class="container">
 			<h2>Selectors</h2>
 			<div class="row">
@@ -1276,17 +1275,59 @@ console.log(cities); // Check if array has new order
 						</a>
 		</section>
 
-		<section id="G6_Templates" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>JavaScript Templates</h2>
-			<div class="row">
-				<div class="col-xs-12">
+		<section id="G6_Template_Engines" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>JavaScript Template Engines</h2>
+			<p></p>
+            <div class="row">
+				<div class="col-xs-6">
 					<ul>
-						<li>Mustache</li>
-						<li>...</li>
+						<li><a href="https://github.com/janl/mustache.js">Mustache.js</a></li>
+						<li><a href="http://underscorejs.org/">Underscore.js</a></li>
+                        <li><a href="http://www.embeddedjs.com/">Embedded JS</a></li>
+                        <li><a href="http://handlebarsjs.com/">Handlebars.js</a></li>
+                        <li><a href="https://github.com/trix/nano">NanoJS</a></li>
 					</ul>
-				</div> 
-			</div>	
+                    </div>
+                    <div class="col-xs-6">
+                        <div
+                    </div>
+                </div>
 		</section>
+        <section id="G6_Nano_JS" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+            <h2>Code examples</h2>
+            <p></p>
+            <div class="row">
+                <div class="col-xs-6">
+                        <p>NanoJS Example</p>
+                        <pre><code>
+data = {
+        user: {
+            login: "tomek",
+            first_name: "Thomas",
+            last_name: "Mazur",
+            account: {
+            status: "active",
+            expires_at: "2009-12-31"
+            }
+    }
+}
+
+nano("<p>Hello {user.first_name} {user.last_name}! Your account is <strong>{user.account.status}</strong></p>", data)
+                            </code></pre>
+                </div>
+                <div class="col-xs-6">
+                    <p>Mustache Example</p>
+                        <pre><code>
+var view = {
+    title: "Joe",
+    calc: function () {
+        return 2 + 4;
+    }
+};
+var output = Mustache.render("{{title}} spends {{calc}}", view);</code></pre>
+                </div>
+            </div>
+        </section>
 
 	</section>
 

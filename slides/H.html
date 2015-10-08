@@ -15,6 +15,7 @@
 		</script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
 		</script>
+		<script src="js/slide.js"></script>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="css/style.css">
@@ -126,85 +127,6 @@
 				</div>
 			</div>
 	</section>
-	</section>
-
-<!--	#							#
-	 	#							#
-	 	#    H2 AJAX 	 			#
-	 	#							#
-	 	#							#	-->
-
-	<section id="h2">					
-		<section id="h2-ajax" >
-			<h2>H2</h2>
-			<h2>AJAX</h2>
-				<br>
-				<a href="#" class="navigate-down">
-							<img data-src="./images/arrow.png" alt="Down arrow">
-						</a>
-		</section>
-
-		<section id="h2-ajax" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-			<h2>AJAX</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>A</b>synchronous <b>J</b>avaScript <b>a</b>nd <b>X</b>ML
-							<ul>
-								<li>loading data in the <b>background</b> and display it on the webpage</li>
-								<li><b>without reloading</b> the whole page</li>
-								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-							</ul>
-						</li>
-					</ul>	
-				</div> 
-			</div>	
-		</section>
-
-		<section id="h2-load" data-background="#fff" class="container">
-			<h2>Load</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>The load() method loads data from a server and puts the returned data into the selected element.
-							<ul>
-								<li><code>$(selector).load(URL);</code></li>
-								<li><code>$("#div1").load("demo_test.txt");</code></li>
-								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-							</ul>
-						</li>
-						<li>Selector (load an external element with an id)
-							<ul>
-								<li><code>$("#div1").load(„content.htm #p1");</code></li>
-								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load2" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-							</ul>
-						</li>
-					</ul>	
-				</div> 
-			</div>	
-		</section>
-
-	<section id="h2-ajax-json" data-background="#fff" class="container">
-		<h2>AJAX & JSON</h2>
-		<div class="row">
-			<div class="col-xs-12">
-				<ul>
-					<li>Call an external <b>API</b> <br>
-						(<b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface)
-						<pre><code>$.getJSON("ServerURL").done(function(data)
-{
-//Callback
-});</code></pre>
-					</li>
-				</ul>	
-			</div> 
-		</div>
-		<div class="row"> 
-			<div class="col-xs-12 exlink fiddle">
-				<a href="https://jsfiddle.net/InteractionPrototyping/u3d9k1e9/1/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
-			</div>
-		</div>	
-	</section>
 </section>
 
 
@@ -224,29 +146,15 @@
 						</a>
 		</section>
 
-		<section id="h3-webapis" data-background="#fff" class="container">
-			<h2>APIs</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</li>
-						<li>content can be dynamically posted and updated in multiple locations on the web</li>
-						<li>query data via HTTP requests</b></li>
-						<li>JSON data as response in the background via asynchronous loading (AJAX)</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
 		<section id="h3-technologies" data-background="#fff" class="container">
 			<h2>Technologies</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
-						<li><b>Semantics:</b> allowing you to describe more precisely what your content is  (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms_in_HTML">HTML5 forms</a>)</li>
-						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">Web Sockets</a>)</li>
-						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (e.g. <a href="http://www.w3schools.com/html/html5_webstorage.asp">HTML5 Web Storage</a>)</li>
-						<li><b>Multimedia:</b> controlling audio and video on the web (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video">HTML audio and video</a>)</li>
+						<li><b>Semantics:</b> allowing you to describe more precisely what your content is  (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms_in_HTML" target="_blank">HTML5 forms</a>)</li>
+						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank">Web Sockets</a>)</li>
+						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (e.g. <a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank">HTML5 Web Storage</a>)</li>
+						<li><b>Multimedia:</b> controlling audio and video on the web (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank">HTML5 audio and video</a>)</li>
 					</ul>
 				</div>
 			</div>
@@ -262,48 +170,194 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
-						<li><b>2D/3D graphics and effects:</b> allowing a much more diverse range of presentation options (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/SVG">SVG</a>)</li>
-						<li><b>Performance and Integration:</b> providing greater speed optimization and better usage of computer hardware (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XMLHttpRequest</a>)</li>
-						<li><b>Device access:</b> allowing for the usage of various input and output devices (e.g. <a href="http://www.w3schools.com/html/html5_geolocation.asp">HTML5 Geolocation</a>)</li>
-						<li><b>Styling:</b> letting authors write more sophisticated themes (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions">CSS transitions</a>)</li>
+						<li><b>2D/3D graphics and effects:</b> allowing a much more diverse range of presentation options (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">SVG</a>)</li>
+						<li><b>Performance and Integration:</b> providing greater speed optimization and better usage of computer hardware (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank">XMLHttpRequest</a>)</li>
+						<li><b>Device access:</b> allowing for the usage of various input and output devices (e.g. <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank">HTML5 Geolocation</a>)</li>
+						<li><b>Styling:</b> letting authors write more sophisticated themes (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank">CSS transitions</a>)</li>
 					</ul>
 				</div>
 			</div>
 			<div class="row"> 
 				<div class="col-xs-12 exlink important">
-					<a href="http://html5index.org/" target="_blank"><small><i class="fa fa-book"> The HTML 5 JavaScript API Index</i></small></a>
+					<a href="http://html5index.org/" target="_blank"><small><i class="fa fa-book"> The HTML5 JavaScript API Index</i></small></a>
 				</div>
 			</div>	
 		</section>
 
-		<section id="h3-retrievingdata" data-background="#fff" class="container">
-			<h2>Retrieving JS objects</h2>
+
+		<section id="h3_audioVideo" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video</h2>
 			<div class="row">
 				<div class="col-xs-12">
 					<ul>
-						<li>jQuery AJAX Request
-						<pre><code>$.ajax(url, function(data) {
-// DO SOMETHING WITH THE RESULT
-});</code></pre>
-						</li>
-						<li>basic response: JSON String</li>
-						<li>Usually parsed as JS object by jQuery
-						<pre><code>{"first":"klaus", "last":"bengler"}</code></pre>
-						</li>
-						<li>Shorthand version to load JSON via AJAX
-						<pre><code>$.getJSON('object.txt', function(data) {
-alert("Hallo " + data.first + ' ' + data.last);
-});</code></pre>
-						</li>
+						<li>built-in media support via <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code></li>
 					</ul>
 				</div>
 			</div>
-			<div class="row"> 
-			<div class="col-xs-12 exlink important">
-				<a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp" target="_blank"><small><i class="fa fa-book"> AJAX Reference</i></small></a>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Embedding <code>&lt;audio&gt;</code>:</p>
+					<pre><code>&lt;audio controls&gt;
+  &lt;source src="horse.ogg" type="audio/ogg"&gt;
+  &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+				</div>	
+				<div class="col-xs-6">
+					<p class="text-left">Embedding <code>&lt;video&gt;</code>:</p>
+					<pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+&lt;/video&gt;</code></pre>
+					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+				</div>	
 			</div>
-		</div>
-	</section>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/html/html_media.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Multimedia</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h3_audioVideo2" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video Attributes</h2>
+			<div class="row">
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Attributes for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>:</p>
+						<ul>
+							<li><code>autoplay</code> (as soon as ready)</li>
+							<li><code>controls</code> (displayed)</li>
+							<li><code>loop</code> (over and over)</li>
+							<li><code>muted</code> (sound)</li>
+							<li><code>preload</code> (when page loads)</li>
+							<li><code>src</code> (URL of audio file)</li>
+						</ul>
+				</div>	
+				<div class="col-xs-6">
+					<p class="text-left">Attributes for <code>&lt;video&gt;</code>:</p>
+						<ul>
+							<li><code>height</code>, <code>width</code></li>
+							<li><code>poster</code> (image to be displayed while downloading</li>
+						</ul>
+				</div>	
+			</div>
+		</section>
+
+		<section id="h3_audioVideo3" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video DOM access</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left">Audio/Video elements may be accessed by DOM</p>
+						<ul>
+							<li><b>Methods</b>: <code>play()</code>
+								<ul>
+									<li><code>document.getElementById("video1").play();</code> or</li>
+									<li><code>$('#video1').get(0).play();</code></li>
+									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_met_play_pause"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+								</ul>
+							</li>
+							<li><b>Property</b>: e.g. audio/video source
+								<ul>
+									<li><code>document.getElementById("video1").src = "movie.ogg";</code> or</li>
+									<li><code>$('#video1').attr('src','movie.ogg');</code></li>
+									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_src"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+								</ul>
+							</li>
+						</ul> 
+				</div>	
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
+				</div>
+			</div>	
+		</section>	
+
+
+		<section id="h3-htmlgeolocation1" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left"><b>HTML Geolocation is used to locate a user's position.</b></p>
+					<p>Click the button to get your coordinates.</p>
+					<button class="btn btn-lg btn-primary" onclick="getLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
+					<p id="demo"></p>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h3-htmlgeolocation2" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<pre><code>var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}</code></pre>
+				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation" class="pull-left"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+			</div>
+		</section>
+
+		<section id="h3-htmlgeolocation3" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-6">
+				<pre><code>function showPosition(position) {
+var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
+document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;";
+}</code></pre>
+				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+				<div class="col-xs-6">
+					<button class="btn btn-lg btn-primary" onclick="getMapLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
+					<div id="mapholder"></div>
+				</div>	
+			</div>
+		</section>
+
+		<section id="h3_audioVideo4" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video DOM access</h2>
+			<div class="row">
+				<div class="col-xs-12">
+						<ul>
+							<li><b>Event</b>: e.g. Audio/Video ended
+								<ul>
+									<li><code>myVid=document.getElementById("video1");
+myVid.onended=function()
+{alert(myVid.ended);};</code> or</li>
+									<li><code>&lt;video onended="alert('fertig');" controls &gt;</code> or</li>
+									<li><code>$("#video1").bind("ended", function() { alert($
+('#video1').attr('ended'));
+});</code></li>
+								</ul>
+							</li>
+						</ul> 
+				</div>	
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
+				</div>
+			</div>	
+		</section>		
 
 
 	<section id="h4-webstorageapi" data-background="#fff" class="container">
@@ -369,6 +423,20 @@ button " + localStorage.clickcount
 				<a href="#" class="navigate-down">
 							<img data-src="./images/arrow.png" alt="Down arrow">
 						</a>
+		</section>
+
+		<section id="h4-webapis" data-background="#fff" class="container">
+			<h2>APIs</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</li>
+						<li>content can be dynamically posted and updated in multiple locations on the web</li>
+						<li>query data via HTTP requests</b></li>
+						<li>JSON data as response in the background via asynchronous loading (AJAX)</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
 		<section id="h4-googleapikey" data-background="#fff" class="container">
@@ -568,12 +636,116 @@ source.start(0);   // play the source now
 			</div>
 		</section>
 
-
-		
 	</section>
 
 
+<!--	#							#
+	 	#							#
+	 	#    H2 AJAX 	 			#
+	 	#							#
+	 	#							#	-->
 
+	<section id="h2">					
+		<section id="h2-ajax" >
+			<h2>H2</h2>
+			<h2>AJAX</h2>
+				<br>
+				<a href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="h2-ajax" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
+			<h2>AJAX</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>A</b>synchronous <b>J</b>avaScript <b>a</b>nd <b>X</b>ML
+							<ul>
+								<li>loading data in the <b>background</b> and display it on the webpage</li>
+								<li><b>without reloading</b> the whole page</li>
+								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+							</ul>
+						</li>
+					</ul>	
+				</div> 
+			</div>	
+		</section>
+
+		<section id="h2-load" data-background="#fff" class="container">
+			<h2>Load</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>The load() method loads data from a server and puts the returned data into the selected element.
+							<ul>
+								<li><code>$(selector).load(URL);</code></li>
+								<li><code>$("#div1").load("demo_test.txt");</code></li>
+								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+							</ul>
+						</li>
+						<li>Selector (load an external element with an id)
+							<ul>
+								<li><code>$("#div1").load(„content.htm #p1");</code></li>
+								<li><a  href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_load2" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+							</ul>
+						</li>
+					</ul>	
+				</div> 
+			</div>	
+		</section>
+
+		<section id="h3-retrievingdata" data-background="#fff" class="container">
+			<h2>Retrieving JS objects</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>jQuery AJAX Request
+						<pre><code>$.ajax(url, function(data) {
+// DO SOMETHING WITH THE RESULT
+});</code></pre>
+						</li>
+						<li>basic response: JSON String</li>
+						<li>Usually parsed as JS object by jQuery
+						<pre><code>{"first":"klaus", "last":"bengler"}</code></pre>
+						</li>
+						<li>Shorthand version to load JSON via AJAX
+						<pre><code>$.getJSON('object.txt', function(data) {
+alert("Hallo " + data.first + ' ' + data.last);
+});</code></pre>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"> 
+			<div class="col-xs-12 exlink important">
+				<a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp" target="_blank"><small><i class="fa fa-book"> AJAX Reference</i></small></a>
+			</div>
+		</div>
+	</section>
+
+	<section id="h2-ajax-json" data-background="#fff" class="container">
+		<h2>AJAX & JSON</h2>
+		<div class="row">
+			<div class="col-xs-12">
+				<ul>
+					<li>Call an external <b>API</b> <br>
+						(<b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface)
+						<pre><code>$.getJSON("ServerURL").done(function(data)
+{
+//Callback
+});</code></pre>
+					</li>
+				</ul>	
+			</div> 
+		</div>
+		<div class="row"> 
+			<div class="col-xs-12 exlink fiddle">
+				<a href="https://jsfiddle.net/InteractionPrototyping/u3d9k1e9/1/" target="_blank"><small><i class="fa fa-jsfiddle"> View example on fiddle</i></small></a>
+			</div>
+		</div>	
+	</section>
+</section>
 
 
 <!-- chapter API -->
@@ -596,6 +768,7 @@ source.start(0);   // play the source now
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		
 
 		
 

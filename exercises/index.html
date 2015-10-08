@@ -811,7 +811,21 @@ PREPARATION
     -->
         <h2 id="G">G: jQuery</h2>
 
-        <h3 id="jQ-DOM">DOM Manipulation</h3>
+        <h3 id="jQ-Basics">jQuery Basics (G1)</h3>
+        <ul>
+            <li>Embed the jQery library into your <kbd>index.html</kbd> – either offline or via <a href="https://code.jquery.com">jQuery CDN</a></li>
+            <li>Replace <code>document.getElementById</code> with jQuery's </li>
+            <li>Instead of <code>style.display</code>, use jQuery's<code>.show()</code>, .<code>hide()</code> or .toggle() to control visibility of your <kbd>detailsview</kbd>.</li>
+            <li>Try different animation speeds</li>
+        </ul>
+        <h3 id="jQ-Transition">jQuery Effects (G2)</h3>
+        <ul>
+            <li>Fade in the animated loading indicator</li>
+            <li>Call <code>.fadeOut()</code> after 500 ms</li>
+            <li>Hint: Check the documentation how the jQuery animation queue works</li>
+            <li>Add an animation that smoothly displays the <kbd>detailsview</kbd>, when <kbd>button-details</kbd> is clicked</li>
+        </ul>
+        <h3 id="jQ-DOM">jQuery &amp; HTML (G3) </h3>
         <ul>
             <li>Replace all innerHTML manipulations with jQuery's <code>html()</code> function</li>
             <li>Use jQuery's <code>.each()</code> to create DOM elements for each element in your <strong>cities</strong> array. Then <code>.append()</code> them to your
@@ -820,17 +834,11 @@ PREPARATION
             <li>When the user adds a new city, append it to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
             <li>Track the current unit of wind speed and temperature with a global variable.Use jQuery's <code>.click()</code> on the <kbd>sidebar</kbd> unit chooser buttons to change the current unit.</li>
         </ul>
-        <h3 id="jQ-Transition">Transition & Animation</h3>
+        <h3 id="jQ-Functions">jQuery Functions (G4)</h3>
         <ul>
-            <li>Fade in the animated loading indicator</li>
-            <li>Call <code>.fadeOut()</code> after 500 ms</li>
-            <li>Hint: Check the documentation how the jQuery animation queue works</li>
+            <li>Introduce a jQuery function <strong>setCityClickable()</strong> that adds the <code>.click()</code> handler to a city. Use the plugin function whenever a new city getss created.</li>
         </ul>
-        <h3 id="jQ-Plugin">Plugins</h3>
-        <ul>
-            <li>Introduce a jQuery plugin <strong>setCityClickable()</strong> that adds the <code>.click()</code> handler to a city. Use the plugin function whenever a new city getss created.</li>
-        </ul>
-        <h3 id="jQ-UI">jQuery UI</h3>
+        <h3 id="jQ-UI">jQuery UI (G5)</h3>
         <ul>
             <li>Embed jQuery UI from <a href="https//code.jquery.com">jQuery CDN</a></li>
             <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
@@ -840,6 +848,48 @@ PREPARATION
         <ul class="todo">
             <li></li>
         </ul>
+
+        <!--
+------------------------
+1 EXERCISE BASICS
+        embed the jquery library – either offline or via jquery cdn
+move all <script> tags to the <head> (& use external file)
+delete the <body> onload attribute
+wrap all js code that should be executed after the dom has been loaded („onload“ event) inside the document ready event handler
+other functions can be outside the event handler
+remove any „onclick“ attributes from html and use .click() jquery event handlers
+ $(function() {
+// code that relies on the dom (referencing ids, changing html ...) goes here
+});
+// general functions without dom-access go here
+-------------------
+2 EXERCISE: JQUERY EFFECTS
+add an animation that smoothly displays the details view when clicking the button: use .show(), .hide() or .toggle() to control visibility of your details view and try different animation speeds
+-------------------
+
+3 EXERCISE: JQUERY & HTML
+Replace every usage of innerHTML with the corresponding jQuery function .html()
+Replace every document.write and create HTML using jQuery instead
+Use event handlers to connect the functions with the buttons
+---------------
+4 EXERCISE: JQUERY FUNCTIONS
+Create an object „prototype“ with your methods getWindspeed, getTemperature
+Create an array of data objects containing only data temperature windspeed
+Use $.each() and $.extend() to merge the prototype functions into every data object in the array
+--------------------
+5 EXERCISE: CITY LIST
+Add a city list in your Settings view: Create an empty HTML list element with an ID
+Add your dummy data dynamically to the DOM: Create list elements from your cities array
+Make the list sortable and update your array every time the user rearranges a city
+-------------------------
+
+1 Basics
+2 Effects
+3 jq + html
+4 Arrays and objects
+5 jQuery UI
+6 Frameworks
+-->
 
         <h2 id="H">H: APIs</h2>
 

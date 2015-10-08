@@ -20,13 +20,13 @@ function hello() {
 /*           H APIs              */
 
 // get Location as coordinates
-var x = document.getElementById("location");
+var location = document.getElementById("location");
 
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        location.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
@@ -36,13 +36,13 @@ function showPosition(position) {
 }
 
 // get Location shown in Map
-var x = document.getElementById("map");
+var maplocation = document.getElementById("mapholder");
 
 function getMapLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showMapPosition);
     } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        maplocation.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 

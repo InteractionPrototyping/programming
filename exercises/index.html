@@ -816,6 +816,7 @@ PREPARATION
             <li>Embed the jQuery library into your <kbd>index.html</kbd> – either offline or via <a href="https://code.jquery.com">jQuery CDN</a></li>
             <li>Replace <code>document.getElementById()</code> with jQuery's query selector <code>$('#id')</code></li>
             <li>Hint: Whenever you want to access a DOM element, be sure the DOM has already loaded! Put this code <b>always</b> into the <code>$(document).ready()</code> event handler function!</li>
+            <li>Replace all innerHTML manipulations with jQuery's <code>html()</code> function</li>
             <li>Instead of <code>style.display</code>, now use jQuery's<code>$.show()</code>, .<code>$.hide()</code> or <code>$.toggle()</code> to control visibility of your <kbd>detailsview</kbd>. Try different animation speeds</li>
             <li>Clean up <kbd>index.html</kbd>: Move all javascript code to your external script file. Only use <code>script</code> tags in the <code>head</code> to embed jQuery and your JS code. Remove all <code>onclick</code> attributes in your HTML and use <code>.click()</code> instead. </li>
         </ul>
@@ -828,14 +829,11 @@ PREPARATION
         </ul>
         <h3 id="jQ-DOM">jQuery &amp; HTML (G3) </h3>
         <ul>
-            <li>Replace all innerHTML manipulations with jQuery's <code>html()</code> function</li>
-            <li>Use jQuery's <code>$.each()</code> to create DOM elements for each element in your <strong>cities</strong> array. Then <code>$.append()</code> them to your
-                <kbd>city-list</kbd>
-            </li>
             <li>Instead of creating your details table out of HTML strings, use jQuery's element creation, like <code>$.(&quot;div&quot;)</code></li>
+            <li>Loop through your <strong>cities</strong> array and <code>$.append()</code> your jQuery-created-HTML to the <kbd>city-list</kbd></li>
             <li>When the user adds a new city, append it to the <kbd>city-list</kbd> in the <kbd>sidebar</kbd></li>
             <li>Track the current unit of wind speed and temperature with a global variable.Use jQuery's <code>$.click()</code> on the <kbd>sidebar</kbd> unit chooser buttons to change the current unit.</li>
-            <li>Modify your conversion functions so that it considers the current unit</li>
+            <li>Modify your conversion functions so that they consider the currently selected unit</li>
         </ul>
         <h3 id="jQ-Functions">jQuery Functions (G4)</h3>
         <ul>
@@ -848,7 +846,7 @@ PREPARATION
             <li>Embed jQuery UI from <a href="https://code.jquery.com">jQuery CDN</a>. You need <b>both</b>: javascript (minfied) and a CSS stylesheet (many different themes available).</li>
             <li>Use the Sortable Widget to make <kbd>city-list</kbd> sortable</li>
         </ul>
-        <h3 id="jQ-Plugins">jQuery Plugin</h3>
+        <h3 id="jQ-Plugins">jQuery Plugins</h3>
         <ul>
             <li>Introduce a custom jQuery function <strong>setCityClickable()</strong> that adds the <code>$.click()</code> handler to a city. Use the plugin function whenever a new city gets created.</li>
         </ul>

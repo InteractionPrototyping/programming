@@ -63,12 +63,256 @@
 
 <!--	#							#
 	 	#							#
-	 	#    H2 JSON 	 			#
+	 	#    H1 JSON 	 			#
 	 	#							#
 	 	#							#	-->
 
 	<section id="h1">					
-		<section id="h1-json" >
+		<section id="h1-api" >
+			<h2>H1</h2>
+			<h2>HTML5 Technologies</h2>
+				<br>
+				<a href="#" class="navigate-down">
+							<img data-src="./images/arrow.png" alt="Down arrow">
+						</a>
+		</section>
+
+		<section id="h1-technologies0" data-background="#fff" class="container">
+			<h2>Reference: Technologies</h2>
+			<div class="row"> 
+				<div class="col-xs-12 ">
+				<a href="http://html5index.org/" target="_blank"><i class="fa fa-external-link"> The HTML 5 JavaScript API Index</i></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h1-technologies" data-background="#fff" class="container">
+			<h2>Technologies</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>Semantics:</b> allowing you to describe more precisely what your content is  (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms_in_HTML" target="_blank"><i class="fa fa-external-link"></i> HTML5 forms</a>)</li>
+						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank"><i class="fa fa-external-link"></i> Web Sockets</a>)</li>
+						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (e.g. <a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank"><i class="fa fa-external-link"></i> HTML5 Web Storage</a>)</li>
+						<li><b>Multimedia:</b> controlling audio and video on the web (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank"><i class="fa fa-external-link"></i> HTML5 audio and video</a>)</li>
+					</ul>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h1_moretechnologies" data-background="#fff" class="container">
+			<h2>Technologies</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>2D/3D graphics and effects:</b> allowing a much more diverse range of presentation options (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><i class="fa fa-external-link"></i> SVG</a>)</li>
+						<li><b>Performance and Integration:</b> providing greater speed optimization and better usage of computer hardware (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank"><i class="fa fa-external-link"></i> XMLHttpRequest</a>)</li>
+						<li><b>Device access:</b> allowing for the usage of various input and output devices (e.g. <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank"><i class="fa fa-external-link"></i> HTML5 Geolocation</a>)</li>
+						<li><b>Styling:</b> letting authors write more sophisticated themes (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank"><i class="fa fa-external-link"></i> CSS transitions</a>)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="h1_audioVideo" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>built-in media support via <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Embedding <code>&lt;audio&gt;</code>:</p>
+					<pre><code>&lt;audio controls&gt;
+  &lt;source src="horse.ogg" type="audio/ogg"&gt;
+  &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+				</div>	
+				<div class="col-xs-6">
+					<p class="text-left">Embedding <code>&lt;video&gt;</code>:</p>
+					<pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+&lt;/video&gt;</code></pre>
+					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+				</div>	
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/html/html_media.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Multimedia</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h1_audioVideo2" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video Attributes</h2>
+			<div class="row">
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Attributes for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>:</p>
+						<ul>
+							<li><code>autoplay</code> (as soon as ready)</li>
+							<li><code>controls</code> (displayed)</li>
+							<li><code>loop</code> (over and over)</li>
+							<li><code>muted</code> (sound)</li>
+							<li><code>preload</code> (when page loads)</li>
+							<li><code>src</code> (URL of audio file)</li>
+						</ul>
+				</div>	
+				<div class="col-xs-6">
+					<p class="text-left">Attributes for <code>&lt;video&gt;</code>:</p>
+						<ul>
+							<li><code>height</code>, <code>width</code></li>
+							<li><code>poster</code> (image to be displayed while downloading</li>
+						</ul>
+				</div>	
+			</div>
+		</section>
+
+		<section id="h1_audioVideo3" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video DOM access</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left">Audio/Video elements may be accessed by DOM</p>
+						<ul>
+							<li><b>Methods</b>: <code>play()</code>
+								<ul>
+									<li><code>document.getElementById("video1").play();</code> or</li>
+									<li><code>$('#video1').get(0).play();</code></li>
+									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_met_play_pause"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+								</ul>
+							</li>
+							<li><b>Property</b>: e.g. audio/video source
+								<ul>
+									<li><code>document.getElementById("video1").src = "movie.ogg";</code> or</li>
+									<li><code>$('#video1').attr('src','movie.ogg');</code></li>
+									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_src"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+								</ul>
+							</li>
+						</ul> 
+				</div>	
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
+				</div>
+			</div>	
+		</section>	
+
+
+		<section id="h1_audioVideo4" data-background="#fff" class="container">
+			<h2>HTML5 Audio/Video DOM access</h2>
+			<div class="row">
+				<div class="col-xs-12">
+						<ul>
+							<li><b>Event</b>: e.g. Audio/Video ended
+								<ul>
+									<li><code>myVid=document.getElementById("video1");
+myVid.onended=function()
+{alert(myVid.ended);};</code> or</li>
+									<li><code>&lt;video onended="alert('fertig');" controls &gt;</code> or</li>
+									<li><code>$("#video1").bind("ended", function() { alert($
+('#video1').attr('ended'));
+});</code></li>
+								</ul>
+							</li>
+						</ul> 
+				</div>	
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
+				</div>
+			</div>	
+		</section>	
+
+
+		<section id="h1-htmlgeolocation1" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-left"><b>HTML Geolocation is used to locate a user's position.</b></p>
+					<p>Click the button to get your coordinates.</p>
+					<button class="btn btn-lg btn-primary" onclick="getLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
+					<p id="demo"></p>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
+				</div>
+			</div>	
+		</section>
+
+
+		<section id="h1-geolocation2" data-background="#fff" class="container">
+			<h2>Determine GPS Location</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li>Use the Javascript method <code>getCurrentPosition()</code> to get the user's position</li>
+						<li>If supported, run <code>getCurrentPosition()</code></li>
+						<li>If not, display a message to the user</li>
+						<li>If successful, it returns a coordinates object to the function specified as parameter</li>
+						<li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="h1-htmlgeolocation3" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<pre><code>var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}</code></pre>
+			</div>
+		</section>
+
+		<section id="h1-htmlgeolocation4" data-background="#fff" class="container">
+			<h2>HTML5 Geolocation</h2>
+			<div class="row">
+				<div class="col-xs-6">
+				<pre><code>function showPosition(position) {
+var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
+document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;";
+}</code></pre>
+				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map" class="pull-left" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a>
+				</div>	
+				<div class="col-xs-6">
+					<button class="btn btn-lg btn-primary" onclick="getMapLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
+					<div id="mapholder"></div>
+				</div>	
+			</div>
+		</section>
+</section>
+
+<!--	#							#
+	 	#							#
+	 	#    H2 JSON 	 			#
+	 	#							#
+	 	#							#	-->
+
+	<section id="h2">					
+		<section id="h2-json" >
 			<h2>H1</h2>
 			<h2>JSON</h2>
 				<br>
@@ -78,7 +322,7 @@
 		</section>
 
 
-		<section id="h1-jsondef" data-background="#fff" class="container">
+		<section id="h2-jsondef" data-background="#fff" class="container">
 			<h2>JSON</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -97,7 +341,7 @@
 			</div>
 	</section>
 
-	<section id="h1-jsonsyntax" data-background="#fff" class="container">
+	<section id="h2-jsonsyntax" data-background="#fff" class="container">
 			<h2>JSON Syntax</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -115,7 +359,7 @@
 			</div>
 	</section>
 
-	<section id="f5-js-json" data-background="#fff" class="container">
+	<section id="h2-js-json" data-background="#fff" class="container">
 			<h2>JavaScript and JSON</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -135,9 +379,9 @@
 	 	#							#
 	 	#							#	-->
 
-	<section id="h2">					
-		<section id="h2-ajax" >
-			<h2>H2</h2>
+	<section id="h3">					
+		<section id="h3-ajax" >
+			<h2>H3</h2>
 			<h2>AJAX</h2>
 				<br>
 				<a href="#" class="navigate-down">
@@ -162,7 +406,7 @@
 			</div>	
 		</section>
 
-		<section id="h2-load" data-background="#fff" class="container">
+		<section id="h3-load" data-background="#fff" class="container">
 			<h2>Load</h2>
 			<div class="row">
 				<div class="col-xs-12">
@@ -214,7 +458,7 @@ alert("Hallo " + data.first + ' ' + data.last);
 		</div>
 	</section>
 
-	<section id="h2-ajax-json" data-background="#fff" class="container">
+	<section id="h3-ajax-json" data-background="#fff" class="container">
 		<h2>AJAX & JSON</h2>
 		<div class="row">
 			<div class="col-xs-12">
@@ -239,255 +483,11 @@ alert("Hallo " + data.first + ' ' + data.last);
 
 <!--	#							#
 	 	#							#
-	 	#    H3 APIs 	 			#
+	 	#    H4 APIs 	 			#
 	 	#							#
 	 	#							#	-->
 
-	<section id="h3">					
-		<section id="h3-api" >
-			<h2>H3</h2>
-			<h2>HTML5 Technologies</h2>
-				<br>
-				<a href="#" class="navigate-down">
-							<img data-src="./images/arrow.png" alt="Down arrow">
-						</a>
-		</section>
-
-		<section id="h3-technologies0" data-background="#fff" class="container">
-			<h2>Reference: Technologies</h2>
-			<div class="row">
-			<div class="row"> 
-				<div class="col-xs-12 ">
-				<a href="http://html5index.org/" target="_blank"><i class="fa fa-external-link"> The HTML 5 JavaScript API Index</i></a>
-				</div>
-			</div>	
-		</section>
-
-		<section id="h3-technologies" data-background="#fff" class="container">
-			<h2>Technologies</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>Semantics:</b> allowing you to describe more precisely what your content is  (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms_in_HTML" target="_blank"><i class="fa fa-external-link"></i> HTML5 forms</a>)</li>
-						<li><b>Connectivity:</b> allowing you to communicate with the server in new and innovative ways (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank"><i class="fa fa-external-link"></i> Web Sockets</a>)</li>
-						<li><b>Offline & Storage:</b> allowing webpages to store data on the client-side locally and operate offline more efficiently (e.g. <a href="http://www.w3schools.com/html/html5_webstorage.asp" target="_blank"><i class="fa fa-external-link"></i> HTML5 Web Storage</a>)</li>
-						<li><b>Multimedia:</b> controlling audio and video on the web (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank"><i class="fa fa-external-link"></i> HTML5 audio and video</a>)</li>
-					</ul>
-				</div>
-			</div>	
-		</section>
-
-		<section id="h3_moretechnologies" data-background="#fff" class="container">
-			<h2>Technologies</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>2D/3D graphics and effects:</b> allowing a much more diverse range of presentation options (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank"><i class="fa fa-external-link"></i> SVG</a>)</li>
-						<li><b>Performance and Integration:</b> providing greater speed optimization and better usage of computer hardware (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" target="_blank"><i class="fa fa-external-link"></i> XMLHttpRequest</a>)</li>
-						<li><b>Device access:</b> allowing for the usage of various input and output devices (e.g. <a href="http://www.w3schools.com/html/html5_geolocation.asp" target="_blank"><i class="fa fa-external-link"></i> HTML5 Geolocation</a>)</li>
-						<li><b>Styling:</b> letting authors write more sophisticated themes (e.g. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank"><i class="fa fa-external-link"></i> CSS transitions</a>)</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-
-		<section id="h3_audioVideo" data-background="#fff" class="container">
-			<h2>HTML5 Audio/Video</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>built-in media support via <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-6">
-					<p class="text-left">Embedding <code>&lt;audio&gt;</code>:</p>
-					<pre><code>&lt;audio controls&gt;
-  &lt;source src="horse.ogg" type="audio/ogg"&gt;
-  &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-&lt;/audio&gt;</code></pre>
-					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-				</div>	
-				<div class="col-xs-6">
-					<p class="text-left">Embedding <code>&lt;video&gt;</code>:</p>
-					<pre><code>&lt;video width="320" height="240" controls&gt;
-  &lt;source src="movie.mp4" type="video/mp4"&gt;
-  &lt;source src="movie.ogg" type="video/ogg"&gt;
-&lt;/video&gt;</code></pre>
-					<a class="pull-left" href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-				</div>	
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<a href="http://www.w3schools.com/html/html_media.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Multimedia</i></small></a>
-				</div>
-			</div>	
-		</section>
-
-		<section id="h3_audioVideo2" data-background="#fff" class="container">
-			<h2>HTML5 Audio/Video Attributes</h2>
-			<div class="row">
-			</div>
-			<div class="row">
-				<div class="col-xs-6">
-					<p class="text-left">Attributes for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>:</p>
-						<ul>
-							<li><code>autoplay</code> (as soon as ready)</li>
-							<li><code>controls</code> (displayed)</li>
-							<li><code>loop</code> (over and over)</li>
-							<li><code>muted</code> (sound)</li>
-							<li><code>preload</code> (when page loads)</li>
-							<li><code>src</code> (URL of audio file)</li>
-						</ul>
-				</div>	
-				<div class="col-xs-6">
-					<p class="text-left">Attributes for <code>&lt;video&gt;</code>:</p>
-						<ul>
-							<li><code>height</code>, <code>width</code></li>
-							<li><code>poster</code> (image to be displayed while downloading</li>
-						</ul>
-				</div>	
-			</div>
-		</section>
-
-		<section id="h3_audioVideo3" data-background="#fff" class="container">
-			<h2>HTML5 Audio/Video DOM access</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-left">Audio/Video elements may be accessed by DOM</p>
-						<ul>
-							<li><b>Methods</b>: <code>play()</code>
-								<ul>
-									<li><code>document.getElementById("video1").play();</code> or</li>
-									<li><code>$('#video1').get(0).play();</code></li>
-									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_met_play_pause"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-								</ul>
-							</li>
-							<li><b>Property</b>: e.g. audio/video source
-								<ul>
-									<li><code>document.getElementById("video1").src = "movie.ogg";</code> or</li>
-									<li><code>$('#video1').attr('src','movie.ogg');</code></li>
-									<li><a href="http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_av_prop_src"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-								</ul>
-							</li>
-						</ul> 
-				</div>	
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
-				</div>
-			</div>	
-		</section>	
-
-
-		<section id="h3_audioVideo4" data-background="#fff" class="container">
-			<h2>HTML5 Audio/Video DOM access</h2>
-			<div class="row">
-				<div class="col-xs-12">
-						<ul>
-							<li><b>Event</b>: e.g. Audio/Video ended
-								<ul>
-									<li><code>myVid=document.getElementById("video1");
-myVid.onended=function()
-{alert(myVid.ended);};</code> or</li>
-									<li><code>&lt;video onended="alert('fertig');" controls &gt;</code> or</li>
-									<li><code>$("#video1").bind("ended", function() { alert($
-('#video1').attr('ended'));
-});</code></li>
-								</ul>
-							</li>
-						</ul> 
-				</div>	
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<a href="http://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"><small><i class="fa fa-book"> HTML5 Audio/Video DOM Reference</i></small></a>
-				</div>
-			</div>	
-		</section>	
-
-
-		<section id="h3-htmlgeolocation1" data-background="#fff" class="container">
-			<h2>HTML5 Geolocation</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-left"><b>HTML Geolocation is used to locate a user's position.</b></p>
-					<p>Click the button to get your coordinates.</p>
-					<button class="btn btn-lg btn-primary" onclick="getLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
-					<p id="demo"></p>
-				</div>
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<a href="https://developers.google.com/maps/documentation/geocoding/intro?hl=en" target="_blank"><small><i class="fa fa-book"> Geolocation API Documentation</i></small></a>
-				</div>
-			</div>	
-		</section>
-
-
-		<section id="h3-geolocation2" data-background="#fff" class="container">
-			<h2>Determine GPS Location</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li>Use the Javascript method <code>getCurrentPosition()</code> to get the user's position</li>
-						<li>If supported, run <code>getCurrentPosition()</code></li>
-						<li>If not, display a message to the user</li>
-						<li>If successful, it returns a coordinates object to the function specified as parameter</li>
-						<li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation"><i class="fa fa-laptop"> Show (w3schools)</i></a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section id="h3-htmlgeolocation3" data-background="#fff" class="container">
-			<h2>HTML5 Geolocation</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<pre><code>var x = document.getElementById("demo");
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
-}</code></pre>
-			</div>
-		</section>
-
-		<section id="h3-htmlgeolocation4" data-background="#fff" class="container">
-			<h2>HTML5 Geolocation</h2>
-			<div class="row">
-				<div class="col-xs-6">
-				<pre><code>function showPosition(position) {
-var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
-document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;";
-}</code></pre>
-				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map" class="pull-left" target="_blank"><i class="fa fa-laptop"> Show (w3schools)</i></a>
-				</div>	
-				<div class="col-xs-6">
-					<button class="btn btn-lg btn-primary" onclick="getMapLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
-					<div id="mapholder"></div>
-				</div>	
-			</div>
-		</section>
-
-</section>
-
-<!--	#							#
-	 	#							#
-	 	#    G1 DEVELOPING JS 		#
-	 	#							#
-	 	#							#	-->
+	
 	<section id="h4">					
 		<section id="h4_webapis" >
 			<h2>h4</h2>
@@ -728,10 +728,7 @@ alert(lat + ” , ”
         "dewPoint": 27.33,
         "humidity": 0.52,
         "windSpeed": 4.85,
-        "windBearing": 5.06,
-        "cloudCover": 0,
-        "pressure": 1027.25,
-        "ozone": 334.29
+        ...
     }</code></pre>
 				</div>
 			</div> 	

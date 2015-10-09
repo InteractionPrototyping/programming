@@ -363,6 +363,10 @@ body {
 
 /*Important external links*/
 
+.new a.small {
+    font-size: 0.7em;
+}
+
 .new a[href^="http"].documentation {
     color: #ee762c !important;
 }

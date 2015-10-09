@@ -284,7 +284,7 @@ for (i = 0; i &lt; nodes.length; i++) {
 	 	#    G jQuery DOM 		#
 	 	#							#
 	 	#							#	-->
-            <section id="g2">
+            <section id="g2" data-background-transition="zoom">
                 <section id="g2-jquery-html">
                     <h2>G2</h2>
                     <h2>jQuery and HTML</h2>
@@ -293,47 +293,35 @@ for (i = 0; i &lt; nodes.length; i++) {
                         <img data-src="./images/arrow.png" alt="Down arrow">
                     </a>
                 </section>
+                <section id="g2-getters-setters" data-background="#fff">
+                    <h2 id="getandset">Getters and Setters</h2>
+                    <p>jQuery methods usually alow to <b>read</b> and <b>write</b> values.</p>
+                    <ul>
 
-                <section id="g2-get" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-                    <h2>Get Content</h2>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <ul>
-                                <li><code>text()</code> sets or returns the text content of selected elements
-                                    <ul>
-                                        <li><code>$("#test").text()</code></li>
-                                    </ul>
-                                </li>
-                                <li><code>html()</code> sets or returns the content of selected elements (including HTML markup)
-                                    <ul>
-                                        <li><code>$("#test").html()</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_get" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul>
-                                <li><code>val()</code> sets or returns the value of form fields
-                                    <ul>
-                                        <li><code>$("#test").val()</code></li>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_val_get" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        <li><b>Get</b>: <code>var whatIsIt = $("#my").html();</code>
+                            <br>
+                            <button class="btn btn-lg" onclick="alert($('#getandset').html())">What is it?</button>
+                        </li>
+                        <li><b>Set</b>: <code>$("#my").html("That's better");</code>
+                            <br>
+                            <button class="btn btn-lg" onclick="$('#getandset').html('Betters and Betters');">Change it!</button>
+                        </li>
+                    </ul>
+
                 </section>
 
-                <section id="g2-set" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-                    <h2>Set Content</h2>
+                <section id="g2-content" data-transition="slide" data-background="#fff" class="container">
+                    <h2>Work with Content</h2>
                     <div class="row">
                         <div class="col-xs-12">
                             <ul>
-                                <li><code>$("#test1").text("Hello world!");</code></li>
-                                <li><code>$("#test2").html("&lt;b&gt;Hello world!&lt;/b&gt;");</code></li>
-                                <li><code>$("#test3").val("Dolly Duck");</code></li>
-                                <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_html_set" target="_blank">Try it</a></li>
+                                <li><code>$("#test1").<b>text</b>("Hello world!");</code>
+                                    <br>sets or returns the text content of selected elements</li>
+                                <li><code>$("#test2").<b>html</b>("&lt;b&gt;Hello world!&lt;/b&gt;");</code>
+                                    <br>sets or returns the content of selected elements (including HTML markup)</li>
+                                <li><code>$("#test3").<b>val</b>("Dolly Duck");</code>
+                                    <br>sets or returns the value of form fields</li>
+                                <li><a href="http://jsfiddle.net/InteractionPrototyping/1LphmdL3/" target="_blank">Example</a></li>
                             </ul>
                         </div>
                     </div>
@@ -341,7 +329,7 @@ for (i = 0; i &lt; nodes.length; i++) {
 
 
                 <section id="g2-attributes" data-transition="slide" data-background="#fff" data-background-transition="zoom" class="container">
-                    <h2>Get and Set Attributes</h2>
+                    <h2>Attributes</h2>
                     <div class="row">
                         <div class="col-xs-6">
                             <p class="text-left">Get Attributes</p>
@@ -369,36 +357,21 @@ for (i = 0; i &lt; nodes.length; i++) {
                 <section id="g2-add-content" data-background="#fff" class="container">
                     <h2>Add Content</h2>
                     <div class="row">
-                        <div class="col-xs-6">
-                            <ul>
-                                <li><code>append()</code> inserts content at the end of the selected elements
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
-                                <li><code>prepend()</code> inserts content at the beginning of the selected elements
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_prepend" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
 
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <ul>
-                                <li><code>after()</code> inserts content after the selected elements</li>
-                                <li><code>before()</code> content before the selected elements
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_after" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
-                                <li>Several Elements
-                                    <ul>
-                                        <li><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append2" target="_blank">Try it</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li><code>append()</code> inserts content at the end of the selection <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append" target="_blank" class="small">Try it</a> </li>
+                            <li><code>prepend()</code> inserts content at the selection's beginning <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_prepend" target="_blank" class="small">Try it</a></li>
+
+                            <li><code>after()</code> inserts content after the selected elements</li>
+                            <li><code>before()</code> adds content before the selected elements <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_after" target="_blank" class="small">Try it</a></li>
+                            <li>Several Elements can be inserted at the same time <a class="small" href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_html_append2" target="_blank">Try it</a>
+                            </li>
+                            <li>
+                                <pre><code class="javascript">$("body").append("<p>One</p>", "<p>Two</p>");</code></pre>
+                            </li>
+                        </ul>
+
+
                     </div>
                 </section>
 
@@ -522,14 +495,17 @@ for (i = 0; i &lt; nodes.length; i++) {
                             <ul>
                                 <li>Create and insert new elements via chaining multiple actions</li>
                             </ul>
-                            <pre><code>function createContentView() {
-$("&lt;div&gt;&lt;/div&gt;).addClass("box").css({
-	"width": "300px",
-	"height": "100%",
-	"color": "red",
-	"padding": "2%"
-    }).text($("body").html()).appendTo("body");
-}</code></pre>
+                            <pre><code>$("&lt;div&gt;&lt;/div&gt;")
+    .addClass("box")
+    .css({
+	    "width": "300px",
+	    "height": "100%",
+	    "color": "red",
+	    "padding": "2%"
+    })
+    .text($("body").html())
+    .appendTo("body");
+</code></pre>
                         </div>
                     </div>
                     <div class="row">

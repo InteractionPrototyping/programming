@@ -444,7 +444,19 @@ h1.city {
     background-color: #e0e0e0;
     color: #333333;
 }
+
 .app img {
     width:100%;
     max-width:400px;
+}
+
+#garbage-icon {
+    position: fixed;
+    margin:auto;
+    bottom: 15%;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    font-size: 2.0em;
+    display: none;
 }

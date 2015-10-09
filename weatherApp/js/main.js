@@ -66,6 +66,17 @@ $(function () {
 
     showCityList();
 
+	$( "#garbage-icon").droppable({
+		accept: ".city",
+		drop: function( event, ui ) {
+			console.log("Dropped city");
+			console.log(ui.draggable.attr("id"));
+			var droppedCity = ui.draggable.attr("id");
+			cities.splice(droppedCity,1);
+			ui.draggable.remove();
+		}
+	});
+
     // Close sidebar
     document.getElementById('close-sidebar').onclick = function () {
         console.log('clicked sidebar');
@@ -86,9 +97,13 @@ $(function () {
 
     /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
+		start: function() {
+			$('#garbage-icon').show();
+		},
         stop: function () {
             var newPositions = $(this).sortable('toArray');
             console.log('Cities sorted. New order: ', newPositions);
+			$('#garbage-icon').hide();
         }
     });
 

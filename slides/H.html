@@ -299,7 +299,6 @@ var latlon = position.coords.latitude + "," + position.coords.longitude;
 var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
 document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;";
 }</code></pre>
-<<<<<<< HEAD
 				<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map" class="pull-left" target="_blank"> Try it</a>
 				</div>	
 				<div class="col-xs-6">
@@ -308,6 +307,7 @@ document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;"
 				</div>	
 			</div>
 		</section>
+
 
 		<section id="h4-webstorageapi" data-background="#fff" class="container">
 			<h2>Web Storage API</h2>
@@ -358,20 +358,9 @@ button " + localStorage.clickcount
 		</section>
 </section>
 
-<!--	#							#
-=======
-                            <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map" class="pull-left" target="_blank"> Try it</a>
-                        </div>
-                        <div class="col-xs-6">
-                            <button class="btn btn-lg btn-primary" onclick="getMapLocation()"><i class="fa fa-location-arrow"></i> Get location</button>
-                            <div id="mapholder"></div>
-                        </div>
-                    </div>
-                </section>
-            </section>
+                            
 
-            <!--	#							#
->>>>>>> cf97355038c15b6031b5fe4ed3d9ed870c4b23ed
+<!--	#							#
 	 	#							#
 	 	#    H2 JSON 	 			#
 	 	#							#
@@ -532,13 +521,11 @@ button " + localStorage.clickcount
 
             </section>
 
-            <!--	#							#
+<!--	#							#
 	 	#							#
 	 	#    H4 APIs 	 			#
 	 	#							#
 	 	#							#	-->
-
-<<<<<<< HEAD
 	
 	<section id="h4">					
 		<section id="h4_webapis" >
@@ -564,114 +551,6 @@ button " + localStorage.clickcount
 			</div>
 		</section>
 
-		<section id="h4-webaudioapi1" data-background="#fff" class="container">
-			<h2>Web Audio API</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>Web Audio API</b> provides mechanisms for mixing, processing and synthesizing audio in web applications</li>
-						<li><code>AudioContext</code> is used for managing and playing all 
-						sounds</li>
-						<li>short- to medium-length sounds can be fetched from an audio buffer via a <code>XMLHttpRequest</code></li>
-						<li>Supported file formats: WAV, MP3, AAC, OGG
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row"> 
-				<div class="col-xs-4 pull-right">
-					<small><a href="http://www.w3.org/TR/2013/WD-webaudio-20131010/#API-section" class="documentation" target="_blank"> Web Audio API</a></small>
-				</div>
-			</div>	
-		</section>
-
-
-		<section id="h4-webaudioapi3" data-background="#fff" class="container">
-			<h2>Web Audio API</h2>
-			<div class="row">
-				<div class="col-xs-6">
-					<p class="text-left"><b>Playing sounds</b></p>
-							<ul>
-								<li><code>playSound()</code> can be called everytime someone presses a key</li>
-								<li><code>start(time)</code> schedules sound playback</li>
-							</ul>
-				</div>
-				<div class="col-xs-6">
-					<pre><code>function playSound(buffer) {
-=======
-
-            <section id="h4">
-                <section id="h4_webapis">
-                    <h2>h4</h2>
-                    <h2>Web APIs</h2>
-                    <br>
-                    <a href="#" class="navigate-down">
-                        <img data-src="./images/arrow.png" alt="Down arrow">
-                    </a>
-                </section>
-
-                <section id="h4-webapis" data-background="#fff" class="container">
-                    <h2>APIs</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li><b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface</li>
-                                <li>content can be dynamically posted and updated in multiple locations on the web</li>
-                                <li>query data via HTTP requests</b>
-                                </li>
-                                <li>JSON data as response in the background via asynchronous loading (AJAX)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="h4-webstorageapi" data-background="#fff" class="container">
-                    <h2>Web Storage API</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul>
-                                <li><b>Web Storage API</b> provides mechanisms by which browsers can store key/value pairs</li>
-                                <li>Two mechanisms:
-                                    <ul>
-                                        <li><code>sessionStorage</code> maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores)</li>
-                                        <li><code>localStorage</code> persists even when the browser is closed and reopened</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 exlink important">
-                            <small><a href="https://w3c.github.io/webstorage/" class="documentation" target="_blank"> Web Storage API</a></small>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="h4-webstorageapi1" data-background="#fff" class="container">
-                    <h2>Web Storage API</h2>
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <p class="text-left">Access:</p>
-                            <ul>
-                                <li><code>localStorage.key="value"</code></li>
-                                <li>keys/values are stored as Strings</li>
-                                <li><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank"> Try it</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-6">
-                            <pre><code>if (localStorage.clickcount) {
-  localStorage.clickcount=
-  Number(localStorage.clickcount)+1;
-} else {
-  localStorage.clickcount=1;
-}
-document.getElementById("result")
-.innerHTML="You have clicked the 
-button " + localStorage.clickcount 
-+ "time(s).";</code></pre>
-                        </div>
-                    </div>
-                </section>
 
                 <section id="h4-webaudioapi1" data-background="#fff" class="container">
                     <h2>Web Audio API</h2>
@@ -707,7 +586,6 @@ button " + localStorage.clickcount
                         </div>
                         <div class="col-xs-6">
                             <pre><code>function playSound(buffer) {
->>>>>>> cf97355038c15b6031b5fe4ed3d9ed870c4b23ed
 var source = context.createBufferSource(); // creates a sound source
 source.buffer = buffer;                    // tell the source which sound to play
 source.connect(context.destination);       // connect the source to the context's destination (the speakers)
@@ -844,32 +722,20 @@ alert(lat + ” , ” + long);
     }</code></pre>
                         </div>
                     </div>
-                </section>
+    </section>
 
 
-                <section id="h4-exercise" class="container">
-                    <h2>Exercise</h2>
-                    <p><b>Task 40:</b></p>
-                    <p>Geocoding</p>
-                </section>
+     <section id="h4-exercise" class="container">
+        <h2>Exercise</h2>
+        <p><b>Task 40:</b></p>
+        <p>Geocoding</p>
+     </section>
+</section>
 
 
-            </section>
-
-
-            <!-- chapter API -->
-            <!-- Google API key -->
-            <!-- Example: Sound API -->
-            <!-- Example: Geocoding -->
-            <!-- Example: forecast.io -->
-            <!-- File API -->
-            <!-- Hammer JS: swipe -->
-
-
-
-            <section style="text-align: left;">
-                <h1>THE END</h1>
-            </section>
+    <section style="text-align: left;">
+        <h1>THE END</h1>
+    </section>
 
             </div>
         </div>

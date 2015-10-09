@@ -910,6 +910,7 @@ Make the list sortable and update your array every time the user rearranges a ci
             <li>Use <code>$.getJSON</code> to retrieve data from the <a href="http://forecast.io/">forecast.io</a> API</li>
             <li>For now, use this location data: <pre><code>{"lat": 48.2655761, "lng": 11.6703165}</code></pre></li>
             <li>Your Server-URL should start with <code>http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/</code></li>
+            <li>Look at the forecast.io <a href="https://developer.forecast.io/docs/v2#forecast_call">API docs</a> to understand requests and responses</li>
             <li>Try to retrieve data via <code>$.getJSON()</code> oder use a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> client like <a href="https://www.getpostman.com/">Postman</a> to test API calls</li>
             <li>Replace your sample <strong>weather</strong> data with original API data from forecast.io and be sure that your views work with this data</li>
         </ul>
@@ -923,16 +924,17 @@ Make the list sortable and update your array every time the user rearranges a ci
             <h3 id="API-Geocoding">Geocoding</h3>
             <li>Use the Google Geocoding API and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your geolocation</li>
             <li>Process the city and add it to your city list. Somehow connect the city name with its location.</li>
-            <li>Now implement <code>$.click()</code> handlers on your city list items. Use Google Maps Geocoding to get the location of  </li>
+            <li>Now implement <code>$.click()</code> handlers on your city list items. Use Google Maps Geocoding to get the geolocation of the clicked city, query weather data for this location and display it.</li>
         </ul>
         <h3 id="API-Local">Local Storage</h3>
-        <p>Use local storage to save your <strong>cities</strong> array, to make added cities persisent in your browser</p>
+        <p>Use local storage to save your <strong>cities</strong> array, to make added cities persistent in your browser</p>
+        <h4>Congratulations! You have implemented your first own web application!</h4>
+                <p>Now look at our ideas, how you could further improve your app:</p>
         <h2 id="I">I: Inspiration</h2>
-        <ul class="todo">
-            <li>Add a function that changes the <code>background-color</code> depending on temperature.</li>
-            <li>Interpolate the color code from hot to code </li>
+        <ul>
+            <li>Change the <code>background-color</code> depending on temperature. You could calculate RGB-values directly or use temperature ranges like hot and cold.</li>
+            <li>Implement a Droppable widget and a garbage bin and allow users to remove cities</li>
         </ul>
     </div>
 </body>
-
 </html>

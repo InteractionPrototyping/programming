@@ -852,7 +852,7 @@ PREPARATION
         </ul>
         <h3 id="jQ-Plugins">jQuery Plugins</h3>
         <ul>
-            <li>Introduce a custom jQuery function <strong>setCityClickable()</strong> that adds the <code>$.click()</code> handler to a city. Use the plugin function whenever a new city gets created.</li>
+            <li>Introduce a custom jQuery (plugin) function <strong>setCityClickable()</strong> that adds the <code>$.click()</code> handler to a city. Use the plugin function whenever a new city gets created.</li>
         </ul>
         <!-- Dummy Task -->
         <h3 class="todo" id="jQ-">&nbsp;</h3>
@@ -905,20 +905,27 @@ Make the list sortable and update your array every time the user rearranges a ci
         <h2 id="H">H: APIs</h2>
 
         <!-- API -->
-        <h3 class="todo" id="API-Weather">Weather API</h3>
-        <ul class="todo">
-            <li>Use getJSON to retrieve data from forecast.io</li>
-            <li>Replace your weather object with original API data</li>
+        <h3 id="API-Weather">Weather API</h3>
+        <ul>
+            <li>Use <code>$.getJSON</code> to retrieve data from the <a href="http://forecast.io/">forecast.io</a> API</li>
+            <li>For now, use this location data: <pre><code>{"lat": 48.2655761, "lng": 11.6703165}</code></pre></li>
+            <li>Your Server-URL should start with <code>http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/</code></li>
+            <li>Try to retrieve data via <code>$.getJSON()</code> oder use a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> client like <a href="https://www.getpostman.com/">Postman</a> to test API calls</li>
+            <li>Replace your sample <strong>weather</strong> data with original API data from forecast.io and be sure that your views work with this data</li>
+        </ul>
+        <div class="well" id="warning"><span class="warning-text">DO NOT</span> declare a global variable <code>location</code> because it might overwrite the Browsers <code>window.location</code> object!</div>
+        <h3 id="API-Location">Geolocation</h3>
+        <ul>
+            <li>Implement the <kbd>button-locate-me</kbd> using the geolocation API. Retrieve <strong>latitude</strong> and <strong>longitude</strong> of the current geolocation.</li>
+            <li>Store the position somewhere, because we will use it later on</li>
         </ul>
 
-        <h3 class="todo" id="API-Location">Geolocation API </h3>
-        <ul class="todo">
-            <li>LocateMe</li>
-            <li>getLocation</li>
-            <h3 class="todo" id="API-Geocoding">Geocoding API</h3>
-            <li>getCoordinates</li>
-            <li>getCityname</li>
+            <h3 id="API-Geocoding">Geocoding</h3>
+            <li>Use the Google Geocoding API and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your Location</li>
+            <li>Process the city and add it to your city list. Somehow connect the city name with its location.</li>
+            <li>Now implement <code>$.click()</code> handlers on your city list items. Use Google Maps Geocoding to get the location of  </li>
         </ul>
+        <h3 class="todo" id="API-Local">Local Storage</h3>
         <h3 class="todo">Local Storage</h3>
         <p class="todo">Use offlinestorage for selected element and store your list</p>
         <h2 id="I">I: Inspiration</h2>

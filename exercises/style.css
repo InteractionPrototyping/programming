@@ -118,3 +118,14 @@ strong {
     width: 100%;
     height: auto;
 }
+
+#warning {
+    background-color: rgba(200,0,0,0.2);
+    color: red;
+}
+
+.warning-text {
+    color:red;
+    font-weight: 600;
+    text-transform: capitalize;
+}

@@ -672,8 +672,7 @@ var data = {key: “YOUR_API_KEY”, address: "Boltzmannstrasse 15, Garching“}
 					<pre><code>$.getJSON(url, data, function(geodata) {
 var lat = geodata.results[0].geometry.location.lat;
 var long = geodata.results[0].geometry.location.lng;
-alert(lat + ” , ”
-+ long);
+alert(lat + ” , ” + long);
 });</code></pre>
 				</div>
 			</div>
@@ -690,13 +689,12 @@ alert(lat + ” , ”
 							<ul>
 								<li>Current conditions</li>
 								<li>Minute-by-minute forecasts out to 1 hour</li>
-								<li>Hour-byhour forecasts out to 48 hours</li>
+								<li>Hour-by-hour forecasts out to 48 hours</li>
 								<li>Day-by-day forecasts out to 7 days</li>
 							</ul>
 						</li>
 						<li>Retrieve update weather data in JSON format using an API call of this form:
-						<pre><code>https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE</code></pre> </li>
-						
+						<pre><code>https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE</code></pre></li>
 				</div>
 			</div> 
 			<div class="row"> 

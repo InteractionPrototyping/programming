@@ -858,12 +858,15 @@ PREPARATION
         <h2 id="H">H: APIs</h2>
         <h3 id="API-Weather">Weather API</h3>
         <ul>
-            <li>Use <code>$.getJSON</code> to retrieve data from the <a href="http://forecast.io/">forecast.io</a> API</li>
+            <li>Use <code>$.ajax</code> to retrieve data from the <a href="http://forecast.io/">forecast.io</a> API, and pass a callback function to <code>$.done()</code> </li>
             <li>For now, use this location data: <pre><code>{"lat": 48.2655761, "lng": 11.6703165}</code></pre></li>
-            <li>Your Server-URL should start with <code>http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/</code></li>
+            <li>Your Server-URL should start with <code>http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/</code>. Append <strong>latitude</strong>,<strong>longitude</strong> (comma-separated)</li>
+            <li>Use the following config-object as second parameter of <code>$.ajax</code>: <pre><code>{dataType: "JSONP", crossDomain: true}</code></pre></li>
             <li>Look at the forecast.io <a href="https://developer.forecast.io/docs/v2#forecast_call">API docs</a> to understand requests and responses</li>
-            <li>Try to retrieve data via <code>$.getJSON()</code> oder use a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> client like <a href="https://www.getpostman.com/">Postman</a> to test API calls</li>
+            <li>For debugging requests, you can use a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> client like <a href="https://www.getpostman.com/">Postman</a></li>
             <li>Replace your sample <strong>weather</strong> data with original API data from forecast.io and be sure that your views work with this data</li>
+            <li>Important: Data is available only when the <code>$.done()</code> callback function has been called!</li>
+            <li>Display a loading indicator when the document loads. and start to load the data asynchronously. As soon as you have received the data, hide the loading indicator and update your HTML</li>
         </ul>
         <div class="well" id="warning"><span class="warning-text">DO NOT</span> declare a global variable <code>location</code> because it might overwrite the browser's <code>window.location</code> object!</div>
         <h3 id="API-Location">Geolocation</h3>
@@ -886,14 +889,42 @@ PREPARATION
         <h3>Style & Appearance</h3>
         <ul>
             <li>Change the <code>background-color</code> depending on temperature. You could calculate RGB-values directly or use temperature ranges like hot and cold.</li>
+            <li>Improve your color scheme, constrast, font sizes and so on following ergonomic requirements</li>
         </ul>
-        <h3>User Interaction</h3>
+        <h3>User Interaction & Usability</h3>
         <ul>
             <li>Implement a jQuery UI Droppable widget and a garbage bin and allow users to remove cities by dropping them on the garbage bin</li>
+            <li></li>
         </ul>
-        <h3 class="todo">Code Quality</h3>
-        <ul class="todo">
+        <h3>Code Quality</h3>
+        <ul>
+            <li>Divide your CSS into different sections using comments and group together styles that are related to each other</li>
+            <pre><code>
+/***** MAIN VIEW ***/
 
+#mainview {
+    width: 100%;
+    height: 100%;
+}
+
+/*** DETAIL VIEW ***/
+#detailview {
+    background-color: cadet-blue;
+}
+
+.row {
+    width: 100%;
+}            </code></pre>
+            <li>Replace all concatenated HTML strings in javascript using jQuery DOM element creation or templates (e.g. nanoJS)</li>
+            <li>Remove ALL javascript code and event attributes (like <code>onclick</code> from your HTML. Use jQuery event handlers instead.</li>
+            <li>Comment all javascript functions. Group them using comment blocks like in CSS (see above)</li>
+
+        </ul>
+        <h3>Git Repository & Web access</h3>
+        <ul>
+            <li>Put your code into a GitHub repository, commit and sync your code.</li>
+            <li>Use <a href="https://pages.github.com/">Github Pages</a> to make it available online</li>
+            <li>It should display the contents of the <strong>gh-pages</strong> branch. Be sure you have provided an <kbd>index.html</kbd> in your root folder.</li>
         </ul>
     </div>
 </body>

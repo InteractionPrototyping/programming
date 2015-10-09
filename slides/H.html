@@ -63,7 +63,7 @@
 
 <!--	#							#
 	 	#							#
-	 	#    H1 JSON 	 			#
+	 	#    H1 Technologies 	 	#
 	 	#							#
 	 	#							#	-->
 
@@ -304,6 +304,54 @@ document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;"
 				</div>	
 			</div>
 		</section>
+
+		<section id="h4-webstorageapi" data-background="#fff" class="container">
+			<h2>Web Storage API</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><b>Web Storage API</b> provides mechanisms by which browsers can store key/value pairs</li>
+						<li>Two mechanisms:
+							<ul>
+								<li><code>sessionStorage</code> maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores)</li>
+								<li><code>localStorage</code> persists even when the browser is closed and reopened</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 exlink important">
+					<small><a href="https://w3c.github.io/webstorage/" class="documentation" target="_blank"> Web Storage API</a></small>
+				</div>
+			</div>	
+		</section>
+
+		<section id="h4-webstorageapi1" data-background="#fff" class="container">
+			<h2>Web Storage API</h2>
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="text-left">Access:</p>
+							<ul>
+								<li><code>localStorage.key="value"</code></li>
+								<li>keys/values are stored as Strings</li>
+								<li><a  href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank"> Try it</a></li>
+							</ul>
+				</div>
+				<div class="col-xs-6">
+					<pre><code>if (localStorage.clickcount) {
+  localStorage.clickcount=
+  Number(localStorage.clickcount)+1;
+} else {
+  localStorage.clickcount=1;
+}
+document.getElementById("result")
+.innerHTML="You have clicked the 
+button " + localStorage.clickcount 
++ "time(s).";</code></pre>
+				</div>
+			</div>
+		</section>
 </section>
 
 <!--	#							#
@@ -509,54 +557,6 @@ alert("Hallo " + data.first + ' ' + data.last);
 						<li>query data via HTTP requests</b></li>
 						<li>JSON data as response in the background via asynchronous loading (AJAX)</li>
 					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section id="h4-webstorageapi" data-background="#fff" class="container">
-			<h2>Web Storage API</h2>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul>
-						<li><b>Web Storage API</b> provides mechanisms by which browsers can store key/value pairs</li>
-						<li>Two mechanisms:
-							<ul>
-								<li><code>sessionStorage</code> maintains a separate storage area for each given origin that's available for the duration of the page session (as long as the browser is open, including page reloads and restores)</li>
-								<li><code>localStorage</code> persists even when the browser is closed and reopened</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row"> 
-				<div class="col-xs-12 exlink important">
-					<small><a href="https://w3c.github.io/webstorage/" class="documentation" target="_blank"> Web Storage API</a></small>
-				</div>
-			</div>	
-		</section>
-
-		<section id="h4-webstorageapi1" data-background="#fff" class="container">
-			<h2>Web Storage API</h2>
-			<div class="row">
-				<div class="col-xs-6">
-					<p class="text-left">Access:</p>
-							<ul>
-								<li><code>localStorage.key="value"</code></li>
-								<li>keys/values are stored as Strings</li>
-								<li><a  href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount" target="_blank"> Try it</a></li>
-							</ul>
-				</div>
-				<div class="col-xs-6">
-					<pre><code>if (localStorage.clickcount) {
-  localStorage.clickcount=
-  Number(localStorage.clickcount)+1;
-} else {
-  localStorage.clickcount=1;
-}
-document.getElementById("result")
-.innerHTML="You have clicked the 
-button " + localStorage.clickcount 
-+ "time(s).";</code></pre>
 				</div>
 			</div>
 		</section>

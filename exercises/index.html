@@ -854,51 +854,8 @@ PREPARATION
         <ul>
             <li>Introduce a custom jQuery (plugin) function <strong>setCityClickable()</strong> that adds the <code>$.click()</code> handler to a city. Use the plugin function whenever a new city gets created.</li>
         </ul>
-        <!--
-------------------------
-1 EXERCISE BASICS
-        embed the jquery library – either offline or via jquery cdn
-move all <script> tags to the <head> (& use external file)
-delete the <body> onload attribute
-wrap all js code that should be executed after the dom has been loaded („onload“ event) inside the document ready event handler
-other functions can be outside the event handler
-remove any „onclick“ attributes from html and use .click() jquery event handlers
- $(function() {
-// code that relies on the dom (referencing ids, changing html ...) goes here
-});
-// general functions without dom-access go here
--------------------
-2 EXERCISE: JQUERY EFFECTS
-add an animation that smoothly displays the details view when clicking the button: use .show(), .hide() or .toggle() to control visibility of your details view and try different animation speeds
--------------------
-
-3 EXERCISE: JQUERY & HTML
-Replace every usage of innerHTML with the corresponding jQuery function .html()
-Replace every document.write and create HTML using jQuery instead
-Use event handlers to connect the functions with the buttons
----------------
-4 EXERCISE: JQUERY FUNCTIONS
-Create an object „prototype“ with your methods getWindspeed, getTemperature
-Create an array of data objects containing only data temperature windspeed
-Use $.each() and $.extend() to merge the prototype functions into every data object in the array
---------------------
-5 EXERCISE: CITY LIST
-Add a city list in your Settings view: Create an empty HTML list element with an ID
-Add your dummy data dynamically to the DOM: Create list elements from your cities array
-Make the list sortable and update your array every time the user rearranges a city
--------------------------
-
-1 Basics
-2 Effects
-3 jq + html
-4 Arrays and objects
-5 jQuery UI
-6 Frameworks
--->
 
         <h2 id="H">H: APIs</h2>
-
-        <!-- API -->
         <h3 id="API-Weather">Weather API</h3>
         <ul>
             <li>Use <code>$.getJSON</code> to retrieve data from the <a href="http://forecast.io/">forecast.io</a> API</li>
@@ -911,12 +868,12 @@ Make the list sortable and update your array every time the user rearranges a ci
         <div class="well" id="warning"><span class="warning-text">DO NOT</span> declare a global variable <code>location</code> because it might overwrite the browser's <code>window.location</code> object!</div>
         <h3 id="API-Location">Geolocation</h3>
         <ul>
-            <li>Implement the <kbd>button-locate-me</kbd> using the geolocation API. Retrieve <strong>latitude</strong> and <strong>longitude</strong> of the current geolocation.</li>
+            <li>Implement the <kbd>button-locate-me</kbd> using the <a href="http://www.w3schools.com/html/html5_geolocation.asp">Javascript Geolocation API</a>. Retrieve <strong>latitude</strong> and <strong>longitude</strong> of the current geolocation.</li>
             <li>Store the position somewhere, because we will use it later on</li>
         </ul>
 
             <h3 id="API-Geocoding">Geocoding</h3>
-            <li>Use the Google Geocoding API and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your geolocation</li>
+            <li>Use the <a href="https://developers.google.com/maps/documentation/geocoding/">Google Geocoding API</a> and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your geolocation</li>
             <li>Process the city and add it to your city list. Somehow connect the city name with its location.</li>
             <li>Now implement <code>$.click()</code> handlers on your city list items. Use Google Maps Geocoding to get the geolocation of the clicked city, query weather data for this location and display it.</li>
         </ul>

@@ -367,7 +367,7 @@ document.getElementById("mapholder").innerHTML = "&lt;img src='"+img_url+"'&gt;"
 					<ul>
 						<li>JSON data can be converted into native JavaScript objects
 						<pre><code>var obj = JSON.parse(text);</code></pre></li>
-						<li>Vice versa: objects can be converted into JSON text <pre><code>var obj = JSON.parse(text);</code></pre></li>
+						<li>Vice versa: objects can be converted into JSON text <pre><code>var jsonString = JSON.stringify(object);</code></pre></li>
 					</ul>
 				</div>
 			</div>
@@ -648,13 +648,13 @@ source.start(0);   // play the source now
 					<ul>
 						<li>Communication with API Server via HTTP</li>
 						<li>GET: Key/Value-Pairs attached to URL</li>
-						<li>URL and first parameter seperated by <code>?</code>, parameters seperated by <code>&</code>
+						<li>URL and first parameter separated by <code>?</code>, parameters seperated by <code>&</code>
 							<pre><code>https://maps.googleapis.com/maps/api/geocode/json?key=API_KEY&address=ADDRESS</code></pre></li>
 						<li>jQuery AJAX method takes URL as String and parameters as object
 						<pre><code>var url = “https://maps.googleapis.com/maps/api/geocode/json”;
 var data = {key: “API_KEY”, ADDRESS: "Boltzmannstrasse 15, Garching“};</code></pre>
 						</li>
-						<li>Request URI is built automatically, no manual string concatenation needed</li>
+						<li>Request URL is built automatically, no manual string concatenation needed</li>
 						
 					</ul>
 				</div>
@@ -673,8 +673,7 @@ var data = {key: “YOUR_API_KEY”, address: "Boltzmannstrasse 15, Garching“}
 					<pre><code>$.getJSON(url, data, function(geodata) {
 var lat = geodata.results[0].geometry.location.lat;
 var long = geodata.results[0].geometry.location.lng;
-alert(lat + ” , ”
-+ long);
+alert(lat + ” , ” + long);
 });</code></pre>
 				</div>
 			</div>
@@ -691,13 +690,12 @@ alert(lat + ” , ”
 							<ul>
 								<li>Current conditions</li>
 								<li>Minute-by-minute forecasts out to 1 hour</li>
-								<li>Hour-byhour forecasts out to 48 hours</li>
+								<li>Hour-by-hour forecasts out to 48 hours</li>
 								<li>Day-by-day forecasts out to 7 days</li>
 							</ul>
 						</li>
 						<li>Retrieve update weather data in JSON format using an API call of this form:
-						<pre><code>https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE</code></pre> </li>
-						
+						<pre><code>https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE</code></pre></li>
 				</div>
 			</div> 
 			<div class="row"> 

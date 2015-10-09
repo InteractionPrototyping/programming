@@ -913,7 +913,7 @@ Make the list sortable and update your array every time the user rearranges a ci
             <li>Try to retrieve data via <code>$.getJSON()</code> oder use a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a> client like <a href="https://www.getpostman.com/">Postman</a> to test API calls</li>
             <li>Replace your sample <strong>weather</strong> data with original API data from forecast.io and be sure that your views work with this data</li>
         </ul>
-        <div class="well" id="warning"><span class="warning-text">DO NOT</span> declare a global variable <code>location</code> because it might overwrite the Browsers <code>window.location</code> object!</div>
+        <div class="well" id="warning"><span class="warning-text">DO NOT</span> declare a global variable <code>location</code> because it might overwrite the browser's <code>window.location</code> object!</div>
         <h3 id="API-Location">Geolocation</h3>
         <ul>
             <li>Implement the <kbd>button-locate-me</kbd> using the geolocation API. Retrieve <strong>latitude</strong> and <strong>longitude</strong> of the current geolocation.</li>
@@ -921,13 +921,12 @@ Make the list sortable and update your array every time the user rearranges a ci
         </ul>
 
             <h3 id="API-Geocoding">Geocoding</h3>
-            <li>Use the Google Geocoding API and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your Location</li>
+            <li>Use the Google Geocoding API and <a href="https://en.wikipedia.org/wiki/Reverse_geocoding">Reverse Geocoding</a> to get a human readable adress for your geolocation</li>
             <li>Process the city and add it to your city list. Somehow connect the city name with its location.</li>
             <li>Now implement <code>$.click()</code> handlers on your city list items. Use Google Maps Geocoding to get the location of  </li>
         </ul>
-        <h3 class="todo" id="API-Local">Local Storage</h3>
-        <h3 class="todo">Local Storage</h3>
-        <p class="todo">Use offlinestorage for selected element and store your list</p>
+        <h3 id="API-Local">Local Storage</h3>
+        <p>Use local storage to save your <strong>cities</strong> array, to make added cities persisent in your browser</p>
         <h2 id="I">I: Inspiration</h2>
         <ul class="todo">
             <li>Add a function that changes the <code>background-color</code> depending on temperature.</li>

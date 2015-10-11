@@ -504,11 +504,13 @@ function showCityList() {
     citylist.empty();
 
     var cityItem;
+	var cityIcon;
 
     // Cycle trough cities and add them to DOM
     $.each(cities, function (c, city) {
-        // Create list item
-        cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', c);
+
+		        // Create list item
+        cityItem = $('<li>').append(city.name).addClass('city list-group-item').attr('id', c);
 
         // First item is active
         if (c == 0) {

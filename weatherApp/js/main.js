@@ -13,22 +13,7 @@ var tempUnit = 'C'
 var windUnit = 'k'
 
 // Default city data (localStorage to make it persistent)
-var cities = [
-    {
-        name: 'Berlin',
-        location: {
-            'lat': 52.52000659999999,
-            'lng': 13.404954
-        }
-    },
-    {
-        name: 'Paris',
-        location: {
-            'lat': 48.856614,
-            'lng': 2.3522219
-        }
-    }
-];
+var cities;
 
 // Save cities array as string
 function setCities() {
@@ -37,6 +22,22 @@ function setCities() {
 
 // Execute to save the first time to local storage
 if (localStorage.getItem("cities") == false) {
+	cities = [
+		{
+			name: 'Berlin',
+			location: {
+				'lat': 52.52000659999999,
+				'lng': 13.404954
+			}
+		},
+		{
+			name: 'Paris',
+			location: {
+				'lat': 48.856614,
+				'lng': 2.3522219
+			}
+		}
+	];
 	setCities();
 } else {
 	// Load cities if the exist in local storage

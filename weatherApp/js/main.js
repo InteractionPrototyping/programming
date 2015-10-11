@@ -17,11 +17,13 @@ var cities;
 
 // Save cities array as string
 function setCities() {
-	localStorage.setItem("cities", JSON.stringify(cities));
+	if(typeof(Storage) !== "undefined") {
+		localStorage.setItem("cities", JSON.stringify(cities));
+	}
 }
 
-// Execute to save the first time to local storage
-if (localStorage.getItem("cities") == false) {
+// Execute to save the first time to local storage (or init cities array if local storage is not available
+if (localStorage.getItem("cities") == false || (typeof(Storage) == "undefined")) {
 	cities = [
 		{
 			name: 'Berlin',
@@ -46,7 +48,11 @@ if (localStorage.getItem("cities") == false) {
 
 // Retrieve from local storage and parse as JS object
 function getCities() {
-	return JSON.parse(localStorage.getItem("cities"));
+	if(typeof(Storage) !== "undefined") {
+		return JSON.parse(localStorage.getItem("cities"));
+	} else {
+		return cities;
+	}
 }
 
 

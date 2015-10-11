@@ -13,7 +13,7 @@ var tempUnit = 'C'
 var windUnit = 'k'
 
 // Default city data (localStorage to make it persistent)
-localStorage.cities = [
+var cities = [
     {
         name: 'Berlin',
         location: {
@@ -30,8 +30,28 @@ localStorage.cities = [
     }
 ];
 
+// Save cities array as string
+function setCities() {
+	localStorage.setItem("cities", JSON.stringify(cities));
+}
+
+// Execute to save the first time to local storage
+if (localStorage.getItem("cities") == false) {
+	setCities();
+} else {
+	// Load cities if the exist in local storage
+	cities = getCities();
+}
+
+// Retrieve from local storage and parse as JS object
+function getCities() {
+	return JSON.parse(localStorage.getItem("cities"));
+}
+
+
+
 // Default active city: Berlin
-var activeCity = localStorage.cities[0];
+var activeCity = cities[0];
 
 // ColorCodes
 
@@ -72,7 +92,8 @@ $(function () {
 			console.log("Dropped city");
 			console.log(ui.draggable.attr("id"));
 			var droppedCity = ui.draggable.attr("id");
-			localStorage.cities.splice(droppedCity,1);
+			cities.splice(droppedCity,1);
+			setCities();
 			ui.draggable.remove();
 		}
 	});
@@ -485,7 +506,7 @@ function showCityList() {
     var cityItem;
 
     // Cycle trough cities and add them to DOM
-    $.each(localStorage.cities, function (c, city) {
+    $.each(cities, function (c, city) {
         // Create list item
         cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', c);
 
@@ -576,9 +597,9 @@ function getCityName(location, callback) {
 
 function addCity(city) {
 
-    // Prevent duplicate localStorage.cities
+    // Prevent duplicate cities
     // First get all citynames
-    var citynames = $.map(localStorage.cities, function (city) {
+    var citynames = $.map(cities, function (city) {
         return city.name;
     });
 
@@ -586,14 +607,17 @@ function addCity(city) {
 
     // Add only cities with a name we don't have yet
     if ($.inArray(city.name, citynames) === -1) {
-        localStorage.cities.push(city);
+        cities.push(city);
     } else {
         console.log('City ' + city.name + ' is already in the list');
         return false;
     }
 
+	// Save to localStorage
+	setCities();
+
     // Create list item
-    cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', localStorage.cities.length - 1);
+    cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', cities.length - 1);
 
     // Append item to city list
     cityItem.appendTo(citylist);
@@ -630,7 +654,7 @@ function updateArraySorting(oldArray, newPositions) {
             $(this).click(function () {
                 $(this).siblings().removeClass('active');
                 $(this).addClass('active');
-                activeCity = localStorage.cities[$(this).attr('id')];
+                activeCity = cities[$(this).attr('id')];
                 console.log('New active city: ', activeCity);
                 getApiData(activeCity.location.lat, activeCity.location.lng);
                 toggleSidebar();

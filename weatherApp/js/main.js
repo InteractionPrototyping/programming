@@ -17,42 +17,42 @@ var cities;
 
 // Save cities array as string
 function setCities() {
-	if(typeof(Storage) !== "undefined") {
-		localStorage.setItem("cities", JSON.stringify(cities));
-	}
+    if (typeof (Storage) !== "undefined") {
+        localStorage.setItem("cities", JSON.stringify(cities));
+    }
 }
 
 // Execute to save the first time to local storage (or init cities array if local storage is not available
-if (localStorage.getItem("cities") == false || (typeof(Storage) == "undefined")) {
-	cities = [
-		{
-			name: 'Berlin',
-			location: {
-				'lat': 52.52000659999999,
-				'lng': 13.404954
-			}
+if (!localStorage.getItem("cities") || (typeof (Storage) == "undefined")) {
+    cities = [
+        {
+            name: 'Berlin',
+            location: {
+                'lat': 52.52000659999999,
+                'lng': 13.404954
+            }
 		},
-		{
-			name: 'Paris',
-			location: {
-				'lat': 48.856614,
-				'lng': 2.3522219
-			}
+        {
+            name: 'Paris',
+            location: {
+                'lat': 48.856614,
+                'lng': 2.3522219
+            }
 		}
 	];
-	setCities();
+    setCities();
 } else {
-	// Load cities if the exist in local storage
-	cities = getCities();
+    // Load cities if the exist in local storage
+    cities = getCities();
 }
 
 // Retrieve from local storage and parse as JS object
 function getCities() {
-	if(typeof(Storage) !== "undefined") {
-		return JSON.parse(localStorage.getItem("cities"));
-	} else {
-		return cities;
-	}
+    if (typeof (Storage) !== "undefined") {
+        return JSON.parse(localStorage.getItem("cities"));
+    } else {
+        return cities;
+    }
 }
 
 
@@ -93,17 +93,17 @@ $(function () {
 
     showCityList();
 
-	$( "#garbage-icon").droppable({
-		accept: ".city",
-		drop: function( event, ui ) {
-			console.log("Dropped city");
-			console.log(ui.draggable.attr("id"));
-			var droppedCity = ui.draggable.attr("id");
-			cities.splice(droppedCity,1);
-			setCities();
-			ui.draggable.remove();
-		}
-	});
+    $("#garbage-icon").droppable({
+        accept: ".city",
+        drop: function (event, ui) {
+            console.log("Dropped city");
+            console.log(ui.draggable.attr("id"));
+            var droppedCity = ui.draggable.attr("id");
+            cities.splice(droppedCity, 1);
+            setCities();
+            ui.draggable.remove();
+        }
+    });
 
     // Close sidebar
     document.getElementById('close-sidebar').onclick = function () {
@@ -125,13 +125,13 @@ $(function () {
 
     /* Event Handler that updates the currently order*/
     $('#citylist').sortable({
-		start: function() {
-			$('#garbage-icon').show();
-		},
+        start: function () {
+            $('#garbage-icon').show();
+        },
         stop: function () {
             var newPositions = $(this).sortable('toArray');
             console.log('Cities sorted. New order: ', newPositions);
-			$('#garbage-icon').hide();
+            $('#garbage-icon').hide();
         }
     });
 
@@ -511,12 +511,12 @@ function showCityList() {
     citylist.empty();
 
     var cityItem;
-	var cityIcon;
+    var cityIcon;
 
     // Cycle trough cities and add them to DOM
     $.each(cities, function (c, city) {
 
-		        // Create list item
+        // Create list item
         cityItem = $('<li>').append(city.name).addClass('city list-group-item').attr('id', c);
 
         // First item is active
@@ -622,8 +622,8 @@ function addCity(city) {
         return false;
     }
 
-	// Save to localStorage
-	setCities();
+    // Save to localStorage
+    setCities();
 
     // Create list item
     cityItem = $('<li>').html(city.name).addClass('city list-group-item').attr('id', cities.length - 1);

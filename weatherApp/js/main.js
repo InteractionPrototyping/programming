@@ -7,10 +7,10 @@ var currentWeekDay = 0;
 var weather = {};
 
 // Global Variable for Temperature Unit: C (Celsius) or F (Fahrenheit)
-var tempUnit = 'C'
+var tempUnit = 'C';
 
 // Global Variable for Windspeed Unit: k (Kilometer) or m (Miles)
-var windUnit = 'k'
+var windUnit = 'k';
 
 // Default city data (localStorage to make it persistent)
 var cities;
@@ -23,7 +23,7 @@ function setCities() {
 }
 
 // Execute to save the first time to local storage (or init cities array if local storage is not available
-if (!localStorage.getItem("cities") || (typeof (Storage) == "undefined")) {
+if (!localStorage.getItem("cities") || (typeof (Storage) === "undefined")) {
     cities = [
         {
             name: 'Berlin',
@@ -74,7 +74,7 @@ var colorCodes = [
     {
         range: 'hot',
         code: '#e05111'
-    },
+    }
 ];
 // current Color Scheme
 var activeColor = colorCodes[0];
@@ -144,7 +144,7 @@ $(function () {
      */
     function updateArraySorting(oldArray, newPositions) {
         // Initialize the new array
-        var newArray = new Array();
+        var newArray = [];
         // Go trough new positions and build sorted array
         $.each(newPositions, function (i, p) {
             // add the object at this position from the old array to the new array
@@ -283,7 +283,7 @@ function toggleSidebar() {
             left: '0px'
         }, 500);
         $('#sidebar-fade-overlay').fadeToggle();
-    };
+    }
 
     console.log('Function: toggleSidebar()');
 }
@@ -309,7 +309,7 @@ function toggleDetails() {
             top: '0%'
         }, 500);
         console.log("Open details");
-    };
+    }
 
     console.log('Function: toggleDetails()');
 }
@@ -321,15 +321,22 @@ function toggleDetails() {
  */
 
 function getApiData(lat, lng) {
-    showLoadingIndicator();
-    $.getJSON('http://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/' + lat + ',' + lng + '?callback=?')
-        .done(function (data) {
-            console.log(JSON.stringify(data));
-            weather = data;
-            updateWeatherMainHTML();
-            updateWeatherDetailHTML();
-            hideLoadingIndicator();
-        });
+    $.ajax({
+        dataType: 'jsonp',
+        url: 'https://api.forecast.io/forecast/04b2f6e3ed72c29396c0e78463b8866a/' + lat + ',' + lng
+    }).done(function (data) {
+        console.log('retrieved weather data:');
+        console.log(JSON.stringify(data));
+        weather = data;
+    }).fail(function () {
+        console.log('failed to retrieve weather data');
+        //use dummy object
+        weather = dummy;
+    }).always(function () {
+        updateWeatherMainHTML();
+        updateWeatherDetailHTML();
+        hideLoadingIndicator();
+    });
 }
 
 /**
